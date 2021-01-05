@@ -1,0 +1,13 @@
+(defun Fct (F L)
+    (cond
+        ((null L) nil)
+        ;((FUNCALL F (car L)) (CONS (FUNCALL F (CAR L)) (Fct F (CDR L))))
+        ((MAPCAR F L))
+        (T nil)
+    )
+)
+(print (Fct #'- '(1 2 3 4 5)))
+(defun G (L) (LIST (CAR L) (CAR L)))
+(setq Q 'G)
+(setq P Q)
+(print (FUNCALL P '(A B C)))
