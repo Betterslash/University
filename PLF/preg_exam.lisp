@@ -6,11 +6,11 @@
         (T nil)
     )
 )
-(print (Fct #'- '(1 2 3 4 5)))
-(defun G (L) (LIST (CAR L) (CAR L)))
-(setq Q 'G)
-(setq P Q)
-(print (FUNCALL P '(A B C)))
+;(print (Fct #'- '(1 2 3 4 5)))
+;(defun G (L) (LIST (CAR L) (CAR L)))
+;(setq Q 'G)
+;(setq P Q)
+;(print (FUNCALL P '(A B C)))
 
 
 ;search_r(e, (a1, ..., an)) = { (), if |a1, ..., an| = 0
@@ -32,4 +32,14 @@
         (T (MAPCAN #'liniarize L))
     )
 )
-(print (search_r 'Z (liniarize '(a (b (c)) (d) (E (f))))))
+;(print (search_r 'Z (liniarize '(a (b (c)) (d) (E (f))))))
+
+(defun next_value (L)
+    (cond
+        ((null L) nil)
+        ((and (atom L) (and (numberp L) (equal (mod L 2) 0)))(print L) (+ 1 L))
+        ((and (atom L) (or (not (numberp L)) (not (equal (mod L 2) 0)))) L)
+        (T (MAPCAR #'next_value L))
+    )
+)
+(print (next_value '(1 s 4 (2 f (7)))))
