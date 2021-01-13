@@ -34,6 +34,7 @@
 )
 ;(print (search_r 'Z (liniarize '(a (b (c)) (d) (E (f))))))
 
+;replace every even atom with it + 1 using MAP
 (defun next_value (L)
     (cond
         ((null L) nil)
@@ -43,3 +44,8 @@
     )
 )
 (print (next_value '(1 s 4 (2 f (7)))))
+
+(defun G (F L)
+    (FUNCALL F L)
+)
+(print (G #'(lambda (L) (G #'CDR L)) '(1 2 3)))
