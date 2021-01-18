@@ -1,0 +1,20 @@
+(defun is_desc (lista)
+    (cond 
+        ((>= (car lista) (car (cdr lista))) (is_desc (cdr lista)))
+        ((cdr lista))
+        (T 0)
+    )
+)
+(defun is_asc (lista)
+    (cond
+        ((null (cdr lista)) 1)
+        ((<= (car lista) (car (cdr lista))) (is_asc (cdr lista)))
+        (T 0)
+    )
+)
+(defun check_list (lista)
+    (cond
+        ((equal (is_asc (is_desc lista)) 1))
+    )
+)
+(print (check_list '(8 4 66 5 6 17 18 26)))

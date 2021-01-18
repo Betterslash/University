@@ -29,7 +29,7 @@ t_resol(L, R):- resol(L, [], R).
 
 % subsets(L:list, R:list)
 % subsets(i, o)
-subsets([E], [E]).
+subsets([], []).
 subsets([H|T], [H|R]):-
     subsets(T, R)
 .
