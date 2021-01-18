@@ -91,18 +91,6 @@ allsolutions(L, N, R) :-
 %                     Problmes                      %
 %---------------------------------------------------%
 
-aranjamente(L, K, V, R):-
-    combinari(L, K, Rez),
-    product_list(Rez, X),
-    X >= V,
-    permutari(Rez, Rez1).
-
-product_list([], 1).
-product_list([H|T], R):-
-    product_list(T, R1),
-    R is R1 * H
-.
-
 aranjamente(L, K, R):-
     combinari(L, K, Rez),
     permutari(Rez, R)
@@ -116,3 +104,4 @@ product_list([H|T], R):-
     product_list(T, R1),
     R is R1 * H
 .
+
