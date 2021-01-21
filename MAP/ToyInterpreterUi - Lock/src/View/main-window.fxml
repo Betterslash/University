@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="mainStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="357.79998779296875" minWidth="10.0" prefWidth="289.60003662109375" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="381.5999755859375" minWidth="10.0" prefWidth="271.4" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.8000183105469" minWidth="10.0" prefWidth="291.4" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+        <RowConstraints maxHeight="239.8000061035156" minHeight="10.0" prefHeight="239.8000061035156" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="129.60001220703128" minHeight="0.0" prefHeight="19.799993896484352" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="267.40000000000003" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="53.600012207031284" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="296.1999877929687" minHeight="10.0" prefHeight="190.79997558593743" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="122.19998779296873" minHeight="9.200024414062455" prefHeight="98.80002441406248" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <TableView fx:id="heapTable" prefHeight="210.0" prefWidth="286.0" GridPane.rowIndex="2">
+      <columns>
+          <TableColumn fx:id="heapTableAdress" prefWidth="144.79998779296875" text="Address" />
+          <TableColumn fx:id="heapTableValue" prefWidth="152.0" text="Value" />
+      </columns>
+        <GridPane.margin>
+          <Insets bottom="10.0" left="10.0" top="10.0" />
+        </GridPane.margin>
+    </TableView>
+    <ListView fx:id="outputList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <GridPane.margin>
+          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </GridPane.margin>
+    </ListView>
+    <ListView fx:id="prgStateList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+        <GridPane.margin>
+          <Insets bottom="10.0" right="10.0" top="10.0" />
+        </GridPane.margin>
+    </ListView>
+    <Label text="Number of programs:" GridPane.halignment="CENTER" />
+    <TableView fx:id="symTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+      <columns>
+          <TableColumn fx:id="symTableId" prefWidth="104.0" text="id" />
+          <TableColumn fx:id="symTableValue" minWidth="0.0" prefWidth="139.20001220703125" text="value" />
+      </columns>
+        <GridPane.margin>
+          <Insets bottom="10.0" right="10.0" top="10.0" />
+        </GridPane.margin>
+    </TableView>
+    <ListView fx:id="exeStackList" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+        <GridPane.margin>
+          <Insets bottom="10.0" left="10.0" top="10.0" />
+        </GridPane.margin>
+    </ListView>
+     <Button fx:id="oneStepButton" mnemonicParsing="false" prefHeight="61.0" prefWidth="147.0" text="Run" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+      <GridPane.margin>
+         <Insets top="10.0" />
+      </GridPane.margin></Button>
+   <ListView fx:id="fileTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </GridPane.margin>
+   </ListView>
+   <Label fx:id="numberLabel" GridPane.columnIndex="1" />
+   <Label text="HeapTable" GridPane.rowIndex="1" />
+   <Label text="Output" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   <Label text="Symbol Table" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <Label text="Execution Stack" GridPane.rowIndex="3" />
+   <Label text="File Table" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   <Label text="Programs Id" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   <Label text="Lock Table" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   <TableView fx:id="lockTable" prefHeight="230.0" prefWidth="262.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+     <columns>
+       <TableColumn fx:id="lockId" prefWidth="124.00000303983688" text="ID" />
+       <TableColumn fx:id="lockAddress" prefWidth="132.7999725341797" text="Address" />
+     </columns>
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin>
+   </TableView>
+</GridPane>
