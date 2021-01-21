@@ -1,0 +1,4081 @@
+
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|b = int@UnknownValue|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|b = int@UnknownValue|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|b = int@UnknownValue|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|b = int@UnknownValue|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = int@UnknownValue|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |a-->int@UnknownValue b-->int@UnknownValue v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|
+out ->int@UnknownValue 
+fileTable ->
+originalProgram ->int v ; int w ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([v, w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([v, w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|return;|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|print v|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|fork(Call product([(v * 10), w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|fork(Call product([(v * 10), w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([(v * 10), w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([(v * 10), w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] )) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|a = 20|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a * b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a * b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a * b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->return;|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->return;|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([v, w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->7 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] )))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] )))|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([v, w] ) ; print v ; fork(Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([(v * 10), w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([(v * 10), w] )|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|b = 5|int b|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|b = 5|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|int a|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 20|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->7 2 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->100 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call product([(v * 10), w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->7 2 100 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->7 2 100 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|Call sum([(v * 10), w] ) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|Call sum([(v * 10), w] )|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|int b|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|b = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|int a|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|a = 20|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|fork(Call product([v, w] ) ; fork(Call sum([v, w] )))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->Model.stmt.NoStmt@6830a61f|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call product([v, w] ) ; fork(Call sum([v, w] ))|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 0 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; Call sum([(v * 10), w] ) ; print v ; fork(Call product([v, w] ) ; fork(Call sum([v, w] ))) ; Model.stmt.NoStmt@6830a61f
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|Call product([v, w] )|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|b = 5|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|int a|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|a = 2|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->fork(Call sum([v, w] ))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call product([v, w] ) ; fork(Call sum([v, w] ))
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->Call sum([v, w] )|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|int b|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->int@UnknownValue v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|b = 5|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|int a|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->int@UnknownValue b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|a = 2|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->Call sum([v, w] )
+heapTable ->}

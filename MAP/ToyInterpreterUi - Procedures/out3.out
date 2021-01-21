@@ -1,0 +1,209 @@
+
+
+Program 2 {
+symTable ->|
+exeStack ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->|
+exeStack ->new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|Ref(int) v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->|
+exeStack ->new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|Ref(int) v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 20) ; new(v, 33)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 20) ; new(v, 33)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 33)|new(v, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->Ref(int)@UnknownValue |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 33)|new(v, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->}
+
+Program 2 {
+symTable ->v-->(int, 1) |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 33)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->1-->20 }
+
+Program 2 {
+symTable ->v-->(int, 1) |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|new(v, 33)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->1-->20 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->1-->20 2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|print rH(v)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|print rH(v)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->wH(v, 30) ; new(v, 40) ; print (5 + rH(v))|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|wH(v, 30) ; new(v, 40)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|wH(v, 30) ; new(v, 40)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|new(v, 40)|wH(v, 30)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|new(v, 40)|wH(v, 30)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->33 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|new(v, 40)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->30 }
+
+Program 2 {
+symTable ->v-->(int, 2) |
+exeStack ->print (5 + rH(v))|new(v, 40)|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->30 }
+
+Program 2 {
+symTable ->v-->(int, 3) |
+exeStack ->print (5 + rH(v))|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->2-->30 3-->40 }
+
+Program 2 {
+symTable ->v-->(int, 3) |
+exeStack ->print (5 + rH(v))|
+out ->33 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->3-->40 }
+
+Program 2 {
+symTable ->v-->(int, 3) |
+exeStack ->
+out ->33 45 
+fileTable ->
+originalProgram ->Ref(int) v ; new(v, 20) ; new(v, 33) ; print rH(v) ; wH(v, 30) ; new(v, 40) ; print (5 + rH(v))
+heapTable ->3-->40 }

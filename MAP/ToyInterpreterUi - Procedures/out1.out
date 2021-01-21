@@ -1,0 +1,5473 @@
+
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue 
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([v, w] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([v, w] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([v, w] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([v, w] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|a = 17|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|a = 17|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->string@UnknownValue b-->string@UnknownValue |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|b = 18|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->string a|a = 17|string b|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|a = 17|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|a = 17|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->string@UnknownValue |
+exeStack ->string a|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->string@UnknownValue b-->string@UnknownValue |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (a + b)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|int v|v = 17|int w|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|int v|v = 17|int w|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|int v|v = 17|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|int v|v = 17|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|int v|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|int v|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |a-->17 b-->18 v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->return;|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->int@UnknownValue |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 w-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->int@UnknownValue w-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 v-->17 w-->18 |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->|
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|a = (2 + (3 * 5))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->b = (a + 1) ; print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->int@UnknownValue |
+exeStack ->print b ; Call sum([a, b] )|b = (a + 1)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->print b ; Call sum([a, b] )|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->Call sum([a, b] )|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|int w|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 w-->int@UnknownValue |
+exeStack ->return;|print (v + w)|v = 17|int v|w = 18|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 w-->18 |
+exeStack ->return;|print (v + w)|v = 17|int v|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->int@UnknownValue w-->18 |
+exeStack ->return;|print (v + w)|v = 17|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|print (v + w)|
+out ->18 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |a-->17 b-->18 v-->17 w-->18 |
+exeStack ->return;|
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
+
+Program 0 {
+symTable ->a-->17 b-->18 |
+exeStack ->
+out ->18 35 
+fileTable ->
+originalProgram ->int a ; int b ; a = (2 + (3 * 5)) ; b = (a + 1) ; print b ; Call sum([a, b] )
+heapTable ->}
