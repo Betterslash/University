@@ -17,12 +17,13 @@ public class ForkStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) {
+        ILatchTable<Integer, Integer> latchTable = state.getLatchTable();
         IDict<String, Value> symTable = state.getSymTable().clone();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IStack<IStmt> exeStack = new MyStack<>();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IList<Value> output = state.getOut();
-        PrgState prgState = new PrgState(symTable, exeStack, output, fileTable, statement, heapTable);
+        PrgState prgState = new PrgState(symTable, exeStack, output, fileTable, statement, heapTable, latchTable);
         exeStack.push(statement);
         return prgState;
     }
@@ -35,6 +36,6 @@ public class ForkStmt implements IStmt{
 
     @Override
     public String toString() {
-        return "fork("+statement+")";
+        return "\nfork("+statement+")";
     }
 }

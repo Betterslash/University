@@ -17,11 +17,18 @@ import javafx.scene.layout.GridPane;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class PrgRunController implements Initializable {
 
     Controller myController;
+    @FXML
+    TableView<Map.Entry<Integer, Integer>> latchTable;
+    @FXML
+    TableColumn<Map.Entry<Integer, Integer>, String> latchId;
+    @FXML
+    TableColumn<Map.Entry<Integer, Integer>, String> latchValue;
     @FXML
     Button oneStepButton;
     @FXML
@@ -100,6 +107,7 @@ public class PrgRunController implements Initializable {
         setOutList();
         setFileTable();
         setPrgStateList();
+        setLatchTable();
         if(prgStateList.getSelectionModel().getSelectedItem() == null) {
             prgStateList.getSelectionModel().selectFirst();
         }
@@ -120,6 +128,15 @@ public class PrgRunController implements Initializable {
         heapTableList.addAll(myController.getRepository().getPrgList().get(0).getHeap().getRepresentation().entrySet());
         heapTable.refresh();
         heapTable.setItems(heapTableList);
+    }
+
+    public void setLatchTable() {
+        ObservableList<HashMap.Entry<Integer, Integer>> lacthTableList = FXCollections.observableArrayList();
+        latchId.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(Integer.toString(cellData.getValue().getKey())));
+        latchValue.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getValue().toString()));
+        lacthTableList.addAll(myController.getRepository().getPrgList().get(0).getLatchTable().getRepresentation().entrySet());
+        latchTable.refresh();
+        latchTable.setItems(lacthTableList);
     }
 
     public void setOutList() {

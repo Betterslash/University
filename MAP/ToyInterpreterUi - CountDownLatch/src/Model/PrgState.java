@@ -19,20 +19,28 @@ public class PrgState {
     IFDict<String, BufferedReader> fileTable;
     IHeap<Integer, Value> heapTable;
     IStmt originalProgram;
+    final ILatchTable<Integer, Integer> latchTable;
+
+    public ILatchTable<Integer, Integer> getLatchTable() {
+        return latchTable;
+    }
+
     static synchronized void incId(){
         id += 1;
     }
-    public PrgState(IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
+    public PrgState(IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable, ILatchTable<Integer, Integer> latchTable){
         this.exeStack = exeStack;
         this.originalProgram = originalProgram;
         this.out = out;
         this.symTable = symTable;
         this.fileTable = fileTable;
         this.heapTable = heapTable;
+        this.latchTable = latchTable;
         ID = id;
         incId();
     }
     public PrgState(IStmt iStmt){
+        this.latchTable = new LatchTable<>();
         this.heapTable = new MyHeap<>();
         this.exeStack = new MyStack<>();
         this.originalProgram = iStmt;
