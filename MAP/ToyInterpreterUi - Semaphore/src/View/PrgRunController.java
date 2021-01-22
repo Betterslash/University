@@ -3,6 +3,7 @@ package View;
 import Controller.Controller;
 import Model.PrgState;
 import Model.Values.Value;
+import Model.adt.MyTPair;
 import Model.except.MyException;
 import Model.stmt.IStmt;
 import javafx.beans.property.ReadOnlyStringWrapper;
@@ -17,6 +18,7 @@ import javafx.scene.layout.GridPane;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class PrgRunController implements Initializable {
@@ -48,6 +50,12 @@ public class PrgRunController implements Initializable {
     GridPane mainStage;
     @FXML
     ListView<String> fileTable;
+    @FXML
+    TableView<Map.Entry<Integer, MyTPair<Integer, List<Integer>, Integer>>> semaphoreTable;
+    @FXML
+    TableColumn<Map.Entry<Integer, MyTPair<Integer, List<Integer>, Integer>>, String> semId;
+    @FXML
+    TableColumn<Map.Entry<Integer, MyTPair<Integer, List<Integer>, Integer>>, String> semVal;
 
     public PrgRunController(Controller myController) {
         this.myController = myController;
@@ -96,6 +104,7 @@ public class PrgRunController implements Initializable {
 
     public void updateUIComponents() {
         setNumberLabel();
+        setSemaphoreTable();
         setHeapTable();
         setOutList();
         setFileTable();
@@ -120,6 +129,14 @@ public class PrgRunController implements Initializable {
         heapTableList.addAll(myController.getRepository().getPrgList().get(0).getHeap().getRepresentation().entrySet());
         heapTable.refresh();
         heapTable.setItems(heapTableList);
+    }
+    public void setSemaphoreTable() {
+        ObservableList<Map.Entry<Integer, MyTPair<Integer, List<Integer>, Integer>>> semList = FXCollections.observableArrayList();
+        semId.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(Integer.toString(cellData.getValue().getKey())));
+        semVal.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getValue().toString()));
+        semList.addAll(myController.getRepository().getPrgList().get(0).getSemaphoreTable().getRepresentation().entrySet());
+        semaphoreTable.refresh();
+        semaphoreTable.setItems(semList);
     }
 
     public void setOutList() {

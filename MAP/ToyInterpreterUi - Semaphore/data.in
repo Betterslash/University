@@ -1,0 +1,3 @@
+fork(acquire(cnt);wh(v1,rh(v1)*10));print(rh(v1));release(cnt));
+fork(acquire(cnt);wh(v1,rh(v1)*10));wh(v1,rh(v1)*2));print(rh(v1));release(cnt
+));

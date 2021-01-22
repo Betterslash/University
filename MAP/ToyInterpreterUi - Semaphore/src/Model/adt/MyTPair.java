@@ -21,4 +21,9 @@ public class MyTPair<T, T1, T2> {
     public T1 getList() {
         return list;
     }
+
+    @Override
+    public String toString() {
+        return first + ", "+ list + ", "+ second;
+    }
 }

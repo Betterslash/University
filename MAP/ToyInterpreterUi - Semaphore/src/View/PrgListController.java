@@ -30,8 +30,8 @@ import java.util.ResourceBundle;
 
 public class PrgListController implements Initializable {
 
-    static Repository repository1, repository2, repository3, repository4, repository5;
-    static Controller controller1, controller2, controller3, controller4, controller5;
+    static Repository repository0, repository1, repository2, repository3, repository4, repository5;
+    static Controller controller0, controller1, controller2, controller3, controller4, controller5;
 
     @FXML
     private ListView<Controller> programsListView;
@@ -39,13 +39,33 @@ public class PrgListController implements Initializable {
     private Button chooseProgram;
 
     public void setUp() {
+        IStmt ex0 = new CompStmt(
+                new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),new VarDeclStmt("cnt", new IntType())),
+                new CompStmt(new HeapAllocStmt("v1", new ValueExp(new IntValue(2))),
+                        new CompStmt(new NewSemaphoreStmt("cnt", new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(1))),
+                                new CompStmt(new ForkStmt(new CompStmt(new AcquireStmt("cnt"),
+                                        new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                                new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v1"))),
+                                                        new ReleaseStmt("cnt")))
+                                        )),new CompStmt(
+                                        new ForkStmt(new CompStmt(new AcquireStmt("cnt"),
+                                        new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                                new CompStmt(new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(2)))),
+                                                        new PrintStmt(new ReadHeapExp(new VarExp("v1")))),
+                                                        new ReleaseStmt("cnt")))
+                                        )),
+                                        new CompStmt(new CompStmt(new AcquireStmt("cnt"),
+                                                new PrintStmt(new ArithmExp('-', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(1))))),
+                                                new ReleaseStmt("cnt")))))
+        ));
         IStmt ex1 = new CompStmt(new VarDeclStmt("a", new IntType()),
                 new CompStmt(new VarDeclStmt("b", new IntType()),
                         new CompStmt(new AssignStmt("a", new ArithmExp('+', new ValueExp(new IntValue(2)),
                                 new ArithmExp('*', new ValueExp(new IntValue(3)),
                                         new ValueExp(new IntValue(5))))),
                                 new CompStmt(new AssignStmt("b", new ArithmExp('+', new VarExp("a"),
-                                        new ValueExp(new IntValue(1)))), new PrintStmt(new VarExp("b"))))));
+                                        new ValueExp(new IntValue(1)))),
+                                        new CompStmt(new NewSemaphoreStmt("SMP", new ValueExp(new IntValue(1)), new ValueExp(new IntValue(1))),new PrintStmt(new VarExp("b")))))));
         VarDeclStmt v = new VarDeclStmt("v", new RefType(new IntType()));
         HeapAllocStmt heapAllocStmt = new HeapAllocStmt("v", new ValueExp(new IntValue(20)));
         VarDeclStmt rdc = new VarDeclStmt("a", new RefType(new RefType(new IntType())));
@@ -106,24 +126,28 @@ public class PrgListController implements Initializable {
 
         checker(ex1, ex2, ex3);
         checker(ex4, ex5, ex6);
+        PrgState prgState0 = new PrgState(ex0);
         PrgState prgState1 = new PrgState(ex1);
         PrgState prgState2 = new PrgState(ex2);
         PrgState prgState3 = new PrgState(ex3);
         PrgState prgState4 = new PrgState(ex4);
         PrgState prgState5 = new PrgState(ex7);
 
+        repository0 = new Repository("out0.out");
         repository1 = new Repository("out1.out");
         repository2 = new Repository("out2.out");
         repository3 = new Repository("out3.out");
         repository4 = new Repository("out4.out");
         repository5 = new Repository("out5.out");
 
+        repository0.addToRepository(prgState0);
         repository1.addToRepository(prgState1);
         repository2.addToRepository(prgState2);
         repository3.addToRepository(prgState3);
         repository4.addToRepository(prgState4);
         repository5.addToRepository(prgState5);
 
+        controller0 = new Controller(repository0);
         controller1 = new Controller(repository1);
         controller2 = new Controller(repository2);
         controller3 = new Controller(repository3);
@@ -153,6 +177,7 @@ public class PrgListController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         setUp();
         ObservableList<Controller> myData = FXCollections.observableArrayList();
+        myData.add(controller0);
         myData.add(controller1);
         myData.add(controller2);
         myData.add(controller3);

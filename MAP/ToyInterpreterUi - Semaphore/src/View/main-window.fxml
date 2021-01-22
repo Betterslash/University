@@ -76,10 +76,10 @@
    <Label text="Execution Stack" GridPane.rowIndex="3" />
    <Label text="File Table" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    <Label text="Programs Id" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-   <TableView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+   <TableView fx:id="semaphoreTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
      <columns>
-       <TableColumn prefWidth="139.99993592500687" text="ID" />
-       <TableColumn minWidth="0.0" prefWidth="157.60011291503906" text="SemValues" />
+       <TableColumn fx:id="semId" prefWidth="139.99993592500687" text="ID" />
+       <TableColumn fx:id="semVal" minWidth="0.0" prefWidth="157.60011291503906" text="SemValues" />
      </columns>
       <GridPane.margin>
          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
