@@ -8,6 +8,7 @@ import Model.stmt.IStmt;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 public class PrgState {
@@ -19,20 +20,28 @@ public class PrgState {
     IFDict<String, BufferedReader> fileTable;
     IHeap<Integer, Value> heapTable;
     IStmt originalProgram;
+    final ICBarrierTable<Integer, MyPair<Integer, List<Integer>>> barrierTable;
+
+    public ICBarrierTable<Integer, MyPair<Integer, List<Integer>>> getBarrierTable() {
+        return barrierTable;
+    }
+
     static synchronized void incId(){
         id += 1;
     }
-    public PrgState(IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
+    public PrgState(IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable, ICBarrierTable<Integer, MyPair<Integer, List<Integer>>> barrierTable){
         this.exeStack = exeStack;
         this.originalProgram = originalProgram;
         this.out = out;
         this.symTable = symTable;
         this.fileTable = fileTable;
         this.heapTable = heapTable;
+        this.barrierTable = barrierTable;
         ID = id;
         incId();
     }
     public PrgState(IStmt iStmt){
+        this.barrierTable = new BarrierTable<>();
         this.heapTable = new MyHeap<>();
         this.exeStack = new MyStack<>();
         this.originalProgram = iStmt;

@@ -3,6 +3,7 @@ package sample;
 import Controller.Controller;
 import Model.PrgState;
 import Model.Values.Value;
+import Model.adt.MyPair;
 import Model.except.MyException;
 import Model.stmt.IStmt;
 import javafx.beans.property.ReadOnlyStringWrapper;
@@ -17,11 +18,18 @@ import javafx.scene.layout.GridPane;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 public class PrgRunController implements Initializable {
 
     Controller myController;
+    @FXML
+    TableView<Map.Entry<Integer, MyPair<Integer, List<Integer>>>> barrierTable;
+    @FXML
+    TableColumn<Map.Entry<Integer, MyPair<Integer, List<Integer>>>, String> barrierId;
+    @FXML
+    TableColumn<Map.Entry<Integer, MyPair<Integer, List<Integer>>>, String> barrierValue;
     @FXML
     Button oneStepButton;
     @FXML
@@ -100,6 +108,7 @@ public class PrgRunController implements Initializable {
         setOutList();
         setFileTable();
         setPrgStateList();
+        setBarrierTable();
         if(prgStateList.getSelectionModel().getSelectedItem() == null) {
             prgStateList.getSelectionModel().selectFirst();
         }
@@ -120,6 +129,15 @@ public class PrgRunController implements Initializable {
         heapTableList.addAll(myController.getRepository().getPrgList().get(0).getHeap().getRepresentation().entrySet());
         heapTable.refresh();
         heapTable.setItems(heapTableList);
+    }
+
+    public void setBarrierTable() {
+        ObservableList<Map.Entry<Integer, MyPair<Integer, List<Integer>>>> barrierList = FXCollections.observableArrayList();
+        barrierId.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(Integer.toString(cellData.getValue().getKey())));
+        barrierValue.setCellValueFactory(cellData -> new ReadOnlyStringWrapper(cellData.getValue().getValue().toString()));
+        barrierList.addAll(myController.getRepository().getPrgList().get(0).getBarrierTable().getRepresentation().entrySet());
+        barrierTable.refresh();
+        barrierTable.setItems(barrierList);
     }
 
     public void setOutList() {

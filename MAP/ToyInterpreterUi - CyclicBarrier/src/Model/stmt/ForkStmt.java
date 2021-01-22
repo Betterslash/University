@@ -7,6 +7,7 @@ import Model.adt.*;
 import Model.except.MyException;
 
 import java.io.BufferedReader;
+import java.util.List;
 
 public class ForkStmt implements IStmt{
     final IStmt statement;
@@ -22,7 +23,8 @@ public class ForkStmt implements IStmt{
         IStack<IStmt> exeStack = new MyStack<>();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IList<Value> output = state.getOut();
-        PrgState prgState = new PrgState(symTable, exeStack, output, fileTable, statement, heapTable);
+        ICBarrierTable<Integer, MyPair<Integer, List<Integer>>> barrierTable = state.getBarrierTable();
+        PrgState prgState = new PrgState(symTable, exeStack, output, fileTable, statement, heapTable, barrierTable);
         exeStack.push(statement);
         return prgState;
     }
@@ -35,6 +37,6 @@ public class ForkStmt implements IStmt{
 
     @Override
     public String toString() {
-        return "fork("+statement+")";
+        return "\nfork("+statement+")";
     }
 }

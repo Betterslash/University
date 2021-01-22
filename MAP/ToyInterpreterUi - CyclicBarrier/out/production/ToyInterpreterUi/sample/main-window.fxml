@@ -19,9 +19,11 @@
     <rowConstraints>
         <RowConstraints />
         <RowConstraints />
-        <RowConstraints maxHeight="239.8000061035156" minHeight="10.0" prefHeight="239.8000061035156" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="129.60001220703128" minHeight="0.0" prefHeight="19.799993896484352" vgrow="SOMETIMES" />
-      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="204.00001831054686" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="239.8000061035156" minHeight="10.0" prefHeight="140.99999389648434" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="129.60001220703128" minHeight="0.0" prefHeight="24.79998779296875" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="136.80001220703127" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="31.799963378906284" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="279.4" minHeight="10.0" prefHeight="149.4000366210937" vgrow="SOMETIMES" />
       <RowConstraints maxHeight="107.80002441406248" minHeight="10.0" prefHeight="72.7999877929688" vgrow="SOMETIMES" />
     </rowConstraints>
     <TableView fx:id="heapTable" prefHeight="210.0" prefWidth="286.0" GridPane.rowIndex="2">
@@ -58,7 +60,7 @@
           <Insets bottom="10.0" left="10.0" top="10.0" />
         </GridPane.margin>
     </ListView>
-     <Button fx:id="oneStepButton" mnemonicParsing="false" prefHeight="61.0" prefWidth="147.0" text="Run" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+     <Button fx:id="oneStepButton" mnemonicParsing="false" prefHeight="61.0" prefWidth="147.0" text="Run" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
    <ListView fx:id="fileTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
       <GridPane.margin>
          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -71,4 +73,14 @@
    <Label text="Execution Stack" GridPane.rowIndex="3" />
    <Label text="File Table" GridPane.columnIndex="1" GridPane.rowIndex="3" />
    <Label text="Programs Id" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+   <TableView fx:id="barrierTable" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+     <columns>
+       <TableColumn fx:id="barrierId" prefWidth="117.60003358125687" text="Barrier ID" />
+       <TableColumn fx:id="barrierValue" minWidth="0.0" prefWidth="164.80003356933594" text="Barrier Values" />
+     </columns>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+   </TableView>
+   <Label text="Barrier Table" GridPane.columnIndex="1" GridPane.rowIndex="5" />
 </GridPane>
