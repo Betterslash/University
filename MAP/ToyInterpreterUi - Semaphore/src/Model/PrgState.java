@@ -8,11 +8,13 @@ import Model.stmt.IStmt;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.List;
 import java.util.Map;
 
 public class PrgState {
     private static int id = 0;
     int ID;
+    final ISemaphoreTable<Integer, MyTPair<Integer,List<Integer>, Integer>> semaphoreTable;
     IDict<String, Value> symTable;
     IStack<IStmt> exeStack;
     IList<Value> out;
@@ -22,7 +24,8 @@ public class PrgState {
     static synchronized void incId(){
         id += 1;
     }
-    public PrgState(IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
+    public PrgState(ISemaphoreTable<Integer, MyTPair<Integer,List<Integer>, Integer>> semaphoreTable, IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
+        this.semaphoreTable = semaphoreTable;
         this.exeStack = exeStack;
         this.originalProgram = originalProgram;
         this.out = out;
@@ -33,6 +36,7 @@ public class PrgState {
         incId();
     }
     public PrgState(IStmt iStmt){
+        this.semaphoreTable = new SemaphoreTable<>();
         this.heapTable = new MyHeap<>();
         this.exeStack = new MyStack<>();
         this.originalProgram = iStmt;
@@ -62,6 +66,10 @@ public class PrgState {
 
     public IStack<IStmt> getExeStack() {
         return exeStack;
+    }
+
+    public ISemaphoreTable<Integer, MyTPair<Integer,List<Integer>, Integer>> getSemaphoreTable() {
+        return semaphoreTable;
     }
 
     public IFDict<String, BufferedReader> getFileTable() {

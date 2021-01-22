@@ -104,31 +104,8 @@ public class PrgListController implements Initializable {
                                                                 new PrintStmt(new ValueExp(new IntValue(300)))),
                                                                 new PrintStmt(new ValueExp(new IntValue(300))))))))));
 
-        try {
-            ex1.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex2.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex3.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex4.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex5.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
+        checker(ex1, ex2, ex3);
+        checker(ex4, ex5, ex6);
         PrgState prgState1 = new PrgState(ex1);
         PrgState prgState2 = new PrgState(ex2);
         PrgState prgState3 = new PrgState(ex3);
@@ -154,6 +131,24 @@ public class PrgListController implements Initializable {
         controller5 = new Controller(repository5);
     }
 
+    private void checker(IStmt ex1, IStmt ex2, IStmt ex3) {
+        try {
+            ex1.typecheck(new MyDict<>());
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
+        try {
+            ex2.typecheck(new MyDict<>());
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
+        try {
+            ex3.typecheck(new MyDict<>());
+        } catch (MyException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         setUp();
@@ -174,7 +169,7 @@ public class PrgListController implements Initializable {
                     PrgRunController mainWindowController = new PrgRunController(programsListView.getSelectionModel().getSelectedItem());
                     fxmlLoader.setController(mainWindowController);
                     programRoot = fxmlLoader.load();
-                    Scene scene = new Scene(programRoot, 1300, 720);
+                    Scene scene = new Scene(programRoot);
                     programStage.setScene(scene);
                     programStage.show();
                 }else{

@@ -13,7 +13,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException {
         GridPane root = FXMLLoader.load(getClass().getResource("first_view.fxml"));
-        Scene scene = new Scene(root, 720, 480);
+        Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Choose program window");
         primaryStage.show();
