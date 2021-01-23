@@ -34,16 +34,16 @@ import java.util.ResourceBundle;
 
 public class PrgListController implements Initializable {
 
+    static Repository repository0;
     static Repository repository1;
     static Repository repository2;
     static Repository repository3;
     static Repository repository4;
-    static Repository repository0;
+    static Controller controller0;
     static Controller controller1;
     static Controller controller2;
     static Controller controller3;
     static Controller controller4;
-    static Controller controller0;
 
     @FXML
     private ListView<Controller> programsListView;
@@ -61,30 +61,25 @@ public class PrgListController implements Initializable {
     }
 
     public void setUp() {
-        IStmt simpleStmt = new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(20))),
-                new CompStmt(new WaitStmt(new ValueExp(new IntValue(10))),
-                        new PrintStmt(new ArithmExp('*', new VarExp("v"), new ValueExp(new IntValue(10))))));
-        IStmt declarations = new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
-                new CompStmt(new VarDeclStmt("b", new RefType(new IntType())),
-                        new VarDeclStmt("v", new IntType())));
-        IStmt allocHeaps = new CompStmt(new HeapAllocStmt("a",new ValueExp(new IntValue(0))),
-                new HeapAllocStmt("b",new ValueExp(new IntValue(0))));
-        IStmt writeHeaps = new CompStmt(new HeapWriteStmt("a", new ValueExp(new IntValue(1))),
-                new HeapWriteStmt("b", new ValueExp(new IntValue(2))));
-        IStmt condStmt = new CompStmt(new CondStmt("v",new RelationalExp("<", new ReadHeapExp(new VarExp("a")), new ReadHeapExp(new VarExp("b"))),
-                new ValueExp(new IntValue(100)),
-                new ValueExp(new IntValue(200))),
-                new PrintStmt(new VarExp("v")));
-        IStmt condStmt2 = new CompStmt(new CondStmt("v",new RelationalExp(">", new ArithmExp('-',new ReadHeapExp(new VarExp("b")),new ValueExp(new IntValue(2))), new ReadHeapExp(new VarExp("a"))),
-                new ValueExp(new IntValue(100)),
-                new ValueExp(new IntValue(200))),
-                new PrintStmt(new VarExp("v")));
-        IStmt ex0 = new CompStmt(declarations,
-                new CompStmt(allocHeaps,
-                        new CompStmt(writeHeaps,
-                                new CompStmt(condStmt,
-                                        new CompStmt(condStmt2,
-                                                simpleStmt)))));
+        IStmt ex0 = new CompStmt(
+                new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),new VarDeclStmt("cnt", new IntType())),
+                new CompStmt(new HeapAllocStmt("v1", new ValueExp(new IntValue(1))),
+                        new CompStmt(new CreateSemaphoreStmt("cnt", new ReadHeapExp(new VarExp("v1"))),
+                                new CompStmt(new ForkStmt(new CompStmt(new AcquireSemaphoreStmt("cnt"),
+                                        new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                                new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("v1"))),
+                                                        new ReleaseSemaphoreStmt("cnt")))
+                                )),new CompStmt(
+                                        new ForkStmt(new CompStmt(new AcquireSemaphoreStmt("cnt"),
+                                                new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(10)))),
+                                                        new CompStmt(new CompStmt(new HeapWriteStmt("v1", new ArithmExp('*', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(2)))),
+                                                                new PrintStmt(new ReadHeapExp(new VarExp("v1")))),
+                                                                new ReleaseSemaphoreStmt("cnt")))
+                                        )),
+                                        new CompStmt(new CompStmt(new AcquireSemaphoreStmt("cnt"),
+                                                new PrintStmt(new ArithmExp('-', new ReadHeapExp(new VarExp("v1")), new ValueExp(new IntValue(1))))),
+                                                new ReleaseSemaphoreStmt("cnt")))))
+                ));
         IStmt ex1 = new CompStmt(new VarDeclStmt("a", new IntType()),
                 new CompStmt(new VarDeclStmt("b", new IntType()),
                         new CompStmt(new AssignStmt("a", new ArithmExp('+', new ValueExp(new IntValue(2)),
@@ -129,11 +124,11 @@ public class PrgListController implements Initializable {
         List<IStmt> typeCheckStmtList = Arrays.asList(ex0, ex1, ex2, ex3, ex4, ex5);
         this.typecheckSetUp(typeCheckStmtList);
 
-        PrgState prgState0 = new PrgState(ex0);
-        PrgState prgState1 = new PrgState(ex1);
-        PrgState prgState2 = new PrgState(ex2);
-        PrgState prgState3 = new PrgState(ex3);
-        PrgState prgState4 = new PrgState(ex4);
+        PrgState prgState0 = new PrgState( ex0);
+        PrgState prgState1 = new PrgState( ex1);
+        PrgState prgState2 = new PrgState( ex2);
+        PrgState prgState3 = new PrgState( ex3);
+        PrgState prgState4 = new PrgState( ex4);
 
         repository0 = new Repository("out0.out");
         repository1 = new Repository("out1.out");
@@ -175,7 +170,7 @@ public class PrgListController implements Initializable {
                     PrgRunController mainWindowController = new PrgRunController(programsListView.getSelectionModel().getSelectedItem());
                     fxmlLoader.setController(mainWindowController);
                     programRoot = fxmlLoader.load();
-                    Scene scene = new Scene(programRoot, 1300, 720);
+                    Scene scene = new Scene(programRoot);
                     programStage.setScene(scene);
                     programStage.show();
                 }else{

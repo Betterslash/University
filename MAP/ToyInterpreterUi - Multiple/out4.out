@@ -1,0 +1,1217 @@
+
+
+Program 3 {
+symTable ->
+exeStack ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->print v|
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->print v|
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->print v|
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->print v|
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->print v|
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->print v|
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->print v|
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->
+out ->4 3 2 1 0 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->int@UnknownValue 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|v = 4|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->while((v > 0)){fork(print v) ; v = (v - 1)} ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->4 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->print v|
+out ->
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->4 
+exeStack ->
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->print v|
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->3 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->print v|
+out ->4 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 6 {
+symTable ->v-->3 
+exeStack ->
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->print v|
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->2 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->print v|
+out ->4 3 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 
+exeStack ->
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|fork(print v) ; v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|fork(print v)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->print v|
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->1 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|v = (v - 1)|
+out ->4 3 2 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->print v|
+out ->4 3 2 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 8 {
+symTable ->v-->1 
+exeStack ->
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|while((v > 0)){fork(print v) ; v = (v - 1)}|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->print v|
+out ->4 3 2 1 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
+
+Program 3 {
+symTable ->v-->0 
+exeStack ->
+out ->4 3 2 1 0 
+fileTable ->
+originalProgram ->int v ; v = 4 ; while((v > 0)){fork(print v) ; v = (v - 1)} ; print v
+heapTable ->}
