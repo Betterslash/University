@@ -7,7 +7,9 @@ import Model.Types.RefType;
 import Model.Values.IntValue;
 import Model.Values.StringValue;
 import Model.adt.MyDict;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 import Model.exp.*;
 import Model.stmt.*;
 import Repository.Repository;
@@ -50,7 +52,7 @@ public class PrgListController implements Initializable {
         statementsList.forEach(e -> {
             try {
                 e.typecheck(new MyDict<>());
-            } catch (MyException myException) {
+            } catch (MyException | TypeCheckException | ExpressionException myException) {
                 myException.printStackTrace();
             }
         });

@@ -2,6 +2,7 @@ package Model;
 
 import Model.Values.Value;
 import Model.adt.*;
+import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
 import Model.stmt.IStmt;
@@ -82,7 +83,7 @@ public class PrgState {
                 '}';
     }
 
-    public PrgState oneStep() throws MyException, IOException, StatementException {
+    public PrgState oneStep() throws MyException, IOException, StatementException, ExpressionException {
         if(exeStack.isEmpty()){
             System.out.println(exeStack);
             throw new MyException("Exe stack is empty!");
