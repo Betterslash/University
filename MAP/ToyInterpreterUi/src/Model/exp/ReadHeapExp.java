@@ -7,7 +7,9 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 
 import java.io.BufferedReader;
 
@@ -19,7 +21,7 @@ public class ReadHeapExp extends Expression {
     }
 
     @Override
-    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException {
+    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
         Value value = this.expression.evaluate(symTable, fileTable, heapTable);
         if(value.getType() instanceof RefType){
             RefValue refValue = (RefValue)value;
@@ -29,7 +31,7 @@ public class ReadHeapExp extends Expression {
     }
 
     @Override
-    public Type typeCheck(IDict<String, Type> typeEnv) throws MyException {
+    public Type typeCheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         Type type;
         type = this.expression.typeCheck(typeEnv);
         if(type instanceof RefType){
@@ -37,7 +39,7 @@ public class ReadHeapExp extends Expression {
                 return reft.getInner();
         }
         else {
-            throw new MyException("Expression of rH is not a reference!");
+            throw new TypeCheckException("Expression of rH is not a reference!");
         }
     }
 

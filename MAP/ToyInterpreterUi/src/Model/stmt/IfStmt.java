@@ -9,7 +9,10 @@ import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
 import Model.adt.IStack;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.StatementException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.BufferedReader;
@@ -24,7 +27,7 @@ public class IfStmt implements IStmt{
         this.thenStmt = thenStmt;
     }
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException, ExpressionException, StatementException {
         IDict<String, Value> symTable = state.getSymTable();
         IStack<IStmt> exeStack = state.getExeStack();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
@@ -37,12 +40,14 @@ public class IfStmt implements IStmt{
             else{
                 exeStack.push(elseStmt);
             }
+        }else{
+            throw new StatementException("The checking expression must be boolean!");
         }
         return null;
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         Type type = e1.typeCheck(typeEnv);
         if(type instanceof BoolType){
             thenStmt.typecheck(typeEnv);
@@ -50,7 +55,7 @@ public class IfStmt implements IStmt{
             return typeEnv;
         }
         else {
-            throw new MyException("The expression is not a boolean one!");
+            throw new TypeCheckException("The expression is not a boolean one!");
         }
     }
 

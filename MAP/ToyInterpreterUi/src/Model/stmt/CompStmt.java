@@ -4,7 +4,9 @@ import Model.PrgState;
 import Model.Types.Type;
 import Model.adt.IDict;
 import Model.adt.IStack;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 
 public class CompStmt implements IStmt{
     IStmt st1;
@@ -22,7 +24,7 @@ public class CompStmt implements IStmt{
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         return this.st2.typecheck(this.st1.typecheck(typeEnv));
     }
 

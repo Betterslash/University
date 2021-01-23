@@ -1,4 +1,4 @@
-package sample;
+package View;
 
 import Controller.Controller;
 import Model.PrgState;

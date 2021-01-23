@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PrgListController">
+<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PrgListController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="606.4" minWidth="10.0" prefWidth="606.4" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.199951171875" minWidth="0.0" prefWidth="0.0" />

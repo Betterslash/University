@@ -1,4 +1,4 @@
-package sample;
+package View;
 
 import Controller.Controller;
 import Model.PrgState;
@@ -26,17 +26,35 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class PrgListController implements Initializable {
 
-    static Repository repository1, repository2, repository3, repository4, repository5;
-    static Controller controller1, controller2, controller3, controller4, controller5;
+    static Repository repository1;
+    static Repository repository2;
+    static Repository repository3;
+    static Repository repository4;
+    static Controller controller1;
+    static Controller controller2;
+    static Controller controller3;
+    static Controller controller4;
 
     @FXML
     private ListView<Controller> programsListView;
     @FXML
     private Button chooseProgram;
+
+    public void typecheckSetUp(List<IStmt> statementsList){
+        statementsList.forEach(e -> {
+            try {
+                e.typecheck(new MyDict<>());
+            } catch (MyException myException) {
+                myException.printStackTrace();
+            }
+        });
+    }
 
     public void setUp() {
         IStmt ex1 = new CompStmt(new VarDeclStmt("a", new IntType()),
@@ -80,78 +98,32 @@ public class PrgListController implements Initializable {
                                                 new CompStmt(new PrintStmt(new ReadHeapExp(new VarExp("a"))),
                                                         new CompStmt(new OpenRFile(new ValueExp(new StringValue("data.in"))),
                                                                 new CloseRFile(new ValueExp(new StringValue("data.in")))))))))));
-        IStmt ex6 = new CompStmt(new CompStmt(new VarDeclStmt("v", new IntType()),
-                new CompStmt(new AssignStmt("v", new ValueExp(new IntValue(20))),
-                new ForStmt(new VarExp("v"),
-                        new ValueExp(new IntValue(0)),
-                        new ValueExp(new IntValue(3)),
-                        new ArithmExp('+', new VarExp("v"), new ValueExp(new IntValue(1))),
-                        new ForkStmt(new CompStmt(new PrintStmt(new VarExp("v")),
-                                new AssignStmt("v", new ArithmExp('+', new VarExp("v"), new ValueExp(new IntValue(1))))))))),
-                new PrintStmt(new ArithmExp('*',new VarExp("v"), new ValueExp(new IntValue(10)))));
+        List<IStmt> typeCheckStmtList = Arrays.asList(ex1, ex2, ex3, ex4, ex5);
+        this.typecheckSetUp(typeCheckStmtList);
 
-        IStmt ex7 = new CompStmt(new VarDeclStmt("a", new IntType()),
-                new CompStmt(new VarDeclStmt("b", new IntType()),
-                        new CompStmt(new VarDeclStmt("c", new IntType()),
-                                new CompStmt(new AssignStmt("a", new ValueExp(new IntValue(1))),
-                                        new CompStmt(new AssignStmt("b", new ValueExp(new IntValue(2))),
-                                                new CompStmt(new AssignStmt("c", new ValueExp(new IntValue(5))),
-                                                        new CompStmt(new SwitchStmt(new ArithmExp('*', new VarExp("a"), new ValueExp(new IntValue(10))),
-                                                                new CompStmt(new PrintStmt(new VarExp("a")), new PrintStmt(new VarExp("b"))),
-                                                                new ArithmExp('*', new VarExp("b"), new VarExp("c")),
-                                                                new CompStmt(new PrintStmt(new ValueExp(new IntValue(100))), new PrintStmt(new ValueExp(new IntValue(200)))),
-                                                                new ValueExp(new IntValue(10)),
-                                                                new PrintStmt(new ValueExp(new IntValue(300)))),
-                                                                new PrintStmt(new ValueExp(new IntValue(300))))))))));
-
-        try {
-            ex1.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex2.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex3.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex4.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
-        try {
-            ex5.typecheck(new MyDict<>());
-        } catch (MyException e) {
-            e.printStackTrace();
-        }
         PrgState prgState1 = new PrgState(ex1);
         PrgState prgState2 = new PrgState(ex2);
         PrgState prgState3 = new PrgState(ex3);
         PrgState prgState4 = new PrgState(ex4);
-        PrgState prgState5 = new PrgState(ex7);
+
 
         repository1 = new Repository("out1.out");
         repository2 = new Repository("out2.out");
         repository3 = new Repository("out3.out");
         repository4 = new Repository("out4.out");
-        repository5 = new Repository("out5.out");
+
 
         repository1.addToRepository(prgState1);
         repository2.addToRepository(prgState2);
         repository3.addToRepository(prgState3);
         repository4.addToRepository(prgState4);
-        repository5.addToRepository(prgState5);
+
 
         controller1 = new Controller(repository1);
         controller2 = new Controller(repository2);
         controller3 = new Controller(repository3);
         controller4 = new Controller(repository4);
-        controller5 = new Controller(repository5);
+
     }
 
     @Override
@@ -162,7 +134,6 @@ public class PrgListController implements Initializable {
         myData.add(controller2);
         myData.add(controller3);
         myData.add(controller4);
-        myData.add(controller5);
         programsListView.setItems(myData);
         programsListView.getSelectionModel().selectFirst();
         chooseProgram.setOnAction(e -> {

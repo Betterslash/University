@@ -7,7 +7,9 @@ import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
 import Model.adt.IList;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.BufferedReader;
@@ -18,7 +20,7 @@ public class PrintStmt implements IStmt{
         this.v = value;
     }
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException, ExpressionException {
         IList<Value> output = state.getOut();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IDict<String, Value> symTable = state.getSymTable();
@@ -28,7 +30,7 @@ public class PrintStmt implements IStmt{
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         v.typeCheck(typeEnv);
         return typeEnv;
     }

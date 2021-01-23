@@ -15,6 +15,11 @@ public class NoStmt implements IStmt{
 
     @Override
     public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
-        return null;
+        return typeEnv;
+    }
+
+    @Override
+    public String toString() {
+        return "NullStmt()";
     }
 }

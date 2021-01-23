@@ -4,7 +4,9 @@ import Model.PrgState;
 import Model.Types.Type;
 import Model.Values.Value;
 import Model.adt.*;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 
 import java.io.BufferedReader;
 
@@ -28,7 +30,7 @@ public class ForkStmt implements IStmt{
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         statement.typecheck(typeEnv.clone());
         return typeEnv;
     }

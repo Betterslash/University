@@ -8,7 +8,10 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.StatementException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.*;
@@ -21,7 +24,7 @@ public class OpenRFile implements IStmt{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException, IOException {
+    public PrgState execute(PrgState state) throws MyException, IOException, ExpressionException, StatementException {
         IDict<String, Value> symTable = state.getSymTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
@@ -32,17 +35,17 @@ public class OpenRFile implements IStmt{
                 BufferedReader bufferedReader = new BufferedReader(new FileReader(stringValue.getValue()));
                 fileTable.add(stringValue.getValue(), bufferedReader);
             }else {
-                throw new MyException("File already opened!");
+                throw new StatementException("File already opened!");
             }
         }
         else{
-            throw new MyException("You can't open a file with a path different than string!");
+            throw new StatementException("You can't open a file with a path different than string!");
         }
         return null;
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         expression.typeCheck(typeEnv);
         return typeEnv;
     }

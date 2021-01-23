@@ -9,7 +9,9 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.TypeCheckException;
 
 import java.io.BufferedReader;
 
@@ -23,14 +25,14 @@ public class RelationalExp extends Expression{
         this.op = op;
     }
     @Override
-    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException {
+    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
         if(!left.evaluate(symTable, fileTable, heapTable).getType().equals(new IntType()))
         {
-            throw new MyException("The left operand in not integer!");
+            throw new ExpressionException("The left operand in not integer!");
         }
         if(!right.evaluate(symTable, fileTable, heapTable).getType().equals(new IntType()))
         {
-            throw new MyException("The right operand in not integer!");
+            throw new ExpressionException("The right operand in not integer!");
         }
         IntValue le = (IntValue)this.left.evaluate(symTable, fileTable, heapTable);
         IntValue ri = (IntValue)this.right.evaluate(symTable, fileTable, heapTable);
@@ -42,11 +44,11 @@ public class RelationalExp extends Expression{
             case ">=" : return new BoolValue(le.getValue() >= ri.getValue());
             case "<=" : return new BoolValue(le.getValue() <= ri.getValue());
         }
-        throw new MyException("Wrong operator!");
+        throw new ExpressionException("Wrong operator!");
     }
 
     @Override
-    public Type typeCheck(IDict<String, Type> typeEnv) throws MyException {
+    public Type typeCheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         Type type1;
         Type type2;
         type1 = this.left.typeCheck(typeEnv);
@@ -55,11 +57,11 @@ public class RelationalExp extends Expression{
             if(type2.equals(new IntType())){
                 return new BoolType();
             }else {
-                throw new MyException("Left opperand is not an integer!");
+                throw new TypeCheckException("Left opperand is not an integer!");
             }
         }
         else{
-            throw new MyException("Right opperand is not an integer!");
+            throw new TypeCheckException("Right opperand is not an integer!");
         }
     }
 

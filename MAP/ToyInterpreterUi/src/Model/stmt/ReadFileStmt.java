@@ -10,7 +10,10 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.StatementException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.BufferedReader;
@@ -26,7 +29,7 @@ public class ReadFileStmt implements IStmt {
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException, IOException {
+    public PrgState execute(PrgState state) throws MyException, IOException, StatementException, ExpressionException {
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IDict<String, Value> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
@@ -40,30 +43,30 @@ public class ReadFileStmt implements IStmt {
                         int val = Integer.parseInt(bufferedReader.readLine());
                         symTable.update(varName, new IntValue(val));
                     }else{
-                        throw new MyException("No file opened!");
+                        throw new StatementException("No file opened!");
                     }
                 }else{
-                    throw new MyException("Path is not a string!");
+                    throw new StatementException("Path is not a string!");
                 }
             }else{
-                throw new MyException("The var doesn't have the coresponding type!");
+                throw new StatementException("The var doesn't have the coresponding type!");
             }
         }else{
-            throw new MyException("No variable of this name is stored!");
+            throw new StatementException("No variable of this name is stored!");
         }
         return null;
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         this.expression.typeCheck(typeEnv);
         if(expression.typeCheck(typeEnv) instanceof StringType){
             if(typeEnv.lookup(varName) instanceof IntType)
             return typeEnv;
-            else throw new MyException("Wrong type!");
+            else throw new TypeCheckException("Wrong type!");
         }
         else{
-            throw new MyException("Wrong variables!");
+            throw new TypeCheckException("Wrong variables!");
         }
     }
 

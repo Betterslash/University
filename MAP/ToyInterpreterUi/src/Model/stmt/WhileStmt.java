@@ -9,7 +9,10 @@ import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
 import Model.adt.IStack;
+import Model.except.ExpressionException;
 import Model.except.MyException;
+import Model.except.StatementException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.BufferedReader;
@@ -24,7 +27,7 @@ public class WhileStmt implements IStmt{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException {
+    public PrgState execute(PrgState state) throws MyException, ExpressionException, StatementException {
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IDict<String, Value> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
@@ -36,18 +39,20 @@ public class WhileStmt implements IStmt{
                 exeStack.push(this);
                 exeStack.push(iStmt);
             }
+        }else{
+            throw new StatementException("Cheking while value must be of boolean type!");
         }
         return null;
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         Type type = expression.typeCheck(typeEnv);
         if(type instanceof BoolType){
             iStmt.typecheck(typeEnv);
             return typeEnv;
         }else {
-            throw new MyException("Expression is not a boolean type!");
+            throw new TypeCheckException("Expression is not a boolean type!");
         }
     }
 

@@ -12,7 +12,6 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
 public class Controller {
@@ -47,7 +46,7 @@ public class Controller {
         this.repository.addToRepository(prgState);
     }
 
-    public void oneStepForAllPrg(List<PrgState> prgStateList) throws InterruptedException, MyException {
+    public void oneStepForAllPrg(List<PrgState> prgStateList) throws InterruptedException {
         prgStateList.forEach(p -> {
             try {
                 repository.logProgState(p);

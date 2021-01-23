@@ -2,7 +2,6 @@ package Model.adt;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class MyDict<T1,T2> implements IDict<T1, T2>{
     HashMap<T1, T2> representation;
@@ -12,7 +11,7 @@ public class MyDict<T1,T2> implements IDict<T1, T2>{
     }
 
     public MyDict(){
-        this.representation = new HashMap<T1, T2>();
+        this.representation = new HashMap<>();
     }
     @Override
     public void update(T1 id, T2 value) {

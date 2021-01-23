@@ -8,8 +8,10 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
+import Model.except.TypeCheckException;
 import Model.exp.Expression;
 
 import java.io.BufferedReader;
@@ -24,7 +26,7 @@ public class HeapAllocStmt implements IStmt{
     }
 
     @Override
-    public PrgState execute(PrgState state) throws MyException, StatementException {
+    public PrgState execute(PrgState state) throws MyException, StatementException, ExpressionException {
         IDict<String, Value> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
@@ -50,13 +52,13 @@ public class HeapAllocStmt implements IStmt{
     }
 
     @Override
-    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException {
+    public IDict<String, Type> typecheck(IDict<String, Type> typeEnv) throws MyException, ExpressionException, TypeCheckException {
         Type typevar = typeEnv.lookup(id);
         Type typexp = expression.typeCheck(typeEnv);
         if (typevar.equals(new RefType(typexp)))
             return typeEnv;
         else
-            throw new MyException("NEW stmt: right hand side and left hand side have different types ");
+            throw new TypeCheckException("NEW stmt: right hand side and left hand side have different types ");
     }
     @Override
     public String toString() {

@@ -6,7 +6,7 @@ import java.util.List;
 public class MyList<T> implements IList<T>{
     ArrayList<T> representation;
     public MyList(){
-        this.representation = new ArrayList<T>();
+        this.representation = new ArrayList<>();
     }
     @Override
     public void addOut(T item) {
