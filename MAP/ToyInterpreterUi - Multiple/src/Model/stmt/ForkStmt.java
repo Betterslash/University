@@ -20,13 +20,14 @@ public class ForkStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) {
-        IDict<String, Value> symTable = state.getSymTable().clone();
+        IProcTable<String, MyPair<List<String>, IStmt>> procTable = state.getProcTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable().clone();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IStack<IStmt> exeStack = new MyStack<>();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IList<Value> output = state.getOut();
         ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> semaphoreTable = state.getSemaphoreTable();
-        PrgState prgState = new PrgState(semaphoreTable, symTable, exeStack, output, fileTable, statement, heapTable);
+        PrgState prgState = new PrgState(semaphoreTable, procTable, symTable, exeStack, output, fileTable, statement, heapTable);
         exeStack.push(statement);
         return prgState;
     }

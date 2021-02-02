@@ -8,6 +8,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
@@ -27,16 +28,16 @@ public class HeapAllocStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws MyException, StatementException, ExpressionException {
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         Value value = expression.evaluate(symTable, fileTable, heapTable);
-        if(symTable.lookup(this.id).getType() instanceof RefType){
-            RefType refType = (RefType) symTable.lookup(this.id).getType();
+        if(symTable.clone().pop().lookup(this.id).getType() instanceof RefType){
+            RefType refType = (RefType) symTable.clone().pop().lookup(this.id).getType();
             if(value.getType().equals(refType.getInner())) {
                 try {
                     int address = heapTable.getAddress();
-                    symTable.update(id, new RefValue(refType.getInner(), address));
+                    symTable.clone().pop().update(id, new RefValue(refType.getInner(), address));
                     heapTable.add(address, value);
                 }catch (Exception e){
                     System.out.println("here");

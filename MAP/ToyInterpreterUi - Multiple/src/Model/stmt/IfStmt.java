@@ -28,7 +28,7 @@ public class IfStmt implements IStmt{
     }
     @Override
     public PrgState execute(PrgState state) throws MyException, ExpressionException, StatementException {
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IStack<IStmt> exeStack = state.getExeStack();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();

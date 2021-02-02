@@ -29,7 +29,7 @@ public class WhileStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException, ExpressionException, StatementException {
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IStack<IStmt> exeStack = state.getExeStack();
         Value value = this.expression.evaluate(symTable, fileTable, heapTable);

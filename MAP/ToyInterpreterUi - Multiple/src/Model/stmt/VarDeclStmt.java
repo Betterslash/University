@@ -5,6 +5,7 @@ import Model.Types.Type;
 import Model.Values.UnknownValue;
 import Model.Values.Value;
 import Model.adt.IDict;
+import Model.adt.IStack;
 
 
 public class VarDeclStmt implements IStmt{
@@ -16,7 +17,7 @@ public class VarDeclStmt implements IStmt{
     }
     @Override
     public PrgState execute(PrgState state) {
-        IDict<String, Value> symTable = state.getSymTable();
+        IDict<String, Value> symTable = state.getSymTable().clone().pop();
         Value v = new UnknownValue(this.type);
         symTable.add(this.id,v);
         return null;

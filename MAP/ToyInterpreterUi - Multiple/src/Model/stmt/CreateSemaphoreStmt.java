@@ -31,7 +31,7 @@ public class CreateSemaphoreStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException, IOException, StatementException, ExpressionException {
         lock.lock();
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         Value value = this.expression1.evaluate(symTable, fileTable, heapTable);
@@ -41,9 +41,9 @@ public class CreateSemaphoreStmt implements IStmt{
             Integer number1 = intValue.getValue();
             int freeLocation =  semaphoreTable.getAddress() - 1;
             semaphoreTable.update(freeLocation, new MyPair<>(number1, new ArrayList<>()));
-            Value value1 = symTable.lookup(var);
+            Value value1 = symTable.clone().pop().lookup(var);
             if(value1 != null){
-                symTable.update(var, new IntValue(freeLocation));
+                symTable.clone().pop().update(var, new IntValue(freeLocation));
             }else{
                 throw new StatementException("There's no variable stored for semaphore!");
             }

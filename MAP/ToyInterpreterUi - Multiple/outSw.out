@@ -1,0 +1,500 @@
+
+
+Program 6 {
+symTable ->|
+exeStack ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->|
+exeStack ->int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->|
+exeStack ->int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue |
+exeStack ->int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int c|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue |
+exeStack ->a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|int c|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|a = 1|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->int@UnknownValue b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|a = 1|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|b = 2|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->int@UnknownValue c-->int@UnknownValue |
+exeStack ->c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|b = 2|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->int@UnknownValue |
+exeStack ->c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->int@UnknownValue |
+exeStack ->c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->int@UnknownValue |
+exeStack ->switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|c = 5|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->int@UnknownValue |
+exeStack ->switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|c = 5|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300)|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|If (((a * 10) == (b * c))) then (print a ; print b) else (If (((a * 10) == 10)) then (print 100 ; print 200) else (print 300))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|If (((a * 10) == (b * c))) then (print a ; print b) else (If (((a * 10) == 10)) then (print 100 ; print 200) else (print 300))|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print a ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print a ; print b|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print b|print a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print b|print a|
+out ->
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print b|
+out ->1 
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|print b|
+out ->1 
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|
+out ->1 2 
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->print 300|
+out ->1 2 
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}
+
+Program 6 {
+symTable ->a-->1 b-->2 c-->5 |
+exeStack ->
+out ->1 2 300 
+fileTable ->
+originalProgram ->int a ; int b ; int c ; a = 1 ; b = 2 ; c = 5 ; switch((a * 10))
+(case((a * 10))print a ; print b)
+(case((b * c))print 100 ; print 200)
+(default print 300) ; print 300
+heapTable ->}

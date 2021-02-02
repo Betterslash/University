@@ -8,6 +8,6 @@ public interface IStack<T>{
     T pop();
     void push(T item);
     boolean isEmpty();
-
+    IStack<T> clone();
     Stack<T> getStack();
 }

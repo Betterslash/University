@@ -16,7 +16,8 @@ public class PrgState {
     private static int id = 0;
     int ID;
     final ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> semaphoreTable;
-    IDict<String, Value> symTable;
+    final IProcTable<String, MyPair<List<String>, IStmt>> procTable;
+    IStack<IDict<String, Value>> symTable;
     IStack<IStmt> exeStack;
     IList<Value> out;
     IFDict<String, BufferedReader> fileTable;
@@ -25,8 +26,9 @@ public class PrgState {
     static synchronized void incId(){
         id += 1;
     }
-    public PrgState(ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> semaphoreTable, IDict<String, Value> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
+    public PrgState(ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> semaphoreTable, IProcTable<String, MyPair<List<String>, IStmt>> procTable, IStack<IDict<String, Value>> symTable, IStack<IStmt> exeStack, IList<Value> out, IFDict<String, BufferedReader> fileTable, IStmt originalProgram, IHeap<Integer, Value> heapTable){
         this.semaphoreTable = semaphoreTable;
+        this.procTable = procTable;
         this.exeStack = exeStack;
         this.originalProgram = originalProgram;
         this.out = out;
@@ -36,13 +38,15 @@ public class PrgState {
         ID = id;
         incId();
     }
-    public PrgState(IStmt iStmt){
+    public PrgState( IStmt iStmt){
+        this.procTable = new ProcTable<>();
         this.semaphoreTable = new SemaphoreTable<>();
         this.heapTable = new MyHeap<>();
         this.exeStack = new MyStack<>();
         this.originalProgram = iStmt;
         this.out = new MyList<>();
-        this.symTable = new MyDict<>();
+        this.symTable = new MyStack<>();
+        this.symTable.push(new MyDict<>());
         this.fileTable = new MyIFDict<>();
         this.exeStack.push(iStmt);
         ID = id;
@@ -57,7 +61,7 @@ public class PrgState {
         this.heapTable.setTable(heapTable);
     }
 
-    public IDict<String, Value> getSymTable() {
+    public IStack<IDict<String, Value>> getSymTable() {
         return symTable;
     }
 
@@ -71,6 +75,10 @@ public class PrgState {
 
     public ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> getSemaphoreTable() {
         return semaphoreTable;
+    }
+
+    public IProcTable<String, MyPair<List<String>, IStmt>> getProcTable() {
+        return procTable;
     }
 
     public IFDict<String, BufferedReader> getFileTable() {
@@ -103,7 +111,9 @@ public class PrgState {
     public IHeap<Integer, Value> getHeap() {
         return this.heapTable;
     }
-
+    public void addProcedure(String procName, List<String> params, IStmt procBody){
+        this.procTable.add(procName, new MyPair<>(params, procBody));
+    }
     public int getId() {
         return this.ID;
     }

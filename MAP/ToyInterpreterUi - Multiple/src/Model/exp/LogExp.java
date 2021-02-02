@@ -7,6 +7,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.TypeCheckException;
@@ -18,7 +19,7 @@ public class LogExp extends Expression{
     Expression left;
     char op;
     @Override
-    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
+    public Value evaluate(IStack<IDict<String, Value>> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
         BoolValue vL = (BoolValue) this.left.evaluate(symTable, fileTable, heapTable);
         BoolValue vR = (BoolValue) this.right.evaluate(symTable, fileTable, heapTable);
         return switch (this.op) {

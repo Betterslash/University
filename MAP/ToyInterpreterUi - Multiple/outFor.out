@@ -1,0 +1,3293 @@
+
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+fork(print v ; v = (v * 10))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+fork(print v ; v = (v * 10))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * 10)|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * 10)|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+out ->20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * 10)|print v|
+out ->20 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+out ->20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * 10)|print v|
+out ->20 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * 10)|
+out ->20 1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * 10)|
+out ->20 1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->
+out ->20 1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+fork(print v ; v = (v * 10))|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+fork(print v ; v = (v * 10))|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print v ; v = (v * 10)|
+out ->20 1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+out ->20 1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print v ; v = (v * 10)|
+out ->20 1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+out ->20 1 20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->v = (v * 10)|print v|
+out ->20 1 20 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+out ->20 1 20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->v = (v * 10)|print v|
+out ->20 1 20 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->v = (v * 10)|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->v = (v * 10)|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->110 |
+exeStack ->NullStmt()|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->110 |
+exeStack ->
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->110 |
+exeStack ->NullStmt()|
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->110 |
+exeStack ->
+out ->20 1 20 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|int v|v = 0|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|int v|v = 0|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){v = (v + 1) ; 
+fork(print v ; v = (v * 10)) ; print rH(a)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|int v|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->NullStmt()|while((v < 3)){
+fork(print v ; v = (v * 10)) ; print rH(a) ; v = (v + 1)}|v = (v + 1)|print rH(a)|
+fork(print v ; v = (v * 10))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; print rH(a) ; NullStmt()
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * 10))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * 10))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * 10)|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * 10)|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * 10)|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * 10)|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * 10)|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * 10)|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * 10)) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * 10))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * 10))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print v ; v = (v * 10)|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print v ; v = (v * 10)|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->v = (v * 10)|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->10 |
+exeStack ->v = (v * 10)|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * 10)) ; NullStmt() ; v = (v + 1)}|
+out ->1 11 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * 10)) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->11 |
+exeStack ->v = (v * 10)|
+out ->1 11 
+fileTable ->
+originalProgram ->print v ; v = (v * 10)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * rH(a))|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * rH(a))|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->v = (v * rH(a))|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->v = (v * rH(a))|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->v = (v * rH(a))|
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->v = (v * rH(a))|
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->print rH(a)|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->print rH(a)|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->
+out ->1 21 20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->|
+exeStack ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->|
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|Ref(int) a|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->Ref(int)@UnknownValue |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|new(a, 20)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->}
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|int v|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->int@UnknownValue |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = 0|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * rH(a))|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->0 |
+exeStack ->v = (v * rH(a))|print v|
+out ->
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->1 |
+exeStack ->v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 8 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+fork(print v ; v = (v * rH(a))) ; NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+fork(print v ; v = (v * rH(a)))|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|NullStmt()|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print v ; v = (v * rH(a))|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->v = (v * rH(a))|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|v = (v + 1)|
+out ->1 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->20 |
+exeStack ->v = (v * rH(a))|print v|
+out ->1 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->v = (v * rH(a))|
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->print rH(a)|while((v < 3)){
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; v = (v + 1)}|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->21 |
+exeStack ->v = (v * rH(a))|
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->print rH(a)|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 9 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->
+out ->1 21 
+fileTable ->
+originalProgram ->print v ; v = (v * rH(a))
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->print rH(a)|
+out ->1 21 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }
+
+Program 7 {
+symTable ->a-->(int, 1) v-->420 |
+exeStack ->
+out ->1 21 20 
+fileTable ->
+originalProgram ->Ref(int) a ; new(a, 20) ; for( v = 0;v < 3; v = (v + 1))
+fork(print v ; v = (v * rH(a))) ; NullStmt() ; print rH(a)
+heapTable ->1-->20 }

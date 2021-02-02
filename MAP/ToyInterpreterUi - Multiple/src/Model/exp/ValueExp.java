@@ -5,6 +5,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 
 import java.io.BufferedReader;
 
@@ -14,7 +15,7 @@ public class ValueExp extends Expression{
         this.value = value;
     }
     @Override
-    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) {
+    public Value evaluate(IStack<IDict<String, Value>> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) {
         return this.value;
     }
 

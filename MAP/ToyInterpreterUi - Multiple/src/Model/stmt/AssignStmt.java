@@ -6,6 +6,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
@@ -23,14 +24,14 @@ public class AssignStmt implements IStmt{
     }
     @Override
     public PrgState execute(PrgState state) throws MyException, ExpressionException, StatementException {
-        IDict<String , Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
             Value val = this.exp.evaluate(symTable, fileTable, heapTable);
             try{
-            Type type = symTable.lookup(id).getType();
+            Type type = symTable.clone().pop().lookup(id).getType();
             if (val.getType().equals(type)) {
-                symTable.update(id, val);
+                symTable.clone().pop().update(id, val);
             }
         }catch (Exception e){
             throw new StatementException("There's no variable like this stored!");

@@ -2,23 +2,50 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PrgListController">
+<GridPane prefHeight="509.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.PrgListController">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="606.4" minWidth="10.0" prefWidth="606.4" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.199951171875" minWidth="0.0" prefWidth="0.0" />
     </columnConstraints>
     <rowConstraints>
-        <RowConstraints maxHeight="302.00002136230466" minHeight="10.0" prefHeight="275.59999694824216" vgrow="SOMETIMES" />
-        <RowConstraints maxHeight="194.79999389648438" minHeight="10.0" prefHeight="125.20000305175785" vgrow="SOMETIMES" />
+        <RowConstraints />
+        <RowConstraints maxHeight="302.00002136230466" minHeight="10.0" prefHeight="206.20001220703122" vgrow="SOMETIMES" />
+      <RowConstraints fillHeight="false" maxHeight="302.00002136230466" minHeight="0.0" prefHeight="24.000006103515602" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="519.1999816894531" minHeight="10.0" prefHeight="175.99999389648434" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="467.1999755859375" minHeight="10.0" prefHeight="85.99998779296874" vgrow="SOMETIMES" />
     </rowConstraints>
-    <Button fx:id="chooseProgram" mnemonicParsing="false" prefHeight="54.0" prefWidth="160.0" text="Select" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-    <ListView fx:id="programsListView" editable="true" prefHeight="276.0" prefWidth="576.0" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+    <Button fx:id="chooseProgram" mnemonicParsing="false" prefHeight="54.0" prefWidth="160.0" text="Select" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+      <GridPane.margin>
+         <Insets right="10.0" />
+      </GridPane.margin></Button>
+    <ListView fx:id="programsListView" editable="true" prefHeight="238.0" prefWidth="598.0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+      <padding>
+         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+      </padding>
+      <opaqueInsets>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </opaqueInsets>
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin></ListView>
+   <ListView fx:id="procedureListView" prefHeight="173.0" prefWidth="598.0" GridPane.rowIndex="3">
+      <GridPane.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </GridPane.margin>
+   </ListView>
+   <Label text="Program List:" />
+   <Label text="Procedures List:" GridPane.rowIndex="2" />
+   <Button fx:id="addProcedureButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="159.0" text="Add Procedure" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="CENTER">
       <padding>
          <Insets left="10.0" />
-      </padding></ListView>
+      </padding>
+      <GridPane.margin>
+         <Insets left="10.0" />
+      </GridPane.margin>
+   </Button>
 </GridPane>

@@ -1,0 +1,63 @@
+1.  Instant messaging, file transfers and web documnents:
+    a) Admit data-loss  F
+    b) Admit NO data-loss T
+    c) Need elastic bandwith T
+    d) Are time sensitive F
+
+2.  The UDP API:
+    a) Uses bind in a similar way as TCP T
+    b) Data exchange is done with: send, recv F
+    c) Listen and accept are required F
+    d) Listen and accept are not permited T
+
+3.  Which services can be implemented by a server module?
+    a) DHCP T
+    b) DNS T
+    c) RIPv2 F
+    d) NAT F
+
+4.  Which of the following are not identical in the same LAN?
+    a) MAC address T
+    b) Router address T 
+    c) Network address F 
+    d) Broadcast address F 
+
+5.  In Class Full addressing, which classes have 
+    less or equal number of network addresses compared to host addresses?
+    a) A T
+    b) C F
+    c) D F
+    d) B T
+
+6.  Which is the metric number from the routing table that
+    symbolizes that no router should be traversed?
+    a) 1 T
+    b) 0 or 1 T
+    c) -1 F
+    d) None of the above F
+
+7.  The dlayer from the OSI model that is for sure an end-to-end layer is:
+    a) Datalink layer F 
+    b) Transport layer T
+    c) Physical layer F
+    d) None of the above F
+
+8.  An advantage of UDP over TCP/IP is:
+    a) Low latency in data transportation T
+    b) Reliability on data sending F
+    c) Reliability on data receiving F
+    d) Bigger data size capacity F 
+
+9. The IP Datagram:
+    a) Knows how to handle data at receiving/sending F
+    b) Has ttl, maximum number of hops decremented at each router T
+    c) Cannot include an optional byte F
+    d) Can include an optional byte T
+
+10. Which is the correct order of data conversion in the OSI model:
+    a) frame -> data structure -> packet -> segment F
+    b) frame -> data structure -> packet -> datagram F
+    c) packet -> data structure -> frame -> segment F
+    d) frame -> datagram/packet -> data structure T
+
+                                                                            By Doreata Andrei Stefan 923 

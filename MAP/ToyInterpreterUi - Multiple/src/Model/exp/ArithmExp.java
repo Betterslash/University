@@ -7,6 +7,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.TypeCheckException;
@@ -23,7 +24,7 @@ public class ArithmExp extends Expression{
         this.op = op;
     }
     @Override
-    public Value evaluate(IDict<String, Value> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
+    public Value evaluate(IStack<IDict<String, Value>> symTable, IFDict<String, BufferedReader> fileTable, IHeap<Integer, Value> heapTable) throws MyException, ExpressionException {
         if(!left.evaluate(symTable, fileTable, heapTable).getType().equals(new IntType()))
         {
             throw new ExpressionException("The left operand in not integer!");

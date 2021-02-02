@@ -1,8 +1,10 @@
 package Controller;
 
 import Model.PrgState;
+import Model.Procedure;
 import Model.Values.RefValue;
 import Model.Values.Value;
+import Model.adt.MyPair;
 import Model.except.MyException;
 import Repository.IRepository;
 
@@ -83,7 +85,7 @@ public class Controller {
         //while (prgStateList.size() > 0){
             prgStateList
                .forEach(e ->{
-                   List<Integer> newSymTable = this.getListOfAdresses(e.getSymTable().getRepresentation().values(), e.getHeapTable().getRepresentation().values());
+                   List<Integer> newSymTable = this.getListOfAdresses(e.getSymTable().clone().pop().getRepresentation().values(), e.getHeapTable().getRepresentation().values());
                    Map<Integer, Value> newHeap = garbageCollector(newSymTable, e.getHeapTable().getRepresentation());
                    e.setHeapTable(newHeap);
                });
@@ -98,11 +100,18 @@ public class Controller {
                 .filter(PrgState::isNotCompleted)
                 .collect(Collectors.toList());
     }
-
+    public void addProcedure(Procedure procedure){
+        this.repository.getPrgList().get(0).addProcedure(procedure.getName(), procedure.getParams(), procedure.getProcBody());
+    }
     @Override
     public String toString() {
         if(repository.getPrgList().size() > 0){
-            return repository.getPrgList().get(0).getExeStack().toString();
+            PrgState currentState = repository.getPrgList().get(0);
+            if(currentState.getProcTable().getRepresentation().size() > 0){
+                return currentState.getProcTable() + "\n"+currentState.getExeStack().toString();
+            }else {
+                return currentState.getExeStack().toString();
+            }
         }
             return "Finished";
     }

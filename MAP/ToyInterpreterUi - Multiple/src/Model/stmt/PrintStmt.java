@@ -3,10 +3,7 @@ package Model.stmt;
 import Model.PrgState;
 import Model.Types.Type;
 import Model.Values.Value;
-import Model.adt.IDict;
-import Model.adt.IFDict;
-import Model.adt.IHeap;
-import Model.adt.IList;
+import Model.adt.*;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.TypeCheckException;
@@ -23,7 +20,7 @@ public class PrintStmt implements IStmt{
     public PrgState execute(PrgState state) throws MyException, ExpressionException {
         IList<Value> output = state.getOut();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         output.addOut(this.v.evaluate(symTable, fileTable, heapTable));
         return null;

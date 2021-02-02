@@ -7,6 +7,7 @@ import Model.Values.IntValue;
 import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.ISemaphoreTable;
+import Model.adt.IStack;
 import Model.adt.MyPair;
 import Model.except.ExpressionException;
 import Model.except.MyException;
@@ -28,9 +29,9 @@ public class AcquireSemaphoreStmt implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException, IOException, StatementException, ExpressionException {
         lock.lock();
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         ISemaphoreTable<Integer, MyPair<Integer, List<Integer>>> semaphoreTable = state.getSemaphoreTable();
-        Value value = symTable.lookup(var);
+        Value value = symTable.clone().pop().lookup(var);
         if(value != null){
             if(value.getType().equals(new IntType())){
                 IntValue intValue = (IntValue) value;

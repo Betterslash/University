@@ -8,6 +8,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
@@ -27,7 +28,7 @@ public class CloseRFile implements IStmt{
     @Override
     public PrgState execute(PrgState state) throws MyException, IOException, ExpressionException, StatementException {
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IHeap<Integer, Value> heapTable = state.getHeapTable();
         Value value = this.expression.evaluate(symTable, fileTable, heapTable);
         if(value.getType().equals(new StringType())){

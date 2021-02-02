@@ -1,0 +1,2784 @@
+
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|
+out ->2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|return;|
+out ->2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|
+out ->2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->print v|
+out ->2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->int@UnknownValue v-->2 w-->int@UnknownValue |
+exeStack ->
+out ->2 2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+out ->25 25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+out ->25 25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+out ->25 25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->a-->20 b-->5 v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->w = 5 ; call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; int w ; v = 2 ; w = 5 ; call sum(, (v * 10), w) ; print v
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|int v ; v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->|
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|v = 2|int v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->int@UnknownValue |
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|v = 2|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|int w ; w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|w = 5|int w|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->int@UnknownValue |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|w = 5|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|call sum(, (v * 10), w) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|call sum(, (v * 10), w)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|v = (a + b) ; print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|print v|v = (a + b)|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|print v|
+out ->
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |a-->20 b-->5 v-->25 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|return;|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|print v|
+out ->25 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->NullStmt()|
+fork(call product(, v, w) ; 
+fork(call sum(, v, w)))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->NullStmt()|
+fork(call product(, v, w) ; 
+fork(call sum(, v, w)))|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->NullStmt()|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->call product(, v, w) ; 
+fork(call sum(, v, w))|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->NullStmt()|
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->call product(, v, w) ; 
+fork(call sum(, v, w))|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 5 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 
+fileTable ->
+originalProgram ->int v ; v = 2 ; int w ; w = 5 ; call sum(, (v * 10), w) ; print v ; 
+fork(call product(, v, w) ; 
+fork(call sum(, v, w))) ; NullStmt()
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|call product(, v, w)|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|call product(, v, w)|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|v = (a * b) ; print v|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|print v|v = (a * b)|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|print v|
+out ->25 2 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->10 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|return;|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+fork(call sum(, v, w))|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 6 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 
+fileTable ->
+originalProgram ->call product(, v, w) ; 
+fork(call sum(, v, w))
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, v, w)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->call sum(, v, w)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|v = (a + b) ; print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->2 w-->5 |
+exeStack ->return;|print v|v = (a + b)|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|print v|
+out ->25 2 10 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |a-->2 b-->5 v-->7 w-->5 |
+exeStack ->return;|
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}
+
+Program 7 {
+symTable ->v-->2 w-->5 |
+exeStack ->
+out ->25 2 10 7 
+fileTable ->
+originalProgram ->call sum(, v, w)
+heapTable ->}

@@ -23,6 +23,16 @@ public class MyStack<T> implements IStack<T>{
     }
 
     @Override
+    public IStack<T> clone() {
+        Stack<T> tStack = new Stack<>();
+        this.representation
+                .forEach(tStack::push);
+        MyStack<T> myStack = new MyStack<>();
+        myStack.representation = tStack;
+        return myStack;
+    }
+
+    @Override
     public Stack<T> getStack() {
         return this.representation;
     }

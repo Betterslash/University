@@ -170,7 +170,7 @@ public class PrgRunController implements Initializable {
             }
         }
         if(prgResult != null) {
-            symTableList.addAll(prgResult.getSymTable().getRepresentation().entrySet());
+            symTableList.addAll(prgResult.getSymTable().clone().pop().getRepresentation().entrySet());
             for(IStmt e : prgResult.getExeStack().getStack()) {
                 exeStackItemsList.add(e.toString());
             }

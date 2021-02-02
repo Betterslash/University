@@ -9,6 +9,7 @@ import Model.Values.Value;
 import Model.adt.IDict;
 import Model.adt.IFDict;
 import Model.adt.IHeap;
+import Model.adt.IStack;
 import Model.except.ExpressionException;
 import Model.except.MyException;
 import Model.except.StatementException;
@@ -28,11 +29,11 @@ public class HeapWriteStmt implements IStmt{
 
     @Override
     public PrgState execute(PrgState state) throws StatementException, MyException, ExpressionException {
-        IDict<String, Value> symTable = state.getSymTable();
+        IStack<IDict<String, Value>> symTable = state.getSymTable();
         IFDict<String, BufferedReader> fileTable = state.getFileTable();
         IHeap<Integer, Value> heapTable = state.getHeap();
         Value value = this.exp.evaluate(symTable,fileTable, heapTable);
-        Value value1 = symTable.lookup(varName);
+        Value value1 = symTable.clone().pop().lookup(varName);
         if(value1 != null){
             if(value1.getType() instanceof RefType){
                 if(value1.getType().equals(value.getType())){
