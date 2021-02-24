@@ -5,6 +5,85 @@ import pickle,pygame,sys
 from pygame.locals import *
 from random import random, randint
 import numpy as np
+# Python3 program to print DFS traversal
+# from a given given graph
+from collections import defaultdict
+
+# This class represents a directed graph using
+# adjacency list representation
+
+class Vertex:
+    def __init__(self, ic, jc):
+        self._i = ic
+        self._j = jc
+
+    def get_i(self):
+        return self._i
+    
+    def get_j(self):
+        return self._j
+
+    def to_string(self):
+        return "(" + str(self._i) +", "+str(self._j) +")"
+
+class Edge:
+    def __init__(self, fv, sv):
+        self._first_vertex = fv
+        self._second_vertex = sv
+    
+    def get_first_vertex(self):
+        return self._first_vertex
+
+    def get_second_vertex(self):
+        return self._second_vertex
+
+
+class Graph:
+
+	# Constructor
+	def __init__(self):
+		# default dictionary to store graph
+		self.graph = defaultdict(list)
+
+	# function to add an edge to graph
+	def addEdge(self, u, v):
+            if v not in self.graph[u]:
+	            self.graph[u].append(v)
+
+
+	# A function used by DFS
+	def DFSUtil(self, v, visited, drone):
+
+		# Mark the current node as visited
+		# and print it
+		visited.add(v)
+		print(v, end=' ')
+
+		# Recur for all the vertices
+		# adjacent to this vertex
+		for neighbour in self.graph[v]:
+			if neighbour not in visited:
+				self.DFSUtil(neighbour, visited)
+
+	# The function to do DFS traversal. It uses
+	# recursive DFSUtil()
+	def DFS(self, v, drone):
+
+		# Create a set to store visited vertices
+		visited = set()
+
+		# Call the recursive helper function
+		# to print DFS traversal
+		self.DFSUtil(v, visited, drone)
+
+# Driver code
+
+
+# Create a graph given
+# in the above diagram
+g = Graph()
+
+
 
 
 #Creating some colors
@@ -110,9 +189,16 @@ class DMap():
         #   To DO
         # mark on this map the wals that you detect
         wals = e.readUDMSensors(x, y)
+        sx = x
+        sy = y
         i = x - 1
         if wals[UP] > 0:
+            # sx = x
+            # sy = y
             while ((i>=0) and (i >= x - wals[UP])):
+                g.addEdge((sx, sy), (i, y))
+                sx = i
+                sy = y
                 self.surface[i][y] = 0
                 i = i - 1
         if (i>=0):
@@ -120,7 +206,12 @@ class DMap():
             
         i = x + 1
         if wals[DOWN] > 0:
+            # sx = x
+            # sy = y
             while ((i < self.__n) and (i <= x + wals[DOWN])):
+                g.addEdge((sx, sy), (i, y))
+                sx = i
+                sy = y
                 self.surface[i][y] = 0
                 i = i + 1
         if (i < self.__n):
@@ -128,7 +219,12 @@ class DMap():
             
         j = y + 1
         if wals[LEFT] > 0:
+            # sx = x
+            # sy = y
             while ((j < self.__m) and (j <= y + wals[LEFT])):
+                g.addEdge((sx, sy), (x, j))
+                sx = x
+                sy = j
                 self.surface[x][j] = 0
                 j = j + 1
         if (j < self.__m):
@@ -136,7 +232,12 @@ class DMap():
         
         j = y - 1
         if wals[RIGHT] > 0:
+            # sx = x
+            # sy = y
             while ((j >= 0) and (j >= y - wals[RIGHT])):
+                g.addEdge((sx, sy), (x, j))
+                sx = x
+                sy = j
                 self.surface[x][j] = 0
                 j = j - 1
         if (j >= 0):
@@ -193,6 +294,8 @@ class Drone():
          # mapping with DFS
 
 # define a main function
+tvx = 0
+tvy = 0
 def main():
     #we create the environment
     e = Environment()
@@ -215,7 +318,8 @@ def main():
     # we position the drone somewhere in the area
     x = randint(0, 19)
     y = randint(0, 19)
-
+    tvx = x
+    tvy = y
     #cream drona
     d = Drone(x, y)
 
@@ -244,7 +348,7 @@ def main():
         m.markDetectedWalls(e, d.x, d.y)
         screen.blit(m.image(d.x,d.y),(400,0))
         pygame.display.flip()
-
+    print(g.graph)
     pygame.quit()
 
 
@@ -253,3 +357,4 @@ def main():
 if __name__=="__main__":
     # call the main function
     main()
+    
