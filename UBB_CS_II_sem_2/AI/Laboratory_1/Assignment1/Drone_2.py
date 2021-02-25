@@ -1,11 +1,9 @@
 # import the pygame module, so you can use it
 import pickle
-from collections import defaultdict
-
-import pygame
 from random import random, randint
 
 import numpy as np
+import pygame
 from pygame.locals import *
 
 # Creating some colors
@@ -48,7 +46,7 @@ class Environment:
 
     def readUDMSensors(self, x, y):
         readings = [0, 0, 0, 0]
-        # UP 
+        # UP
         xf = x - 1
         while (xf >= 0) and (self.__surface[xf][y] == 0):
             xf = xf - 1
@@ -172,6 +170,7 @@ class Drone:
         self.visited = set()
         self.graph_moves = []
 
+    '''
     def move(self, detectedMap):
         pressed_keys = pygame.key.get_pressed()
         if self.x > 0:
@@ -187,9 +186,14 @@ class Drone:
         if self.y < 19:
             if pressed_keys[K_RIGHT] and detectedMap.surface[self.x][self.y + 1] == 0:
                 self.y = self.y + 1
+    '''
 
     def moveDSF(self, detectedMap):
+        # We mark the current node as visited
         self.visited.add((self.x, self.y))
+
+        # We try adding possible moves to the drone
+        # We count through move_variants array and add the tuples to current position
         for directions in move_variants:
             test_x = self.x + directions[0]
             test_y = self.y + directions[1]
@@ -197,16 +201,27 @@ class Drone:
                 if detectedMap.surface[test_x][test_y] == 0:
                     current_pos = (test_x, test_y)
                     if current_pos not in self.visited:
-                        # self.graph_moves.append((self.x, self.y))
-                        self.graph_moves.append((test_x, test_y))
+                        # If we found a valid new position we add it as a valid move on the graph to
+                        # come back to in case the one adjacent to this is fully explored
+                        self.graph_moves.append(current_pos)
+                        # We set as rendering coordinates the new discovered valid move
+                        self.x = test_x
+                        self.y = test_y
+                        # We return from function to rerender the drone with it's new positions
+                        return True
+        # In case the current position is fully explored we return back to the last marked position
         if len(self.graph_moves) >= 1:
+            # We pop from possible valid positions in search of one that's not fully explored
             move = self.graph_moves.pop()
+            # We set as rendering coordinates the new discovered valid move
             self.x = move[0]
             self.y = move[1]
+            # We return from function to rerender the drone with it's new positions
             return True
         else:
+            # This means we have no more valid current positions so the drone really searched everything
+            # reachable
             return False
-            # define a main function
 
 
 def main():
@@ -250,12 +265,11 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
-        moves += 1
         response = d.moveDSF(m)
         if not response:
-            print("The drone made " + str(moves) + " !")
+            print("The drone made it !")
             return
-        pygame.time.wait(10)
+        pygame.time.wait(350)
         m.markDetectedWalls(e, d.x, d.y)
         screen.blit(m.image(d.x, d.y), (400, 0))
         pygame.display.flip()
