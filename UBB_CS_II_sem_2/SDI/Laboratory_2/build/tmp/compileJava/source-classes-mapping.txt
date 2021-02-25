@@ -1,4 +1,18 @@
-TrainStations/DBOConnectivityUtils/DboController.java
- TrainStations.DBOConnectivityUtils.DboController
+TrainStations/DBOConnectivityUtils/DboCRUDController.java
+ TrainStations.DBOConnectivityUtils.DboCRUDController
+TrainStations/DBOConnectivityUtils/TrainsController.java
+ TrainStations.DBOConnectivityUtils.TrainsController
+TrainStations/Repository/IRepository.java
+ TrainStations.Repository.IRepository
+TrainStations/Model/Station.java
+ TrainStations.Model.Station
+TrainStations/Model/Train.java
+ TrainStations.Model.Train
+TrainStations/CustomExceptions/MyCustomDTOControllerException.java
+ TrainStations.CustomExceptions.MyCustomDTOControllerException
+TrainStations/Model/DTOCustomObj.java
+ TrainStations.Model.DTOCustomObj
 TrainStations/View/MainView.java
  TrainStations.View.MainView
+TrainStations/DBOConnectivityUtils/StationsController.java
+ TrainStations.DBOConnectivityUtils.StationsController
