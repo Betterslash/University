@@ -197,7 +197,7 @@ class Drone:
                 if detectedMap.surface[test_x][test_y] == 0:
                     current_pos = (test_x, test_y)
                     if current_pos not in self.visited:
-                        # self.graph_moves.append((self.x, self.y))
+                        self.graph_moves.append((self.x, self.y))
                         self.graph_moves.append((test_x, test_y))
         if len(self.graph_moves) >= 1:
             move = self.graph_moves.pop()

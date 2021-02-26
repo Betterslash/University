@@ -1,5 +1,6 @@
 # import the pygame module, so you can use it
 import pickle
+from collections import defaultdict
 from random import random, randint
 
 import numpy as np
@@ -104,43 +105,66 @@ class DMap:
             for j in range(self.__m):
                 self.surface[i][j] = -1
 
-    def markDetectedWalls(self, e, x, y):
+    def markDetectedWalls(self, e, x, y, collector):
         #   To DO
         # mark on this map the walls that you detect
         walls = e.readUDMSensors(x, y)
+        # collect all the possible edges from every position into something similar to a graph representation
+
+        current_x = x
+        current_y = y
         i = x - 1
         if walls[UP] > 0:
             while (i >= 0) and (i >= x - walls[UP]):
+                collector[(current_x, current_y)].add((i, y))
+                collector[(i, y)].add((current_x, current_y))
+                current_x = i
                 self.surface[i][y] = 0
                 i = i - 1
         if i >= 0:
             self.surface[i][y] = 1
 
+        current_x = x
+        current_y = y
         i = x + 1
         if walls[DOWN] > 0:
             while (i < self.__n) and (i <= x + walls[DOWN]):
+                collector[(current_x, current_y)].add((i, y))
+                collector[(i, y)].add((current_x, current_y))
+                current_x = i
                 self.surface[i][y] = 0
                 i = i + 1
         if i < self.__n:
             self.surface[i][y] = 1
 
+        current_x = x
+        current_y = y
         j = y + 1
         if walls[LEFT] > 0:
             while (j < self.__m) and (j <= y + walls[LEFT]):
+                collector[(current_x, current_y)].add((x, j))
+                collector[(x, j)].add((current_x, current_y))
+                current_y = j
                 self.surface[x][j] = 0
                 j = j + 1
         if j < self.__m:
             self.surface[x][j] = 1
 
+        current_x = x
+        current_y = y
         j = y - 1
         if walls[RIGHT] > 0:
             while (j >= 0) and (j >= y - walls[RIGHT]):
+                collector[(current_x, current_y)].add((x, j))
+                collector[(x, j)].add((current_x, current_y))
+                current_y = j
                 self.surface[x][j] = 0
                 j = j - 1
         if j >= 0:
             self.surface[x][j] = 1
 
-        return None
+        # print(collector)
+        return collector
 
     def image(self, x, y):
 
@@ -168,7 +192,7 @@ class Drone:
         self.x = x
         self.y = y
         self.visited = set()
-        self.graph_moves = []
+        self.graph_moves = defaultdict(set)
 
     '''
     def move(self, detectedMap):
@@ -189,41 +213,10 @@ class Drone:
     '''
 
     def moveDSF(self, detectedMap):
-        # We mark the current node as visited
-        self.visited.add((self.x, self.y))
-
-        # We try adding possible moves to the drone
-        # We count through move_variants array and add the tuples to current position
-        for directions in move_variants:
-            test_x = self.x + directions[0]
-            test_y = self.y + directions[1]
-            if 0 <= test_x <= 19 and 0 <= test_y <= 19:
-                if detectedMap.surface[test_x][test_y] == 0:
-                    current_pos = (test_x, test_y)
-                    if current_pos not in self.visited:
-                        # If we found a valid new position we add it as a valid move on the graph to
-                        # come back to in case the one adjacent to this is fully explored
-                        self.graph_moves.append((self.x, self.y))
-                        self.graph_moves.append(current_pos)
-                        # We set as rendering coordinates the new discovered valid move
-                        self.x = test_x
-                        self.y = test_y
-                        # We return from function to rerender the drone with it's new positions
-                        return True
-        # In case the current position is fully explored we return back to the last marked position
-        if len(self.graph_moves) >= 1:
-            # We pop from possible valid positions in search of one that's not fully explored
-            move = self.graph_moves.pop()
-            # We set as rendering coordinates the new discovered valid move
-            self.x = move[0]
-            self.y = move[1]
-            # We return from function to rerender the drone with it's new positions
-            return True
-        else:
-            # This means we have no more valid current positions so the drone really searched everything
-            # reachable
-            return False
-
+        move = self.graph_moves[(self.x, self.y)].pop()
+        self.x = move[0]
+        self.y = move[1]
+        self.visited.add((move[0], move[1]))
 
 def main():
     # we create the environment
@@ -257,7 +250,7 @@ def main():
     running = True
 
     # main loop
-    m.markDetectedWalls(e, d.x, d.y)
+    m.markDetectedWalls(e, d.x, d.y, d.graph_moves)
     while running:
         # event handling, gets all event from the event queue
         for event in pygame.event.get():
@@ -265,12 +258,9 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
-        response = d.moveDSF(m)
-        if not response:
-            print("The drone made it !")
-            return
-        pygame.time.wait(350)
-        m.markDetectedWalls(e, d.x, d.y)
+        d.moveDSF(m)
+        pygame.time.wait(520)
+        m.markDetectedWalls(e, d.x, d.y, d.graph_moves)
         screen.blit(m.image(d.x, d.y), (400, 0))
         pygame.display.flip()
 
