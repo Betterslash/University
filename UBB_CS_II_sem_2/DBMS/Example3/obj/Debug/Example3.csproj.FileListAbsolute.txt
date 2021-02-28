@@ -1,0 +1,7 @@
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\bin\Debug\Example3.exe.config
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\bin\Debug\Example3.exe
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\bin\Debug\Example3.pdb
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\obj\Debug\Example3.csprojAssemblyReference.cache
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\obj\Debug\Example3.csproj.CoreCompileInputs.cache
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\obj\Debug\Example3.exe
+D:\University\University\UBB_CS_II_sem_2\DBMS\Example3\obj\Debug\Example3.pdb

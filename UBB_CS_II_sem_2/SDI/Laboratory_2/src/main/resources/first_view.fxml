@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TrainStations.View.FirstViewController">
+    <HBox alignment="CENTER" layoutX="201.0" layoutY="208.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   <TableView layoutX="10.0" layoutY="8.0" prefHeight="382.0" prefWidth="582.0">
+     <columns>
+       <TableColumn prefWidth="109.5999755859375" text="ID" />
+       <TableColumn minWidth="0.0" prefWidth="165.5999755859375" text="Type" />
+         <TableColumn prefWidth="145.60003662109375" text="Color" />
+         <TableColumn prefWidth="164.79998779296875" text="Fabrication Date" />
+     </columns>
+   </TableView>
+</AnchorPane>

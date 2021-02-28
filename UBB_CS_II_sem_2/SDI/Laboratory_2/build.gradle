@@ -1,10 +1,19 @@
 plugins {
     id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
-
+sourceCompatibility = 1.8
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/java"]
+            includes = ["**/*.fxml"]
+        }
+    }
+}
 repositories {
     jcenter()
     mavenCentral()
@@ -15,8 +24,19 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.6'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
 test {
     useJUnitPlatform()
+}
+
+javafx {
+    version = '14'
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+compileJava.options.encoding = 'UTF-8'
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }

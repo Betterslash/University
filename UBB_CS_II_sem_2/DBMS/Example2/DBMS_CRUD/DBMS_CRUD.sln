@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBMS_CRUD", "DBMS_CRUD.csproj", "{29E7AF6C-A7B7-4590-B812-703845657463}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29E7AF6C-A7B7-4590-B812-703845657463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E7AF6C-A7B7-4590-B812-703845657463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E7AF6C-A7B7-4590-B812-703845657463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E7AF6C-A7B7-4590-B812-703845657463}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E88CC397-FDFA-4671-A9C1-949AA9F4E35F}
+	EndGlobalSection
+EndGlobal

@@ -10,9 +10,13 @@ TrainStations/Model/Train.java
  TrainStations.Model.Train
 TrainStations/CustomExceptions/MyCustomDTOControllerException.java
  TrainStations.CustomExceptions.MyCustomDTOControllerException
+TrainStations/Repository/CRUDLocalRepository.java
+ TrainStations.Repository.CRUDLocalRepository
 TrainStations/Model/DTOCustomObj.java
  TrainStations.Model.DTOCustomObj
-TrainStations/View/MainView.java
- TrainStations.View.MainView
+TrainStations/View/Main.java
+ TrainStations.View.Main
+TrainStations/View/FirstViewController.java
+ TrainStations.View.FirstViewController
 TrainStations/DBOConnectivityUtils/StationsController.java
  TrainStations.DBOConnectivityUtils.StationsController

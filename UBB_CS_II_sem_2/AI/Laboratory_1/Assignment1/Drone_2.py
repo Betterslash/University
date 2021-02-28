@@ -4,7 +4,6 @@ from random import random, randint
 
 import numpy as np
 import pygame
-from pygame.locals import *
 
 # Creating some colors
 BLUE = (0, 0, 255)
@@ -191,7 +190,6 @@ class Drone:
     def moveDSF(self, detectedMap):
         # We mark the current node as visited
         self.visited.add((self.x, self.y))
-
         # We try adding possible moves to the drone
         # We count through move_variants array and add the tuples to current position
         for directions in move_variants:
@@ -204,7 +202,6 @@ class Drone:
                         # If we found a valid new position we add it as a valid move on the graph to
                         # come back to in case the one adjacent to this is fully explored
                         self.graph_moves.append((self.x, self.y))
-                        self.graph_moves.append(current_pos)
                         # We set as rendering coordinates the new discovered valid move
                         self.x = test_x
                         self.y = test_y
@@ -257,7 +254,8 @@ def main():
     running = True
 
     # main loop
-    m.markDetectedWalls(e, d.x, d.y)
+    # m.markDetectedWalls(e, d.x, d.y)
+    moves_number = 0
     while running:
         # event handling, gets all event from the event queue
         for event in pygame.event.get():
@@ -265,12 +263,15 @@ def main():
             if event.type == pygame.QUIT:
                 # change the value to False, to exit the main loop
                 running = False
-        response = d.moveDSF(m)
-        if not response:
-            print("The drone made it !")
-            return
-        pygame.time.wait(350)
+        # Because the drone needed to move automatically we moved the detect walls function
+        # up so the drone will have initialized in itself some valid moves
         m.markDetectedWalls(e, d.x, d.y)
+        response = d.moveDSF(m)
+        moves_number += 1
+        if not response:
+            print("The drone made it in " + str(moves_number) + " steps !")
+            return
+        pygame.time.wait(20)
         screen.blit(m.image(d.x, d.y), (400, 0))
         pygame.display.flip()
 

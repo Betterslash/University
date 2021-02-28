@@ -26,6 +26,11 @@ public class Train implements DTOCustomObj{
     }
 
     @Override
+    public int getId() {
+        return id;
+    }
+
+    @Override
     public String toString() {
         return "Train{" +
                 "type='" + type + '\'' +
