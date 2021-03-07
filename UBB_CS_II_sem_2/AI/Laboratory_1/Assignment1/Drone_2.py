@@ -271,7 +271,7 @@ def main():
         if not response:
             print("The drone made it in " + str(moves_number) + " steps !")
             return
-        pygame.time.wait(20)
+        pygame.time.wait(120)
         screen.blit(m.image(d.x, d.y), (400, 0))
         pygame.display.flip()
 

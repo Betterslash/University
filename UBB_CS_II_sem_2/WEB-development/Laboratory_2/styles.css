@@ -1,0 +1,100 @@
+body{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    overflow:visible;
+}
+.sidebar-left{
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 8vw;
+    margin: 0%;
+    flex-direction: column;
+    z-index: 1;
+    overflow: visible;
+    display: inline;
+}
+
+ul:first-child{
+    list-style-type: none;
+    list-style-position: outside;
+    z-index: 4;
+    background-color: #7A89C2;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #2e5eaa;
+}
+ul ul{
+    display: none;
+}
+
+li:hover > ul{
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+    list-style-position: outside;
+    z-index: 4;
+    background-color: #2e5eaa;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    width: 100%;
+    left: 100%;
+}
+a{
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+}
+li{
+    display: flex;
+    transition-duration: 0.35s;
+    border-radius: 4px;
+    padding: 15px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+li:hover{
+    background-color: #F61067;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+.main-card{
+    display: inline;
+    width: 65%;
+    background-color: #4712808f;
+    color: #f1f1ff;
+    font-size: 18px;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 4vh;
+}
+.hero-title{
+    display: inline;
+    font-size: 5vw;
+    margin-left: 15vw;
+}
+.hero-image{
+    transition-duration: 1s;
+}
+.hero-image:hover{
+    transform: scale(1.2);
+}
