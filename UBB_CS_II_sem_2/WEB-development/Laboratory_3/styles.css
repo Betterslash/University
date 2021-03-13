@@ -1,13 +1,13 @@
 body {
   margin: 0 !important;
   font-family: "Amazon Ember",Arial,sans-serif;
-  background-color: #cbc8bd;
+  background-color: #e7e9e8;
 }
 
 .navbars-container {
   width: 100%;
   display: flex;
-  height: 12vh;
+  height: 12.5vh;
   flex-direction: column;
 }
 
@@ -15,15 +15,9 @@ body {
   display: flex;
   background-color: #131921;
   width: 100%;
-  height: 65%;
+  height: 61%;
   flex-direction: row;
   align-items: center;
-}
-
-.navbar-down {
-  background-color: #232f3e;
-  width: 100%;
-  height: 35%;
 }
 
 .deliver-to-container {
@@ -37,7 +31,7 @@ body {
 .searchbar{
     display: flex;
     flex-direction: row;
-    width: 56%;
+    width: 58%;
     margin: 0 !important;
 }
 
@@ -57,15 +51,16 @@ body {
 .search-button{
     margin: 0;
     background-color: #febd69;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: #4b4339;
     border: none;
     outline: none;
-    width: 7%;
+    width: 6%;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    align-items: center;
 }
 
 .category-selector{
@@ -80,6 +75,7 @@ body {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     border-right: 0.5px solid rgb(109, 108, 108);
+    color: rgba(0, 0, 0, 0.63);
 }
 
 .country-selector-container{
@@ -103,12 +99,12 @@ body {
 .country-selector > li{
     margin-top: 15%;
 }
-.sign-in-container{
+.words-container{
     display: flex;
     width: 8%;
     justify-content: center;
 }
-.sign-in-div{
+.words-div{
     font-size: 0.9vw;
     color: #f4f2e9;
 }
@@ -116,9 +112,162 @@ body {
     color: #5f646b;
     font-size: 0.7vw;
 }
+.smaller-width{
+    width: 7%;
+}
+.cart-container{
+    display: flex;
+    width: 6%;
+    justify-content: center;
+}
+
+.navbar-down {
+    background-color: #232f3e;
+    width: 100%;
+    height: 39%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-down-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-down-contents a{
+    font-family: inherit;
+    color: #fffbec;
+    text-decoration: none;
+    font-size: 1.8vh;
+    margin-left: 1.2vw;
+    font-weight: 480;
+}
+.first-elements-nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+}
+.navbar-down-contents a i{
+    font-size: 1.9vh;
+}
+.special-text-nav{
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    margin-right: 1.1vw;
+}
+
 #a-logo {
   width: 6.5vw;   
   height: 5vh;
   margin-left: 1.2vw;
   margin-top: 0.7vh;
+}
+#cart-logo{
+    width: 5vw;
+    height: 5.5vh;
+}
+#canapea-img{
+    width:100%;
+    height: auto;
+}
+.rest-of-body{
+    position: absolute;
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#3d372c, #eaeded);
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
+}
+.card{
+    display: block;
+    height: auto;
+    margin-top: 1.2vh;
+    margin-bottom: 1.5vh;
+    margin-left: 0.7vw;
+    margin-right: 0.7vw;
+    padding: 7px;
+    background-color: #ffffff;
+    z-index: 1;
+    max-width: 100%;
+}
+.image-slider{
+    position: relative;
+    width: 100%;
+    display: block;
+    max-height: 30%;
+}
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 0;
+}
+.card-img{
+    width:100%;
+    height: auto;
+    min-height: 35vh;
+    max-height: 35vh;
+    max-width: 300px;
+}
+.card-title{
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    padding-top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: inherit;
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+.footer-card-link{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.65vh;
+    padding: 2.2vh;
+}
+.footer-card-link a{
+    text-decoration: none;
+    color: #0f798c;
+    font-weight: 300;
+}
+.special-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center; 
+}
+.special-card{
+    height: 30%;
+    padding:1.8vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.special-card-button{
+    width: 100%;
+    padding: 1.1vh;
+    background-image: linear-gradient(#f6dc9c,#f1c457);
+    border-radius: 3px;
+    border: 0.5px solid rgba(0, 0, 0, 0.527);
+}
+.special-card-image{
+    position: relative;
+    width:100% ;
+    height: auto;
+    max-height: 28.5vh;
+    max-width: 300px;
 }
