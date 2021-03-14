@@ -1,4 +1,8 @@
+from queue import PriorityQueue
+from random import randint
+
 import pygame
+from numpy import sqrt
 
 from taks1.Model.DroneClass import Drone
 from taks1.Model.EnviromentVariables import *
@@ -19,33 +23,35 @@ def displayWithPath(image, path):
     return image
 
 
+def computeHValueGreedy(current, destination):
+    dx = abs(current[0] - destination[0])
+    dy = abs(current[1] - destination[1])
+    return dx + dy
+
 class Controller:
-    def __init__(self, droneD: Drone):
-        self.drone = droneD
+    def __init__(self):
+        x = randint(0, 19)
+        y = randint(0, 19)
+        self.drone = Drone(x, y)
         self.map = Map()
         self.map.loadMap("test1.map")
         self.moves = []
         self.exploration_map = self.createObjectsMap()
 
-    def get_Drone(self):
-        return self.drone
-
-    def get_exp_Map(self):
-        return self.exploration_map
-
-    def get_drone_X(self):
-        return self.drone.get_X()
-
-    def get_drone_Y(self):
-        return self.drone.get_Y()
-
     def isUnblocked(self, posX, posY):
         return self.map.surface[posX][posY] == 0
 
     def computeHValue(self, destination):
-        return abs(self.get_drone_X() - destination[0]) + abs(self.get_drone_Y() - destination[1])
+        return abs(self.drone.get_X() - destination[0]) + abs(self.drone.get_Y() - destination[1])
 
-    def trace_path(self, destination):
+    def __init_first_position(self):
+        self.exploration_map[self.drone.get_X()][self.drone.get_Y()].g = 0
+        self.exploration_map[self.drone.get_X()][self.drone.get_Y()].h = 0
+        self.exploration_map[self.drone.get_X()][self.drone.get_Y()].f = 0
+        self.exploration_map[self.drone.get_X()][self.drone.get_Y()].x = self.drone.get_X()
+        self.exploration_map[self.drone.get_X()][self.drone.get_Y()].y = self.drone.get_Y()
+
+    def __trace_path(self, destination):
         row = destination[0]
         col = destination[1]
         while self.exploration_map[row][col].x != row or self.exploration_map[row][col].y != col:
@@ -63,6 +69,7 @@ class Controller:
         # TO DO
         # implement the search function and put it in controller
         # returns a list of moves as a list of pairs [x,y]
+        self.__init_first_position()
         while len(self.drone.open_list) > 0:
             current_elem = self.drone.open_list[0]
             self.drone.open_list.remove(current_elem)
@@ -78,7 +85,7 @@ class Controller:
                     if current_x == finalX and current_y == finalY:
                         self.exploration_map[current_x][current_y].x = i
                         self.exploration_map[current_x][current_y].y = j
-                        self.trace_path((finalX, finalY))
+                        self.__trace_path((finalX, finalY))
                         return self.moves
                     elif not self.drone.close_list[(current_x, current_y)]:
                         if self.isUnblocked(current_x, current_y):
@@ -94,6 +101,7 @@ class Controller:
                                 self.exploration_map[current_x][current_y].h = h_function
                                 self.exploration_map[current_x][current_y].x = i
                                 self.exploration_map[current_x][current_y].y = j
+        return []
 
     def createObjectsMap(self):
         for i in range(self.map.m):
@@ -103,12 +111,33 @@ class Controller:
         return [[Node(-1, -1, self.map.surface[j][i], INF_VAL, INF_VAL, INF_VAL) for i in range(self.map.m)] for j in
                 range(self.map.n)]
 
-    def searchGreedy(self, initialX, initialY, finalX, finalY):
+    def searchGreedy(self, finalX, finalY):
         # TO DO
         # implement the search function and put it in controller
         # returns a list of moves as a list of pairs [x,y]
-        pass
+        path = []
+        pq = self.drone.priority_queue
+        visited = self.drone.visited
+        i = self.drone.get_X()
+        j = self.drone.get_Y()
+        pq.put((0, (i, j)))
+        final = (finalX, finalY)
+        while not pq.empty():
+            u = pq.get()[1]
+            path.append(u)
+            visited.append((u[0], u[1]))
+            if u[0] == finalX and u[1] == finalY:
+                self.moves = path
+                return self.moves
+            minList = PriorityQueue()
+            for d in directions:
+                current_x = u[0] + d[0]
+                current_y = u[1] + d[1]
+                current = (current_x, current_y)
+                if isValid(current_x, current_y) and self.isUnblocked(current_x, current_y):
+                    if (current_x, current_y) not in visited:
+                        cost = computeHValueGreedy(current, final)
+                        minList.put((cost, current))
+            pq.put(minList.get())
+            minList.queue.clear()
 
-    def dummySearch(self):
-        # example of some path in test1.map from [5,7] to [7,11]
-        return self.moves

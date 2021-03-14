@@ -1,3 +1,5 @@
+from queue import PriorityQueue
+
 import pygame
 from pygame.locals import *
 
@@ -9,6 +11,8 @@ class Drone:
         self.open_list = []
         self.close_list = dict()
         self.open_list.append((0, (self._x, self._y)))
+        self.visited = []
+        self.priority_queue = PriorityQueue()
 
     def get_X(self):
         return self._x
@@ -37,3 +41,5 @@ class Drone:
         mapImage.blit(drona, (self.y * 20, self.x * 20))
 
         return mapImage
+
+
