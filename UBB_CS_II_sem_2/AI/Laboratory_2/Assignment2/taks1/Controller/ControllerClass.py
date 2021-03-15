@@ -23,10 +23,12 @@ def displayWithPath(image, path):
     return image
 
 
-def computeHValueGreedy(current, destination):
-    dx = abs(current[0] - destination[0])
-    dy = abs(current[1] - destination[1])
-    return dx + dy
+def computeValueGreedy(current, destination):
+    # Euclidean distance for effective distance
+    dx = current[0] - destination[0]
+    dy = current[1] - destination[1]
+    return sqrt(dx * 2 + dy * 2)
+
 
 class Controller:
     def __init__(self):
@@ -42,6 +44,7 @@ class Controller:
         return self.map.surface[posX][posY] == 0
 
     def computeHValue(self, destination):
+        # Manhattan distance for A*
         return abs(self.drone.get_X() - destination[0]) + abs(self.drone.get_Y() - destination[1])
 
     def __init_first_position(self):
@@ -89,6 +92,7 @@ class Controller:
                         return self.moves
                     elif not self.drone.close_list[(current_x, current_y)]:
                         if self.isUnblocked(current_x, current_y):
+                            # We iterate the steps as g
                             g_function = self.exploration_map[i][j].g + 1
                             h_function = self.computeHValue((finalX, finalY))
                             f_function = g_function + h_function
@@ -136,8 +140,7 @@ class Controller:
                 current = (current_x, current_y)
                 if isValid(current_x, current_y) and self.isUnblocked(current_x, current_y):
                     if (current_x, current_y) not in visited:
-                        cost = computeHValueGreedy(current, final)
+                        cost = computeValueGreedy(current, final)
                         minList.put((cost, current))
             pq.put(minList.get())
             minList.queue.clear()
-

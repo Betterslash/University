@@ -34,8 +34,8 @@ class View:
         running = True
         # main loop
         before_time = datetime.now()
-        moves = deepcopy(self.controller.searchGreedy(2, 1).copy())
-        # moves = deepcopy(self.controller.searchAStar(2, 1).copy())
+        # moves = deepcopy(self.controller.searchGreedy(2, 1).copy())
+        moves = deepcopy(self.controller.searchAStar(2, 1).copy())
         path = deepcopy(moves.copy())
         after_time = datetime.now()
         print("Finding the path took " + str((after_time - before_time).microseconds))
