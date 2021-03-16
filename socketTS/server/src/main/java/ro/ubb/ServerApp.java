@@ -12,10 +12,7 @@ import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.tcp.TCPServer;
 
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class ServerApp {
     public static void main(String[] args) {
@@ -27,15 +24,21 @@ public class ServerApp {
         TCPServer tcpServer = new TCPServer(executorService, ITransferService.PORT);
         ITransferService<Integer, Train> helloService = new TrainTransferService(executorService, trainService);
 
-        tcpServer.addHandler("getEntities", request -> {
-            Future<String> res = helloService.getEntities();
-            try {
-                String response = res.get();
-                return new Message(new Header(StatusCodes.OK, ""), response);
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-                return new Message(new Header(StatusCodes.SERVER_ERROR, ""), e.getMessage());
-            }
+        tcpServer.addHandler(ITransferService.GET_ENTITIES, request -> {
+            CompletableFuture<String> res = helloService.getEntities();
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.ADD_ENTITY, request -> {
+            CompletableFuture<String>res = helloService.addEntity(Train.parseTrain(request.getBody()));
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.UPDATE_ENTITY, request -> {
+            CompletableFuture<String> res = helloService.updateEntity(Train.parseTrain(request.getBody()));
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.DELETE_ENTITY, request -> {
+            CompletableFuture<String> res = helloService.deleteEntity(Integer.parseInt(request.getBody()));
+            return getResponse(res);
         });
 
 
@@ -43,5 +46,15 @@ public class ServerApp {
 
 
         System.out.println("bye server");
+    }
+
+    private static Message getResponse(CompletableFuture<String> res) {
+        try {
+            String response = res.get();
+            return new Message(new Header(StatusCodes.OK, ""), response);
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
+            return new Message(new Header(StatusCodes.SERVER_ERROR, ""), e.getMessage());
+        }
     }
 }

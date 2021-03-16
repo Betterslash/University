@@ -1,6 +1,5 @@
 package ro.ubb.CommunicationCommons;
 
-import lombok.Data;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 
@@ -54,10 +53,15 @@ public class Message {
         }
         header.setMethodName(br.readLine());
         line = br.readLine();
-        while (line != null && !(line).isEmpty()) {
-            this.body += line + "\n";
-            line = br.readLine();
+        if(!this.header.getMethodName().equals("deleteEntity")){
+            while (line != null && !(line).isEmpty()) {
+                this.body += line + "\n";
+                line = br.readLine();
+            }
+        }else{
+            this.body = line;
         }
+
     }
 
     public void writeTo(OutputStream os) throws IOException {

@@ -5,8 +5,11 @@ import lombok.EqualsAndHashCode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import ro.ubb.Model.Validators.TrainValidator;
 
 import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  *
@@ -71,5 +74,15 @@ public class Train extends BaseEntity<Integer>{
         trainElement.appendChild(childElement4);
 
         return trainElement;
+    }
+    public static Train parseTrain(String csvFormat){
+        List<String> items = Arrays.asList(csvFormat.split(", "));
+        Integer id = Integer.parseInt(items.get(0));
+        String type = items.get(1);
+        String color = items.get(2);
+        LocalDate localDate = LocalDate.parse(items.get(3).strip());
+        Train train = new Train(id, type, color, localDate);
+        new TrainValidator().validate(train);
+        return train;
     }
 }

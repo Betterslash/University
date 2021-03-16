@@ -28,8 +28,8 @@ ro/ubb/Model/Validators/StationValidator.java
  ro.ubb.Model.Validators.StationValidator
 ro/ubb/Model/Exceptions/XMLLoaderException.java
  ro.ubb.Model.Exceptions.XMLLoaderException
-ro/ubb/Model/Exceptions/TrainException.java
- ro.ubb.Model.Exceptions.TrainException
+ro/ubb/CommunicationCommons/CustomEntities/Header.java
+ ro.ubb.CommunicationCommons.CustomEntities.Header
 ro/ubb/Model/Exceptions/IdTypeException.java
  ro.ubb.Model.Exceptions.IdTypeException
 ro/ubb/Model/Validators/TrainsStationsValidator.java
@@ -54,7 +54,7 @@ ro/ubb/Model/Station.java
  ro.ubb.Model.Station
 ro/ubb/Model/Train.java
  ro.ubb.Model.Train
-ro/ubb/CommunicationCommons/CustomEntities/Header.java
- ro.ubb.CommunicationCommons.CustomEntities.Header
+ro/ubb/Model/Exceptions/TrainException.java
+ ro.ubb.Model.Exceptions.TrainException
 ro/ubb/CommunicationCommons/Message.java
  ro.ubb.CommunicationCommons.Message

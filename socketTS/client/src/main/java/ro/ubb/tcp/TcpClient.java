@@ -26,8 +26,6 @@ public class TcpClient {
 
             Message response = new Message();
             response.readFrom(is);
-            System.out.println("received response: " + response);
-
             return response;
 
         } catch (IOException e) {

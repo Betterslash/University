@@ -2,16 +2,17 @@ ro/ubb/Repository/IRepository.java
  ro.ubb.Repository.IRepository
 ro/ubb/Repository/Savers/XMLSaver.java
  ro.ubb.Repository.Savers.XMLSaver
-ro/ubb/ServerApp.java
- ro.ubb.ServerApp
-ro/ubb/Repository/Repositories/CRUDUtils/TrainDBOService.java
- ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService
+ro/ubb/Services/StationService.java
+ ro.ubb.Services.StationService
+ro/ubb/Repository/XMLUtils/XMLLoaders/XMLLoader.java
+ ro.ubb.Repository.XMLUtils.XMLLoaders.XMLLoader
 ro/ubb/Repository/Repositories/CRUDUtils/TimeTableDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService
-ro/ubb/Repository/FileUtils/FileLoaders/TrainsLoader.java
- ro.ubb.Repository.FileUtils.FileLoaders.TrainsLoader
-ro/ubb/ServerTransferServices/TrainTransferService.java
- ro.ubb.ServerTransferServices.TrainTransferService
+ro/ubb/tcp/TCPServer.java
+ ro.ubb.tcp.TCPServer
+ ro.ubb.tcp.TCPServer$ClientHandler
+ro/ubb/Repository/Savers/FileSaver.java
+ ro.ubb.Repository.Savers.FileSaver
 ro/ubb/Repository/Repositories/CRUDRepository.java
  ro.ubb.Repository.Repositories.CRUDRepository
 ro/ubb/Services/TrainsStationsService.java
@@ -22,13 +23,12 @@ ro/ubb/Repository/Repositories/StorageRepository.java
  ro.ubb.Repository.Repositories.StorageRepository
 ro/ubb/Repository/FileUtils/FileLoaders/StationsLoader.java
  ro.ubb.Repository.FileUtils.FileLoaders.StationsLoader
-ro/ubb/Services/TrainService.java
- ro.ubb.Services.TrainService
+ro/ubb/Repository/Loader.java
+ ro.ubb.Repository.Loader
 ro/ubb/Repository/FileUtils/FileLoaders/TimeTableLoader.java
  ro.ubb.Repository.FileUtils.FileLoaders.TimeTableLoader
-ro/ubb/tcp/TCPServer.java
- ro.ubb.tcp.TCPServer
- ro.ubb.tcp.TCPServer$ClientHandler
+ro/ubb/Repository/Repositories/LocalRepository.java
+ ro.ubb.Repository.Repositories.LocalRepository
 ro/ubb/Repository/Repositories/CRUDUtils/StationDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService
 ro/ubb/Repository/XMLUtils/XMLLoaders/StationsXMLLoader.java
@@ -39,15 +39,15 @@ ro/ubb/Repository/XMLUtils/XMLLoaders/TimeTableXMLLoader.java
  ro.ubb.Repository.XMLUtils.XMLLoaders.TimeTableXMLLoader
 ro/ubb/Repository/Repositories/CRUDUtils/DBOServices.java
  ro.ubb.Repository.Repositories.CRUDUtils.DBOServices
-ro/ubb/Repository/XMLUtils/XMLLoaders/XMLLoader.java
- ro.ubb.Repository.XMLUtils.XMLLoaders.XMLLoader
-ro/ubb/Repository/Loader.java
- ro.ubb.Repository.Loader
+ro/ubb/Repository/FileUtils/FileLoaders/TrainsLoader.java
+ ro.ubb.Repository.FileUtils.FileLoaders.TrainsLoader
+ro/ubb/ServerTransferServices/TrainTransferService.java
+ ro.ubb.ServerTransferServices.TrainTransferService
+ro/ubb/ServerApp.java
+ ro.ubb.ServerApp
 ro/ubb/Repository/XMLUtils/XMLLoaders/TrainsXMLLoader.java
  ro.ubb.Repository.XMLUtils.XMLLoaders.TrainsXMLLoader
-ro/ubb/Services/StationService.java
- ro.ubb.Services.StationService
-ro/ubb/Repository/Savers/FileSaver.java
- ro.ubb.Repository.Savers.FileSaver
-ro/ubb/Repository/Repositories/LocalRepository.java
- ro.ubb.Repository.Repositories.LocalRepository
+ro/ubb/Services/TrainService.java
+ ro.ubb.Services.TrainService
+ro/ubb/Repository/Repositories/CRUDUtils/TrainDBOService.java
+ ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService

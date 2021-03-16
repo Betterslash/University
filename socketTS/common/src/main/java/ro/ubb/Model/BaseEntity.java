@@ -37,6 +37,5 @@ public abstract class BaseEntity<ID> {
      * @return the proper format of every object inheriting this class to be stored as a csv entry
      */
     public abstract String csvFileFormat();
-
     public  abstract Node createNodeFromEntity(Document document);
 }

@@ -6,12 +6,12 @@ import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.Console;
 import ro.ubb.tcp.TcpClient;
 
-import java.util.concurrent.ExecutionException;
+import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ClientApp {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
+    public static void main(String[] args) throws IOException {
         ExecutorService executorService = Executors.newFixedThreadPool(
                 Runtime.getRuntime().availableProcessors()
         );
