@@ -15,6 +15,10 @@ public interface ITransferService<ID, E extends BaseEntity<ID>> {
     String UPDATE_STATION_ENTITY = "updateStationEntity";
     String DELETE_STATION_ENTITY = "deleteStationEntity";
     String ADD_STATION_ENTITY = "addStationEntity";
+    String GET_TT_ENTITIES = "getTTEntities";
+    String UPDATE_TT_ENTITY = "updateTTEntity";
+    String DELETE_TT_ENTITY = "deleteTTEntity";
+    String ADD_TT_ENTITY = "addTTEntity";
     CompletableFuture<String> getEntities();
     CompletableFuture<String> addEntity(E entity);
     CompletableFuture<String> deleteEntity(ID id);

@@ -54,7 +54,9 @@ public class Message {
         }
         header.setMethodName(br.readLine());
         line = br.readLine();
-        if(!this.header.getMethodName().equals(ITransferService.DELETE_STATION_ENTITY) && !this.header.getMethodName().equals(ITransferService.DELETE_TRAIN_ENTITY)){
+        if(!this.header.getMethodName().equals(ITransferService.DELETE_STATION_ENTITY) &&
+                !this.header.getMethodName().equals(ITransferService.DELETE_TRAIN_ENTITY) &&
+                    !this.header.getMethodName().equals(ITransferService.DELETE_TT_ENTITY)){
             while (line != null && !(line).isEmpty()) {
                 this.body += line + "\n";
                 line = br.readLine();
