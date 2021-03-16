@@ -18,7 +18,7 @@ hs_err_pid*
 
 
 ### Gradle ###
-.gradle
+build.gradle
 /build/
 
 # Ignore Gradle GUI config
@@ -34,3 +34,11 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 # End of https://www.gitignore.io/api/java,gradle
+# IntelliJ IDEA
+*.iml
+*.ipr
+*.iws
+.idea
+build
+out
+MANIFEST.MF
