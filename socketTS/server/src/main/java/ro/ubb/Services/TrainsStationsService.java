@@ -1,6 +1,6 @@
 package ro.ubb.Services;
 
-import ro.ubb.Exceptions.ValidatorException;
+import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Repository.IRepository;

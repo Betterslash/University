@@ -1,6 +1,6 @@
 package ro.ubb.Repository.FileUtils.FileLoaders;
 
-import ro.ubb.Exceptions.LoaderException;
+import ro.ubb.Model.Exceptions.LoaderException;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Model.Validators.TrainsStationsValidator;

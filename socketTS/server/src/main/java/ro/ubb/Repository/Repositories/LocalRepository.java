@@ -1,6 +1,6 @@
 package ro.ubb.Repository.Repositories;
 
-import ro.ubb.Exceptions.ValidatorException;
+import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.BaseEntity;
 import ro.ubb.Model.Validators.Validator;
 import ro.ubb.Repository.IRepository;

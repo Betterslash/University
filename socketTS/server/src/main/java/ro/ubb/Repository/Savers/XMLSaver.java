@@ -3,7 +3,7 @@ package ro.ubb.Repository.Savers;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import ro.ubb.Exceptions.SaverException;
+import ro.ubb.Model.Exceptions.SaverException;
 import ro.ubb.Model.BaseEntity;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

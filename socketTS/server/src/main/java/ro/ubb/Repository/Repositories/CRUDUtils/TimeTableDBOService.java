@@ -1,6 +1,6 @@
 package ro.ubb.Repository.Repositories.CRUDUtils;
 
-import ro.ubb.Exceptions.TimeTableDBOServiceException;
+import ro.ubb.Model.Exceptions.TimeTableDBOServiceException;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.TrainsStationsEntity;
 import java.sql.*;

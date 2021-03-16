@@ -2,7 +2,7 @@ package ro.ubb.Repository.Repositories.CRUDUtils;
 
 
 
-import ro.ubb.Exceptions.StationDBOServiceException;
+import ro.ubb.Model.Exceptions.StationDBOServiceException;
 import ro.ubb.Model.Station;
 
 import java.sql.DriverManager;

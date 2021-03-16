@@ -1,7 +1,7 @@
 package ro.ubb.Repository.Repositories;
 
 
-import ro.ubb.Exceptions.ValidatorException;
+import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.BaseEntity;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.DBOServices;
