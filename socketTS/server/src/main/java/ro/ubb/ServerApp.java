@@ -3,11 +3,15 @@ package ro.ubb;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 import ro.ubb.CommunicationCommons.Message;
+import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
+import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
 import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
+import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
+import ro.ubb.Services.StationService;
 import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.tcp.TCPServer;
@@ -21,31 +25,50 @@ public class ServerApp {
         );
         IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
         TrainService trainService = new TrainService(trainIRepository);
+        IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
+        StationService stationService = new StationService(stationIRepository);
+
         TCPServer tcpServer = new TCPServer(executorService, ITransferService.PORT);
-        ITransferService<Integer, Train> helloService = new TrainTransferService(executorService, trainService);
+        ITransferService<Integer, Train> transferTrainService = new TrainTransferService(executorService, trainService);
+        ITransferService<Integer, Station> transferStationService = new StationTransferService(executorService, stationService);
 
-        tcpServer.addHandler(ITransferService.GET_ENTITIES, request -> {
-            CompletableFuture<String> res = helloService.getEntities();
+        tcpServer.addHandler(ITransferService.GET_TRAIN_ENTITIES, request -> {
+            CompletableFuture<String> res = transferTrainService.getEntities();
             return getResponse(res);
         });
-        tcpServer.addHandler(ITransferService.ADD_ENTITY, request -> {
-            CompletableFuture<String>res = helloService.addEntity(Train.parseTrain(request.getBody()));
+        tcpServer.addHandler(ITransferService.GET_STATION_ENTITIES, request -> {
+            CompletableFuture<String> res = transferStationService.getEntities();
             return getResponse(res);
         });
-        tcpServer.addHandler(ITransferService.UPDATE_ENTITY, request -> {
-            CompletableFuture<String> res = helloService.updateEntity(Train.parseTrain(request.getBody()));
+        tcpServer.addHandler(ITransferService.ADD_TRAIN_ENTITY, request -> {
+            CompletableFuture<String>res = transferTrainService.addEntity(Train.parseTrain(request.getBody()));
             return getResponse(res);
         });
-        tcpServer.addHandler(ITransferService.DELETE_ENTITY, request -> {
-            CompletableFuture<String> res = helloService.deleteEntity(Integer.parseInt(request.getBody()));
+        tcpServer.addHandler(ITransferService.UPDATE_TRAIN_ENTITY, request -> {
+            CompletableFuture<String> res = transferTrainService.updateEntity(Train.parseTrain(request.getBody()));
             return getResponse(res);
         });
-
+        tcpServer.addHandler(ITransferService.DELETE_TRAIN_ENTITY, request -> {
+            CompletableFuture<String> res = transferTrainService.deleteEntity(Integer.parseInt(request.getBody()));
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.ADD_STATION_ENTITY, request -> {
+            CompletableFuture<String>res = transferStationService.addEntity(Station.parseStation(request.getBody()));
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.UPDATE_STATION_ENTITY, request -> {
+            CompletableFuture<String> res = transferStationService.updateEntity(Station.parseStation(request.getBody()));
+            return getResponse(res);
+        });
+        tcpServer.addHandler(ITransferService.DELETE_STATION_ENTITY, request -> {
+            CompletableFuture<String> res = transferStationService.deleteEntity(Integer.parseInt(request.getBody()));
+            return getResponse(res);
+        });
 
         tcpServer.startServer();
 
 
-        System.out.println("bye server");
+        System.out.println("Server shuted down...");
     }
 
     private static Message getResponse(CompletableFuture<String> res) {

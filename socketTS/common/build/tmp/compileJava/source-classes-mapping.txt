@@ -24,8 +24,8 @@ ro/ubb/Model/Exceptions/DomainException.java
  ro.ubb.Model.Exceptions.DomainException
 ro/ubb/Model/Exceptions/ValidatorException.java
  ro.ubb.Model.Exceptions.ValidatorException
-ro/ubb/Model/Validators/StationValidator.java
- ro.ubb.Model.Validators.StationValidator
+ro/ubb/Model/Exceptions/TrainException.java
+ ro.ubb.Model.Exceptions.TrainException
 ro/ubb/Model/Exceptions/XMLLoaderException.java
  ro.ubb.Model.Exceptions.XMLLoaderException
 ro/ubb/CommunicationCommons/CustomEntities/Header.java
@@ -50,11 +50,11 @@ ro/ubb/Model/Validators/TrainValidator.java
  ro.ubb.Model.Validators.TrainValidator
 ro/ubb/Model/Exceptions/SaverException.java
  ro.ubb.Model.Exceptions.SaverException
-ro/ubb/Model/Station.java
- ro.ubb.Model.Station
-ro/ubb/Model/Train.java
- ro.ubb.Model.Train
-ro/ubb/Model/Exceptions/TrainException.java
- ro.ubb.Model.Exceptions.TrainException
 ro/ubb/CommunicationCommons/Message.java
  ro.ubb.CommunicationCommons.Message
+ro/ubb/Model/Train.java
+ ro.ubb.Model.Train
+ro/ubb/Model/Station.java
+ ro.ubb.Model.Station
+ro/ubb/Model/Validators/StationValidator.java
+ ro.ubb.Model.Validators.StationValidator

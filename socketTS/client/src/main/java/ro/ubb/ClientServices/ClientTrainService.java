@@ -22,7 +22,7 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
     public CompletableFuture<String> getEntities() {
         return CompletableFuture.supplyAsync(() -> {
                     Message request = new Message();
-                    request.setHeader(new Header(StatusCodes.OK, ITransferService.GET_ENTITIES));
+                    request.setHeader(new Header(StatusCodes.OK, ITransferService.GET_TRAIN_ENTITIES));
                     request.setBody("");
                     Message res = tcpClient.sendAndReceive(request);
                     return res.getBody();
@@ -33,7 +33,7 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
     public CompletableFuture<String> addEntity(Train entity) {
         return CompletableFuture.supplyAsync(() -> {
             Message req = new Message();
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.ADD_ENTITY));
+            req.setHeader(new Header(StatusCodes.OK, ITransferService.ADD_TRAIN_ENTITY));
             req.setBody(entity.csvFileFormat());
             Message res = tcpClient.sendAndReceive(req);
             return res.getBody();
@@ -45,7 +45,7 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
         return CompletableFuture.supplyAsync(() -> {
             Message req = new Message();
             req.setBody(integer.toString());
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.DELETE_ENTITY));
+            req.setHeader(new Header(StatusCodes.OK, ITransferService.DELETE_TRAIN_ENTITY));
             Message res = tcpClient.sendAndReceive(req);
             return res.getBody();
         });
@@ -56,7 +56,7 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
         return CompletableFuture.supplyAsync(() -> {
             Message req = new Message();
             req.setBody(entity.csvFileFormat());
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.UPDATE_ENTITY));
+            req.setHeader(new Header(StatusCodes.OK, ITransferService.UPDATE_TRAIN_ENTITY));
             Message res = tcpClient.sendAndReceive(req);
             return res.getBody();
         });

@@ -6,6 +6,10 @@ import lombok.EqualsAndHashCode;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
+import ro.ubb.Model.Validators.StationValidator;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  *
@@ -23,6 +27,16 @@ public class Station extends BaseEntity<Integer>{
             this.stationName = stationName;
             this.populationRate = populationRate;
         }
+
+    public static Station parseStation(String body) {
+        List<String> attrs = Arrays.asList(body.split(", "));
+        Integer id = Integer.parseInt(attrs.get(0));
+        String name = attrs.get(1);
+        String populationRate = attrs.get(2);
+        Station station = new Station(id, name, populationRate);
+        new StationValidator().validate(station);
+        return station;
+    }
 
     /**
      * @return string representation

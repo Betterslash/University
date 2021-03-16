@@ -28,7 +28,7 @@ public class TCPServer {
     public void startServer() {
 
         try (var serverSocket = new ServerSocket(this.port)) {
-            System.out.println("server started; waiting for clients...");
+            System.out.println("Server started, waiting for clients...");
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("client connected");

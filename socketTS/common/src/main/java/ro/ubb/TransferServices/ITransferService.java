@@ -7,10 +7,14 @@ import java.util.concurrent.CompletableFuture;
 public interface ITransferService<ID, E extends BaseEntity<ID>> {
     int PORT = 8080;
     String HOST = "localhost";
-    String GET_ENTITIES = "getEntities";
-    String UPDATE_ENTITY = "updateEntity";
-    String DELETE_ENTITY = "deleteEntity";
-    String ADD_ENTITY = "addEntity";
+    String GET_TRAIN_ENTITIES = "getTrainEntities";
+    String UPDATE_TRAIN_ENTITY = "updateTrainEntity";
+    String DELETE_TRAIN_ENTITY = "deleteTrainEntity";
+    String ADD_TRAIN_ENTITY = "addTrainEntity";
+    String GET_STATION_ENTITIES = "getStationEntities";
+    String UPDATE_STATION_ENTITY = "updateStationEntity";
+    String DELETE_STATION_ENTITY = "deleteStationEntity";
+    String ADD_STATION_ENTITY = "addStationEntity";
     CompletableFuture<String> getEntities();
     CompletableFuture<String> addEntity(E entity);
     CompletableFuture<String> deleteEntity(ID id);

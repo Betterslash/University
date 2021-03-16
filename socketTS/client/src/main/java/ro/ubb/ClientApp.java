@@ -1,6 +1,8 @@
 package ro.ubb;
 
+import ro.ubb.ClientServices.ClientStationService;
 import ro.ubb.ClientServices.ClientTrainService;
+import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.Console;
@@ -18,7 +20,8 @@ public class ClientApp {
 
         TcpClient tcpClient = new TcpClient(executorService);
         ITransferService<Integer, Train> iTransferService = new ClientTrainService(executorService, tcpClient);
-        Console console = new Console(iTransferService);
+        ITransferService<Integer, Station> stationTransferService = new ClientStationService(executorService, tcpClient);
+        Console console = new Console(iTransferService, stationTransferService);
         console.runConsole();
         System.out.println("bye client");
 
