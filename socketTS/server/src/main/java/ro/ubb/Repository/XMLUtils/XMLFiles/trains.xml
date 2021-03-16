@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<trains>
+    <train>
+        <id>112</id>
+        <type>YouTrain</type>
+        <color>Redis</color>
+        <fabricationDate>2020-11-11</fabricationDate>
+    </train>
+    <train>
+        <id>102</id>
+        <type>Jitesh</type>
+        <color>Red</color>
+        <fabricationDate>2020-11-13</fabricationDate>
+    </train>
+    <train>
+        <id>103</id>
+        <type>TestUpdate</type>
+        <color>newColor</color>
+        <fabricationDate>2007-11-23</fabricationDate>
+    </train>
+    <train>
+        <id>106</id>
+        <type>testAdd</type>
+        <color>Blue</color>
+        <fabricationDate>2010-11-11</fabricationDate>
+    </train>
+    <train>
+        <id>107</id>
+        <type>someType</type>
+        <color>Red</color>
+        <fabricationDate>2010-10-23</fabricationDate>
+    </train>
+    <train>
+        <id>108</id>
+        <type>type3</type>
+        <color>White</color>
+        <fabricationDate>2007-06-12</fabricationDate>
+    </train>
+</trains>

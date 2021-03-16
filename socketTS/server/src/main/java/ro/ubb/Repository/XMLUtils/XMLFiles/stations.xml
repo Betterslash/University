@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<stations>
+    <station>
+        <id>0</id>
+        <name>Pritax</name>
+        <populationRate>50/100</populationRate>
+    </station>
+
+    <station>
+        <id>1</id>
+        <name>Cocosu</name>
+        <populationRate>40/100</populationRate>
+    </station>
+
+    <station>
+        <id>2</id>
+        <name>Minerva</name>
+        <populationRate>90/100</populationRate>
+    </station>
+
+    <station>
+        <id>3</id>
+        <name>Sirena</name>
+        <populationRate>80/100</populationRate>
+    </station>
+
+</stations>

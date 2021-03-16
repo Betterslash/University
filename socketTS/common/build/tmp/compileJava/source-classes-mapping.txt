@@ -1,0 +1,10 @@
+ro/ubb/CommunicationCommons/CustomEntities/StatusCodes.java
+ ro.ubb.CommunicationCommons.CustomEntities.StatusCodes
+ro/ubb/TransferServices/ITransferService.java
+ ro.ubb.TransferServices.ITransferService
+ro/ubb/CommunicationCommons/CustomExceptions/MessageException.java
+ ro.ubb.CommunicationCommons.CustomExceptions.MessageException
+ro/ubb/CommunicationCommons/Message.java
+ ro.ubb.CommunicationCommons.Message
+ro/ubb/CommunicationCommons/CustomEntities/Header.java
+ ro.ubb.CommunicationCommons.CustomEntities.Header

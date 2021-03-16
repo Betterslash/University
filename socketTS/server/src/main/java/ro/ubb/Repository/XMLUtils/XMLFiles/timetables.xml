@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<timetables>
+    <timetable>
+        <trainId>101</trainId>
+        <stationId>2</stationId>
+        <arrivalDate>2020-08-11 19:00:00</arrivalDate>
+        <departureDate>2020-08-12 11:00:00</departureDate>
+    </timetable>
+    <timetable>
+        <trainId>103</trainId>
+        <stationId>3</stationId>
+        <arrivalDate>2020-09-11 17:00:00</arrivalDate>
+        <departureDate>2020-09-12 10:00:00</departureDate>
+    </timetable>
+    <timetable>
+        <trainId>102</trainId>
+        <stationId>1</stationId>
+        <arrivalDate>2020-12-11 10:15:00</arrivalDate>
+        <departureDate>2020-12-12 11:25:00</departureDate>
+    </timetable>
+</timetables>
