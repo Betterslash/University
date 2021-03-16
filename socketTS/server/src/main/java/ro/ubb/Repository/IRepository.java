@@ -1,6 +1,6 @@
 package ro.ubb.Repository;
 
-import ro.ubb.Exceptions.ValidatorException;
+import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.BaseEntity;
 import java.io.IOException;
 import java.util.Optional;

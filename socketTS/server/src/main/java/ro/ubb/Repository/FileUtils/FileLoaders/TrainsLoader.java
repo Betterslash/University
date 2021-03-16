@@ -1,7 +1,7 @@
 package ro.ubb.Repository.FileUtils.FileLoaders;
 
 
-import ro.ubb.Exceptions.LoaderException;
+import ro.ubb.Model.Exceptions.LoaderException;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.Validators.TrainValidator;
 import ro.ubb.Repository.Loader;

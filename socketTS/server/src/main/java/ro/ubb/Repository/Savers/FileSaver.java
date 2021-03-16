@@ -1,6 +1,6 @@
 package ro.ubb.Repository.Savers;
 
-import ro.ubb.Exceptions.SaverException;
+import ro.ubb.Model.Exceptions.SaverException;
 import ro.ubb.Model.BaseEntity;
 
 import java.io.BufferedWriter;

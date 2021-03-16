@@ -26,6 +26,7 @@ public class TCPServer {
         this.methodHandlers.put(methodName, handler);
     }
     public void startServer() {
+
         try (var serverSocket = new ServerSocket(this.port)) {
             System.out.println("server started; waiting for clients...");
             while (true) {

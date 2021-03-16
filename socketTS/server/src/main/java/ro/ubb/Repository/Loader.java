@@ -1,7 +1,7 @@
 package ro.ubb.Repository;
 
 import org.xml.sax.SAXException;
-import ro.ubb.Exceptions.LoaderException;
+import ro.ubb.Model.Exceptions.LoaderException;
 import ro.ubb.Model.BaseEntity;
 
 import javax.xml.parsers.ParserConfigurationException;

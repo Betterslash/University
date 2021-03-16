@@ -1,6 +1,6 @@
 package ro.ubb.Services;
 
-import ro.ubb.Exceptions.ServiceExceptions.TrainServiceException;
+import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
 import ro.ubb.Model.Train;
 import ro.ubb.Repository.IRepository;
 

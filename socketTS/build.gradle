@@ -17,6 +17,7 @@ allprojects {
 
         testCompileOnly 'org.projectlombok:lombok:1.18.16'
         testAnnotationProcessor 'org.projectlombok:lombok:1.18.16'
+        implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.19'
     }
 
     test {

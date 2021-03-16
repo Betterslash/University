@@ -12,7 +12,8 @@ public class Message {
     private Header header;
     private String body;
     public Message(){
-
+        this.header = new Header(StatusCodes.OK, "");
+        this.body = "";
     }
     public Message(Header header, String body){
         this.header = header;
@@ -21,10 +22,9 @@ public class Message {
 
     @Override
     public String toString() {
-        return "Message = {" +
-                " Header = { " + header +"}" +
-                "; Body= {" + body + " }"+ '\'' +
-                '}';
+        return header.getStatusCode() + "\n" +
+                header.getMethodName() + "\n" +
+                this.body ;
     }
 
     public Header getHeader() {
@@ -45,9 +45,19 @@ public class Message {
 
     public void readFrom(InputStream is) throws IOException {
         var br = new BufferedReader(new InputStreamReader(is));
-        header.setStatusCode(StatusCodes.OK);
+        String line = br.readLine();
+        if(line.contains(StatusCodes.OK.name()) && line.contains(StatusCodes.OK.code.toString())) {
+            header.setStatusCode(StatusCodes.OK);
+        }else{
+            header.setStatusCode(StatusCodes.UNAUTHORIZED);
+            return;
+        }
         header.setMethodName(br.readLine());
-        body = br.readLine();
+        line = br.readLine();
+        while (line != null && !(line).isEmpty()) {
+            this.body += line + "\n";
+            line = br.readLine();
+        }
     }
 
     public void writeTo(OutputStream os) throws IOException {

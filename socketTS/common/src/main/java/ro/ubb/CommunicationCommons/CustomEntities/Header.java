@@ -13,8 +13,6 @@ public class Header {
 
     @Override
     public String toString() {
-        return
-                "statusCode='" + statusCode + '\'' +
-                ", methodName='" + methodName + '\'';
+        return statusCode  + "\n" + methodName ;
     }
 }
