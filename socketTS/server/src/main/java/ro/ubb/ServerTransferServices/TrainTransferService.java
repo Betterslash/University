@@ -17,7 +17,6 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     @Override
     public CompletableFuture<String> getEntities() {
-        System.out.println("here");
         return CompletableFuture.supplyAsync(() -> this.trainService.getAllEntities().stream()
                 .map(Train::toString)
                 .reduce((a ,b) -> a + "\n" + b).orElse(""));
@@ -42,7 +41,8 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     @Override
     public CompletableFuture<String> updateEntity(Train entity) {
-        this.trainService.executeUpdate(entity);
-        return CompletableFuture.supplyAsync(() -> "Train " + entity.toString() + " was updated !");
+
+        return CompletableFuture.supplyAsync(() -> {this.trainService.executeUpdate(entity);
+        return "Train " + entity.toString() + " was updated !";});
     }
 }
