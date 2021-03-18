@@ -69,9 +69,6 @@ class Controller:
         return self.moves
 
     def searchAStar(self, finalX, finalY):
-        # TO DO
-        # implement the search function and put it in controller
-        # returns a list of moves as a list of pairs [x,y]
         self.__init_first_position()
         while len(self.drone.open_list) > 0:
             current_elem = self.drone.open_list[0]
@@ -116,9 +113,6 @@ class Controller:
                 range(self.map.n)]
 
     def searchGreedy(self, finalX, finalY):
-        # TO DO
-        # implement the search function and put it in controller
-        # returns a list of moves as a list of pairs [x,y]
         path = []
         pq = self.drone.priority_queue
         visited = self.drone.visited
@@ -142,5 +136,7 @@ class Controller:
                     if (current_x, current_y) not in visited:
                         cost = computeValueGreedy(current, final)
                         minList.put((cost, current))
-            pq.put(minList.get())
+            minElem = minList.get()
+            if minElem[0] < u[0]:
+                pq.put(minElem)
             minList.queue.clear()

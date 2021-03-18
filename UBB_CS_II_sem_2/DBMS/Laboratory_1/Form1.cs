@@ -70,7 +70,7 @@ namespace Laboratory_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            daGames.Update(ds, "Games");
+            daGames.Update(ds, "Games"); //RowState property
         }
 
 
