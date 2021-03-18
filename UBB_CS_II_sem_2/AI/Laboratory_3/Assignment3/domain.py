@@ -83,7 +83,7 @@ class Map:
         self.m = m
         self.surface = np.zeros((self.n, self.m))
 
-    def randomMap(self, fill=0.2):
+    def randomMap(self, fill=0.3):
         for i in range(self.n):
             for j in range(self.m):
                 if random() <= fill:

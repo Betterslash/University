@@ -3,10 +3,8 @@
 
 # imports
 from Assignment3.commandreader import CommandReader
-from gui import *
 from controller import *
-from repository import *
-from domain import *
+from gui import *
 
 
 # create a menu
@@ -24,24 +22,45 @@ from domain import *
 #              ATENTION! the function doesn't check if the path passes trough walls
 
 class Ui:
-    def __init__(self, args):
-        self.controller = Controller(args)
+    def __init__(self):
+        self.controller = Controller()
 
     def run(self):
-        self.__print_main_ui()
-        menu_choice = input("Choose a menu, master ")
-        if menu_choice == "1":
-            self.__print_map_options()
-            menu_choice = input("Choose an option master ")
-            if menu_choice == "a":
-                path = self.controller.run(args)
-                true_path = []
-                for ele in path.get_x():
-                    true_path.append(v[ele.gene])
-                print(true_path)
-                movingDrone(self.controller.get_cmap(), true_path)
-        elif menu_choice == "2":
-            self.__print_ea_options()
+        running = True
+        while running:
+            self.__print_main_ui()
+            menu_choice = input("Choose a menu, master ")
+            if menu_choice == "1":
+                self.__print_map_options()
+                menu_choice = input("Choose an option master ")
+                if menu_choice == "a":
+                    self.controller.initialize_repository_map()
+                    print("Map succesfully initialized ...")
+                elif menu_choice == "b":
+                    menu_choice = int(input("Give here the map number >> "))
+                    maps_number = self.controller.set_map(menu_choice)
+                    print("You have " + str(maps_number) + " maps !")
+                    print("Map succesfully laoded ...")
+                elif menu_choice == "c":
+                    self.controller.save_repository_map()
+                    print("Map succesfully saved ...")
+                elif menu_choice == "d":
+                    self.controller.repository.visualise_map()
+            elif menu_choice == "2":
+                self.__print_ea_options()
+                menu_choice = input("Choose an option master ")
+                if menu_choice == "a":
+                    print("Initialize args here >> ")
+                    args = CommandReader.read_command()
+                    for i in range(len(args)):
+                        args[i] = int(args[i])
+                    self.controller.set_args(args)
+                elif menu_choice == "b":
+                    pass
+                elif menu_choice == "c":
+                    pass
+                elif menu_choice == "d":
+                    movingDrone(self.controller.repository.cmap, TEST_VECTOR)
 
     @staticmethod
     def __print_main_ui():
@@ -52,7 +71,7 @@ class Ui:
     def __print_map_options():
         print("a -> create random map")
         print("b -> load a map")
-        print("c -> save a map")
+        print("c -> save current map")
         print("d -> visualize map")
 
     @staticmethod
@@ -65,8 +84,5 @@ class Ui:
 
 if __name__ == "__main__":
     # choice = input()
-    args = CommandReader.read_command()
-    for i in range(len(args)):
-        args[i] = int(args[i])
-    ui = Ui(args)
+    ui = Ui()
     ui.run()
