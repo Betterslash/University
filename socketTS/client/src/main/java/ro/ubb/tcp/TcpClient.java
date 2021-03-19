@@ -23,9 +23,9 @@ public class TcpClient {
             System.out.println("sending request: " + request);
             request.writeTo(os);
             System.out.println("request sent");
-
             Message response = new Message();
             response.readFrom(is);
+            System.out.println("got response ");
             return response;
 
         } catch (IOException e) {

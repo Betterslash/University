@@ -40,7 +40,7 @@ public class ClientStationService implements ITransferService<Integer, Station> 
     @Override
     public CompletableFuture<String> deleteEntity(Integer integer) {
         return CompletableFuture.supplyAsync(() -> {
-            Message request = new Message(new Header(StatusCodes.OK, ITransferService.DELETE_STATION_ENTITY), integer.toString());
+            Message request = new Message(new Header(StatusCodes.OK, ITransferService.DELETE_STATION_ENTITY), integer.toString() + LINE_SEPARATOR);
             Message response = this.tcpClient.sendAndReceive(request);
             return response.getBody();
         });

@@ -41,7 +41,7 @@ public class TimeTableService implements ITransferService<Pair<Integer, Integer>
     @Override
     public CompletableFuture<String> deleteEntity(Pair<Integer, Integer> integerIntegerPair) {
         return CompletableFuture.supplyAsync(() -> {
-            Message request = new Message(new Header(StatusCodes.OK, ITransferService.DELETE_TT_ENTITY), integerIntegerPair.asCsv());
+            Message request = new Message(new Header(StatusCodes.OK, ITransferService.DELETE_TT_ENTITY), integerIntegerPair.asCsv() + LINE_SEPARATOR);
             Message response = tcpClient.sendAndReceive(request);
             return response.getBody();
         });

@@ -1,12 +1,16 @@
 package ro.ubb.CommunicationCommons;
 
+import lombok.Data;
+import ro.ubb.CommunicationCommons.CustomEntities.CommunicationChannel;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
-import ro.ubb.TransferServices.ITransferService;
+import ro.ubb.CommunicationCommons.CustomExceptions.MessageException;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 
-
+@Data
 public class Message {
     private static final String LINE_SEPARATOR = System.lineSeparator();
     private Header header;
@@ -24,47 +28,38 @@ public class Message {
     public String toString() {
         return header.getStatusCode() + "\n" +
                 header.getMethodName() + "\n" +
-                this.body ;
+                this.body;
     }
 
-    public Header getHeader() {
-        return header;
+
+    public void readChannel(){
+        List<String> elements = CommunicationChannel.readChannel();
+        this.header.setMethodName(elements.get(1));
+        elements.stream()
+                .skip(2)
+                .forEach(e -> this.body += e);
     }
 
-    public void setBody(String body) {
-        this.body = body;
-    }
-
-    public String getBody() {
-        return body;
-    }
-
-    public void setHeader(Header header) {
-        this.header = header;
+    public void writeChannel(){
+        CommunicationChannel.writeChannel(header + LINE_SEPARATOR + body + LINE_SEPARATOR);
     }
 
     public void readFrom(InputStream is) throws IOException {
-        var br = new BufferedReader(new InputStreamReader(is));
-        String line = br.readLine();
-        if(line.contains(StatusCodes.OK.name()) && line.contains(StatusCodes.OK.code.toString())) {
-            header.setStatusCode(StatusCodes.OK);
-        }else{
-            header.setStatusCode(StatusCodes.UNAUTHORIZED);
-            return;
+        List<String> streamLines = new ArrayList<>();
+        BufferedReader isReader = new BufferedReader(new InputStreamReader(is));
+        String lines = isReader.readLine();
+        while(lines != null && !lines.isEmpty()){
+            streamLines.add(lines);
+            lines = isReader.readLine();
         }
-        header.setMethodName(br.readLine());
-        line = br.readLine();
-        if(!this.header.getMethodName().equals(ITransferService.DELETE_STATION_ENTITY) &&
-                !this.header.getMethodName().equals(ITransferService.DELETE_TRAIN_ENTITY) &&
-                    !this.header.getMethodName().equals(ITransferService.DELETE_TT_ENTITY)){
-            while (line != null && !(line).isEmpty()) {
-                this.body += line + "\n";
-                line = br.readLine();
-            }
-        }else{
-            this.body = line;
-        }
-
+        this.header = new Header(StatusCodes.OK, streamLines
+                .stream()
+                .skip(1)
+                .findFirst()
+                .orElseThrow(() -> new MessageException("Couldn't parse correctly!")));
+        streamLines.stream()
+                .skip(2)
+                .forEach(e -> this.body += e + LINE_SEPARATOR);
     }
 
     public void writeTo(OutputStream os) throws IOException {
