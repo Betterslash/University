@@ -38,7 +38,7 @@ public class StationDBOService extends DBOServices<Integer, Station> {
 
     /**
      * adds a station in the database
-     * @param entity
+     * @param entity entity to be saved
      */
     @Override
     public void saveEntity(Station entity) {
@@ -57,7 +57,7 @@ public class StationDBOService extends DBOServices<Integer, Station> {
 
     /**
      * deletes a station from the database
-     * @param id
+     * @param id id of deletion entity
      */
     @Override
     public void deleteEntity(Integer id) {
@@ -74,7 +74,7 @@ public class StationDBOService extends DBOServices<Integer, Station> {
 
     /**
      * updates a station in the database
-     * @param entity
+     * @param entity entity to be updated
      */
     @Override
     public void updateEntity(Station entity) {

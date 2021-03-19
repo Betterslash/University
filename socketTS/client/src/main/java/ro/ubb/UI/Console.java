@@ -10,7 +10,6 @@ import ro.ubb.UI.EntityManagers.TimeTableCreator;
 import ro.ubb.UI.EntityManagers.TrainCreator;
 
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
 public class Console {
@@ -34,47 +33,48 @@ public class Console {
         while (running) {
             UIPrinter.printMainMenu();
             choice = scanner.nextLine();
-            switch (choice) {
-                case UIPrinter.TRAIN_CONSTANT -> {
-                    UIPrinter.printTrainMenu();
-                    choice = scanner.nextLine();
-                    switch (choice) {
-                        case "1" -> resultFuture = this.trainTransferService.getEntities();
-                        case "2" -> resultFuture = this.trainTransferService.addEntity(trainCreator.createEntity());
-                        case "4" -> resultFuture = this.trainTransferService.deleteEntity(trainCreator.createID());
-                        case "3" -> resultFuture = this.trainTransferService.updateEntity(trainCreator.createEntity());
-                        default -> throw new IllegalStateException("Unexpected value: " + choice);
+            try{
+                switch (choice) {
+                    case UIPrinter.TRAIN_CONSTANT -> {
+                        UIPrinter.printTrainMenu();
+                        choice = scanner.nextLine();
+                        switch (choice) {
+                            case "1" -> resultFuture = this.trainTransferService.getEntities();
+                            case "2" -> resultFuture = this.trainTransferService.addEntity(trainCreator.createEntity());
+                            case "4" -> resultFuture = this.trainTransferService.deleteEntity(trainCreator.createID());
+                            case "3" -> resultFuture = this.trainTransferService.updateEntity(trainCreator.createEntity());
+                            default -> throw new IllegalStateException("Unexpected value: " + choice);
+                        }
                     }
-                }
-                case UIPrinter.STATION_CONSTANT -> {
-                    UIPrinter.printStationMenu();
-                    choice = scanner.nextLine();
-                    switch (choice) {
-                        case "1" -> resultFuture = this.stationTransferService.getEntities();
-                        case "2" -> resultFuture = this.stationTransferService.addEntity(stationCreator.createEntity());
-                        case "4" -> resultFuture = this.stationTransferService.deleteEntity(stationCreator.createID());
-                        case "3" -> resultFuture = this.stationTransferService.updateEntity(stationCreator.createEntity());
-                        default -> throw new IllegalStateException("Unexpected value: " + choice);
+                    case UIPrinter.STATION_CONSTANT -> {
+                        UIPrinter.printStationMenu();
+                        choice = scanner.nextLine();
+                        switch (choice) {
+                            case "1" -> resultFuture = this.stationTransferService.getEntities();
+                            case "2" -> resultFuture = this.stationTransferService.addEntity(stationCreator.createEntity());
+                            case "4" -> resultFuture = this.stationTransferService.deleteEntity(stationCreator.createID());
+                            case "3" -> resultFuture = this.stationTransferService.updateEntity(stationCreator.createEntity());
+                            default -> throw new IllegalStateException("Unexpected value: " + choice);
+                        }
                     }
-                }
-                case UIPrinter.TT_CONSTANT -> {
-                    UIPrinter.printTimeTablesMenu();
-                    choice = scanner.nextLine();
-                    switch (choice) {
-                        case "1" -> resultFuture = this.ttTransferService.getEntities();
-                        case "2" -> resultFuture = this.ttTransferService.addEntity(timeTableCreator.createEntity());
-                        case "4" -> resultFuture = this.ttTransferService.deleteEntity(timeTableCreator.createID());
-                        case "3" -> resultFuture = this.ttTransferService.updateEntity(timeTableCreator.createEntity());
-                        default -> throw new IllegalStateException("Unexpected value: " + choice);
+                    case UIPrinter.TT_CONSTANT -> {
+                        UIPrinter.printTimeTablesMenu();
+                        choice = scanner.nextLine();
+                        switch (choice) {
+                            case "1" -> resultFuture = this.ttTransferService.getEntities();
+                            case "2" -> resultFuture = this.ttTransferService.addEntity(timeTableCreator.createEntity());
+                            case "4" -> resultFuture = this.ttTransferService.deleteEntity(timeTableCreator.createID());
+                            case "3" -> resultFuture = this.ttTransferService.updateEntity(timeTableCreator.createEntity());
+                            default -> throw new IllegalStateException("Unexpected value: " + choice);
+                        }
                     }
+                    case UIPrinter.EXIT_VALUE -> running = false;
+                    default -> throw new IllegalStateException("Next time please give a valid option!");
                 }
-                case UIPrinter.EXIT_VALUE -> running = false;
-            }
-            try {
                 assert resultFuture != null;
                 System.out.println(resultFuture.get());
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
         }
     }

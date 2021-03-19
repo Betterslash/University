@@ -4,7 +4,6 @@ package ro.ubb.Services;
 import ro.ubb.Model.Station;
 import ro.ubb.Repository.IRepository;
 
-import java.io.IOException;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -24,29 +23,26 @@ public class StationService implements Service<Integer, Station>
     /**
      *
      * @param station adds a station in the repository
-     * @throws IOException in case file reading goes wrong
      */
-    public void executeCreate(Station station) throws IOException {
+    public void executeCreate(Station station) {
         repository.save(station);
     }
 
     /**
      *
      * @param object updates an object in the repository
-     * @throws IOException in case file reading goes wrong
      */
     @Override
-    public void executeUpdate(Station object) throws IOException {
+    public void executeUpdate(Station object) {
         repository.update(object);
     }
 
     /**
      *
      * @param id deletes an element with the specified id
-     * @throws IOException in case file reading goes wrong
      */
     @Override
-    public void executeDelete(Integer id) throws IOException {
+    public void executeDelete(Integer id){
         repository.delete(id);
     }
 

@@ -1,7 +1,6 @@
 package ro.ubb.tcp;
 
 import lombok.Data;
-import lombok.SneakyThrows;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 import ro.ubb.CommunicationCommons.Message;
@@ -24,7 +23,6 @@ import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
-import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
@@ -164,14 +162,7 @@ public class TCPServer {
                 System.out.println("response sent to client");
 
             } catch (Exception e) {
-                try {
-                    var os = socket.getOutputStream();
-                    Message message = new Message(new Header(StatusCodes.SERVER_ERROR, "Error"), "Internal server failure!");
-                    message.writeTo(os);
-                } catch (IOException ioException) {
-                    ioException.printStackTrace();
-                }
-                throw new TCPServerException("Server f**d up");
+                throw new TCPServerException("Server failed to send data...");
             }
         }
     }

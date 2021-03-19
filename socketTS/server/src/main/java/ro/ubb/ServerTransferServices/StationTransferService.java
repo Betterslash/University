@@ -5,7 +5,6 @@ import ro.ubb.Model.Station;
 import ro.ubb.Services.StationService;
 import ro.ubb.TransferServices.ITransferService;
 
-import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
@@ -31,11 +30,7 @@ public class StationTransferService implements ITransferService<Integer, Station
     @Override
     public CompletableFuture<String> addEntity(Station entity) {
         return CompletableFuture.supplyAsync(() -> {
-            try {
-                this.stationService.executeCreate(entity);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            this.stationService.executeCreate(entity);
             return "Succesfully added " + entity + " !";
         });
     }
@@ -43,11 +38,7 @@ public class StationTransferService implements ITransferService<Integer, Station
     @Override
     public CompletableFuture<String> deleteEntity(Integer integer) {
         return CompletableFuture.supplyAsync(() -> {
-            try {
-                this.stationService.executeDelete(integer);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            this.stationService.executeDelete(integer);
             return "Succesfully deleted station with id " + integer + " !";
         });
     }
@@ -55,11 +46,7 @@ public class StationTransferService implements ITransferService<Integer, Station
     @Override
     public CompletableFuture<String> updateEntity(Station entity) {
         return CompletableFuture.supplyAsync(() ->{
-            try {
-                this.stationService.executeUpdate(entity);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            this.stationService.executeUpdate(entity);
             return "Succesfully updated " + entity + " !";
         });
     }

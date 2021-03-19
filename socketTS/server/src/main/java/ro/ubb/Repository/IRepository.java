@@ -1,8 +1,8 @@
 package ro.ubb.Repository;
 
-import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.BaseEntity;
-import java.io.IOException;
+import ro.ubb.Model.Exceptions.ValidatorException;
+
 import java.util.Optional;
 
 public interface IRepository<ID, T extends BaseEntity<ID>> {
@@ -35,7 +35,7 @@ public interface IRepository<ID, T extends BaseEntity<ID>> {
      * @throws ValidatorException
      *             if the entity is not valid.
      */
-    Optional<T> save(T entity) throws ValidatorException, IOException;
+    Optional<T> save(T entity) throws ValidatorException;
 
     /**
      * Removes the entity with the given id.
@@ -46,7 +46,7 @@ public interface IRepository<ID, T extends BaseEntity<ID>> {
      * @throws IllegalArgumentException
      *             if the given id is null.
      */
-    Optional<T> delete(ID id) throws IOException;
+    Optional<T> delete(ID id);
 
     /**
      * Updates the given entity.
@@ -60,5 +60,5 @@ public interface IRepository<ID, T extends BaseEntity<ID>> {
      * @throws ValidatorException
      *             if the entity is not valid.
      */
-    Optional<T> update(T entity) throws ValidatorException, IOException;
+    Optional<T> update(T entity) throws ValidatorException;
 }

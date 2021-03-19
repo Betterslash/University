@@ -6,7 +6,6 @@ import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
-import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 
@@ -29,11 +28,7 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
     @Override
     public CompletableFuture<String> addEntity(TrainsStationsEntity<Integer, Integer> entity) {
         return CompletableFuture.supplyAsync(() -> {
-            try {
-                ttService.executeCreate(entity);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            ttService.executeCreate(entity);
             return "Succesfully added " + entity + " !";
         });
     }
@@ -41,11 +36,7 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
     @Override
     public CompletableFuture<String> deleteEntity(Pair<Integer, Integer> integerIntegerPair) {
         return CompletableFuture.supplyAsync(() -> {
-            try {
-                ttService.executeDelete(integerIntegerPair);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            ttService.executeDelete(integerIntegerPair);
             return "Succesfully deleted time table with ids " + integerIntegerPair + " !";
         });
     }
@@ -53,11 +44,7 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
     @Override
     public CompletableFuture<String> updateEntity(TrainsStationsEntity<Integer, Integer> entity) {
         return CompletableFuture.supplyAsync(() -> {
-            try {
-                ttService.executeUpdate(entity);
-            } catch (IOException e) {
-                return e.getMessage();
-            }
+            ttService.executeUpdate(entity);
             return "Succesfully updated " + entity + " !";
         });
     }

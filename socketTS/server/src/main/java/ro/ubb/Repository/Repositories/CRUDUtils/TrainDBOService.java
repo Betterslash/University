@@ -35,7 +35,7 @@ public class TrainDBOService extends DBOServices<Integer, Train> {
 
     /**
      * adds a train in the database
-     * @param entity
+     * @param entity entity to be saved
      */
     @Override
     public void saveEntity(Train entity) {
@@ -55,7 +55,7 @@ public class TrainDBOService extends DBOServices<Integer, Train> {
 
     /**
      * deletes a train from the database
-     * @param id
+     * @param id id of the deleted entity
      */
     @Override
     public void deleteEntity(Integer id) {
@@ -73,7 +73,7 @@ public class TrainDBOService extends DBOServices<Integer, Train> {
 
     /**
      * updates a train in the database
-     * @param entity
+     * @param entity entity to be updated
      */
     @Override
     public void updateEntity(Train entity) {

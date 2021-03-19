@@ -1,7 +1,6 @@
 package ro.ubb.Services;
 
 
-import java.io.IOException;
 import java.util.Set;
 
 /**
@@ -17,15 +16,15 @@ public interface Service<K, T> {
     /**
      * @param object create and store an object
      */
-    void executeCreate(T object) throws IOException;
+    void executeCreate(T object);
 
     /**
      * @param object updates an object in the repository
      */
-    void executeUpdate(T object) throws IOException;
+    void executeUpdate(T object);
 
     /**
      * @param id deletes an element with the specified id
      */
-    void executeDelete(K id) throws IOException;
+    void executeDelete(K id);
 }
