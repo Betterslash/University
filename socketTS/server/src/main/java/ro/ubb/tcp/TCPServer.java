@@ -9,17 +9,9 @@ import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.Repository.IRepository;
-import ro.ubb.Repository.Repositories.CRUDRepository;
-import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
-import ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService;
-import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
-import ro.ubb.Services.StationService;
-import ro.ubb.Services.TrainService;
-import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
@@ -38,25 +30,13 @@ public class TCPServer {
     private final ExecutorService executorService;
     private final int port;
     private final Map<String, UnaryOperator<Message>> methodHandlers;
-    private final TrainService trainService;
-    private final StationService stationService;
     private final ITransferService<Integer, Train> transferTrainService;
     private final ITransferService<Integer, Station> transferStationService;
     private final ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     public TCPServer(ExecutorService executorService, int port) {
-        IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
-        TrainService trainService = new TrainService(trainIRepository);
-        IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
-        StationService stationService = new StationService(stationIRepository);
-        IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttRepository = new CRUDRepository<>(new TimeTableDBOService());
-        TrainsStationsService trainsStationsService = new TrainsStationsService(ttRepository);
-        ITransferService<Integer, Train> transferTrainService = new TrainTransferService(executorService, trainService);
-        ITransferService<Integer, Station> transferStationService = new StationTransferService(executorService, stationService);
-        this.transferTrainService = transferTrainService;
-        this.transferStationService = transferStationService;
-        this.ttTransferService = new TimeTableTransferService(executorService, trainsStationsService);
-        this.trainService = trainService;
-        this.stationService = stationService;
+        this.transferTrainService = new TrainTransferService(executorService);
+        this.transferStationService = new StationTransferService(executorService);
+        this.ttTransferService = new TimeTableTransferService(executorService);
         this.executorService = executorService;
         this.port = port;
         this.methodHandlers = new HashMap<>();
@@ -111,24 +91,18 @@ public class TCPServer {
             return getResponse(response);
         });
     }
-    private static Message getResponse(CompletableFuture<String> res) {
-        try {
-            String response = res.get();
-            return new Message(new Header(StatusCodes.OK, "Succes"), response);
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
-            return new Message(new Header(StatusCodes.SERVER_ERROR, "Error"), e.getMessage());
-        }
+    private static Message getResponse(CompletableFuture<String> res){
+        String response = res.join();
+        return new Message(new Header(StatusCodes.OK, "Succes"), response);
     }
 
     public void startServer() {
-
         try (var serverSocket = new ServerSocket(this.port)) {
             System.out.println("Server started, waiting for clients...");
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("client connected");
-                executorService.submit(new ClientHandler(clientSocket));
+                CompletableFuture.runAsync(new ClientHandler(clientSocket));
             }
 
         } catch (IOException e) {

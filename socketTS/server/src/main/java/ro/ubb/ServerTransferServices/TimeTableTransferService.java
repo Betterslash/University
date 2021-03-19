@@ -3,6 +3,9 @@ package ro.ubb.ServerTransferServices;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Exceptions.DBOServiceException;
 import ro.ubb.Model.TrainsStationsEntity;
+import ro.ubb.Repository.IRepository;
+import ro.ubb.Repository.Repositories.CRUDRepository;
+import ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService;
 import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
@@ -12,8 +15,9 @@ import java.util.concurrent.ExecutorService;
 public class TimeTableTransferService implements ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
     private final ExecutorService executorService;
     private final TrainsStationsService ttService;
-    public TimeTableTransferService(ExecutorService executorService, TrainsStationsService ttService) {
-        this.ttService = ttService;
+    public TimeTableTransferService(ExecutorService executorService) {
+        IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttRepository = new CRUDRepository<>(new TimeTableDBOService());
+        this.ttService = new TrainsStationsService(ttRepository);
         this.executorService = executorService;
     }
     @Override
