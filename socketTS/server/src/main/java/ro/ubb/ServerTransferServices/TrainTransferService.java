@@ -20,7 +20,6 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
         return CompletableFuture.supplyAsync(() -> this.trainService.getAllEntities().stream()
                 .map(Train::toString)
                 .reduce((a ,b) -> a + "\n" + b).orElse(""));
-
     }
 
     @Override

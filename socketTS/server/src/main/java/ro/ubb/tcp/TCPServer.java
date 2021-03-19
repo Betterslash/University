@@ -1,10 +1,12 @@
 package ro.ubb.tcp;
 
 import lombok.Data;
+import lombok.SneakyThrows;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.Model.CustomADT.Pair;
+import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
@@ -22,6 +24,7 @@ import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.HashMap;
@@ -78,7 +81,7 @@ public class TCPServer {
             return getResponse(res);
         });
         this.methodHandlers.put(ITransferService.DELETE_TRAIN_ENTITY, request -> {
-            CompletableFuture<String> res = transferTrainService.deleteEntity(Integer.parseInt(request.getBody()));
+            CompletableFuture<String> res = transferTrainService.deleteEntity(Integer.parseInt(request.getBody().strip()));
             return getResponse(res);
         });
         this.methodHandlers.put(ITransferService.ADD_STATION_ENTITY, request -> {
@@ -90,7 +93,7 @@ public class TCPServer {
             return getResponse(res);
         });
         this.methodHandlers.put(ITransferService.DELETE_STATION_ENTITY, request -> {
-            CompletableFuture<String> res = transferStationService.deleteEntity(Integer.parseInt(request.getBody()));
+            CompletableFuture<String> res = transferStationService.deleteEntity(Integer.parseInt(request.getBody().strip()));
             return getResponse(res);
         });
         this.methodHandlers.put(ITransferService.GET_TT_ENTITIES, request -> {
@@ -102,7 +105,7 @@ public class TCPServer {
             return getResponse(response);
         });
         this.methodHandlers.put(ITransferService.DELETE_TT_ENTITY, request -> {
-            CompletableFuture<String> response = this.ttTransferService.deleteEntity(Pair.parsePair(request.getBody()));
+            CompletableFuture<String> response = this.ttTransferService.deleteEntity(Pair.parsePair(request.getBody().strip()));
             return getResponse(response);
         });
         this.methodHandlers.put(ITransferService.UPDATE_TT_ENTITY, request -> {
@@ -113,10 +116,10 @@ public class TCPServer {
     private static Message getResponse(CompletableFuture<String> res) {
         try {
             String response = res.get();
-            return new Message(new Header(StatusCodes.OK, ""), response);
+            return new Message(new Header(StatusCodes.OK, "Succes"), response);
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
-            return new Message(new Header(StatusCodes.SERVER_ERROR, ""), e.getMessage());
+            return new Message(new Header(StatusCodes.SERVER_ERROR, "Error"), e.getMessage());
         }
     }
 
@@ -145,7 +148,7 @@ public class TCPServer {
         @Override
         public void run() {
             try (var is = socket.getInputStream();
-                 var os = socket.getOutputStream()) {
+                 var os  = socket.getOutputStream()) {
 
                 //read the request (of type Message) from client
                 Message request = new Message();
@@ -160,8 +163,15 @@ public class TCPServer {
                 response.writeTo(os);
                 System.out.println("response sent to client");
 
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                try {
+                    var os = socket.getOutputStream();
+                    Message message = new Message(new Header(StatusCodes.SERVER_ERROR, "Error"), "Internal server failure!");
+                    message.writeTo(os);
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+                throw new TCPServerException("Server f**d up");
             }
         }
     }

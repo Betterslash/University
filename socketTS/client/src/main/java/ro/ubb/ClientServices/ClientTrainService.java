@@ -44,7 +44,7 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
     public CompletableFuture<String> deleteEntity(Integer integer) {
         return CompletableFuture.supplyAsync(() -> {
             Message req = new Message();
-            req.setBody(integer.toString());
+            req.setBody(integer.toString() + LINE_SEPARATOR);
             req.setHeader(new Header(StatusCodes.OK, ITransferService.DELETE_TRAIN_ENTITY));
             Message res = tcpClient.sendAndReceive(req);
             return res.getBody();
