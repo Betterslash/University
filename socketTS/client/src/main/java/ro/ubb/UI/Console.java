@@ -68,6 +68,16 @@ public class Console {
                             default -> throw new IllegalStateException("Unexpected value: " + choice);
                         }
                     }
+                    case UIPrinter.FEATURE_CONSTANT -> {
+                        UIPrinter.printFeatureMenu();
+                        choice = scanner.nextLine();
+                        switch (choice){
+                            case "1" -> resultFuture = this.ttTransferService.getTrainsPassingEveryStation();
+                            case "2" -> resultFuture = this.ttTransferService.getStationsPassedByEveryTrain();
+                            case "3" -> resultFuture = this.ttTransferService.getMostTraveledStation();
+                            default -> throw new IllegalStateException("Unexpected value: " + choice);
+                        }
+                    }
                     case UIPrinter.EXIT_VALUE -> running = false;
                     default -> throw new IllegalStateException("Next time please give a valid option!");
                 }

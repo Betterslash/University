@@ -9,9 +9,15 @@ import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
+import ro.ubb.Repository.IRepository;
+import ro.ubb.Repository.Repositories.CRUDRepository;
+import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
+import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
+import ro.ubb.Services.StationService;
+import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
@@ -20,7 +26,6 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.function.UnaryOperator;
 
@@ -34,9 +39,13 @@ public class TCPServer {
     private final ITransferService<Integer, Station> transferStationService;
     private final ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     public TCPServer(ExecutorService executorService, int port) {
-        this.transferTrainService = new TrainTransferService(executorService);
-        this.transferStationService = new StationTransferService(executorService);
-        this.ttTransferService = new TimeTableTransferService(executorService);
+        IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
+        TrainService trainService = new TrainService(trainIRepository);
+        this.transferTrainService = new TrainTransferService(executorService, trainService);
+        IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
+        StationService stationService = new StationService(stationIRepository);
+        this.transferStationService = new StationTransferService(executorService, stationService);
+        this.ttTransferService = new TimeTableTransferService(executorService, stationService.getAllEntities(), trainService.getAllEntities());
         this.executorService = executorService;
         this.port = port;
         this.methodHandlers = new HashMap<>();
@@ -90,6 +99,19 @@ public class TCPServer {
             CompletableFuture<String> response = this.ttTransferService.updateEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
             return getResponse(response);
         });
+        this.methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getTrainsPassingEveryStation();
+            return getResponse(response);
+        });
+        this.methodHandlers.put(ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getStationsPassedByEveryTrain();
+            return getResponse(response);
+        });
+        this.methodHandlers.put(ITransferService.GET_MOST_TRAVELED_STATION, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getMostTraveledStation();
+            return getResponse(response);
+        });
+
     }
     private static Message getResponse(CompletableFuture<String> res){
         String response = res.join();

@@ -61,4 +61,19 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
             return res.getBody();
         });
     }
+
+    @Override
+    public CompletableFuture<String> getTrainsPassingEveryStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getMostTraveledStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getStationsPassedByEveryTrain() {
+        return null;
+    }
 }

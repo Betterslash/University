@@ -55,4 +55,32 @@ public class TimeTableService implements ITransferService<Pair<Integer, Integer>
             return response.getBody();
         });
     }
+
+    @Override
+    public CompletableFuture<String> getTrainsPassingEveryStation() {
+        return CompletableFuture.supplyAsync(() -> {
+            Message request = new Message(new Header(StatusCodes.OK, ITransferService.GET_TRAINS_PASSING_EVERY_STATION), "");
+            Message response = tcpClient.sendAndReceive(request);
+            return response.getBody();
+        });
+    }
+
+    @Override
+    public CompletableFuture<String> getMostTraveledStation() {
+        return CompletableFuture.supplyAsync(() -> {
+            Message request = new Message(new Header(StatusCodes.OK, ITransferService.GET_MOST_TRAVELED_STATION), "");
+            Message response = tcpClient.sendAndReceive(request);
+            return response.getBody();
+        });
+    }
+
+    @Override
+    public CompletableFuture<String> getStationsPassedByEveryTrain() {
+        return CompletableFuture.supplyAsync(() -> {
+            Message request = new Message(new Header(StatusCodes.OK, ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN), "");
+            Message response = tcpClient.sendAndReceive(request);
+            return response.getBody();
+        });
+    }
+
 }

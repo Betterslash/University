@@ -1,9 +1,6 @@
 package ro.ubb.ServerTransferServices;
 
 import ro.ubb.Model.Train;
-import ro.ubb.Repository.IRepository;
-import ro.ubb.Repository.Repositories.CRUDRepository;
-import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
@@ -13,9 +10,8 @@ import java.util.concurrent.ExecutorService;
 public class TrainTransferService implements ITransferService<Integer, Train> {
     private final ExecutorService executorService;
     private final TrainService trainService;
-    public TrainTransferService(ExecutorService executorService) {
-        IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
-        this.trainService = new TrainService(trainIRepository);
+    public TrainTransferService(ExecutorService executorService, TrainService trainService) {
+        this.trainService = trainService;
         this.executorService = executorService;
     }
 
@@ -47,5 +43,20 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
         return CompletableFuture.supplyAsync(() -> {this.trainService.executeUpdate(entity);
         return "Train " + entity.toString() + " was updated !";});
+    }
+
+    @Override
+    public CompletableFuture<String> getTrainsPassingEveryStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getMostTraveledStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getStationsPassedByEveryTrain() {
+        return null;
     }
 }
