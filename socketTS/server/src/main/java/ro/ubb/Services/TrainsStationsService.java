@@ -3,13 +3,12 @@ package ro.ubb.Services;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
 import ro.ubb.Model.Exceptions.ValidatorException;
+import ro.ubb.Model.Station;
+import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Repository.IRepository;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -20,9 +19,14 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
 {
     //TODO - MULTIPLE REPOSITORIES
     private static IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository = null;
-    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository)
+    private final Set<Station> stations;
+    private final Set<Train> trains;
+    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository,
+                                 Set<Station> stations, Set<Train> trains)
     {
         TrainsStationsService.repository = repository;
+        this.stations = stations;
+        this.trains = trains;
     }
 
     /**
@@ -69,14 +73,18 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
     /**
      * @return the most visited station id
      */
-    public static Integer getMostTraveledStation() {
+    public Set<Station> getMostTraveledStation() {
         Map.Entry<Integer, Integer> maxEntry = initializeMap().entrySet()
                 .stream()
                 .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TrainServiceException("Couldn't get most travelled stations!"));
-        return maxEntry.getKey();
+        Integer mostTraveledStationID = maxEntry.getKey();
+        Set<Station> mostTraveledStationSet = this.stations.stream()
+                                                    .filter(e-> e.getId().equals(mostTraveledStationID))
+                                                    .collect(Collectors.toSet());
+        return mostTraveledStationSet;
     }
 
-    private static Map<Integer, Integer> initializeMap() {
+    private Map<Integer, Integer> initializeMap() {
         Map<Integer, Integer> freqArray = new HashMap<>();
         repository.findAll().forEach(e -> freqArray.put(e.getId().getLast(), 0));
         repository.findAll().forEach(e ->
@@ -91,7 +99,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
      * @param numberOfTrains number of trains to be checked
      * @return the set of stations which are passed by every train
      */
-    public static Set<Integer> getStationsPassedByEveryTrain(Integer numberOfTrains) {
+    public Set<Integer> getStationsPassedByNumberOfTrain(Integer numberOfTrains) {
         Map<Integer, Integer> freqArr = initializeMap();
         return freqArr.keySet()
                 .stream()
@@ -99,12 +107,20 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .collect(Collectors.toSet());
     }
 
+    public Set<Station> getStationsPassedByEveryTrain()
+    {
+        Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(this.trains.size());
+        Set<Station> result = new HashSet<>();
+        this.stations.forEach(e -> {if (stationIDs.contains(e.getId())) result.add(e);});
+        return result;
+    }
+
     /**
      *
      * @param stationNumber stations to be checked
      * @return the set of trains which pass every station
      */
-    public static Set<Integer> getTrainsPassingEveryStation(Integer stationNumber) {
+    public Set<Integer> getTrainsPassingSpecifiedNumberOfStations(Integer stationNumber) {
         Map<Integer, Integer> freqArray = new HashMap<>();
         repository.findAll().forEach(e -> freqArray.put(e.getId().getFirst(), 0));
         repository.findAll().forEach(e -> {Integer currentValue = freqArray.get(e.getId().getFirst());
@@ -114,5 +130,13 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .stream()
                 .filter(integer -> (freqArray.get(integer).equals(stationNumber)))
                 .collect(Collectors.toSet());
+    }
+
+    public Set<Train> getTrainsPassingEveryStation()
+    {
+        Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(this.stations.size());
+        Set<Train> result = new HashSet<>();
+        this.trains.forEach(e -> {if (trainIDs.contains(e.getId())) result.add(e);});
+        return result;
     }
 }

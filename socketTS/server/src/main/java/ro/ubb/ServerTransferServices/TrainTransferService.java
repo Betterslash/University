@@ -1,9 +1,6 @@
 package ro.ubb.ServerTransferServices;
 
 import ro.ubb.Model.Train;
-import ro.ubb.Repository.IRepository;
-import ro.ubb.Repository.Repositories.CRUDRepository;
-import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
@@ -43,5 +40,20 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
     public CompletableFuture<String> updateEntity(Train entity) {
         return CompletableFuture.supplyAsync(() -> {this.trainService.executeUpdate(entity);
         return "Train " + entity.toString() + " was updated !";});
+    }
+
+    @Override
+    public CompletableFuture<String> getTrainsPassingEveryStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getMostTraveledStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getStationsPassedByEveryTrain() {
+        return null;
     }
 }

@@ -2,9 +2,6 @@ package ro.ubb.ServerTransferServices;
 
 import ro.ubb.Model.Exceptions.DBOServiceException;
 import ro.ubb.Model.Station;
-import ro.ubb.Repository.IRepository;
-import ro.ubb.Repository.Repositories.CRUDRepository;
-import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
 import ro.ubb.Services.StationService;
 import ro.ubb.TransferServices.ITransferService;
 
@@ -17,6 +14,11 @@ public class StationTransferService implements ITransferService<Integer, Station
     public StationTransferService() {
         IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
         this.stationService  = new StationService(stationIRepository);
+    }
+
+    public StationService getStationService()
+    {
+        return this.stationService;
     }
 
     @Override
@@ -51,5 +53,20 @@ public class StationTransferService implements ITransferService<Integer, Station
             this.stationService.executeUpdate(entity);
             return "Succesfully updated " + entity + " !";
         });
+    }
+
+    @Override
+    public CompletableFuture<String> getTrainsPassingEveryStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getMostTraveledStation() {
+        return null;
+    }
+
+    @Override
+    public CompletableFuture<String> getStationsPassedByEveryTrain() {
+        return null;
     }
 }

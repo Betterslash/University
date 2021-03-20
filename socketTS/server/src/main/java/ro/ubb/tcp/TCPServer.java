@@ -9,9 +9,15 @@ import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
+import ro.ubb.Repository.IRepository;
+import ro.ubb.Repository.Repositories.CRUDRepository;
+import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
+import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
+import ro.ubb.Services.StationService;
+import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
@@ -85,6 +91,19 @@ public class TCPServer {
             CompletableFuture<String> response = this.ttTransferService.updateEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
             return getResponse(response);
         });
+        this.methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getTrainsPassingEveryStation();
+            return getResponse(response);
+        });
+        this.methodHandlers.put(ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getStationsPassedByEveryTrain();
+            return getResponse(response);
+        });
+        this.methodHandlers.put(ITransferService.GET_MOST_TRAVELED_STATION, request -> {
+            CompletableFuture<String> response = this.ttTransferService.getMostTraveledStation();
+            return getResponse(response);
+        });
+
     }
     private static Message getResponse(CompletableFuture<String> res){
         String response = res.join();

@@ -15,5 +15,21 @@
       <module name="socketTS.server.test" target="15" />
       <module name="socketTS.test" target="15" />
     </bytecodeTargetLevel>
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.16/6dc192c7f93ec1853f70d59d8a6dcf94eb42866/lombok-1.18.16.jar" />
+        </processorPath>
+        <module name="socketTS.main" />
+        <module name="socketTS.client.main" />
+        <module name="socketTS.test" />
+        <module name="socketTS.common.main" />
+        <module name="socketTS.server.test" />
+        <module name="socketTS.common.test" />
+        <module name="socketTS.server.main" />
+        <module name="socketTS.client.test" />
+      </profile>
+    </annotationProcessing>
   </component>
 </project>
