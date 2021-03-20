@@ -9,16 +9,14 @@ import ro.ubb.Services.StationService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 
 public class StationTransferService implements ITransferService<Integer, Station> {
-    private final ExecutorService executorService;
+
     private final StationService stationService;
 
-    public StationTransferService(ExecutorService executorService) {
+    public StationTransferService() {
         IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
         this.stationService  = new StationService(stationIRepository);
-        this.executorService = executorService;
     }
 
     @Override

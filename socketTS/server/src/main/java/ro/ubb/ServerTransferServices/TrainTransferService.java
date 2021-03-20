@@ -8,15 +8,12 @@ import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 
 public class TrainTransferService implements ITransferService<Integer, Train> {
-    private final ExecutorService executorService;
     private final TrainService trainService;
-    public TrainTransferService(ExecutorService executorService) {
+    public TrainTransferService() {
         IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
         this.trainService = new TrainService(trainIRepository);
-        this.executorService = executorService;
     }
 
     @Override
@@ -44,7 +41,6 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     @Override
     public CompletableFuture<String> updateEntity(Train entity) {
-
         return CompletableFuture.supplyAsync(() -> {this.trainService.executeUpdate(entity);
         return "Train " + entity.toString() + " was updated !";});
     }

@@ -10,15 +10,12 @@ import ro.ubb.Services.TrainsStationsService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 
 public class TimeTableTransferService implements ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
-    private final ExecutorService executorService;
     private final TrainsStationsService ttService;
-    public TimeTableTransferService(ExecutorService executorService) {
+    public TimeTableTransferService() {
         IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttRepository = new CRUDRepository<>(new TimeTableDBOService());
         this.ttService = new TrainsStationsService(ttRepository);
-        this.executorService = executorService;
     }
     @Override
     public CompletableFuture<String> getEntities() {

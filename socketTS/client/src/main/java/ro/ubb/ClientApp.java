@@ -11,23 +11,16 @@ import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.Console;
 import ro.ubb.tcp.TcpClient;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 public class ClientApp {
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(
-                Runtime.getRuntime().availableProcessors()
-        );
 
-        TcpClient tcpClient = new TcpClient(executorService);
-        ITransferService<Integer, Train> iTransferService = new ClientTrainService(executorService, tcpClient);
-        ITransferService<Integer, Station> stationTransferService = new ClientStationService(executorService, tcpClient);
-        ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService = new TimeTableService(executorService, tcpClient);
+        TcpClient tcpClient = new TcpClient();
+        ITransferService<Integer, Train> iTransferService = new ClientTrainService(tcpClient);
+        ITransferService<Integer, Station> stationTransferService = new ClientStationService(tcpClient);
+        ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService = new TimeTableService(tcpClient);
         Console console = new Console(iTransferService, stationTransferService, ttTransferService);
         console.runConsole();
         System.out.println("bye client");
 
-        executorService.shutdown();
     }
 }

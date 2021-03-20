@@ -6,13 +6,10 @@ import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
 import java.net.Socket;
-import java.util.concurrent.ExecutorService;
 
 public class TcpClient {
-    private ExecutorService executorService;
 
-    public TcpClient(ExecutorService executorService) {
-        this.executorService = executorService;
+    public TcpClient() {
     }
 
     public Message sendAndReceive(Message request) {

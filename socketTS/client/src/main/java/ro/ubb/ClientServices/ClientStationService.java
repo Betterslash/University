@@ -8,14 +8,11 @@ import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.tcp.TcpClient;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 
 public class ClientStationService implements ITransferService<Integer, Station> {
-    private final ExecutorService executorService;
     private final TcpClient tcpClient;
 
-    public ClientStationService(ExecutorService executorService, TcpClient tcpClient) {
-        this.executorService = executorService;
+    public ClientStationService(TcpClient tcpClient) {
         this.tcpClient = tcpClient;
     }
 

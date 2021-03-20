@@ -20,73 +20,68 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
 import java.util.function.UnaryOperator;
 
 @Data
 public class TCPServer {
 
-    private final ExecutorService executorService;
     private final int port;
-    private final Map<String, UnaryOperator<Message>> methodHandlers;
+    private static final Map<String, UnaryOperator<Message>> methodHandlers  = new HashMap<>();
     private final ITransferService<Integer, Train> transferTrainService;
     private final ITransferService<Integer, Station> transferStationService;
     private final ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
-    public TCPServer(ExecutorService executorService, int port) {
-        this.transferTrainService = new TrainTransferService(executorService);
-        this.transferStationService = new StationTransferService(executorService);
-        this.ttTransferService = new TimeTableTransferService(executorService);
-        this.executorService = executorService;
+    public TCPServer( int port) {
+        this.transferTrainService = new TrainTransferService();
+        this.transferStationService = new StationTransferService();
+        this.ttTransferService = new TimeTableTransferService();
         this.port = port;
-        this.methodHandlers = new HashMap<>();
     }
     public void initializeHandlers(){
-        this.methodHandlers.put(ITransferService.GET_TRAIN_ENTITIES, request -> {
+        methodHandlers.put(ITransferService.GET_TRAIN_ENTITIES, request -> {
             CompletableFuture<String> res = transferTrainService.getEntities();
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.GET_STATION_ENTITIES, request -> {
+        methodHandlers.put(ITransferService.GET_STATION_ENTITIES, request -> {
             CompletableFuture<String> res = transferStationService.getEntities();
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.ADD_TRAIN_ENTITY, request -> {
+        methodHandlers.put(ITransferService.ADD_TRAIN_ENTITY, request -> {
             CompletableFuture<String>res = transferTrainService.addEntity(Train.parseTrain(request.getBody()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.UPDATE_TRAIN_ENTITY, request -> {
+        methodHandlers.put(ITransferService.UPDATE_TRAIN_ENTITY, request -> {
             CompletableFuture<String> res = transferTrainService.updateEntity(Train.parseTrain(request.getBody()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.DELETE_TRAIN_ENTITY, request -> {
+        methodHandlers.put(ITransferService.DELETE_TRAIN_ENTITY, request -> {
             CompletableFuture<String> res = transferTrainService.deleteEntity(Integer.parseInt(request.getBody().strip()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.ADD_STATION_ENTITY, request -> {
+        methodHandlers.put(ITransferService.ADD_STATION_ENTITY, request -> {
             CompletableFuture<String>res = transferStationService.addEntity(Station.parseStation(request.getBody()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.UPDATE_STATION_ENTITY, request -> {
+        methodHandlers.put(ITransferService.UPDATE_STATION_ENTITY, request -> {
             CompletableFuture<String> res = transferStationService.updateEntity(Station.parseStation(request.getBody()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.DELETE_STATION_ENTITY, request -> {
+        methodHandlers.put(ITransferService.DELETE_STATION_ENTITY, request -> {
             CompletableFuture<String> res = transferStationService.deleteEntity(Integer.parseInt(request.getBody().strip()));
             return getResponse(res);
         });
-        this.methodHandlers.put(ITransferService.GET_TT_ENTITIES, request -> {
+        methodHandlers.put(ITransferService.GET_TT_ENTITIES, request -> {
             CompletableFuture<String> response = this.ttTransferService.getEntities();
             return getResponse(response);
         });
-        this.methodHandlers.put(ITransferService.ADD_TT_ENTITY, request -> {
+        methodHandlers.put(ITransferService.ADD_TT_ENTITY, request -> {
             CompletableFuture<String> response = this.ttTransferService.addEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
             return getResponse(response);
         });
-        this.methodHandlers.put(ITransferService.DELETE_TT_ENTITY, request -> {
+        methodHandlers.put(ITransferService.DELETE_TT_ENTITY, request -> {
             CompletableFuture<String> response = this.ttTransferService.deleteEntity(Pair.parsePair(request.getBody().strip()));
             return getResponse(response);
         });
-        this.methodHandlers.put(ITransferService.UPDATE_TT_ENTITY, request -> {
+        methodHandlers.put(ITransferService.UPDATE_TT_ENTITY, request -> {
             CompletableFuture<String> response = this.ttTransferService.updateEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
             return getResponse(response);
         });
@@ -110,7 +105,7 @@ public class TCPServer {
         }
     }
 
-    private class ClientHandler implements Runnable {
+    private static class ClientHandler implements Runnable {
         private final Socket socket;
 
         public ClientHandler(Socket socket) {

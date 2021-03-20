@@ -9,14 +9,11 @@ import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.tcp.TcpClient;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutorService;
 
 public class TimeTableService implements ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
-    private final ExecutorService executorService;
     private final TcpClient tcpClient;
 
-    public TimeTableService(ExecutorService executorService, TcpClient tcpClient) {
-        this.executorService = executorService;
+    public TimeTableService(TcpClient tcpClient) {
         this.tcpClient = tcpClient;
     }
 
