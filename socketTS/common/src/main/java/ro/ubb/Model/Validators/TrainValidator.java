@@ -1,6 +1,6 @@
 package ro.ubb.Model.Validators;
 
-import ro.ubb.Model.Exceptions.TrainException;
+import ro.ubb.Model.Exceptions.DomainExceptions.TrainException;
 import ro.ubb.Model.Train;
 
 import java.time.LocalDate;

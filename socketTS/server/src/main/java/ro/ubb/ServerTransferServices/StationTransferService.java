@@ -1,16 +1,16 @@
 package ro.ubb.ServerTransferServices;
 
-import ro.ubb.Model.Exceptions.DBOServiceException;
+import ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException;
 import ro.ubb.Model.Station;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
 import ro.ubb.Services.StationService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.util.concurrent.CompletableFuture;
 
-public class StationTransferService extends AbstractServerTransferServices<Integer, Station> {
+public class StationTransferService extends AbstractTransferServices<Integer, Station> {
     private final StationService stationService;
 
     public StationTransferService() {

@@ -9,12 +9,15 @@ import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
+import ro.ubb.Parsers.StationParser;
+import ro.ubb.Parsers.TimeTableParser;
+import ro.ubb.Parsers.TrainParser;
 import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
 import ro.ubb.TransferServices.ITransferService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -29,8 +32,8 @@ public class TCPServer {
 
     private final int port;
     private static final Map<String, UnaryOperator<Message>> methodHandlers  = new HashMap<>();
-    private final AbstractServerTransferServices<Integer, Train> transferTrainService;
-    private final AbstractServerTransferServices<Integer, Station> transferStationService;
+    private final AbstractTransferServices<Integer, Train> transferTrainService;
+    private final AbstractTransferServices<Integer, Station> transferStationService;
     private final AbstractFeaturesTransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     public TCPServer( int port) {
         this.transferTrainService = new TrainTransferService();
@@ -40,9 +43,9 @@ public class TCPServer {
     }
 
     public void initializeHandlers(){
-        new CRUDInitializer<Integer, Train>().initialize(methodHandlers, this.transferTrainService);
-        new CRUDInitializer<Integer, Station>().initialize(methodHandlers, this.transferStationService);
-        new CRUDInitializer<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>().initialize(methodHandlers, this.ttTransferService);
+        new CRUDInitializer<Integer, Train>().initialize(methodHandlers, this.transferTrainService, new TrainParser());
+        new CRUDInitializer<Integer, Station>().initialize(methodHandlers, this.transferStationService, new StationParser());
+        new CRUDInitializer<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>().initialize(methodHandlers, this.ttTransferService, new TimeTableParser());
         methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
             CompletableFuture<String> response = this.ttTransferService.getTrainsPassingEveryStation();
             return getResponse(response);
@@ -55,9 +58,9 @@ public class TCPServer {
             CompletableFuture<String> response = this.ttTransferService.getMostTraveledStation();
             return getResponse(response);
         });
-
     }
-    public static Message getResponse(CompletableFuture<String> res){
+    public static Message getResponse(CompletableFuture<String> res) {
+        while (!res.isDone()){}
         String response = res.join();
         return new Message(new Header(StatusCodes.OK, "Succes"), response);
     }
@@ -68,7 +71,7 @@ public class TCPServer {
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("client connected");
-                CompletableFuture.runAsync(new ClientHandler(clientSocket));
+                CompletableFuture.runAsync(new ClientHandler(clientSocket)).join();
             }
 
         } catch (IOException e) {

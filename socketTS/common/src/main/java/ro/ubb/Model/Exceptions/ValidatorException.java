@@ -1,5 +1,7 @@
 package ro.ubb.Model.Exceptions;
 
+import ro.ubb.Model.Exceptions.DomainExceptions.DomainException;
+
 public class ValidatorException extends DomainException {
     public ValidatorException(String message) {
         super(message);

@@ -4,7 +4,7 @@ import ro.ubb.Model.BaseEntity;
 
 import java.util.concurrent.CompletableFuture;
 
-public abstract class AbstractFeaturesTransferService<ID, E extends BaseEntity<ID>> extends AbstractServerTransferServices<ID, E> {
+public abstract class AbstractFeaturesTransferService<ID, E extends BaseEntity<ID>> extends AbstractTransferServices<ID, E> {
     protected AbstractFeaturesTransferService(String service_signature) {
         super(service_signature);
     }

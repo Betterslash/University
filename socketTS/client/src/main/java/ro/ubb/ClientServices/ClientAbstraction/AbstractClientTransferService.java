@@ -4,12 +4,12 @@ import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.Model.BaseEntity;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 import ro.ubb.tcp.TcpClient;
 
 import java.util.concurrent.CompletableFuture;
 
-public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>> extends AbstractServerTransferServices<ID, E> {
+public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>> extends AbstractTransferServices<ID, E> {
 
     protected final TcpClient tcpClient;
 
@@ -25,7 +25,7 @@ public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>
     @Override
     public CompletableFuture<String> getEntities() {
         return CompletableFuture.supplyAsync(() ->{
-            Message request = new Message(new Header(StatusCodes.OK, AbstractServerTransferServices.READ_ENTITIES+this.getSS()), "");
+            Message request = new Message(new Header(StatusCodes.OK, AbstractTransferServices.READ_ENTITIES+this.getSS()), "");
             Message response = this.tcpClient.sendAndReceive(request);
             return response.getBody();
         });
@@ -39,7 +39,7 @@ public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>
     @Override
     public CompletableFuture<String> addEntity(E entity) {
         return CompletableFuture.supplyAsync(() -> {
-            Message request = new Message(new Header(StatusCodes.OK, AbstractServerTransferServices.CREATE_ENTITY+this.getSS()), entity.csvFileFormat());
+            Message request = new Message(new Header(StatusCodes.OK, AbstractTransferServices.CREATE_ENTITY+this.getSS()), entity.csvFileFormat());
             Message response = this.tcpClient.sendAndReceive(request);
             return response.getBody();
         });
@@ -53,7 +53,7 @@ public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>
     @Override
     public CompletableFuture<String> deleteEntity(ID integer) {
         return CompletableFuture.supplyAsync(() -> {
-            Message request = new Message(new Header(StatusCodes.OK, AbstractServerTransferServices.DELETE_ENTITY+this.getSS()), integer.toString() + LINE_SEPARATOR);
+            Message request = new Message(new Header(StatusCodes.OK, AbstractTransferServices.DELETE_ENTITY+this.getSS()), integer.toString() + LINE_SEPARATOR);
             Message response = this.tcpClient.sendAndReceive(request);
             return response.getBody();
         });
@@ -67,7 +67,7 @@ public abstract class AbstractClientTransferService<ID, E extends BaseEntity<ID>
     @Override
     public CompletableFuture<String> updateEntity(E entity) {
         return CompletableFuture.supplyAsync(() -> {
-            Message request = new Message(new Header(StatusCodes.OK, AbstractServerTransferServices.UPDATE_ENTITY +this.getSS()), entity.csvFileFormat());
+            Message request = new Message(new Header(StatusCodes.OK, AbstractTransferServices.UPDATE_ENTITY +this.getSS()), entity.csvFileFormat());
             Message response = this.tcpClient.sendAndReceive(request);
             return response.getBody();
         });

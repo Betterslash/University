@@ -1,6 +1,6 @@
 package ro.ubb.UI.EntityManagers;
 
-import ro.ubb.Model.Exceptions.IdTypeException;
+import ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException;
 import ro.ubb.Model.Station;
 
 import java.io.IOException;

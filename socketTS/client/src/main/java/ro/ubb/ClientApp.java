@@ -9,11 +9,10 @@ import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.Console;
 import ro.ubb.tcp.TcpClient;
 
-import static ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices.*;
+import static ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices.*;
 
 public class ClientApp {
     public static void main(String[] args) {

@@ -1,8 +1,5 @@
 package ro.ubb.Model;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-
 /**
  * @param <ID>
  */
@@ -37,7 +34,4 @@ public abstract class BaseEntity<ID> {
      * @return the proper format of every object inheriting this class to be stored as a csv entry
      */
     public abstract String csvFileFormat();
-    public  abstract Node createNodeFromEntity(Document document);
-
-    public abstract BaseEntity<ID> parseEntity(String body);
 }

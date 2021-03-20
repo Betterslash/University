@@ -1,6 +1,6 @@
 package ro.ubb.Repository.Repositories.CRUDUtils;
 
-import ro.ubb.Model.Exceptions.TrainDBOServiceException;
+import ro.ubb.Model.Exceptions.DBOServiceExceptions.TrainDBOServiceException;
 import ro.ubb.Model.Train;
 
 import java.sql.Date;

@@ -2,14 +2,8 @@ package ro.ubb.Model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import ro.ubb.Model.Validators.TrainValidator;
 
 import java.time.LocalDate;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  *
@@ -57,47 +51,4 @@ public class Train extends BaseEntity<Integer>{
         return this.id+", "+this.trainType+", "+this.trainColor+", "+this.date + "\n";
     }
 
-    /**
-     * creates a Node for XML-File-Format
-     * @param document
-     * @returns the new-created node
-     */
-    @Override
-    public Node createNodeFromEntity(Document document) {
-        Element trainElement = document.createElement("train");
-
-        Element childElement1=document.createElement("id");
-        childElement1.setTextContent(String.valueOf(this.id));
-        trainElement.appendChild(childElement1);
-
-        Element childElement2=document.createElement("type");
-        childElement2.setTextContent(this.trainType);
-        trainElement.appendChild(childElement2);
-
-        Element childElement3=document.createElement("color");
-        childElement3.setTextContent(String.valueOf(this.trainColor));
-        trainElement.appendChild(childElement3);
-
-        Element childElement4=document.createElement("fabricationDate");
-        childElement4.setTextContent(String.valueOf(this.date));
-        trainElement.appendChild(childElement4);
-
-        return trainElement;
-    }
-
-    /**
-     * creates a new Train entity parsing a string
-     * @param csvFormat
-     * @returns the new-created train
-     */
-    public Train parseEntity(String csvFormat){
-        List<String> items = Arrays.asList(csvFormat.split(", "));
-        Integer id = Integer.parseInt(items.get(0));
-        String type = items.get(1);
-        String color = items.get(2);
-        LocalDate localDate = LocalDate.parse(items.get(3).strip());
-        Train train = new Train(id, type, color, localDate);
-        new TrainValidator().validate(train);
-        return train;
-    }
 }

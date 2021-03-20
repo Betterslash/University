@@ -1,4 +1,4 @@
-package ro.ubb.Model.Exceptions;
+package ro.ubb.Model.Exceptions.DBOServiceExceptions;
 
 public class DBOServiceException extends RuntimeException{
     public DBOServiceException(String message) {

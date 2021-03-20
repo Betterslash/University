@@ -2,7 +2,8 @@ package ro.ubb.tcp;
 
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.Model.BaseEntity;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
+import ro.ubb.Parsers.IParser;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -11,26 +12,25 @@ import java.util.function.UnaryOperator;
 import static ro.ubb.tcp.TCPServer.getResponse;
 
 public class CRUDInitializer<ID, E extends BaseEntity<ID>> {
-    @SuppressWarnings("unchecked")
-    public void initialize(Map<String, UnaryOperator<Message>> unaryOperatorMap, AbstractServerTransferServices<ID, E> transferService, E parser){
-        unaryOperatorMap.put(AbstractServerTransferServices.CREATE_ENTITY + transferService.getSS(),
+    public void initialize(Map<String, UnaryOperator<Message>> unaryOperatorMap, AbstractTransferServices<ID, E> transferService, IParser<ID, E> parser){
+        unaryOperatorMap.put(AbstractTransferServices.CREATE_ENTITY + transferService.getSS(),
                 request -> {
-                    CompletableFuture<String> res = transferService.addEntity((E) parser.parseEntity(request.getBody()));
+                    CompletableFuture<String> res = transferService.addEntity(parser.parse(request.getBody()));
                     return getResponse(res);
                 });
-        unaryOperatorMap.put(AbstractServerTransferServices.READ_ENTITIES + transferService.getSS(),
+        unaryOperatorMap.put(AbstractTransferServices.READ_ENTITIES + transferService.getSS(),
                 request -> {
                     CompletableFuture<String> res = transferService.getEntities();
                     return getResponse(res);
                 });
-        unaryOperatorMap.put(AbstractServerTransferServices.UPDATE_ENTITY + transferService.getSS(),
+        unaryOperatorMap.put(AbstractTransferServices.UPDATE_ENTITY + transferService.getSS(),
                 request -> {
-                    CompletableFuture<String> res = transferService.updateEntity((E) parser.parseEntity(request.getBody()));
+                    CompletableFuture<String> res = transferService.updateEntity(parser.parse(request.getBody()));
                     return getResponse(res);
                 });
-        unaryOperatorMap.put(AbstractServerTransferServices.DELETE_ENTITY + transferService.getSS(),
+        unaryOperatorMap.put(AbstractTransferServices.DELETE_ENTITY + transferService.getSS(),
                 request -> {
-                    CompletableFuture<String> res = transferService.deleteEntity(parser.getId());
+                    CompletableFuture<String> res = transferService.deleteEntity(parser.parseID(request.getBody()));
                     return getResponse(res);
                 });
     }

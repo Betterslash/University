@@ -1,24 +1,29 @@
 ro/ubb/Repository/IRepository.java
  ro.ubb.Repository.IRepository
-ro/ubb/tcp/TCPServer.java
- ro.ubb.tcp.TCPServer
- ro.ubb.tcp.TCPServer$ClientHandler
+ro/ubb/Services/TrainService.java
+ ro.ubb.Services.TrainService
 ro/ubb/Repository/Repositories/CRUDUtils/StationDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService
 ro/ubb/ServerTransferServices/StationTransferService.java
  ro.ubb.ServerTransferServices.StationTransferService
 ro/ubb/Services/Service.java
  ro.ubb.Services.Service
-ro/ubb/ServerApp.java
- ro.ubb.ServerApp
+ro/ubb/Parsers/StationParser.java
+ ro.ubb.Parsers.StationParser
+ro/ubb/Parsers/IParser.java
+ ro.ubb.Parsers.IParser
 ro/ubb/ServerTransferServices/TimeTableTransferService.java
  ro.ubb.ServerTransferServices.TimeTableTransferService
+ro/ubb/Parsers/TimeTableParser.java
+ ro.ubb.Parsers.TimeTableParser
 ro/ubb/Repository/Repositories/CRUDUtils/DBOServices.java
  ro.ubb.Repository.Repositories.CRUDUtils.DBOServices
 ro/ubb/Repository/Repositories/CRUDUtils/TrainDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService
 ro/ubb/Repository/Repositories/CRUDUtils/TimeTableDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService
+ro/ubb/Parsers/TrainParser.java
+ ro.ubb.Parsers.TrainParser
 ro/ubb/ServerTransferServices/TrainTransferService.java
  ro.ubb.ServerTransferServices.TrainTransferService
 ro/ubb/Repository/Repositories/CRUDRepository.java
@@ -27,7 +32,10 @@ ro/ubb/Services/TrainsStationsService.java
  ro.ubb.Services.TrainsStationsService
 ro/ubb/Services/StationService.java
  ro.ubb.Services.StationService
-ro/ubb/Services/TrainService.java
- ro.ubb.Services.TrainService
+ro/ubb/tcp/TCPServer.java
+ ro.ubb.tcp.TCPServer
+ ro.ubb.tcp.TCPServer$ClientHandler
+ro/ubb/ServerApp.java
+ ro.ubb.ServerApp
 ro/ubb/tcp/CRUDInitializer.java
  ro.ubb.tcp.CRUDInitializer

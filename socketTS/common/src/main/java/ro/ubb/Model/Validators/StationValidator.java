@@ -1,8 +1,9 @@
 package ro.ubb.Model.Validators;
 
-import ro.ubb.Model.Exceptions.StationException;
+import ro.ubb.Model.Exceptions.DomainExceptions.StationException;
 import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.Station;
+
 import java.util.Optional;
 
 public class StationValidator implements Validator<Station>{

@@ -4,12 +4,12 @@ import ro.ubb.Model.Train;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
 import ro.ubb.Services.TrainService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.util.concurrent.CompletableFuture;
 
-public class TrainTransferService extends AbstractServerTransferServices<Integer, Train> {
+public class TrainTransferService extends AbstractTransferServices<Integer, Train> {
     private final TrainService trainService;
     public TrainTransferService() {
         super(TRAIN_SIGNATURE);

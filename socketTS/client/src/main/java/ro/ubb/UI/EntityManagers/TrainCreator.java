@@ -1,7 +1,7 @@
 package ro.ubb.UI.EntityManagers;
 
-import ro.ubb.Model.Exceptions.IdTypeException;
-import ro.ubb.Model.Exceptions.TimeFormatException;
+import ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException;
+import ro.ubb.Model.Exceptions.DomainExceptions.TimeFormatException;
 import ro.ubb.Model.Train;
 
 import java.io.BufferedReader;
