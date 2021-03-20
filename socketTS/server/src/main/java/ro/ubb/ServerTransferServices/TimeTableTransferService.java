@@ -21,6 +21,10 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         this.ttService = new TrainsStationsService(ttRepository);
     }
 
+    /**
+     *
+     * @returns all objects of type TimeTable
+     */
     @Override
     public CompletableFuture<String> getEntities() {
         return CompletableFuture.supplyAsync(() -> ttService.getAllEntities()
@@ -30,6 +34,11 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         .orElseThrow(() -> new DBOServiceException("Couldn't get entities from time tables table!")));
     }
 
+    /**
+     * adds an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> addEntity(TrainsStationsEntity<Integer, Integer> entity) {
         return CompletableFuture.supplyAsync(() -> {
@@ -38,6 +47,11 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         });
     }
 
+    /**
+     * deletes an entity
+     * @param integerIntegerPair
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> deleteEntity(Pair<Integer, Integer> integerIntegerPair) {
         return CompletableFuture.supplyAsync(() -> {
@@ -46,6 +60,11 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         });
     }
 
+    /**
+     * updates an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> updateEntity(TrainsStationsEntity<Integer, Integer> entity) {
         return CompletableFuture.supplyAsync(() -> {
@@ -54,6 +73,10 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         });
     }
 
+    /**
+     *
+     * @returns message containing the trains that are passing every station
+     */
     @Override
     public CompletableFuture<String> getTrainsPassingEveryStation() {
         return CompletableFuture.supplyAsync(() -> {
@@ -62,6 +85,10 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         });
     }
 
+    /**
+     *
+     * @returns message containing the most traveled station
+     */
     @Override
     public CompletableFuture<String> getMostTraveledStation() {
         return CompletableFuture.supplyAsync(() -> {
@@ -70,6 +97,10 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
         });
     }
 
+    /**
+     *
+     * @returns message containing the stations that are passed by every train
+     */
     @Override
     public CompletableFuture<String> getStationsPassedByEveryTrain() {
         return CompletableFuture.supplyAsync(() -> {

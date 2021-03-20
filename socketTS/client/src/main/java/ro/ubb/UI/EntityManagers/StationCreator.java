@@ -7,6 +7,10 @@ import java.io.IOException;
 
 public class StationCreator extends IEntityCreator<Integer, Station> {
 
+    /**
+     * creates an entity of type Station
+     * @returns the new created station
+     */
     @Override
     public Station createEntity() {
         System.out.println("Id >>");

@@ -58,7 +58,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
 
     /**
      *
-     * @return a set of all routes
+     * @returns a set of all routes
      */
     public Set<TrainsStationsEntity<Integer, Integer>> getAllEntities() {
         Iterable<TrainsStationsEntity<Integer, Integer>> trainsAndStations = repository.findAll();
@@ -66,7 +66,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
     }
 
     /**
-     * @return the most visited station id
+     * @returns the most visited station id
      */
     public Set<Station> getMostTraveledStation() {
         Map.Entry<Integer, Integer> maxEntry = initializeMap().entrySet()
@@ -79,6 +79,10 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
         return mostTraveledStationSet;
     }
 
+    /**
+     * initializes a map
+     * @returns a map(key, value) which has the StationID as key and the number of trains that pass the station as value
+     */
     private Map<Integer, Integer> initializeMap() {
         Map<Integer, Integer> freqArray = new HashMap<>();
         repository.findAll().forEach(e -> freqArray.put(e.getId().getLast(), 0));
@@ -92,7 +96,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
     /**
      *
      * @param numberOfTrains number of trains to be checked
-     * @return the set of stations which are passed by every train
+     * @returns the set of StationIDs which are passed by every train
      */
     public Set<Integer> getStationsPassedByNumberOfTrain(Integer numberOfTrains) {
         Map<Integer, Integer> freqArr = initializeMap();
@@ -102,6 +106,10 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .collect(Collectors.toSet());
     }
 
+    /**
+     *
+     * @returns the set of Stations which are passed by every train
+     */
     public Set<Station> getStationsPassedByEveryTrain()
     {
         Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(TrainService.getTrains().size());
@@ -113,7 +121,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
     /**
      *
      * @param stationNumber stations to be checked
-     * @return the set of trains which pass every station
+     * @returns the set of TrainIDs which pass every station
      */
     public Set<Integer> getTrainsPassingSpecifiedNumberOfStations(Integer stationNumber) {
         Map<Integer, Integer> freqArray = new HashMap<>();
@@ -127,6 +135,10 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .collect(Collectors.toSet());
     }
 
+    /**
+     *
+     * @returns the set of Trains which pass every station
+     */
     public Set<Train> getTrainsPassingEveryStation()
     {
         Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(StationService.getStations().size());

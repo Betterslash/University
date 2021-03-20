@@ -24,6 +24,10 @@ public class StationTransferService implements ITransferService<Integer, Station
         return this.stationService;
     }
 
+    /**
+     *
+     * @returns all objects of type Station
+     */
     @Override
     public CompletableFuture<String> getEntities() {
         return CompletableFuture.supplyAsync(() ->
@@ -34,6 +38,11 @@ public class StationTransferService implements ITransferService<Integer, Station
                     .orElseThrow(() -> new DBOServiceException("Couldn't get entities!")));
     }
 
+    /**
+     * adds an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> addEntity(Station entity) {
         return CompletableFuture.supplyAsync(() -> {
@@ -42,6 +51,11 @@ public class StationTransferService implements ITransferService<Integer, Station
         });
     }
 
+    /**
+     * deletes an entity
+     * @param integer
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> deleteEntity(Integer integer) {
         return CompletableFuture.supplyAsync(() -> {
@@ -50,6 +64,11 @@ public class StationTransferService implements ITransferService<Integer, Station
         });
     }
 
+    /**
+     * updates an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> updateEntity(Station entity) {
         return CompletableFuture.supplyAsync(() ->{

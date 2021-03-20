@@ -12,6 +12,11 @@ public class TcpClient {
     public TcpClient() {
     }
 
+    /**
+     * sends a message through a socket and gets back a response
+     * @param request
+     * @returns the received message from the server
+     */
     public Message sendAndReceive(Message request) {
         try (var socket = new Socket(ITransferService.HOST, ITransferService.PORT);
              var is = socket.getInputStream();

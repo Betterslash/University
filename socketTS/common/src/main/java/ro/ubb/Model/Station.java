@@ -28,6 +28,11 @@ public class Station extends BaseEntity<Integer>{
             this.populationRate = populationRate;
         }
 
+    /**
+     * creates a new Station entity parsing a string
+     * @param body
+     * @returns the new-created station
+     */
     public static Station parseStation(String body) {
         List<String> attrs = Arrays.asList(body.split(", "));
         Integer id = Integer.parseInt(attrs.get(0));
@@ -39,7 +44,7 @@ public class Station extends BaseEntity<Integer>{
     }
 
     /**
-     * @return string representation
+     * @returns string representation
      */
     @Override
     public String toString() {
@@ -50,11 +55,20 @@ public class Station extends BaseEntity<Integer>{
                 '}';
     }
 
+    /**
+     *
+     * @returns the CSV-File-Format of the entity
+     */
     @Override
     public String csvFileFormat() {
         return this.Id+", "+this.stationName +", "+this.populationRate + "\n";
     }
 
+    /**
+     * creates a Node for XML-File-Format
+     * @param document
+     * @returns the new-created node
+     */
     @Override
     public Node createNodeFromEntity(Document document) {
         Element stationElement = document.createElement("station");

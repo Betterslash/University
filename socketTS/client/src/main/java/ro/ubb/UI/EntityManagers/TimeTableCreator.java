@@ -10,6 +10,11 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class TimeTableCreator extends IEntityCreator<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>{
+
+    /**
+     * creates an entity of type TimeTable
+     * @returns the new created timetable
+     */
     @Override
     public TrainsStationsEntity<Integer, Integer> createEntity() {
         int trainID, stationID;

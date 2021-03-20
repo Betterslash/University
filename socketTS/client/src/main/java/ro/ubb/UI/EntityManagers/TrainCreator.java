@@ -10,6 +10,11 @@ import java.io.InputStreamReader;
 import java.time.LocalDate;
 
 public class TrainCreator extends IEntityCreator<Integer, Train> {
+
+    /**
+     * creates an entity of type Train
+     * @returns the new created train
+     */
     @Override
     public Train createEntity() {
         LocalDate localDate;

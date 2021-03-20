@@ -6,6 +6,10 @@ public class UIPrinter {
     public final static String TT_CONSTANT = "3";
     public final static String FEATURE_CONSTANT = "4";
     public final static String EXIT_VALUE = "X";
+
+    /**
+     * prints the main menu of the application
+     */
     public static void printMainMenu(){
         System.out.println("1 -> Trains menu!");
         System.out.println("2 -> Stations menu!");
@@ -13,6 +17,10 @@ public class UIPrinter {
         System.out.println("4 -> Feature menu!");
         System.out.println("X -> Exit!");
     }
+
+    /**
+     * prints the menu that operates with Train entity
+     */
     public static void printTrainMenu(){
         System.out.println("1 -> Get all trains!");
         System.out.println("2 -> Add a train!");
@@ -20,6 +28,10 @@ public class UIPrinter {
         System.out.println("4 -> Delete a train!");
         System.out.println("X -> Back!");
     }
+
+    /**
+     * prints the menu that operates with Station entity
+     */
     public static void printStationMenu(){
         System.out.println("1 -> Get all stations!");
         System.out.println("2 -> Add a station!");
@@ -27,6 +39,10 @@ public class UIPrinter {
         System.out.println("4 -> Delete a station!");
         System.out.println("X -> Back!");
     }
+
+    /**
+     * prints the menu that operates with TimeTable entity
+     */
     public static void printTimeTablesMenu(){
         System.out.println("1 -> Get all time tables!");
         System.out.println("2 -> Add a time table!");
@@ -34,6 +50,10 @@ public class UIPrinter {
         System.out.println("4 -> Delete a time table!");
         System.out.println("X -> Back!");
     }
+
+    /**
+     * prints the menu for featured commands
+     */
     public static void printFeatureMenu()
     {
         System.out.println("1 -> Get trains passing every station!");

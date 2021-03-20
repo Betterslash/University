@@ -23,21 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e59cf8a-aacb-49b7-a7f4-1284042d6e26" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/ClientStationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/ClientStationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/ClientTrainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/ClientTrainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/TimeTableService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/ClientServices/TimeTableService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/StationCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/StationCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/TimeTableCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/TimeTableCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/TrainCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/EntityManagers/TrainCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/UIPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/UI/UIPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/tcp/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/client/src/main/java/ro/ubb/tcp/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Station.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Train.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Train.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/TrainsStationsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/TrainsStationsEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/StationValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/StationValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/TrainValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/TrainValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/TrainsStationsValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/common/src/main/java/ro/ubb/Model/Validators/TrainsStationsValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/StationTransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/StationTransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TimeTableTransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TimeTableTransferService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TrainTransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TrainTransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/StationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/StationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/TrainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/TrainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/TrainsStationsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/Services/TrainsStationsService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +86,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.ServerApp">
+  <component name="RunManager" selected="Application.ClientApp">
     <configuration name="ClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ro.ubb.ClientApp" />
       <module name="socketTS.client.main" />
@@ -149,22 +155,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1616230731544" />
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1616239907668">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1616246878614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616239907668" />
-    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1616239907668">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1616246878614" />
+    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1616246878614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616239907668" />
-    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1616239907668">
+    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1616246878614" />
+    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1616246878614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616239907668" />
-    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1616239907668">
+    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1616246878614" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1616246878614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616239907668" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1616246878614" />
     <state x="562" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1616233320079">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

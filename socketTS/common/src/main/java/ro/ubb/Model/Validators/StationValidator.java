@@ -6,6 +6,12 @@ import ro.ubb.Model.Station;
 import java.util.Optional;
 
 public class StationValidator implements Validator<Station>{
+
+    /**
+     * validates an entity of type Station
+     * @param entity
+     * @throws ValidatorException
+     */
     @Override
     public void validate(Station entity) throws ValidatorException {
         Optional.ofNullable(entity.getId())

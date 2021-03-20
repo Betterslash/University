@@ -37,7 +37,7 @@ public class TrainService  implements Service<Integer, Train>
     }
 
     /**
-     * @return a set of all trains
+     * @returns a set of all trains
      */
     public Set<Train> getAllEntities() {
         Iterable<Train> trains = repository.findAll();
@@ -71,7 +71,7 @@ public class TrainService  implements Service<Integer, Train>
     /**
      *
      * @param date date parameter to check the rest of trains
-     * @return the set of all trains that are fabricated before given date
+     * @returns the set of all trains that are fabricated before given date
      */
     public Set<Train> getTrainsFabricatedBefore(LocalDate date){
         return this.getAllEntities().stream()
@@ -82,7 +82,7 @@ public class TrainService  implements Service<Integer, Train>
     /**
      *
      * @param type type parameter for filtering entities
-     * @return the set of all trains with the specified type
+     * @returns the set of all trains with the specified type
      */
     public Set<Train> getTrainsWithSpecificTrainType(String type){
         return this.getAllEntities().stream()
@@ -92,7 +92,7 @@ public class TrainService  implements Service<Integer, Train>
 
     /**
      *
-     * @return a set containing all IDs
+     * @returns a set containing all IDs
      */
     public static Set<Integer> getEntitiesIds() {
         return StreamSupport.stream(repository.findAll().spliterator(), true)
@@ -100,6 +100,10 @@ public class TrainService  implements Service<Integer, Train>
                 .collect(Collectors.toSet());
     }
 
+    /**
+     *
+     * @returns a set containing all trains
+     */
     public static Set<Train> getTrains(){
         return StreamSupport.stream(repository.findAll().spliterator(), false)
                 .collect(Collectors.toSet());

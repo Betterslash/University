@@ -15,6 +15,10 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
         this.tcpClient = tcpClient;
     }
 
+    /**
+     *
+     * @returns all objects of type Train
+     */
     @Override
     public CompletableFuture<String> getEntities() {
         return CompletableFuture.supplyAsync(() -> {
@@ -26,6 +30,11 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
                 });
     }
 
+    /**
+     * adds an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> addEntity(Train entity) {
         return CompletableFuture.supplyAsync(() -> {
@@ -37,6 +46,11 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
         });
     }
 
+    /**
+     * deletes an entity
+     * @param integer
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> deleteEntity(Integer integer) {
         return CompletableFuture.supplyAsync(() -> {
@@ -48,6 +62,11 @@ public class ClientTrainService implements ITransferService<Integer, Train> {
         });
     }
 
+    /**
+     * updates an entity
+     * @param entity
+     * @returns message based on the success of the execution
+     */
     @Override
     public CompletableFuture<String> updateEntity(Train entity) {
         return CompletableFuture.supplyAsync(() -> {

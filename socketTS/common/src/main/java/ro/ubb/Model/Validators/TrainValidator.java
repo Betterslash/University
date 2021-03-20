@@ -7,10 +7,22 @@ import java.time.LocalDate;
 import java.util.Optional;
 
 public class TrainValidator implements Validator<Train>{
+
+    /**
+     * compares the current date with a specified one
+     * @param givenDate
+     * @returns a boolean
+     */
     private static boolean checkDate(LocalDate givenDate){
         LocalDate currentDate = LocalDate.now();
         return currentDate.compareTo(givenDate) > 0;
     }
+
+    /**
+     * validates an entity of type Train
+     * @param entity
+     * @throws TrainException
+     */
     @Override
     public void validate(Train entity) throws TrainException {
         Optional.ofNullable(entity.getId())

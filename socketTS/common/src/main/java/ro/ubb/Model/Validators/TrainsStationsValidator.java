@@ -7,6 +7,12 @@ import ro.ubb.Model.TrainsStationsEntity;
 import java.util.Optional;
 
 public class TrainsStationsValidator implements Validator<TrainsStationsEntity<Integer, Integer>>{
+
+    /**
+     * validates an entity of type TimeTable
+     * @param entity
+     * @throws ValidatorException
+     */
     @Override
     public void validate(TrainsStationsEntity<Integer, Integer> entity) throws ValidatorException {
         Optional.ofNullable(entity.getId())

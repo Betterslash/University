@@ -27,6 +27,10 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
         this.departureTime = departureTime;
     }
 
+    /**
+     *
+     * @returns the CSV-File-Format of the entity
+     */
     @Override
     public String csvFileFormat() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -35,8 +39,10 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
         return this.Id.getFirst().toString() +", "+this.Id.getLast().toString() +", "+arrival +", "+departure + "\n";
     }
 
-
-
+    /**
+     *
+     * @returns the string representation
+     */
     @Override
     public String toString() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -47,7 +53,11 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
                 "Arrival time: "+arrival + ", "+
                 "Departure time: "+departure + "}";
     }
-
+    /**
+     * creates a Node for XML-File-Format
+     * @param document
+     * @returns the new-created node
+     */
     @Override
     public Node createNodeFromEntity(Document document) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
@@ -74,6 +84,12 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
 
         return timetableElement;
     }
+
+    /**
+     * creates a new TimeTable entity parsing a string
+     * @param body
+     * @returns the new-created timetable
+     */
     public static TrainsStationsEntity<Integer, Integer> parseTimeTable(String body){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         List<String> attrs = Arrays.asList(body.split(", "));

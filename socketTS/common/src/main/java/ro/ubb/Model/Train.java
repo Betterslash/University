@@ -48,11 +48,20 @@ public class Train extends BaseEntity<Integer>{
                 '}';
     }
 
+    /**
+     *
+     * @returns the CSV-File-Format of the entity
+     */
     @Override
     public String csvFileFormat() {
         return this.id+", "+this.trainType+", "+this.trainColor+", "+this.date + "\n";
     }
 
+    /**
+     * creates a Node for XML-File-Format
+     * @param document
+     * @returns the new-created node
+     */
     @Override
     public Node createNodeFromEntity(Document document) {
         Element trainElement = document.createElement("train");
@@ -75,6 +84,12 @@ public class Train extends BaseEntity<Integer>{
 
         return trainElement;
     }
+
+    /**
+     * creates a new Train entity parsing a string
+     * @param csvFormat
+     * @returns the new-created train
+     */
     public static Train parseTrain(String csvFormat){
         List<String> items = Arrays.asList(csvFormat.split(", "));
         Integer id = Integer.parseInt(items.get(0));

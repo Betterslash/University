@@ -48,7 +48,7 @@ public class StationService implements Service<Integer, Station>
 
     /**
      *
-     * @return a set of all stations
+     * @returns a set of all stations
      */
     public Set<Station> getAllEntities() {
         Iterable<Station> stations = repository.findAll();
@@ -57,7 +57,7 @@ public class StationService implements Service<Integer, Station>
 
     /**
      *
-     * @return a set containing all IDs
+     * @returns a set containing all IDs
      */
     public static Set<Integer> getEntitiesIds() {
         return StreamSupport.stream(repository.findAll().spliterator(), false)
@@ -65,6 +65,10 @@ public class StationService implements Service<Integer, Station>
                 .collect(Collectors.toSet());
     }
 
+    /**
+     *
+     * @returns a set containing all stations
+     */
     public static Set<Station> getStations()
     {
         return StreamSupport.stream(repository.findAll().spliterator(), false)
