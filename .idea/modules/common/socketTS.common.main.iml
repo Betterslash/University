@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module version="4">
-  <component name="ExternalSystem" externalSystem="GRADLE" externalSystemModuleGroup="ro.ubb" externalSystemModuleType="sourceSet" externalSystemModuleVersion="1.0-SNAPSHOT" linkedProjectId=":common:main" linkedProjectPath="$MODULE_DIR$/../../../socketTS/common" rootProjectPath="$MODULE_DIR$/../../../socketTS" />
-</module>

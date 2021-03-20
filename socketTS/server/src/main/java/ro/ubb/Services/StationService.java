@@ -64,4 +64,10 @@ public class StationService implements Service<Integer, Station>
                 .map(Station::getId)
                 .collect(Collectors.toSet());
     }
+
+    public static Set<Station> getStations()
+    {
+        return StreamSupport.stream(repository.findAll().spliterator(), false)
+                .collect(Collectors.toSet());
+    }
 }

@@ -1,6 +1,9 @@
 package ro.ubb.ServerTransferServices;
 
 import ro.ubb.Model.Train;
+import ro.ubb.Repository.IRepository;
+import ro.ubb.Repository.Repositories.CRUDRepository;
+import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
 import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 

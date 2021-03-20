@@ -3,8 +3,42 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e59cf8a-aacb-49b7-a7f4-1284042d6e26" name="Default Changelist" comment="" />
+    <list default="true" id="2e59cf8a-aacb-49b7-a7f4-1284042d6e26" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/client/socketTS.client.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/common/socketTS.common.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/server/socketTS.server.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/socketTS.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/StationTransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/StationTransferService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TrainTransferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/socketTS/server/src/main/java/ro/ubb/ServerTransferServices/TrainTransferService.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +80,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.ClientApp">
+  <component name="RunManager" selected="Application.ServerApp">
     <configuration name="ClientApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ro.ubb.ClientApp" />
       <module name="socketTS.client.main" />
@@ -90,6 +124,17 @@
       <updated>1616230715622</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1616237523710">

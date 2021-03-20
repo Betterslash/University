@@ -19,14 +19,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
 {
     //TODO - MULTIPLE REPOSITORIES
     private static IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository = null;
-    private final Set<Station> stations;
-    private final Set<Train> trains;
-    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository,
-                                 Set<Station> stations, Set<Train> trains)
+    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository)
     {
         TrainsStationsService.repository = repository;
-        this.stations = stations;
-        this.trains = trains;
     }
 
     /**
@@ -78,7 +73,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .stream()
                 .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TrainServiceException("Couldn't get most travelled stations!"));
         Integer mostTraveledStationID = maxEntry.getKey();
-        Set<Station> mostTraveledStationSet = this.stations.stream()
+        Set<Station> mostTraveledStationSet = StationService.getStations().stream()
                                                     .filter(e-> e.getId().equals(mostTraveledStationID))
                                                     .collect(Collectors.toSet());
         return mostTraveledStationSet;
@@ -109,9 +104,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
 
     public Set<Station> getStationsPassedByEveryTrain()
     {
-        Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(this.trains.size());
+        Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(TrainService.getTrains().size());
         Set<Station> result = new HashSet<>();
-        this.stations.forEach(e -> {if (stationIDs.contains(e.getId())) result.add(e);});
+        StationService.getStations().forEach(e -> {if (stationIDs.contains(e.getId())) result.add(e);});
         return result;
     }
 
@@ -134,9 +129,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
 
     public Set<Train> getTrainsPassingEveryStation()
     {
-        Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(this.stations.size());
+        Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(StationService.getStations().size());
         Set<Train> result = new HashSet<>();
-        this.trains.forEach(e -> {if (trainIDs.contains(e.getId())) result.add(e);});
+        TrainService.getTrains().forEach(e -> {if (trainIDs.contains(e.getId())) result.add(e);});
         return result;
     }
 }

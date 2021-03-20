@@ -99,4 +99,9 @@ public class TrainService  implements Service<Integer, Train>
                 .map(Train::getId)
                 .collect(Collectors.toSet());
     }
+
+    public static Set<Train> getTrains(){
+        return StreamSupport.stream(repository.findAll().spliterator(), false)
+                .collect(Collectors.toSet());
+    }
 }
