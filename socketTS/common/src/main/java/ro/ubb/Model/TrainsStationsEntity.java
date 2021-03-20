@@ -84,13 +84,13 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
 
         return timetableElement;
     }
-
+    @SuppressWarnings("unchecked")
     /**
      * creates a new TimeTable entity parsing a string
      * @param body
      * @returns the new-created timetable
      */
-    public static TrainsStationsEntity<Integer, Integer> parseTimeTable(String body){
+    public TrainsStationsEntity<T, T1> parseEntity(String body){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         List<String> attrs = Arrays.asList(body.split(", "));
         Pair<Integer, Integer> pair = new Pair<>(Integer.parseInt(attrs.get(0)),Integer.parseInt(attrs.get(1)));
@@ -98,7 +98,6 @@ public class TrainsStationsEntity<T, T1>  extends BaseEntity<Pair<T, T1>>{
         LocalDateTime departureTime = LocalDateTime.parse(attrs.get(3).strip(), formatter);
         TrainsStationsEntity<Integer, Integer> ttEntity = new TrainsStationsEntity<>(pair, arrivalTime, departureTime);
         new TrainsStationsValidator().validate(ttEntity);
-        return ttEntity;
-
+        return (TrainsStationsEntity<T, T1>) ttEntity;
     }
 }

@@ -4,14 +4,15 @@ import ro.ubb.Model.Train;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
 import ro.ubb.Services.TrainService;
-import ro.ubb.TransferServices.ITransferService;
 
 import java.util.concurrent.CompletableFuture;
 
-public class TrainTransferService implements ITransferService<Integer, Train> {
+public class TrainTransferService extends AbstractServerTransferServices<Integer, Train> {
     private final TrainService trainService;
     public TrainTransferService() {
+        super(TRAIN_SIGNATURE);
         IRepository<Integer, Train> trainIRepository = new CRUDRepository<>(new TrainDBOService());
         this.trainService = new TrainService(trainIRepository);
     }
@@ -29,7 +30,7 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     /**
      * adds an entity
-     * @param entity
+     * @param entity entity to be added
      * @returns message based on the success of the execution
      */
     @Override
@@ -41,7 +42,7 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     /**
      * deletes an entity
-     * @param integer
+     * @param integer id for deletion
      * @returns message based on the success of the execution
      */
     @Override
@@ -55,27 +56,12 @@ public class TrainTransferService implements ITransferService<Integer, Train> {
 
     /**
      * updates an entity
-     * @param entity
+     * @param entity enityt to be updated
      * @returns message based on the success of the execution
      */
     @Override
     public CompletableFuture<String> updateEntity(Train entity) {
         return CompletableFuture.supplyAsync(() -> {this.trainService.executeUpdate(entity);
         return "Train " + entity.toString() + " was updated !";});
-    }
-
-    @Override
-    public CompletableFuture<String> getTrainsPassingEveryStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getMostTraveledStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getStationsPassedByEveryTrain() {
-        return null;
     }
 }

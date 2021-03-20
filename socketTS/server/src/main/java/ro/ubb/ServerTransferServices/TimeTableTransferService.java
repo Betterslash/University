@@ -8,15 +8,16 @@ import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
 import ro.ubb.Services.TrainsStationsService;
-import ro.ubb.TransferServices.ITransferService;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class TimeTableTransferService implements ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
+public class TimeTableTransferService extends AbstractFeaturesTransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
     private final TrainsStationsService ttService;
     public TimeTableTransferService() {
+        super(TIME_TABLE_SIGNATURE);
         IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttRepository = new CRUDRepository<>(new TimeTableDBOService());
         this.ttService = new TrainsStationsService(ttRepository);
     }
@@ -36,7 +37,6 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
 
     /**
      * adds an entity
-     * @param entity
      * @returns message based on the success of the execution
      */
     @Override
@@ -49,7 +49,6 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
 
     /**
      * deletes an entity
-     * @param integerIntegerPair
      * @returns message based on the success of the execution
      */
     @Override
@@ -62,7 +61,6 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
 
     /**
      * updates an entity
-     * @param entity
      * @returns message based on the success of the execution
      */
     @Override
@@ -108,4 +106,5 @@ public class TimeTableTransferService implements ITransferService<Pair<Integer, 
             return "Stations passed by every train are: " + stations.toString();
         });
     }
+
 }

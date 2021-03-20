@@ -33,7 +33,7 @@ public class Station extends BaseEntity<Integer>{
      * @param body
      * @returns the new-created station
      */
-    public static Station parseStation(String body) {
+    public Station parseEntity(String body) {
         List<String> attrs = Arrays.asList(body.split(", "));
         Integer id = Integer.parseInt(attrs.get(0));
         String name = attrs.get(1);
@@ -87,4 +87,5 @@ public class Station extends BaseEntity<Integer>{
 
         return stationElement;
     }
+
 }

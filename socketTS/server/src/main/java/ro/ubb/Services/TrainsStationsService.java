@@ -17,7 +17,6 @@ import java.util.stream.StreamSupport;
  */
 public class TrainsStationsService implements Service<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>
 {
-    //TODO - MULTIPLE REPOSITORIES
     private static IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository = null;
     public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository)
     {
@@ -73,10 +72,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .stream()
                 .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TrainServiceException("Couldn't get most travelled stations!"));
         Integer mostTraveledStationID = maxEntry.getKey();
-        Set<Station> mostTraveledStationSet = StationService.getStations().stream()
+        return StationService.getStations().stream()
                                                     .filter(e-> e.getId().equals(mostTraveledStationID))
                                                     .collect(Collectors.toSet());
-        return mostTraveledStationSet;
     }
 
     /**

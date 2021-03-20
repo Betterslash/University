@@ -38,4 +38,6 @@ public abstract class BaseEntity<ID> {
      */
     public abstract String csvFileFormat();
     public  abstract Node createNodeFromEntity(Document document);
+
+    public abstract BaseEntity<ID> parseEntity(String body);
 }

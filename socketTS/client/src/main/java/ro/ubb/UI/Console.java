@@ -1,10 +1,11 @@
 package ro.ubb.UI;
 
+import ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService;
+import ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.EntityManagers.StationCreator;
 import ro.ubb.UI.EntityManagers.TimeTableCreator;
 import ro.ubb.UI.EntityManagers.TrainCreator;
@@ -13,11 +14,13 @@ import java.util.Scanner;
 import java.util.concurrent.Future;
 
 public class Console {
-    private final ITransferService<Integer, Train> trainTransferService;
-    private final ITransferService<Integer, Station> stationTransferService;
-    private final ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
+    private final AbstractClientTransferService<Integer, Train> trainTransferService;
+    private final AbstractClientTransferService<Integer, Station> stationTransferService;
+    private final IFeatureCaller<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     private final Scanner scanner = new Scanner(System.in);
-    public Console(ITransferService<Integer, Train> iTransferService, ITransferService<Integer, Station> stationTransferService, ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService) {
+    public Console(AbstractClientTransferService<Integer, Train> iTransferService,
+                   AbstractClientTransferService<Integer, Station> stationTransferService,
+                   IFeatureCaller<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService) {
         this.trainTransferService = iTransferService;
         this.stationTransferService = stationTransferService;
         this.ttTransferService = ttTransferService;

@@ -9,15 +9,11 @@ import ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.Repository.IRepository;
-import ro.ubb.Repository.Repositories.CRUDRepository;
-import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
-import ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
 import ro.ubb.ServerTransferServices.StationTransferService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
 import ro.ubb.ServerTransferServices.TrainTransferService;
-import ro.ubb.Services.StationService;
-import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
 
 import java.io.IOException;
@@ -33,79 +29,35 @@ public class TCPServer {
 
     private final int port;
     private static final Map<String, UnaryOperator<Message>> methodHandlers  = new HashMap<>();
-    private final ITransferService<Integer, Train> transferTrainService;
-    private final ITransferService<Integer, Station> transferStationService;
-    private final ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
+    private final AbstractServerTransferServices<Integer, Train> transferTrainService;
+    private final AbstractServerTransferServices<Integer, Station> transferStationService;
+    private final AbstractFeaturesTransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     public TCPServer( int port) {
         this.transferTrainService = new TrainTransferService();
         this.transferStationService = new StationTransferService();
         this.ttTransferService = new TimeTableTransferService();
         this.port = port;
     }
+
     public void initializeHandlers(){
-        methodHandlers.put(ITransferService.GET_TRAIN_ENTITIES, request -> {
-            CompletableFuture<String> res = transferTrainService.getEntities();
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.GET_STATION_ENTITIES, request -> {
-            CompletableFuture<String> res = transferStationService.getEntities();
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.ADD_TRAIN_ENTITY, request -> {
-            CompletableFuture<String>res = transferTrainService.addEntity(Train.parseTrain(request.getBody()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.UPDATE_TRAIN_ENTITY, request -> {
-            CompletableFuture<String> res = transferTrainService.updateEntity(Train.parseTrain(request.getBody()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.DELETE_TRAIN_ENTITY, request -> {
-            CompletableFuture<String> res = transferTrainService.deleteEntity(Integer.parseInt(request.getBody().strip()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.ADD_STATION_ENTITY, request -> {
-            CompletableFuture<String>res = transferStationService.addEntity(Station.parseStation(request.getBody()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.UPDATE_STATION_ENTITY, request -> {
-            CompletableFuture<String> res = transferStationService.updateEntity(Station.parseStation(request.getBody()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.DELETE_STATION_ENTITY, request -> {
-            CompletableFuture<String> res = transferStationService.deleteEntity(Integer.parseInt(request.getBody().strip()));
-            return getResponse(res);
-        });
-        methodHandlers.put(ITransferService.GET_TT_ENTITIES, request -> {
-            CompletableFuture<String> response = this.ttTransferService.getEntities();
-            return getResponse(response);
-        });
-        methodHandlers.put(ITransferService.ADD_TT_ENTITY, request -> {
-            CompletableFuture<String> response = this.ttTransferService.addEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
-            return getResponse(response);
-        });
-        methodHandlers.put(ITransferService.DELETE_TT_ENTITY, request -> {
-            CompletableFuture<String> response = this.ttTransferService.deleteEntity(Pair.parsePair(request.getBody().strip()));
-            return getResponse(response);
-        });
-        methodHandlers.put(ITransferService.UPDATE_TT_ENTITY, request -> {
-            CompletableFuture<String> response = this.ttTransferService.updateEntity(TrainsStationsEntity.parseTimeTable(request.getBody()));
-            return getResponse(response);
-        });
-        this.methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
+        new CRUDInitializer<Integer, Train>().initialize(methodHandlers, this.transferTrainService);
+        new CRUDInitializer<Integer, Station>().initialize(methodHandlers, this.transferStationService);
+        new CRUDInitializer<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>().initialize(methodHandlers, this.ttTransferService);
+        methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
             CompletableFuture<String> response = this.ttTransferService.getTrainsPassingEveryStation();
             return getResponse(response);
         });
-        this.methodHandlers.put(ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN, request -> {
+        methodHandlers.put(ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN, request -> {
             CompletableFuture<String> response = this.ttTransferService.getStationsPassedByEveryTrain();
             return getResponse(response);
         });
-        this.methodHandlers.put(ITransferService.GET_MOST_TRAVELED_STATION, request -> {
+        methodHandlers.put(ITransferService.GET_MOST_TRAVELED_STATION, request -> {
             CompletableFuture<String> response = this.ttTransferService.getMostTraveledStation();
             return getResponse(response);
         });
 
     }
-    private static Message getResponse(CompletableFuture<String> res){
+    public static Message getResponse(CompletableFuture<String> res){
         String response = res.join();
         return new Message(new Header(StatusCodes.OK, "Succes"), response);
     }

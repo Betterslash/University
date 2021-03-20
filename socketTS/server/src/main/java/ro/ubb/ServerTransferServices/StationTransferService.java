@@ -5,16 +5,16 @@ import ro.ubb.Model.Station;
 import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService;
+import ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices;
 import ro.ubb.Services.StationService;
-import ro.ubb.TransferServices.ITransferService;
 
 import java.util.concurrent.CompletableFuture;
 
-public class StationTransferService implements ITransferService<Integer, Station> {
-
+public class StationTransferService extends AbstractServerTransferServices<Integer, Station> {
     private final StationService stationService;
 
     public StationTransferService() {
+        super(STATION_SIGNATURE);
         IRepository<Integer, Station> stationIRepository = new CRUDRepository<>(new StationDBOService());
         this.stationService  = new StationService(stationIRepository);
     }
@@ -43,7 +43,6 @@ public class StationTransferService implements ITransferService<Integer, Station
      * @param entity
      * @returns message based on the success of the execution
      */
-    @Override
     public CompletableFuture<String> addEntity(Station entity) {
         return CompletableFuture.supplyAsync(() -> {
             this.stationService.executeCreate(entity);
@@ -69,26 +68,10 @@ public class StationTransferService implements ITransferService<Integer, Station
      * @param entity
      * @returns message based on the success of the execution
      */
-    @Override
     public CompletableFuture<String> updateEntity(Station entity) {
         return CompletableFuture.supplyAsync(() ->{
             this.stationService.executeUpdate(entity);
             return "Succesfully updated " + entity + " !";
         });
-    }
-
-    @Override
-    public CompletableFuture<String> getTrainsPassingEveryStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getMostTraveledStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getStationsPassedByEveryTrain() {
-        return null;
     }
 }

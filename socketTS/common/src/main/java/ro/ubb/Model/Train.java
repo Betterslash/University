@@ -90,7 +90,7 @@ public class Train extends BaseEntity<Integer>{
      * @param csvFormat
      * @returns the new-created train
      */
-    public static Train parseTrain(String csvFormat){
+    public Train parseEntity(String csvFormat){
         List<String> items = Arrays.asList(csvFormat.split(", "));
         Integer id = Integer.parseInt(items.get(0));
         String type = items.get(1);

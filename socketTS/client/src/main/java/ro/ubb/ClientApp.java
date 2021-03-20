@@ -1,5 +1,7 @@
 package ro.ubb;
 
+import ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService;
+import ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller;
 import ro.ubb.ClientServices.ClientStationService;
 import ro.ubb.ClientServices.ClientTrainService;
 import ro.ubb.ClientServices.TimeTableService;
@@ -11,13 +13,15 @@ import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.UI.Console;
 import ro.ubb.tcp.TcpClient;
 
+import static ro.ubb.TransferServices.ServerAbstractions.AbstractServerTransferServices.*;
+
 public class ClientApp {
     public static void main(String[] args) {
 
         TcpClient tcpClient = new TcpClient();
-        ITransferService<Integer, Train> iTransferService = new ClientTrainService(tcpClient);
-        ITransferService<Integer, Station> stationTransferService = new ClientStationService(tcpClient);
-        ITransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService = new TimeTableService(tcpClient);
+        AbstractClientTransferService<Integer, Train> iTransferService = new ClientTrainService(tcpClient, TRAIN_SIGNATURE);
+        AbstractClientTransferService<Integer, Station> stationTransferService = new ClientStationService(tcpClient, STATION_SIGNATURE);
+        IFeatureCaller<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService = new TimeTableService(tcpClient, TIME_TABLE_SIGNATURE);
         Console console = new Console(iTransferService, stationTransferService, ttTransferService);
         console.runConsole();
         System.out.println("bye client");

@@ -1,95 +1,11 @@
 package ro.ubb.ClientServices;
 
-import ro.ubb.CommunicationCommons.CustomEntities.Header;
-import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
-import ro.ubb.CommunicationCommons.Message;
+import ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService;
 import ro.ubb.Model.Train;
-import ro.ubb.TransferServices.ITransferService;
 import ro.ubb.tcp.TcpClient;
 
-import java.util.concurrent.CompletableFuture;
-
-public class ClientTrainService implements ITransferService<Integer, Train> {
-    private final TcpClient tcpClient;
-    public ClientTrainService(TcpClient tcpClient) {
-        this.tcpClient = tcpClient;
-    }
-
-    /**
-     *
-     * @returns all objects of type Train
-     */
-    @Override
-    public CompletableFuture<String> getEntities() {
-        return CompletableFuture.supplyAsync(() -> {
-                    Message request = new Message();
-                    request.setHeader(new Header(StatusCodes.OK, ITransferService.GET_TRAIN_ENTITIES));
-                    request.setBody("");
-                    Message res = tcpClient.sendAndReceive(request);
-                    return res.getBody();
-                });
-    }
-
-    /**
-     * adds an entity
-     * @param entity
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> addEntity(Train entity) {
-        return CompletableFuture.supplyAsync(() -> {
-            Message req = new Message();
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.ADD_TRAIN_ENTITY));
-            req.setBody(entity.csvFileFormat());
-            Message res = tcpClient.sendAndReceive(req);
-            return res.getBody();
-        });
-    }
-
-    /**
-     * deletes an entity
-     * @param integer
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> deleteEntity(Integer integer) {
-        return CompletableFuture.supplyAsync(() -> {
-            Message req = new Message();
-            req.setBody(integer.toString() + LINE_SEPARATOR);
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.DELETE_TRAIN_ENTITY));
-            Message res = tcpClient.sendAndReceive(req);
-            return res.getBody();
-        });
-    }
-
-    /**
-     * updates an entity
-     * @param entity
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> updateEntity(Train entity) {
-        return CompletableFuture.supplyAsync(() -> {
-            Message req = new Message();
-            req.setBody(entity.csvFileFormat());
-            req.setHeader(new Header(StatusCodes.OK, ITransferService.UPDATE_TRAIN_ENTITY));
-            Message res = tcpClient.sendAndReceive(req);
-            return res.getBody();
-        });
-    }
-
-    @Override
-    public CompletableFuture<String> getTrainsPassingEveryStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getMostTraveledStation() {
-        return null;
-    }
-
-    @Override
-    public CompletableFuture<String> getStationsPassedByEveryTrain() {
-        return null;
+public class ClientTrainService extends AbstractClientTransferService<Integer, Train> {
+    public ClientTrainService(TcpClient tcpClient, String signature) {
+        super(tcpClient, signature);
     }
 }
