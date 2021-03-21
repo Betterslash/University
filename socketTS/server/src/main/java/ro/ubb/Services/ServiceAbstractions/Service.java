@@ -1,4 +1,4 @@
-package ro.ubb.Services;
+package ro.ubb.Services.ServiceAbstractions;
 
 
 import java.util.Set;

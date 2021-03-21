@@ -2,57 +2,32 @@ package ro.ubb.Services;
 
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
-import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Repository.IRepository;
+import ro.ubb.Services.ServiceAbstractions.AbstractIService;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 /**
  *
  */
-public class TrainsStationsService implements Service<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>
-{
+public class TrainsStationsService extends AbstractIService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
     private static IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository = null;
-    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository)
+    private final TrainService trainsService;
+    private final StationService stationService;
+    public TrainsStationsService(IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> repository, TrainService trainsService, StationService stationService)
     {
+        super(repository);
         TrainsStationsService.repository = repository;
-    }
-
-    /**
-     * @param trainsStationsEntity adds a route in the repository
-     */
-    public void executeCreate(TrainsStationsEntity<Integer, Integer> trainsStationsEntity){
-        Set<Integer> trainIDs=TrainService.getEntitiesIds();
-        Set<Integer> stationIDs=StationService.getEntitiesIds();
-        Optional.ofNullable(trainsStationsEntity.getId())
-                .filter(e -> trainIDs.contains(e.getFirst()))
-                .filter(e -> stationIDs.contains(e.getLast()))
-                .orElseThrow(() -> new ValidatorException("ID of train and station must be valid!"));
-        repository.save(trainsStationsEntity);
-    }
-
-    /**
-     *
-     * @param object updates an object in the repository
-
-     */
-    @Override
-    public void executeUpdate(TrainsStationsEntity<Integer, Integer> object){
-        repository.update(object);
-    }
-
-    /**
-     * @param id the id of the route that will be deleted
-     *
-     */
-    @Override
-    public void executeDelete(Pair<Integer, Integer> id) {
-        repository.delete(id);
+        this.trainsService = trainsService;
+        this.stationService = stationService;
     }
 
     /**
@@ -72,7 +47,7 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
                 .stream()
                 .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TrainServiceException("Couldn't get most travelled stations!"));
         Integer mostTraveledStationID = maxEntry.getKey();
-        return StationService.getStations().stream()
+        return this.stationService.getStations().stream()
                                                     .filter(e-> e.getId().equals(mostTraveledStationID))
                                                     .collect(Collectors.toSet());
     }
@@ -110,9 +85,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
      */
     public Set<Station> getStationsPassedByEveryTrain()
     {
-        Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(TrainService.getTrains().size());
+        Set<Integer> stationIDs = this.getStationsPassedByNumberOfTrain(this.trainsService.getAllEntities().size());
         Set<Station> result = new HashSet<>();
-        StationService.getStations().forEach(e -> {if (stationIDs.contains(e.getId())) result.add(e);});
+        this.stationService.getStations().forEach(e -> {if (stationIDs.contains(e.getId())) result.add(e);});
         return result;
     }
 
@@ -139,9 +114,9 @@ public class TrainsStationsService implements Service<Pair<Integer, Integer>, Tr
      */
     public Set<Train> getTrainsPassingEveryStation()
     {
-        Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(StationService.getStations().size());
+        Set<Integer> trainIDs = this.getTrainsPassingSpecifiedNumberOfStations(this.stationService.getAllEntities().size());
         Set<Train> result = new HashSet<>();
-        TrainService.getTrains().forEach(e -> {if (trainIDs.contains(e.getId())) result.add(e);});
+        this.trainsService.getAllEntities().forEach(e -> {if (trainIDs.contains(e.getId())) result.add(e);});
         return result;
     }
 }

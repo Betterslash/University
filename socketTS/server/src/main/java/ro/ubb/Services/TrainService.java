@@ -1,8 +1,8 @@
 package ro.ubb.Services;
 
-import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
 import ro.ubb.Model.Train;
 import ro.ubb.Repository.IRepository;
+import ro.ubb.Services.ServiceAbstractions.AbstractIService;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -12,60 +12,10 @@ import java.util.stream.StreamSupport;
 /**
  *
  */
-public class TrainService  implements Service<Integer, Train>
+public class TrainService  extends AbstractIService<Integer, Train>
 {
-    private static IRepository<Integer, Train> repository = null;
-
-    /**
-     * @param repository creates the instance setting a repository
-     */
-    public TrainService(IRepository<Integer, Train> repository)
-    {
-
-        TrainService.repository = repository;
-    }
-
-    /**
-     * @param train the train to be addded
-     */
-    public void executeCreate(Train train) {
-        try {
-            repository.save(train);
-        }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to save an entry!");
-        }
-    }
-
-    /**
-     * @returns a set of all trains
-     */
-    public Set<Train> getAllEntities() {
-        Iterable<Train> trains = repository.findAll();
-        return StreamSupport.stream(trains.spliterator(), false).collect(Collectors.toSet());
-    }
-
-    /**
-     *
-     * @param train updates the train in the repository
-     */
-    public void executeUpdate(Train train) {
-        try {
-            repository.update(train);
-        }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to update an entry!");
-        }
-    }
-
-    /**
-     *
-     * @param id deletes an element with the specified id
-     */
-    public void executeDelete(Integer id) {
-        try {
-            repository.delete(id);
-        }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to delete an entry!");
-        }
+    public TrainService(IRepository<Integer, Train> repository) {
+        super(repository);
     }
 
     /**
@@ -94,8 +44,8 @@ public class TrainService  implements Service<Integer, Train>
      *
      * @returns a set containing all IDs
      */
-    public static Set<Integer> getEntitiesIds() {
-        return StreamSupport.stream(repository.findAll().spliterator(), true)
+    public Set<Integer> getEntitiesIds() {
+        return StreamSupport.stream(this.repository.findAll().spliterator(), true)
                 .map(Train::getId)
                 .collect(Collectors.toSet());
     }
@@ -104,7 +54,7 @@ public class TrainService  implements Service<Integer, Train>
      *
      * @returns a set containing all trains
      */
-    public static Set<Train> getTrains(){
+    public Set<Train> getTrains(){
         return StreamSupport.stream(repository.findAll().spliterator(), false)
                 .collect(Collectors.toSet());
     }

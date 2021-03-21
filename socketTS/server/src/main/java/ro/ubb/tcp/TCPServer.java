@@ -12,12 +12,14 @@ import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Parsers.StationParser;
 import ro.ubb.Parsers.TimeTableParser;
 import ro.ubb.Parsers.TrainParser;
-import ro.ubb.ServerTransferServices.StationTransferService;
+import ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService;
+import ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService;
+import ro.ubb.ServerTransferServices.StationTService;
 import ro.ubb.ServerTransferServices.TimeTableTransferService;
-import ro.ubb.ServerTransferServices.TrainTransferService;
+import ro.ubb.ServerTransferServices.TrainTService;
+import ro.ubb.Services.StationService;
+import ro.ubb.Services.TrainService;
 import ro.ubb.TransferServices.ITransferService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -32,13 +34,13 @@ public class TCPServer {
 
     private final int port;
     private static final Map<String, UnaryOperator<Message>> methodHandlers  = new HashMap<>();
-    private final AbstractTransferServices<Integer, Train> transferTrainService;
-    private final AbstractTransferServices<Integer, Station> transferStationService;
-    private final AbstractFeaturesTransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
+    private final AbstractServerTService<Integer, Train> transferTrainService;
+    private final AbstractServerTService<Integer, Station> transferStationService;
+    private final AbstractFServerTService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttTransferService;
     public TCPServer( int port) {
-        this.transferTrainService = new TrainTransferService();
-        this.transferStationService = new StationTransferService();
-        this.ttTransferService = new TimeTableTransferService();
+        this.transferTrainService = new TrainTService();
+        this.transferStationService = new StationTService();
+        this.ttTransferService = new TimeTableTransferService((TrainService) this.transferTrainService.getService(),(StationService) this.transferStationService.getService());
         this.port = port;
     }
 
@@ -105,7 +107,7 @@ public class TCPServer {
                 System.out.println("response sent to client");
 
             } catch (Exception e) {
-                throw new TCPServerException("Server failed to send data...");
+                throw new TCPServerException(e.getMessage());
             }
         }
     }

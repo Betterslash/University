@@ -1,74 +1,23 @@
 package ro.ubb.ServerTransferServices;
 
 import ro.ubb.Model.CustomADT.Pair;
-import ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
-import ro.ubb.Repository.IRepository;
 import ro.ubb.Repository.Repositories.CRUDRepository;
 import ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService;
+import ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService;
+import ro.ubb.Services.StationService;
+import ro.ubb.Services.TrainService;
 import ro.ubb.Services.TrainsStationsService;
-import ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService;
 
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class TimeTableTransferService extends AbstractFeaturesTransferService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
-    private final TrainsStationsService ttService;
-    public TimeTableTransferService() {
-        super(TIME_TABLE_SIGNATURE);
-        IRepository<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> ttRepository = new CRUDRepository<>(new TimeTableDBOService());
-        this.ttService = new TrainsStationsService(ttRepository);
-    }
-
-    /**
-     *
-     * @returns all objects of type TimeTable
-     */
-    @Override
-    public CompletableFuture<String> getEntities() {
-        return CompletableFuture.supplyAsync(() -> ttService.getAllEntities()
-        .stream()
-        .map(TrainsStationsEntity::toString)
-        .reduce((acc ,elem) -> acc + "\n" + elem)
-        .orElseThrow(() -> new DBOServiceException("Couldn't get entities from time tables table!")));
-    }
-
-    /**
-     * adds an entity
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> addEntity(TrainsStationsEntity<Integer, Integer> entity) {
-        return CompletableFuture.supplyAsync(() -> {
-            ttService.executeCreate(entity);
-            return "Succesfully added " + entity + " !";
-        });
-    }
-
-    /**
-     * deletes an entity
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> deleteEntity(Pair<Integer, Integer> integerIntegerPair) {
-        return CompletableFuture.supplyAsync(() -> {
-            ttService.executeDelete(integerIntegerPair);
-            return "Succesfully deleted time table with ids " + integerIntegerPair + " !";
-        });
-    }
-
-    /**
-     * updates an entity
-     * @returns message based on the success of the execution
-     */
-    @Override
-    public CompletableFuture<String> updateEntity(TrainsStationsEntity<Integer, Integer> entity) {
-        return CompletableFuture.supplyAsync(() -> {
-            ttService.executeUpdate(entity);
-            return "Succesfully updated " + entity + " !";
-        });
+public class TimeTableTransferService extends AbstractFServerTService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
+    private static TrainsStationsService ttService;
+    public TimeTableTransferService(TrainService trainService, StationService stationService) {
+        super(ttService = new TrainsStationsService(new CRUDRepository<>(new TimeTableDBOService()), trainService, stationService), TIME_TABLE_SIGNATURE);
     }
 
     /**
