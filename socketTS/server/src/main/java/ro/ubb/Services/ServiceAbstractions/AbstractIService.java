@@ -1,7 +1,7 @@
 package ro.ubb.Services.ServiceAbstractions;
 
 import ro.ubb.Model.BaseEntity;
-import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
+import ro.ubb.Model.Exceptions.ServiceExceptions.AbstractServiceException;
 import ro.ubb.Repository.IRepository;
 
 import java.util.Set;
@@ -23,7 +23,7 @@ public class AbstractIService<ID, E extends BaseEntity<ID>> implements Service<I
         try {
             repository.save(entity);
         }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to save an entry!");
+            throw new AbstractServiceException("Something went wrong when trying to save an entry!");
         }
     }
 
@@ -43,7 +43,7 @@ public class AbstractIService<ID, E extends BaseEntity<ID>> implements Service<I
         try {
             repository.update(entity);
         }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to update an entry!");
+            throw new AbstractServiceException("Something went wrong when trying to update an entry!");
         }
     }
 
@@ -55,7 +55,7 @@ public class AbstractIService<ID, E extends BaseEntity<ID>> implements Service<I
         try {
             repository.delete(id);
         }catch (Exception runtimeException){
-            throw new TrainServiceException("Something went wrong when trying to delete an entry!");
+            throw new AbstractServiceException("Something went wrong when trying to delete an entry!");
         }
     }
 }

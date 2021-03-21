@@ -1,10 +1,9 @@
 package ro.ubb.CommunicationCommons;
 
 import lombok.Data;
-import ro.ubb.CommunicationCommons.CustomEntities.CommunicationChannel;
 import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
-import ro.ubb.CommunicationCommons.CustomExceptions.MessageException;
+import ro.ubb.Model.Exceptions.MessageException;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -31,18 +30,6 @@ public class Message {
                 this.body;
     }
 
-
-    public void readChannel(){
-        List<String> elements = CommunicationChannel.readChannel();
-        this.header.setMethodName(elements.get(1));
-        elements.stream()
-                .skip(2)
-                .forEach(e -> this.body += e);
-    }
-
-    public void writeChannel(){
-        CommunicationChannel.writeChannel(header + LINE_SEPARATOR + body + LINE_SEPARATOR);
-    }
 
     public void readFrom(InputStream is) throws IOException {
         List<String> streamLines = new ArrayList<>();

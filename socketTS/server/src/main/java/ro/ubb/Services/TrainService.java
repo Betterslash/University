@@ -49,13 +49,4 @@ public class TrainService  extends AbstractIService<Integer, Train>
                 .map(Train::getId)
                 .collect(Collectors.toSet());
     }
-
-    /**
-     *
-     * @returns a set containing all trains
-     */
-    public Set<Train> getTrains(){
-        return StreamSupport.stream(repository.findAll().spliterator(), false)
-                .collect(Collectors.toSet());
-    }
 }

@@ -20,15 +20,6 @@ public class StationService extends AbstractIService<Integer, Station> {
     }
     /**
      *
-     * @returns a set of all stations
-     */
-    public Set<Station> getAllEntities() {
-        Iterable<Station> stations = repository.findAll();
-        return StreamSupport.stream(stations.spliterator(), false).collect(Collectors.toSet());
-    }
-
-    /**
-     *
      * @returns a set containing all IDs
      */
     public Set<Integer> getEntitiesIds() {

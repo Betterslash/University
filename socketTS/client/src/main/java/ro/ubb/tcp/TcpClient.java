@@ -1,6 +1,6 @@
 package ro.ubb.tcp;
 
-import ro.ubb.CommunicationCommons.CustomExceptions.MessageException;
+import ro.ubb.Model.Exceptions.MessageException;
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.TransferServices.ITransferService;
 

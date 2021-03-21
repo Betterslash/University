@@ -27,11 +27,14 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.function.UnaryOperator;
 
 @Data
 public class TCPServer {
-
+    public static final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
     private final int port;
     private static final Map<String, UnaryOperator<Message>> methodHandlers  = new HashMap<>();
     private final AbstractServerTService<Integer, Train> transferTrainService;
@@ -50,21 +53,25 @@ public class TCPServer {
         new CRUDInitializer<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>().initialize(methodHandlers, this.ttTransferService, new TimeTableParser());
         methodHandlers.put(ITransferService.GET_TRAINS_PASSING_EVERY_STATION, request -> {
             CompletableFuture<String> response = this.ttTransferService.getTrainsPassingEveryStation();
-            return getResponse(response);
+            return CompletableFuture.supplyAsync(() ->getResponse(response), executor).join();
         });
         methodHandlers.put(ITransferService.GET_STATIONS_PASSED_BY_EVERY_TRAIN, request -> {
             CompletableFuture<String> response = this.ttTransferService.getStationsPassedByEveryTrain();
-            return getResponse(response);
+            return CompletableFuture.supplyAsync(() ->getResponse(response), executor).join();
         });
         methodHandlers.put(ITransferService.GET_MOST_TRAVELED_STATION, request -> {
             CompletableFuture<String> response = this.ttTransferService.getMostTraveledStation();
-            return getResponse(response);
+            return CompletableFuture.supplyAsync(() ->getResponse(response), executor).join();
         });
     }
     public static Message getResponse(CompletableFuture<String> res) {
-        while (!res.isDone()){}
-        String response = res.join();
-        return new Message(new Header(StatusCodes.OK, "Succes"), response);
+        String response;
+        try {
+            response = res.get();
+            return new Message(new Header(StatusCodes.OK, "Succes"), response);
+        } catch (InterruptedException | ExecutionException e) {
+            return new Message(new Header(StatusCodes.SERVER_ERROR, "ServerFailure"), e.getMessage());
+        }
     }
 
     public void startServer() {
@@ -73,10 +80,11 @@ public class TCPServer {
             while (true) {
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("client connected");
-                CompletableFuture.runAsync(new ClientHandler(clientSocket)).join();
+                CompletableFuture.runAsync(new ClientHandler(clientSocket), executor).join();
             }
 
         } catch (IOException e) {
+            executor.shutdown();
             e.printStackTrace();
         }
     }

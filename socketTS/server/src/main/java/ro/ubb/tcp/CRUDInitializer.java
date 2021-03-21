@@ -9,6 +9,7 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.UnaryOperator;
 
+import static ro.ubb.tcp.TCPServer.executor;
 import static ro.ubb.tcp.TCPServer.getResponse;
 
 public class CRUDInitializer<ID, E extends BaseEntity<ID>> {
@@ -16,22 +17,22 @@ public class CRUDInitializer<ID, E extends BaseEntity<ID>> {
         unaryOperatorMap.put(AbstractTransferServices.CREATE_ENTITY + transferService.getSS(),
                 request -> {
                     CompletableFuture<String> res = transferService.addEntity(parser.parse(request.getBody()));
-                    return getResponse(res);
+                    return CompletableFuture.supplyAsync(() -> getResponse(res), executor).join();
                 });
         unaryOperatorMap.put(AbstractTransferServices.READ_ENTITIES + transferService.getSS(),
                 request -> {
                     CompletableFuture<String> res = transferService.getEntities();
-                    return getResponse(res);
+                    return CompletableFuture.supplyAsync(() -> getResponse(res), executor).join();
                 });
         unaryOperatorMap.put(AbstractTransferServices.UPDATE_ENTITY + transferService.getSS(),
                 request -> {
                     CompletableFuture<String> res = transferService.updateEntity(parser.parse(request.getBody()));
-                    return getResponse(res);
+                    return CompletableFuture.supplyAsync(() -> getResponse(res), executor).join();
                 });
         unaryOperatorMap.put(AbstractTransferServices.DELETE_ENTITY + transferService.getSS(),
                 request -> {
                     CompletableFuture<String> res = transferService.deleteEntity(parser.parseID(request.getBody()));
-                    return getResponse(res);
+                    return CompletableFuture.supplyAsync(() -> getResponse(res), executor).join();
                 });
     }
 }

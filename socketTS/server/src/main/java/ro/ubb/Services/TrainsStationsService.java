@@ -1,7 +1,8 @@
 package ro.ubb.Services;
 
 import ro.ubb.Model.CustomADT.Pair;
-import ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException;
+import ro.ubb.Model.Exceptions.ServiceExceptions.AbstractServiceException;
+import ro.ubb.Model.Exceptions.ServiceExceptions.TimeTableServiceException;
 import ro.ubb.Model.Station;
 import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
@@ -13,7 +14,6 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 /**
  *
@@ -31,21 +31,12 @@ public class TrainsStationsService extends AbstractIService<Pair<Integer, Intege
     }
 
     /**
-     *
-     * @returns a set of all routes
-     */
-    public Set<TrainsStationsEntity<Integer, Integer>> getAllEntities() {
-        Iterable<TrainsStationsEntity<Integer, Integer>> trainsAndStations = repository.findAll();
-        return StreamSupport.stream(trainsAndStations.spliterator(), false).collect(Collectors.toSet());
-    }
-
-    /**
      * @returns the most visited station id
      */
     public Set<Station> getMostTraveledStation() {
         Map.Entry<Integer, Integer> maxEntry = initializeMap().entrySet()
                 .stream()
-                .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TrainServiceException("Couldn't get most travelled stations!"));
+                .max(Map.Entry.comparingByValue()).orElseThrow(() -> new TimeTableServiceException("Couldn't get most travelled stations!"));
         Integer mostTraveledStationID = maxEntry.getKey();
         return this.stationService.getStations().stream()
                                                     .filter(e-> e.getId().equals(mostTraveledStationID))

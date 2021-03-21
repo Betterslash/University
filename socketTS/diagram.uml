@@ -3,384 +3,408 @@
   <ID>JAVA</ID>
   <OriginalElement>D:/University/University/UBB_CS_II_sem_2/SDI/Laboratory_5/lab5x-team-7/socketTS</OriginalElement>
   <nodes>
-    <node x="815.0" y="611.0">ro.ubb.Model.Validators.StationValidator</node>
-    <node x="754.6874279123414" y="216.0">ro.ubb.UI.EntityManagers.TimeTableCreator</node>
-    <node x="0.0" y="611.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.TrainDBOServiceException</node>
-    <node x="1034.5" y="533.0">ro.ubb.Model.Validators.Validator</node>
-    <node x="1209.0" y="611.0">ro.ubb.Model.Validators.TrainValidator</node>
-    <node x="270.5" y="533.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException</node>
-    <node x="1956.5272010765088" y="138.0">ro.ubb.Repository.IRepository</node>
-    <node x="1618.0" y="684.0">ro.ubb.ClientApp</node>
-    <node x="1960.0" y="533.0">ro.ubb.Model.Exceptions.ServiceExceptions.StationServiceException</node>
-    <node x="528.1874279123414" y="304.0">ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService</node>
-    <node x="2462.0" y="533.0">ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException</node>
-    <node x="1354.9374279123413" y="138.0">ro.ubb.Repository.Repositories.CRUDUtils.DBOServices</node>
-    <node x="2116.027201076509" y="382.0">ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller</node>
-    <node x="1116.4374279123413" y="216.0">ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService</node>
-    <node x="1336.4374279123413" y="216.0">ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService</node>
-    <node x="589.6874279123414" y="216.0">ro.ubb.UI.EntityManagers.StationCreator</node>
-    <node x="2542.0" y="684.0">ro.ubb.CommunicationCommons.CustomEntities.Header</node>
-    <node x="2395.0" y="684.0">settings</node>
-    <node x="900.0" y="684.0">ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException</node>
-    <node x="1722.5272010765088" y="138.0">ro.ubb.TransferServices.ITransferService</node>
-    <node x="118.69386774317536" y="138.0">ro.ubb.Model.Train</node>
-    <node x="739.3284313725488" y="382.0">ro.ubb.ServerTransferServices.StationTService</node>
-    <node x="0.0" y="460.0">ro.ubb.ServerTransferServices.TimeTableTransferService</node>
-    <node x="558.1874279123414" y="382.0">ro.ubb.ServerTransferServices.TrainTService</node>
-    <node x="1396.0" y="611.0">ro.ubb.Model.Exceptions.DomainExceptions.TrainException</node>
-    <node x="128.0" y="757.0">ro.ubb.Model.CustomADT.Pair</node>
-    <node x="244.68742791234126" y="216.0">ro.ubb.Parsers.StationParser</node>
-    <node x="1104.0" y="684.0">ro.ubb.CommunicationCommons.CustomEntities.StatusCodes</node>
-    <node x="362.03210303729304" y="138.0">ro.ubb.Model.TrainsStationsEntity</node>
-    <node x="2552.777201076509" y="216.0">ro.ubb.Services.TrainsStationsService</node>
-    <node x="237.0" y="684.0">ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException</node>
-    <node x="1553.1874279123413" y="138.0">ro.ubb.Model.Station</node>
-    <node x="2103.027201076509" y="460.0">ro.ubb.ClientServices.TimeTableService</node>
-    <node x="1567.5" y="533.0">ro.ubb.Model.Exceptions.DomainExceptions.DomainException</node>
-    <node x="1755.0" y="611.0">ro.ubb.Model.Exceptions.DomainExceptions.StationException</node>
-    <node x="242.03210303729293" y="138.0">ro.ubb.Parsers.IParser</node>
-    <node x="606.8284313725488" y="138.0">ro.ubb.tcp.CRUDInitializer</node>
-    <node x="1564.0" y="611.0">ro.ubb.Model.Exceptions.ValidatorException</node>
-    <node x="687.0" y="684.0">ro.ubb.Model.Exceptions.ChannelExceptions.ChannelException</node>
-    <node x="404.6874279123414" y="216.0">ro.ubb.Parsers.TimeTableParser</node>
-    <node x="1532.4374279123413" y="216.0">ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService</node>
-    <node x="5.5" y="382.0">ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService</node>
-    <node x="507.0" y="611.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.TimeTableDBOServiceException</node>
-    <node x="1453.0" y="684.0">ro.ubb.ServerApp</node>
-    <node x="0.0" y="684.0">ro.ubb.Model.Exceptions.DomainExceptions.TimeFormatException</node>
-    <node x="1739.2772010765088" y="216.0">ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices</node>
-    <node x="248.0" y="611.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.StationDBOServiceException</node>
-    <node x="1481.9166666666665" y="382.0">ro.ubb.ClientServices.ClientTrainService</node>
-    <node x="1936.0" y="684.0">ro.ubb.CommunicationCommons.Message</node>
-    <node x="2365.9374279123413" y="138.0">ro.ubb.Services.ServiceAbstractions.AbstractIService</node>
-    <node x="1284.0" y="684.0">ro.ubb.tcp.TCPServer</node>
-    <node x="2233.777201076509" y="216.0">ro.ubb.Services.StationService</node>
-    <node x="988.0" y="611.0">ro.ubb.Model.Validators.TrainsStationsValidator</node>
-    <node x="2398.777201076509" y="216.0">ro.ubb.Services.TrainService</node>
-    <node x="1387.833333333333" y="304.0">ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService</node>
-    <node x="95.68742791234126" y="216.0">ro.ubb.Parsers.TrainParser</node>
-    <node x="1777.0" y="684.0">ro.ubb.tcp.TcpClient</node>
-    <node x="1944.8397731641671" y="304.0">ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService</node>
-    <node x="0.0" y="757.0">build</node>
-    <node x="1363.9374279123413" y="0.0">ro.ubb.Model.BaseEntity</node>
-    <node x="2432.9374279123413" y="0.0">ro.ubb.Services.ServiceAbstractions.Service</node>
-    <node x="2092.0" y="684.0">ro.ubb.UI.UIPrinter</node>
-    <node x="943.6874279123414" y="216.0">ro.ubb.UI.EntityManagers.TrainCreator</node>
-    <node x="1279.9166666666665" y="382.0">ro.ubb.ClientServices.ClientStationService</node>
-    <node x="1973.2772010765088" y="216.0">ro.ubb.Repository.Repositories.CRUDRepository</node>
-    <node x="2245.0" y="684.0">ro.ubb.UI.Console</node>
-    <node x="781.0784313725488" y="138.0">ro.ubb.UI.EntityManagers.IEntityCreator</node>
-    <node x="2213.0" y="533.0">ro.ubb.CommunicationCommons.CustomEntities.CommunicationChannel</node>
-    <node x="469.0" y="684.0">ro.ubb.CommunicationCommons.CustomExceptions.MessageException</node>
+    <node x="2612.0" y="1695.0">ro.ubb.Model.Validators.StationValidator</node>
+    <node x="1550.591647443291" y="743.0">ro.ubb.UI.EntityManagers.TimeTableCreator</node>
+    <node x="3380.0" y="1728.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.TrainDBOServiceException</node>
+    <node x="2883.0" y="1582.0">ro.ubb.Model.Validators.Validator</node>
+    <node x="3352.915369088813" y="363.5">ro.ubb.Repository.IRepository</node>
+    <node x="3622.0" y="1582.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException</node>
+    <node x="3125.0" y="1684.0">ro.ubb.Model.Validators.TrainValidator</node>
+    <node x="2432.0" y="2204.0">ro.ubb.ClientApp</node>
+    <node x="2810.0" y="2204.0">ro.ubb.Model.Exceptions.ServiceExceptions.StationServiceException</node>
+    <node x="936.6570549788553" y="989.0">ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService</node>
+    <node x="3072.0" y="2204.0">ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException</node>
+    <node x="2509.4070549788553" y="329.0">ro.ubb.Repository.Repositories.CRUDUtils.DBOServices</node>
+    <node x="3468.1644079200314" y="1226.0">ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller</node>
+    <node x="2058.591647443291" y="709.0">ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService</node>
+    <node x="2517.591647443291" y="720.5">ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService</node>
+    <node x="1247.0036043829307" y="743.0">ro.ubb.UI.EntityManagers.StationCreator</node>
+    <node x="2118.0" y="1582.0">ro.ubb.CommunicationCommons.CustomEntities.Header</node>
+    <node x="1298.0" y="2204.0">settings</node>
+    <node x="4285.0" y="2204.0">ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException</node>
+    <node x="2961.415369088813" y="263.5">ro.ubb.TransferServices.ITransferService</node>
+    <node x="129.15705497885483" y="263.0">ro.ubb.Model.Train</node>
+    <node x="1209.6617647058824" y="1259.5">ro.ubb.ServerTransferServices.StationTService</node>
+    <node x="0.0" y="1395.0">ro.ubb.ServerTransferServices.TimeTableTransferService</node>
+    <node x="982.75" y="1259.5">ro.ubb.ServerTransferServices.TrainTService</node>
+    <node x="888.0" y="1582.0">ro.ubb.Model.CustomADT.Pair</node>
+    <node x="1439.0" y="1750.0">ro.ubb.Model.Exceptions.DomainExceptions.TrainException</node>
+    <node x="401.09164744329064" y="743.0">ro.ubb.Parsers.StationParser</node>
+    <node x="2366.0" y="1582.0">ro.ubb.CommunicationCommons.CustomEntities.StatusCodes</node>
+    <node x="568.1570549788553" y="285.0">ro.ubb.Model.TrainsStationsEntity</node>
+    <node x="4380.914407920031" y="654.0">ro.ubb.Services.TrainsStationsService</node>
+    <node x="2682.4070549788553" y="285.0">ro.ubb.Model.Station</node>
+    <node x="3576.0" y="2204.0">ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException</node>
+    <node x="3468.1644079200314" y="1406.5">ro.ubb.ClientServices.TimeTableService</node>
+    <node x="1629.0" y="1582.0">ro.ubb.Model.Exceptions.DomainExceptions.DomainException</node>
+    <node x="1895.0" y="1750.0">ro.ubb.Model.Exceptions.DomainExceptions.StationException</node>
+    <node x="404.15705497885506" y="396.5">ro.ubb.Parsers.IParser</node>
+    <node x="1022.1570549788553" y="396.0">ro.ubb.tcp.CRUDInitializer</node>
+    <node x="1627.0" y="1728.0">ro.ubb.Model.Exceptions.ValidatorException</node>
+    <node x="4055.0" y="2204.0">ro.ubb.Model.Exceptions.ChannelExceptions.ChannelException</node>
+    <node x="1862.0" y="2306.0">ro.ubb.Model.Exceptions.ServiceExceptions.TimeTableServiceException</node>
+    <node x="624.0916474432911" y="743.0">ro.ubb.Parsers.TimeTableParser</node>
+    <node x="2821.091647443291" y="720.5">ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService</node>
+    <node x="0.0" y="1226.0">ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService</node>
+    <node x="3898.0" y="1728.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.TimeTableDBOServiceException</node>
+    <node x="3325.0" y="2204.0">ro.ubb.Model.Exceptions.DomainExceptions.TimeFormatException</node>
+    <node x="2621.0" y="2204.0">ro.ubb.ServerApp</node>
+    <node x="2690.833333333333" y="1259.5">ro.ubb.ClientServices.ClientTrainService</node>
+    <node x="3634.0" y="1728.0">ro.ubb.Model.Exceptions.DBOServiceExceptions.StationDBOServiceException</node>
+    <node x="3103.415369088813" y="709.5">ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices</node>
+    <node x="647.0" y="1582.0">ro.ubb.CommunicationCommons.Message</node>
+    <node x="218.0" y="2061.0">ro.ubb.tcp.TCPServer.ClientHandler</node>
+    <node x="4061.3416474432906" y="351.0">ro.ubb.Services.ServiceAbstractions.AbstractIService</node>
+    <node x="0.0" y="1582.0">ro.ubb.tcp.TCPServer</node>
+    <node x="3738.9144079200314" y="732.0">ro.ubb.Services.StationService</node>
+    <node x="2789.0" y="1695.0">ro.ubb.Model.Validators.TrainsStationsValidator</node>
+    <node x="1868.0" y="2204.0">ro.ubb.Model.Exceptions.ServiceExceptions.AbstractServiceException</node>
+    <node x="3821.0" y="2184.0">ro.ubb.Model.Exceptions.MessageException</node>
+    <node x="4044.9144079200314" y="720.5">ro.ubb.Services.TrainService</node>
+    <node x="2577.333333333333" y="1000.0">ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService</node>
+    <node x="175.59164744329064" y="743.0">ro.ubb.Parsers.TrainParser</node>
+    <node x="2143.0" y="2204.0">ro.ubb.tcp.TcpClient</node>
+    <node x="3330.75360438293" y="1023.0">ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService</node>
+    <node x="1580.0" y="2204.0">build</node>
+    <node x="2536.091647443291" y="0.0">ro.ubb.Model.BaseEntity</node>
+    <node x="1888.591647443291" y="743.0">ro.ubb.UI.EntityManagers.TrainCreator</node>
+    <node x="4161.341647443291" y="12.0">ro.ubb.Services.ServiceAbstractions.Service</node>
+    <node x="1186.0" y="1582.0">ro.ubb.UI.UIPrinter</node>
+    <node x="2418.833333333333" y="1259.5">ro.ubb.ClientServices.ClientStationService</node>
+    <node x="3359.915369088813" y="698.5">ro.ubb.Repository.Repositories.CRUDRepository</node>
+    <node x="0.0" y="2204.0">ro.ubb.UI.Console</node>
+    <node x="1639.1570549788553" y="373.5">ro.ubb.UI.EntityManagers.IEntityCreator</node>
+    <node x="3821.0" y="2204.0">ro.ubb.CommunicationCommons.CustomExceptions.MessageException</node>
+    <node x="1049.0" y="2204.0">ro.ubb.CommunicationCommons.CustomEntities.CommunicationChannel</node>
   </nodes>
   <notes />
   <edges>
     <edge source="ro.ubb.ServerTransferServices.TrainTService" target="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="1054.75" y="1201.0" />
+      <point x="1086.6570549788553" y="1201.0" />
+      <point x="0.0" y="93.5" />
     </edge>
     <edge source="ro.ubb.Parsers.StationParser" target="ro.ubb.Parsers.IParser">
-      <point x="0.0" y="-14.0" />
-      <point x="314.68742791234126" y="191.0" />
-      <point x="291.0321030372929" y="191.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="485.09164744329064" y="629.0" />
+      <point x="476.15705497885506" y="629.0" />
+      <point x="0.0" y="37.0" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDRepository" target="ro.ubb.Repository.IRepository">
-      <point x="-40.75" y="-14.0" />
-      <point x="2014.0272010765088" y="191.0" />
-      <point x="2018.5272010765088" y="191.0" />
-      <point x="0.0" y="14.0" />
+      <point x="-65.5" y="-93.0" />
+      <point x="3425.415369088813" y="629.0" />
+      <point x="3441.415369088813" y="629.0" />
+      <point x="0.0" y="70.0" />
     </edge>
     <edge source="ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices" target="ro.ubb.Model.BaseEntity">
-      <point x="53.5" y="-14.0" />
-      <point x="1899.7772010765088" y="191.0" />
-      <point x="1891.0272010765088" y="191.0" />
-      <point x="1891.0272010765088" y="98.0" />
-      <point x="1445.790369088812" y="98.0" />
-      <point x="21.352941176470722" y="14.0" />
+      <point x="56.5" y="-82.0" />
+      <point x="3272.915369088813" y="629.0" />
+      <point x="3304.915369088813" y="629.0" />
+      <point x="3304.915369088813" y="223.0" />
+      <point x="2648.38576509035" y="223.0" />
+      <point x="29.29411764705901" y="71.5" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService" target="ro.ubb.Model.BaseEntity">
-      <point x="-51.0" y="-14.0" />
-      <point x="579.1874279123414" y="88.0" />
-      <point x="1395.9668396770471" y="88.0" />
-      <point x="-28.470588235294144" y="14.0" />
+      <point x="-75.0" y="-93.5" />
+      <point x="1011.6570549788553" y="203.0" />
+      <point x="2580.0328239138794" y="203.0" />
+      <point x="-39.05882352941171" y="71.5" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService" target="ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices">
-      <point x="51.0" y="-14.0" />
-      <point x="681.1874279123414" y="274.0" />
-      <point x="1774.9438677431756" y="274.0" />
-      <point x="-71.33333333333326" y="14.0" />
+      <point x="75.0" y="-93.5" />
+      <point x="1161.6570549788553" y="959.0" />
+      <point x="3141.0820357554794" y="959.0" />
+      <point x="-75.33333333333348" y="82.0" />
     </edge>
     <edge source="ro.ubb.UI.EntityManagers.StationCreator" target="ro.ubb.UI.EntityManagers.IEntityCreator">
-      <point x="0.0" y="-14.0" />
-      <point x="662.1874279123414" y="191.0" />
-      <point x="804.4117647058822" y="191.0" />
-      <point x="-46.66666666666663" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="1326.0036043829307" y="629.0" />
+      <point x="1671.3237216455218" y="629.0" />
+      <point x="-64.33333333333348" y="60.0" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller" target="ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService">
-      <point x="-35.75" y="-14.0" />
-      <point x="2151.777201076509" y="357.0" />
-      <point x="1591.1666666666665" y="357.0" />
-      <point x="81.33333333333326" y="14.0" />
+      <point x="-86.75" y="-59.5" />
+      <point x="3554.9144079200314" y="1201.0" />
+      <point x="2829.833333333333" y="1201.0" />
+      <point x="101.0" y="82.5" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService" target="ro.ubb.Repository.Repositories.CRUDUtils.DBOServices">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-71.0" />
+      <point x="2619.091647443291" y="629.0" />
+      <point x="2585.9070549788553" y="629.0" />
+      <point x="0.0" y="104.5" />
     </edge>
     <edge source="ro.ubb.UI.EntityManagers.TimeTableCreator" target="ro.ubb.UI.EntityManagers.IEntityCreator">
-      <point x="0.0" y="-14.0" />
-      <point x="839.1874279123414" y="191.0" />
-      <point x="851.0784313725488" y="191.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="1709.591647443291" y="629.0" />
+      <point x="1735.6570549788553" y="629.0" />
+      <point x="0.0" y="60.0" />
     </edge>
     <edge source="ro.ubb.Services.StationService" target="ro.ubb.Services.ServiceAbstractions.AbstractIService">
-      <point x="0.0" y="-14.0" />
-      <point x="2306.277201076509" y="191.0" />
-      <point x="2391.9374279123413" y="191.0" />
-      <point x="-52.0" y="14.0" />
+      <point x="0.0" y="-59.5" />
+      <point x="3881.9144079200314" y="629.0" />
+      <point x="4102.008314109957" y="629.0" />
+      <point x="-81.33333333333337" y="82.5" />
     </edge>
     <edge source="ro.ubb.ClientServices.TimeTableService" target="ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-59.5" />
+      <point x="0.0" y="59.5" />
     </edge>
     <edge source="ro.ubb.tcp.CRUDInitializer" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="681.3284313725488" y="98.0" />
-      <point x="1403.084486735871" y="98.0" />
-      <point x="-21.352941176470495" y="14.0" />
+      <point x="-4.547473508864641E-13" y="-37.5" />
+      <point x="1320.6570549788548" y="213.0" />
+      <point x="2589.797529796232" y="213.0" />
+      <point x="-29.29411764705901" y="71.5" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.TimeTableTransferService" target="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-71.0" />
+      <point x="0.0" y="59.5" />
     </edge>
     <edge source="ro.ubb.Model.Train" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="161.69386774317536" y="58.0" />
-      <point x="1374.6138985005769" y="58.0" />
-      <point x="-49.82352941176464" y="14.0" />
+      <point x="0.0" y="-170.5" />
+      <point x="256.65705497885483" y="173.0" />
+      <point x="2550.7387062668204" y="173.0" />
+      <point x="-68.35294117647072" y="71.5" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.DBOServiceExceptions.TrainDBOServiceException" target="ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException">
-      <point x="0.0" y="-14.0" />
-      <point x="114.0" y="586.0" />
-      <point x="302.8333333333333" y="586.0" />
-      <point x="-64.66666666666669" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="3497.0" y="1703.0" />
+      <point x="3666.6666666666665" y="1703.0" />
+      <point x="-89.33333333333348" y="48.0" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.DomainExceptions.TrainException" target="ro.ubb.Model.Exceptions.DomainExceptions.DomainException">
-      <point x="0.0" y="-14.0" />
-      <point x="1470.0" y="586.0" />
-      <point x="1594.8333333333333" y="586.0" />
-      <point x="-54.66666666666674" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="1523.0" y="1703.0" />
+      <point x="1669.6666666666667" y="1703.0" />
+      <point x="-81.33333333333326" y="48.0" />
     </edge>
     <edge source="ro.ubb.Model.Validators.TrainValidator" target="ro.ubb.Model.Validators.Validator">
-      <point x="0.0" y="-14.0" />
-      <point x="1280.0" y="586.0" />
-      <point x="1124.5" y="586.0" />
-      <point x="36.0" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="3230.0" y="1659.0" />
+      <point x="2989.6666666666665" y="1659.0" />
+      <point x="42.666666666666515" y="26.0" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDUtils.DBOServices" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-104.5" />
+      <point x="2585.9070549788553" y="243.0" />
+      <point x="2619.091647443291" y="243.0" />
+      <point x="0.0" y="71.5" />
     </edge>
     <edge source="ro.ubb.Model.Validators.StationValidator" target="ro.ubb.Model.Validators.Validator">
-      <point x="0.0" y="-14.0" />
-      <point x="891.5" y="586.0" />
-      <point x="1052.5" y="586.0" />
-      <point x="-36.0" y="14.0" />
+      <point x="0.0" y="-37.5" />
+      <point x="2690.5" y="1659.0" />
+      <point x="2904.3333333333335" y="1659.0" />
+      <point x="-42.666666666666515" y="26.0" />
     </edge>
     <edge source="ro.ubb.Model.Station" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="1601.6874279123413" y="118.0" />
-      <point x="1431.5550749711647" y="118.0" />
-      <point x="7.117647058823422" y="14.0" />
+      <point x="0.0" y="-148.5" />
+      <point x="2784.9070549788553" y="243.0" />
+      <point x="2628.8563533256442" y="243.0" />
+      <point x="9.764705882353155" y="71.5" />
     </edge>
     <edge source="ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService" target="ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices">
-      <point x="-66.0" y="-14.0" />
-      <point x="2010.8397731641671" y="284.0" />
-      <point x="1917.610534409842" y="284.0" />
-      <point x="71.33333333333326" y="14.0" />
+      <point x="-86.74999999999955" y="-59.5" />
+      <point x="3417.5036043829305" y="969.0" />
+      <point x="3291.7487024221464" y="969.0" />
+      <point x="75.33333333333348" y="82.0" />
+    </edge>
+    <edge source="ro.ubb.Model.Exceptions.ServiceExceptions.TimeTableServiceException" target="ro.ubb.Model.Exceptions.ServiceExceptions.AbstractServiceException">
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="26.0" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.DBOServiceExceptions.TimeTableDBOServiceException" target="ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException">
-      <point x="0.0" y="-14.0" />
-      <point x="638.5" y="586.0" />
-      <point x="432.1666666666667" y="586.0" />
-      <point x="64.66666666666669" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="4029.5" y="1703.0" />
+      <point x="3845.3333333333335" y="1703.0" />
+      <point x="89.33333333333348" y="48.0" />
     </edge>
     <edge source="ro.ubb.Services.TrainService" target="ro.ubb.Services.ServiceAbstractions.AbstractIService">
-      <point x="0.0" y="-14.0" />
-      <point x="2465.777201076509" y="191.0" />
-      <point x="2443.9374279123413" y="191.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-71.0" />
+      <point x="4202.914407920031" y="629.0" />
+      <point x="4183.341647443291" y="629.0" />
+      <point x="0.0" y="82.5" />
+    </edge>
+    <edge source="ro.ubb.tcp.TCPServer.ClientHandler" target="ro.ubb.tcp.TCPServer">
+      <point x="0.0" y="-49.0" />
+      <point x="0.0" y="214.5" />
     </edge>
     <edge source="ro.ubb.Services.ServiceAbstractions.AbstractIService" target="ro.ubb.Model.BaseEntity">
-      <point x="-39.0" y="-14.0" />
-      <point x="2404.9374279123413" y="48.0" />
-      <point x="1481.3786043829296" y="48.0" />
-      <point x="56.94117647058829" y="14.0" />
+      <point x="-61.0" y="-82.5" />
+      <point x="4122.341647443291" y="173.0" />
+      <point x="2697.2092945021145" y="173.0" />
+      <point x="78.11764705882342" y="71.5" />
     </edge>
     <edge source="ro.ubb.Services.ServiceAbstractions.AbstractIService" target="ro.ubb.Services.ServiceAbstractions.Service">
-      <point x="39.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="61.0" y="-82.5" />
+      <point x="0.0" y="59.5" />
     </edge>
     <edge source="ro.ubb.Parsers.TimeTableParser" target="ro.ubb.Parsers.IParser">
-      <point x="0.0" y="-14.0" />
-      <point x="486.6874279123414" y="191.0" />
-      <point x="323.69876970395956" y="191.0" />
-      <point x="32.66666666666663" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="782.0916474432911" y="629.0" />
+      <point x="524.1570549788551" y="629.0" />
+      <point x="48.0" y="37.0" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService" target="ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices">
-      <point x="61.0" y="-14.0" />
-      <point x="1570.833333333333" y="284.0" />
-      <point x="1846.2772010765088" y="284.0" />
-      <point x="0.0" y="14.0" />
+      <point x="75.75" y="-82.5" />
+      <point x="2804.583333333333" y="969.0" />
+      <point x="3216.415369088813" y="969.0" />
+      <point x="0.0" y="82.0" />
     </edge>
     <edge source="ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices" target="ro.ubb.TransferServices.ITransferService">
-      <point x="-53.5" y="-14.0" />
-      <point x="1792.7772010765088" y="191.0" />
-      <point x="1801.5272010765088" y="191.0" />
-      <point x="0.0" y="14.0" />
+      <point x="-56.5" y="-82.0" />
+      <point x="3159.915369088813" y="629.0" />
+      <point x="3127.915369088813" y="629.0" />
+      <point x="0.0" y="170.0" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientAbstraction.IFeatureCaller" target="ro.ubb.Model.BaseEntity">
-      <point x="35.75" y="-14.0" />
-      <point x="2223.277201076509" y="58.0" />
-      <point x="1474.2609573241061" y="58.0" />
-      <point x="49.823529411764866" y="14.0" />
+      <point x="86.75" y="-59.5" />
+      <point x="3728.4144079200314" y="183.0" />
+      <point x="2687.444588619762" y="183.0" />
+      <point x="68.35294117647072" y="71.5" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientTrainService" target="ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService">
-      <point x="0.0" y="-14.0" />
-      <point x="1567.4166666666665" y="357.0" />
-      <point x="1509.833333333333" y="357.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="2811.833333333333" y="1201.0" />
+      <point x="2728.833333333333" y="1201.0" />
+      <point x="0.0" y="82.5" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.StationTService" target="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService">
-      <point x="0.0" y="-14.0" />
-      <point x="816.8284313725488" y="357.0" />
-      <point x="698.1874279123414" y="357.0" />
-      <point x="68.0" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="1287.1617647058824" y="1201.0" />
+      <point x="1186.6570549788553" y="1201.0" />
+      <point x="100.0" y="93.5" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDRepository" target="ro.ubb.Model.BaseEntity">
-      <point x="40.75" y="-14.0" />
-      <point x="2095.527201076509" y="191.0" />
-      <point x="2091.027201076509" y="191.0" />
-      <point x="2091.027201076509" y="78.0" />
-      <point x="1460.0256632064588" y="78.0" />
-      <point x="35.58823529411757" y="14.0" />
+      <point x="65.5" y="-93.0" />
+      <point x="3556.415369088813" y="629.0" />
+      <point x="3540.415369088813" y="629.0" />
+      <point x="3540.415369088813" y="203.0" />
+      <point x="2667.915176855056" y="203.0" />
+      <point x="48.823529411764866" y="71.5" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.ValidatorException" target="ro.ubb.Model.Exceptions.DomainExceptions.DomainException">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-48.0" />
+      <point x="0.0" y="48.0" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.DomainExceptions.StationException" target="ro.ubb.Model.Exceptions.DomainExceptions.DomainException">
-      <point x="0.0" y="-14.0" />
-      <point x="1835.0" y="586.0" />
-      <point x="1704.1666666666667" y="586.0" />
-      <point x="54.66666666666674" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="1984.0" y="1703.0" />
+      <point x="1832.3333333333333" y="1703.0" />
+      <point x="81.33333333333326" y="48.0" />
     </edge>
     <edge source="ro.ubb.Services.TrainsStationsService" target="ro.ubb.Services.ServiceAbstractions.AbstractIService">
-      <point x="0.0" y="-14.0" />
-      <point x="2649.277201076509" y="191.0" />
-      <point x="2495.9374279123413" y="191.0" />
-      <point x="52.0" y="14.0" />
+      <point x="0.0" y="-137.5" />
+      <point x="4738.414407920031" y="629.0" />
+      <point x="4264.674980776624" y="629.0" />
+      <point x="81.33333333333326" y="82.5" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService" target="ro.ubb.Model.BaseEntity">
-      <point x="-53.25" y="-14.0" />
-      <point x="58.75" y="48.0" />
-      <point x="1367.496251441753" y="48.0" />
-      <point x="-56.94117647058829" y="14.0" />
+      <point x="-86.75" y="-59.5" />
+      <point x="86.75" y="163.0" />
+      <point x="2540.9740003844677" y="163.0" />
+      <point x="-78.11764705882342" y="71.5" />
     </edge>
     <edge source="ro.ubb.Model.Validators.TrainsStationsValidator" target="ro.ubb.Model.Validators.Validator">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="26.0" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService" target="ro.ubb.Repository.Repositories.CRUDUtils.DBOServices">
-      <point x="0.0" y="-14.0" />
-      <point x="1614.9374279123413" y="191.0" />
-      <point x="1470.7707612456747" y="191.0" />
-      <point x="46.33333333333326" y="14.0" />
+      <point x="0.0" y="-71.0" />
+      <point x="2917.591647443291" y="629.0" />
+      <point x="2636.9070549788553" y="629.0" />
+      <point x="51.0" y="104.5" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService" target="ro.ubb.Model.BaseEntity">
-      <point x="-61.0" y="-14.0" />
-      <point x="1448.833333333333" y="264.0" />
-      <point x="1105.9374279123413" y="264.0" />
-      <point x="1105.9374279123413" y="118.0" />
-      <point x="1417.3197808535178" y="118.0" />
-      <point x="-7.117647058823422" y="14.0" />
+      <point x="-75.75" y="-82.5" />
+      <point x="2653.083333333333" y="949.0" />
+      <point x="2048.091647443291" y="949.0" />
+      <point x="2048.091647443291" y="233.0" />
+      <point x="2609.326941560938" y="233.0" />
+      <point x="-9.764705882353155" y="71.5" />
     </edge>
     <edge source="ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService" target="ro.ubb.Repository.Repositories.CRUDUtils.DBOServices">
-      <point x="0.0" y="-14.0" />
-      <point x="1216.4374279123413" y="191.0" />
-      <point x="1378.1040945790082" y="191.0" />
-      <point x="-46.33333333333326" y="14.0" />
+      <point x="0.0" y="-82.5" />
+      <point x="2278.091647443291" y="629.0" />
+      <point x="2534.9070549788553" y="629.0" />
+      <point x="-51.0" y="104.5" />
     </edge>
     <edge source="ro.ubb.Model.TrainsStationsEntity" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="452.53210303729304" y="78.0" />
-      <point x="1388.8491926182237" y="78.0" />
-      <point x="-35.58823529411757" y="14.0" />
+      <point x="0.0" y="-148.5" />
+      <point x="767.1570549788553" y="193.0" />
+      <point x="2570.2681180315262" y="193.0" />
+      <point x="-48.823529411764866" y="71.5" />
     </edge>
     <edge source="ro.ubb.ClientServices.ClientStationService" target="ro.ubb.ClientServices.ClientAbstraction.AbstractClientTransferService">
-      <point x="0.0" y="-14.0" />
-      <point x="1370.9166666666665" y="357.0" />
-      <point x="1428.5" y="357.0" />
-      <point x="-81.33333333333326" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="2544.833333333333" y="1201.0" />
+      <point x="2627.833333333333" y="1201.0" />
+      <point x="-101.0" y="82.5" />
     </edge>
     <edge source="ro.ubb.UI.EntityManagers.TrainCreator" target="ro.ubb.UI.EntityManagers.IEntityCreator">
-      <point x="0.0" y="-14.0" />
-      <point x="1010.6874279123414" y="191.0" />
-      <point x="897.7450980392155" y="191.0" />
-      <point x="46.66666666666663" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="1963.091647443291" y="629.0" />
+      <point x="1799.9903883121888" y="629.0" />
+      <point x="64.33333333333348" y="60.0" />
     </edge>
     <edge source="ro.ubb.Parsers.IParser" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="291.0321030372929" y="68.0" />
-      <point x="1381.7315455594003" y="68.0" />
-      <point x="-42.70588235294122" y="14.0" />
+      <point x="0.0" y="-37.0" />
+      <point x="476.15705497885506" y="183.0" />
+      <point x="2560.5034121491735" y="183.0" />
+      <point x="-58.58823529411757" y="71.5" />
     </edge>
     <edge source="ro.ubb.Repository.IRepository" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="2018.5272010765088" y="88.0" />
-      <point x="1452.9080161476354" y="88.0" />
-      <point x="28.470588235294144" y="14.0" />
+      <point x="0.0" y="-70.0" />
+      <point x="3441.415369088813" y="213.0" />
+      <point x="2658.150470972703" y="213.0" />
+      <point x="39.05882352941171" y="71.5" />
     </edge>
     <edge source="ro.ubb.TransferServices.ITransferService" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="1801.5272010765088" y="108.0" />
-      <point x="1438.6727220299886" y="108.0" />
-      <point x="14.235294117647072" y="14.0" />
+      <point x="0.0" y="-170.0" />
+      <point x="3127.915369088813" y="233.0" />
+      <point x="2638.621059207997" y="233.0" />
+      <point x="19.529411764705856" y="71.5" />
     </edge>
     <edge source="ro.ubb.TransferServices.ServerAbstractions.AbstractFeaturesTransferService" target="ro.ubb.Model.BaseEntity">
-      <point x="66.0" y="-14.0" />
-      <point x="2142.839773164167" y="284.0" />
-      <point x="2146.777201076509" y="284.0" />
-      <point x="2146.777201076509" y="68.0" />
-      <point x="1467.1433102652827" y="68.0" />
-      <point x="42.70588235294122" y="14.0" />
+      <point x="86.75000000000045" y="-59.5" />
+      <point x="3591.0036043829305" y="969.0" />
+      <point x="3632.415369088813" y="969.0" />
+      <point x="3632.415369088813" y="193.0" />
+      <point x="2677.6798827374087" y="193.0" />
+      <point x="58.58823529411757" y="71.5" />
     </edge>
     <edge source="ro.ubb.Parsers.TrainParser" target="ro.ubb.Parsers.IParser">
-      <point x="0.0" y="-14.0" />
-      <point x="160.18742791234126" y="191.0" />
-      <point x="258.3654363706262" y="191.0" />
-      <point x="-32.666666666666686" y="14.0" />
+      <point x="0.0" y="-48.5" />
+      <point x="259.59164744329064" y="629.0" />
+      <point x="428.15705497885506" y="629.0" />
+      <point x="-48.0" y="37.0" />
     </edge>
     <edge source="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService" target="ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService">
-      <point x="53.25" y="-14.0" />
-      <point x="165.25" y="357.0" />
-      <point x="562.1874279123414" y="357.0" />
-      <point x="-68.0" y="14.0" />
+      <point x="86.75" y="-59.5" />
+      <point x="260.25" y="1201.0" />
+      <point x="986.6570549788553" y="1201.0" />
+      <point x="-100.0" y="93.5" />
     </edge>
     <edge source="ro.ubb.Model.Exceptions.DBOServiceExceptions.StationDBOServiceException" target="ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException">
-      <point x="0.0" y="-14.0" />
-      <point x="0.0" y="14.0" />
+      <point x="0.0" y="-26.0" />
+      <point x="0.0" y="48.0" />
     </edge>
     <edge source="ro.ubb.UI.EntityManagers.IEntityCreator" target="ro.ubb.Model.BaseEntity">
-      <point x="0.0" y="-14.0" />
-      <point x="851.0784313725488" y="108.0" />
-      <point x="1410.2021337946944" y="108.0" />
-      <point x="-14.235294117647072" y="14.0" />
+      <point x="0.0" y="-60.0" />
+      <point x="1735.6570549788553" y="223.0" />
+      <point x="2599.5622356785852" y="223.0" />
+      <point x="-19.529411764705856" y="71.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.3" x="1347.333333333334" y="326.66666666666674" />
+  <settings layout="Hierarchic Group" zoom="0.30000000000000004" x="3993.0" y="645.4761904761904" />
   <SelectedNodes />
-  <Categories />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>

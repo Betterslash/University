@@ -10,8 +10,8 @@ ro/ubb/Model/Exceptions/DomainExceptions/DomainException.java
  ro.ubb.Model.Exceptions.DomainExceptions.DomainException
 ro/ubb/Model/Exceptions/DomainExceptions/TrainException.java
  ro.ubb.Model.Exceptions.DomainExceptions.TrainException
-ro/ubb/Model/Exceptions/ServiceExceptions/StationServiceException.java
- ro.ubb.Model.Exceptions.ServiceExceptions.StationServiceException
+ro/ubb/Model/Validators/TrainValidator.java
+ ro.ubb.Model.Validators.TrainValidator
 ro/ubb/CommunicationCommons/CustomEntities/StatusCodes.java
  ro.ubb.CommunicationCommons.CustomEntities.StatusCodes
 ro/ubb/TransferServices/ServerAbstractions/AbstractFeaturesTransferService.java
@@ -22,14 +22,14 @@ ro/ubb/Model/Exceptions/DBOServiceExceptions/TrainDBOServiceException.java
  ro.ubb.Model.Exceptions.DBOServiceExceptions.TrainDBOServiceException
 ro/ubb/Model/Exceptions/ServerExceptions/TCPServerException.java
  ro.ubb.Model.Exceptions.ServerExceptions.TCPServerException
-ro/ubb/Model/Exceptions/ChannelExceptions/ChannelException.java
- ro.ubb.Model.Exceptions.ChannelExceptions.ChannelException
+ro/ubb/Model/Station.java
+ ro.ubb.Model.Station
 ro/ubb/Model/Exceptions/ValidatorException.java
  ro.ubb.Model.Exceptions.ValidatorException
 ro/ubb/Model/Exceptions/DomainExceptions/StationException.java
  ro.ubb.Model.Exceptions.DomainExceptions.StationException
-ro/ubb/CommunicationCommons/Message.java
- ro.ubb.CommunicationCommons.Message
+ro/ubb/Model/Validators/StationValidator.java
+ ro.ubb.Model.Validators.StationValidator
 ro/ubb/CommunicationCommons/CustomEntities/Header.java
  ro.ubb.CommunicationCommons.CustomEntities.Header
 ro/ubb/Model/Validators/TrainsStationsValidator.java
@@ -38,25 +38,23 @@ ro/ubb/Model/Exceptions/DomainExceptions/TimeFormatException.java
  ro.ubb.Model.Exceptions.DomainExceptions.TimeFormatException
 ro/ubb/Model/BaseEntity.java
  ro.ubb.Model.BaseEntity
-ro/ubb/Model/Exceptions/ServiceExceptions/TrainServiceException.java
- ro.ubb.Model.Exceptions.ServiceExceptions.TrainServiceException
+ro/ubb/Model/Exceptions/DBOServiceExceptions/TimeTableDBOServiceException.java
+ ro.ubb.Model.Exceptions.DBOServiceExceptions.TimeTableDBOServiceException
 ro/ubb/Model/Exceptions/DomainExceptions/IdTypeException.java
  ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException
-ro/ubb/CommunicationCommons/CustomExceptions/MessageException.java
- ro.ubb.CommunicationCommons.CustomExceptions.MessageException
+ro/ubb/Model/Train.java
+ ro.ubb.Model.Train
 ro/ubb/Model/CustomADT/Pair.java
  ro.ubb.Model.CustomADT.Pair
 ro/ubb/Model/Exceptions/DBOServiceExceptions/DBOServiceException.java
  ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException
-ro/ubb/Model/Validators/TrainValidator.java
- ro.ubb.Model.Validators.TrainValidator
-ro/ubb/CommunicationCommons/CustomEntities/CommunicationChannel.java
- ro.ubb.CommunicationCommons.CustomEntities.CommunicationChannel
-ro/ubb/Model/Exceptions/DBOServiceExceptions/TimeTableDBOServiceException.java
- ro.ubb.Model.Exceptions.DBOServiceExceptions.TimeTableDBOServiceException
-ro/ubb/Model/Station.java
- ro.ubb.Model.Station
-ro/ubb/Model/Train.java
- ro.ubb.Model.Train
-ro/ubb/Model/Validators/StationValidator.java
- ro.ubb.Model.Validators.StationValidator
+ro/ubb/Model/Exceptions/ServiceExceptions/AbstractServiceException.java
+ ro.ubb.Model.Exceptions.ServiceExceptions.AbstractServiceException
+ro/ubb/Model/Exceptions/ServiceExceptions/TimeTableServiceException.java
+ ro.ubb.Model.Exceptions.ServiceExceptions.TimeTableServiceException
+ro/ubb/CommunicationCommons/Message.java
+ ro.ubb.CommunicationCommons.Message
+ro/ubb/Model/Exceptions/MessageException.java
+ ro.ubb.Model.Exceptions.MessageException
+ro/ubb/Model/Exceptions/ServiceExceptions/StationServiceException.java
+ ro.ubb.Model.Exceptions.ServiceExceptions.StationServiceException
