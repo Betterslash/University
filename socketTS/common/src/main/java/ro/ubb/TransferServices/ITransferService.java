@@ -2,6 +2,7 @@ package ro.ubb.TransferServices;
 
 import ro.ubb.Model.BaseEntity;
 
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public interface ITransferService<ID, E extends BaseEntity<ID>> {
@@ -15,7 +16,7 @@ public interface ITransferService<ID, E extends BaseEntity<ID>> {
     String GET_MOST_TRAVELED_STATION = "getMostTraveledStation";
     String GET_STATIONS_PASSED_BY_EVERY_TRAIN = "getStationsPassedByEveryTrain";
     String LINE_SEPARATOR = System.lineSeparator();
-    CompletableFuture<String> getEntities();
+    CompletableFuture<Set<E>> getEntities();
     CompletableFuture<String> addEntity(E entity);
     CompletableFuture<String> deleteEntity(ID id);
     CompletableFuture<String> updateEntity(E entity);
