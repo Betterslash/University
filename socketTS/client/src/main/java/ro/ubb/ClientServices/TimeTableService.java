@@ -5,6 +5,7 @@ import ro.ubb.CommunicationCommons.CustomEntities.Header;
 import ro.ubb.CommunicationCommons.CustomEntities.StatusCodes;
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.Model.CustomADT.Pair;
+import ro.ubb.Model.Parsers.IParser;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.tcp.TcpClient;
 
@@ -13,8 +14,8 @@ import java.util.concurrent.CompletableFuture;
 public class TimeTableService extends IFeatureCaller<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
 
 
-    public TimeTableService(TcpClient tcpClient, String signature) {
-        super(tcpClient, signature);
+    public TimeTableService(TcpClient tcpClient, String signature, IParser<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> parser) {
+        super(tcpClient, signature, parser);
     }
 
     @Override

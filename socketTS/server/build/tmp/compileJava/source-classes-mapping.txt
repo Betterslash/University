@@ -1,47 +1,39 @@
-ro/ubb/Repository/IRepository.java
- ro.ubb.Repository.IRepository
-ro/ubb/Parsers/TrainParser.java
- ro.ubb.Parsers.TrainParser
-ro/ubb/Repository/Repositories/CRUDUtils/StationDBOService.java
- ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService
 ro/ubb/Services/ServiceAbstractions/Service.java
  ro.ubb.Services.ServiceAbstractions.Service
-ro/ubb/Parsers/StationParser.java
- ro.ubb.Parsers.StationParser
+ro/ubb/Repository/IRepository.java
+ ro.ubb.Repository.IRepository
+ro/ubb/Services/TrainService.java
+ ro.ubb.Services.TrainService
+ro/ubb/Repository/Repositories/CRUDUtils/StationDBOService.java
+ ro.ubb.Repository.Repositories.CRUDUtils.StationDBOService
 ro/ubb/ServerTransferServices/ServerAbstraction/AbstractFServerTService.java
  ro.ubb.ServerTransferServices.ServerAbstraction.AbstractFServerTService
-ro/ubb/Parsers/IParser.java
- ro.ubb.Parsers.IParser
-ro/ubb/Repository/Repositories/CRUDRepository.java
- ro.ubb.Repository.Repositories.CRUDRepository
-ro/ubb/Parsers/TimeTableParser.java
- ro.ubb.Parsers.TimeTableParser
-ro/ubb/Repository/Repositories/CRUDUtils/TimeTableDBOService.java
- ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService
+ro/ubb/ServerApp.java
+ ro.ubb.ServerApp
+ro/ubb/ServerTransferServices/TimeTableTransferService.java
+ ro.ubb.ServerTransferServices.TimeTableTransferService
+ro/ubb/ServerTransferServices/TrainTService.java
+ ro.ubb.ServerTransferServices.TrainTService
 ro/ubb/Repository/Repositories/CRUDUtils/DBOServices.java
  ro.ubb.Repository.Repositories.CRUDUtils.DBOServices
 ro/ubb/Repository/Repositories/CRUDUtils/TrainDBOService.java
  ro.ubb.Repository.Repositories.CRUDUtils.TrainDBOService
 ro/ubb/ServerTransferServices/ServerAbstraction/AbstractServerTService.java
  ro.ubb.ServerTransferServices.ServerAbstraction.AbstractServerTService
+ro/ubb/Repository/Repositories/CRUDUtils/TimeTableDBOService.java
+ ro.ubb.Repository.Repositories.CRUDUtils.TimeTableDBOService
 ro/ubb/Services/ServiceAbstractions/AbstractIService.java
  ro.ubb.Services.ServiceAbstractions.AbstractIService
-ro/ubb/tcp/TCPServer.java
- ro.ubb.tcp.TCPServer
- ro.ubb.tcp.TCPServer$ClientHandler
+ro/ubb/Repository/Repositories/CRUDRepository.java
+ ro.ubb.Repository.Repositories.CRUDRepository
 ro/ubb/ServerTransferServices/StationTService.java
  ro.ubb.ServerTransferServices.StationTService
 ro/ubb/Services/TrainsStationsService.java
  ro.ubb.Services.TrainsStationsService
-ro/ubb/ServerApp.java
- ro.ubb.ServerApp
 ro/ubb/Services/StationService.java
  ro.ubb.Services.StationService
-ro/ubb/ServerTransferServices/TimeTableTransferService.java
- ro.ubb.ServerTransferServices.TimeTableTransferService
-ro/ubb/Services/TrainService.java
- ro.ubb.Services.TrainService
-ro/ubb/ServerTransferServices/TrainTService.java
- ro.ubb.ServerTransferServices.TrainTService
+ro/ubb/tcp/TCPServer.java
+ ro.ubb.tcp.TCPServer
+ ro.ubb.tcp.TCPServer$ClientHandler
 ro/ubb/tcp/CRUDInitializer.java
  ro.ubb.tcp.CRUDInitializer

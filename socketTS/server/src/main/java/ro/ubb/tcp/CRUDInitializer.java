@@ -2,10 +2,11 @@ package ro.ubb.tcp;
 
 import ro.ubb.CommunicationCommons.Message;
 import ro.ubb.Model.BaseEntity;
-import ro.ubb.Parsers.IParser;
+import ro.ubb.Model.Parsers.IParser;
 import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.UnaryOperator;
 
@@ -21,8 +22,15 @@ public class CRUDInitializer<ID, E extends BaseEntity<ID>> {
                 });
         unaryOperatorMap.put(AbstractTransferServices.READ_ENTITIES + transferService.getSS(),
                 request -> {
-                    CompletableFuture<String> res = transferService.getEntities();
-                    return CompletableFuture.supplyAsync(() -> getResponse(res), executor).join();
+                    CompletableFuture<Set<E>> res = transferService.getEntities();
+                    return CompletableFuture.supplyAsync(() -> getResponse(
+                            CompletableFuture.supplyAsync(() ->res.join().
+                                stream()
+                            .map(BaseEntity::csvFileFormat)
+                            .reduce((acc,  e) -> acc + e)
+                                    .orElseThrow(() -> new ExceptionInInitializerError("Someyhing went wrong furing parsing !"))
+                            )
+                            ), executor).join();
                 });
         unaryOperatorMap.put(AbstractTransferServices.UPDATE_ENTITY + transferService.getSS(),
                 request -> {

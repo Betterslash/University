@@ -1,10 +1,11 @@
 package ro.ubb.ServerTransferServices.ServerAbstraction;
 
 import ro.ubb.Model.BaseEntity;
-import ro.ubb.Model.Exceptions.DBOServiceExceptions.DBOServiceException;
 import ro.ubb.Services.ServiceAbstractions.Service;
 import ro.ubb.TransferServices.ServerAbstractions.AbstractTransferServices;
 
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 public abstract class AbstractServerTService<ID, E extends BaseEntity<ID>> extends AbstractTransferServices<ID, E> {
@@ -20,13 +21,9 @@ public abstract class AbstractServerTService<ID, E extends BaseEntity<ID>> exten
      * @returns all objects of type Station
      */
     @Override
-    public CompletableFuture<String> getEntities() {
+    public CompletableFuture<Set<E>> getEntities() {
         return CompletableFuture.supplyAsync(() ->
-                this.service.getAllEntities()
-                        .stream()
-                        .map(BaseEntity::toString)
-                        .reduce((acc, elem) -> acc +"\n" +elem)
-                        .orElseThrow(() -> new DBOServiceException("Couldn't get entities!")));
+                new HashSet<>(this.service.getAllEntities()));
     }
 
     /**

@@ -5,7 +5,6 @@ package ro.ubb.Model;
  */
 public abstract class BaseEntity<ID> {
     private ID id;
-
     /**
      * @return id
      */

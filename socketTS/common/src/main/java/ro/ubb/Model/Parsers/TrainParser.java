@@ -1,4 +1,4 @@
-package ro.ubb.Parsers;
+package ro.ubb.Model.Parsers;
 
 import ro.ubb.Model.Train;
 import ro.ubb.Model.Validators.TrainValidator;

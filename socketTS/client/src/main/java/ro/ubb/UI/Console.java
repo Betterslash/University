@@ -11,7 +11,7 @@ import ro.ubb.UI.EntityManagers.TimeTableCreator;
 import ro.ubb.UI.EntityManagers.TrainCreator;
 
 import java.util.Scanner;
-import java.util.concurrent.Future;
+import java.util.concurrent.CompletableFuture;
 
 public class Console {
     private final AbstractClientTransferService<Integer, Train> trainTransferService;
@@ -28,7 +28,7 @@ public class Console {
     public void runConsole() {
 
         String choice;
-        Future<String> resultFuture = null;
+        CompletableFuture<String> resultFuture = null;
         TrainCreator trainCreator = new TrainCreator();
         StationCreator stationCreator = new StationCreator();
         TimeTableCreator timeTableCreator = new TimeTableCreator();
@@ -42,7 +42,10 @@ public class Console {
                         UIPrinter.printTrainMenu();
                         choice = scanner.nextLine();
                         switch (choice) {
-                            case "1" -> resultFuture = this.trainTransferService.getEntities();
+                            case "1" -> resultFuture = CompletableFuture.supplyAsync(() -> this.trainTransferService.getEntities().join().stream()
+                                    .map(Train::toString)
+                                    .reduce((a, b) -> a + "\n" + b )
+                                    .orElseThrow());
                             case "2" -> resultFuture = this.trainTransferService.addEntity(trainCreator.createEntity());
                             case "4" -> resultFuture = this.trainTransferService.deleteEntity(trainCreator.createID());
                             case "3" -> resultFuture = this.trainTransferService.updateEntity(trainCreator.createEntity());
@@ -53,7 +56,10 @@ public class Console {
                         UIPrinter.printStationMenu();
                         choice = scanner.nextLine();
                         switch (choice) {
-                            case "1" -> resultFuture = this.stationTransferService.getEntities();
+                            case "1" -> resultFuture = CompletableFuture.supplyAsync(() -> this.stationTransferService.getEntities().join().stream()
+                                    .map(Station::toString)
+                                    .reduce((a, b) -> a + "\n" + b )
+                                    .orElseThrow());
                             case "2" -> resultFuture = this.stationTransferService.addEntity(stationCreator.createEntity());
                             case "4" -> resultFuture = this.stationTransferService.deleteEntity(stationCreator.createID());
                             case "3" -> resultFuture = this.stationTransferService.updateEntity(stationCreator.createEntity());
@@ -64,7 +70,11 @@ public class Console {
                         UIPrinter.printTimeTablesMenu();
                         choice = scanner.nextLine();
                         switch (choice) {
-                            case "1" -> resultFuture = this.ttTransferService.getEntities();
+                            case "1" -> resultFuture = CompletableFuture.supplyAsync(() -> this.ttTransferService.getEntities().join()
+                            .stream()
+                                    .map(TrainsStationsEntity::toString)
+                                    .reduce((a, b) -> a + "\n" + b )
+                                    .orElseThrow());
                             case "2" -> resultFuture = this.ttTransferService.addEntity(timeTableCreator.createEntity());
                             case "4" -> resultFuture = this.ttTransferService.deleteEntity(timeTableCreator.createID());
                             case "3" -> resultFuture = this.ttTransferService.updateEntity(timeTableCreator.createEntity());
@@ -85,7 +95,7 @@ public class Console {
                     default -> throw new IllegalStateException("Next time please give a valid option!");
                 }
                 assert resultFuture != null;
-                System.out.println(resultFuture.get());
+                System.out.println(resultFuture.join());
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
