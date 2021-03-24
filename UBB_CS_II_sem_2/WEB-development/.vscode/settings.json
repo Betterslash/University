@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "Fira Code, monospace",
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.fontLigatures": "Fira Code"
+}
