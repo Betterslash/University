@@ -5,8 +5,8 @@ import ro.ubb.Model.BaseEntity;
 import java.util.Optional;
 
 public interface Repository<ID, E extends BaseEntity<ID>>{
-    Optional<E> save(E entity);
-    Optional<E> update(E entity);
+    void save(E entity);
+    void update(E entity);
     Optional<E> delete(ID id);
     Iterable<E> read();
 }

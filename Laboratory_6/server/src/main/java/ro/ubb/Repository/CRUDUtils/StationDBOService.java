@@ -8,6 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StationDBOService extends DBOServices<Integer, Station> {
+
+
     private final static String READ_ENTITIES = "SELECT * FROM stations";
     private final static String ADD_ENTITY = "INSERT INTO stations (stationid, station_name, population_rate) VALUES (?,?,?);";
     private final static String DELETE_ENTITY = "DELETE FROM stations WHERE stationid = ?;";

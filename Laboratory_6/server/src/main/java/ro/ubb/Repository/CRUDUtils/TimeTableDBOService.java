@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class TimeTableDBOService extends DBOServices<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
+
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
     private final static String READ_ENTITIES = "SELECT * FROM timetables";
     private final static String ADD_ENTITY = "INSERT INTO timetables (trainid, stationid, arrival_date, departure_date, arrival_time, departure_time) VALUES (?, ?, ?, ?, ?, ?);";
@@ -26,10 +27,8 @@ public class TimeTableDBOService extends DBOServices<Pair<Integer, Integer>, Tra
             Pair<Integer, Integer> id = new Pair<>(res.getInt("trainid"), res.getInt("stationid"));
             String arrivalDate = res.getDate("arrival_date").toString();
             String arrivalTime = res.getTime("arrival_time").toString();
-            LocalDateTime arrivalDateTime = LocalDateTime.parse(arrivalDate + " " + arrivalTime, formatter);
             String departureDate = res.getDate("departure_date").toString();
             String departureTime = res.getTime("departure_time").toString();
-            LocalDateTime departureDateTime = LocalDateTime.parse(departureDate + " " + departureTime, formatter);
             return new TrainsStationsEntity<>(id, LocalDateTime.parse(arrivalDate + " " + arrivalTime, formatter),
                     LocalDateTime.parse(departureDate + " " + departureTime, formatter));
         }).forEach(e -> stationMap.put(e.getId(), e));

@@ -1,16 +1,20 @@
 package ro.ubb.Repository;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
 import ro.ubb.Model.BaseEntity;
 import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Repository.DBOUtils.DBOServices;
 
 import java.util.Optional;
 
-public class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<ID, T> {
-    @Autowired
-    private DBOServices<ID, T> entityService;
+public abstract class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<ID, T> {
+
+    private final DBOServices<ID, T> entityService;
+
+    protected CRUDRepository(DBOServices<ID, T> entityService) {
+        this.entityService = entityService;
+    }
+
 
     @Override
     public Iterable<T> read() {
@@ -18,9 +22,8 @@ public class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<
     }
 
     @Override
-    public Optional<T> save(T entity) throws ValidatorException {
+    public void save(T entity) throws ValidatorException {
         this.entityService.saveEntity(entity);
-        return Optional.empty();
     }
 
     @Override
@@ -30,9 +33,8 @@ public class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<
     }
 
     @Override
-    public Optional<T> update(T entity) throws ValidatorException{
+    public void update(T entity) throws ValidatorException{
         this.entityService .updateEntity(entity);
-        return Optional.empty();
     }
 
 }

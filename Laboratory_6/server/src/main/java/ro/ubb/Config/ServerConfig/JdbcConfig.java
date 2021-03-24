@@ -1,4 +1,4 @@
-package ro.ubb.Config;
+package ro.ubb.Config.ServerConfig;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.postgresql.Driver;

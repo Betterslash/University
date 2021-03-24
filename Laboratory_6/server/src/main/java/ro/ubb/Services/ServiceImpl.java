@@ -1,17 +1,19 @@
 package ro.ubb.Services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import ro.ubb.Model.BaseEntity;
 import ro.ubb.Model.Exceptions.ServiceExceptions.ServiceException;
-import ro.ubb.Repository.Repository;
+import ro.ubb.Repository.CRUDRepository;
 
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-public class ServiceImpl<ID, E extends BaseEntity<ID>> implements EntityService<ID, E >{
-    @Autowired
-    private Repository<ID, E> repository;
+public abstract class ServiceImpl<ID, E extends BaseEntity<ID>> implements EntityService<ID, E>{
+    private final CRUDRepository<ID, E> repository;
+
+    protected ServiceImpl(CRUDRepository<ID, E> repository) {
+        this.repository = repository;
+    }
 
     @Override
     public Set<E> readEntities() {
