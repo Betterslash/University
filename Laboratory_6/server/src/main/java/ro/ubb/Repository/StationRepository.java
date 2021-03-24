@@ -1,11 +1,8 @@
 package ro.ubb.Repository;
 
+import org.springframework.stereotype.Repository;
 import ro.ubb.Model.Station;
-import ro.ubb.Repository.CRUDUtils.StationDBOService;
-
+@Repository
 public class StationRepository extends CRUDRepository<Integer, Station>{
 
-    public StationRepository() {
-        super(new StationDBOService());
-    }
 }

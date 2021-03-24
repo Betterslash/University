@@ -1,5 +1,6 @@
 package ro.ubb.Config.ClientConfig;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.rmi.RmiProxyFactoryBean;
@@ -16,9 +17,26 @@ import ro.ubb.Ui.ClientConsole;
 @Configuration
 public class ClientAppConfig {
     @Bean
-    RmiProxyFactoryBean rmiProxyFactoryBean(){
+    @Qualifier("train")
+    RmiProxyFactoryBean rmiProxyFactoryBeanTrains(){
         RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
         rmiProxyFactoryBean.setServiceUrl("rmi://localhost:1099/TrainService");
+        rmiProxyFactoryBean.setServiceInterface(EntityService.class);
+        return rmiProxyFactoryBean;
+    }
+    @Bean
+    @Qualifier("station")
+    RmiProxyFactoryBean rmiProxyFactoryBeanStations(){
+        RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
+        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:1099/StationService");
+        rmiProxyFactoryBean.setServiceInterface(EntityService.class);
+        return rmiProxyFactoryBean;
+    }
+    @Bean
+    @Qualifier("timeTable")
+    RmiProxyFactoryBean rmiProxyFactoryBeanTimeTable(){
+        RmiProxyFactoryBean rmiProxyFactoryBean = new RmiProxyFactoryBean();
+        rmiProxyFactoryBean.setServiceUrl("rmi://localhost:1099/TimeTableService");
         rmiProxyFactoryBean.setServiceInterface(EntityService.class);
         return rmiProxyFactoryBean;
     }

@@ -1,5 +1,6 @@
 package ro.ubb.Repository.CRUDUtils;
 
+import org.springframework.stereotype.Component;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Repository.DBOUtils.DBOServices;
@@ -11,6 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Component
 public class TimeTableDBOService extends DBOServices<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> {
 
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");

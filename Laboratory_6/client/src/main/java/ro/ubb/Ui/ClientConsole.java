@@ -6,6 +6,11 @@ import ro.ubb.Model.Train;
 import ro.ubb.Model.TrainsStationsEntity;
 import ro.ubb.Services.EntityService;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
 public class ClientConsole {
     private final EntityService<Integer, Train> trainService;
     private final EntityService<Integer, Station> stationService;
@@ -18,7 +23,18 @@ public class ClientConsole {
     }
 
 
-    public void run(){
-        trainService.readEntities().forEach(System.out::println);
+    public void run() throws IOException {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String choice = reader.readLine();
+        switch (choice){
+            case UIPrinter.TRAIN_CONSTANT:
+                this.trainService.readEntities().forEach(System.out::println);
+                break;
+            case UIPrinter.STATION_CONSTANT:
+                this.stationService.readEntities().forEach(System.out::println);
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + choice);
+        }
     }
 }

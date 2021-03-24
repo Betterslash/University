@@ -1,6 +1,7 @@
 package ro.ubb.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.TrainsStationsEntity;
 
@@ -8,6 +9,7 @@ import java.util.Set;
 
 public class ClientTimeTableServiceImpl implements EntityService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>>{
     @Autowired
+    @Qualifier("timeTable")
     private EntityService<Pair<Integer, Integer>, TrainsStationsEntity<Integer, Integer>> entityService;
 
     @Override

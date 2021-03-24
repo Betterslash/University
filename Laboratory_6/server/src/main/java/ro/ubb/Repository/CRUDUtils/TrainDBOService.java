@@ -1,5 +1,6 @@
 package ro.ubb.Repository.CRUDUtils;
 
+import org.springframework.stereotype.Component;
 import ro.ubb.Model.Train;
 import ro.ubb.Repository.DBOUtils.DBOServices;
 
@@ -7,6 +8,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class TrainDBOService extends DBOServices<Integer, Train> {
 
     private final static String READ_ENTITIES = "SELECT * FROM trains";

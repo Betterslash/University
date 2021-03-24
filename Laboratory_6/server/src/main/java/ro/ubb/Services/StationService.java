@@ -1,10 +1,7 @@
 package ro.ubb.Services;
 
+import org.springframework.stereotype.Service;
 import ro.ubb.Model.Station;
-import ro.ubb.Repository.StationRepository;
-
+@Service
 public class StationService extends ServiceImpl<Integer, Station>{
-    public StationService() {
-        super(new StationRepository());
-    }
 }

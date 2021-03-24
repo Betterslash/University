@@ -1,12 +1,13 @@
 package ro.ubb.Repository.CRUDUtils;
 
 
+import org.springframework.stereotype.Component;
 import ro.ubb.Model.Station;
 import ro.ubb.Repository.DBOUtils.DBOServices;
 
 import java.util.HashMap;
 import java.util.Map;
-
+@Component
 public class StationDBOService extends DBOServices<Integer, Station> {
 
 

@@ -1,4 +1,4 @@
-package ro.ubb.UI;
+package ro.ubb.Ui;
 
 public class UIPrinter {
     public final static String TRAIN_CONSTANT = "1";

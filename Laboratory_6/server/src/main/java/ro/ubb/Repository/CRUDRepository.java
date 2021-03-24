@@ -1,20 +1,16 @@
 package ro.ubb.Repository;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import ro.ubb.Model.BaseEntity;
 import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Repository.DBOUtils.DBOServices;
 
 import java.util.Optional;
-
+@org.springframework.stereotype.Repository
 public abstract class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<ID, T> {
-
-    private final DBOServices<ID, T> entityService;
-
-    protected CRUDRepository(DBOServices<ID, T> entityService) {
-        this.entityService = entityService;
-    }
-
+    @Autowired
+    private DBOServices<ID, T> entityService;
 
     @Override
     public Iterable<T> read() {

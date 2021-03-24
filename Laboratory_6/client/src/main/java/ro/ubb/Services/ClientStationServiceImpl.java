@@ -1,12 +1,14 @@
 package ro.ubb.Services;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import ro.ubb.Model.Station;
 
 import java.util.Set;
 
 public class ClientStationServiceImpl implements EntityService<Integer, Station> {
     @Autowired
+    @Qualifier("station")
     private EntityService<Integer, Station> entityService;
 
     @Override
