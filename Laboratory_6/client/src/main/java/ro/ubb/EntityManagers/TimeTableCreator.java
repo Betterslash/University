@@ -1,4 +1,4 @@
-package ro.ubb.UI.EntityManagers;
+package ro.ubb.EntityManagers;
 
 import ro.ubb.Model.CustomADT.Pair;
 import ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException;
@@ -13,7 +13,7 @@ public class TimeTableCreator extends IEntityCreator<Pair<Integer, Integer>, Tra
 
     /**
      * creates an entity of type TimeTable
-     * @returns the new created timetable
+     * @return the new created timetable
      */
     @Override
     public TrainsStationsEntity<Integer, Integer> createEntity() {
@@ -53,13 +53,13 @@ public class TimeTableCreator extends IEntityCreator<Pair<Integer, Integer>, Tra
         int trainId, stationId;
         System.out.println("Give here the train id >>");
         try {
-            trainId = Integer.parseInt(bufferRead.readLine());
+            trainId = Integer.parseInt(bufferRead.readLine().strip());
         } catch (NumberFormatException | IOException e) {
             throw new IdTypeException("Train ID should be an int!");
         }
         System.out.println("Give here the station id >>");
         try {
-            stationId = Integer.parseInt(bufferRead.readLine());
+            stationId = Integer.parseInt(bufferRead.readLine().strip());
         } catch (NumberFormatException | IOException e) {
             throw new IdTypeException("Station ID should be an int!");
         }

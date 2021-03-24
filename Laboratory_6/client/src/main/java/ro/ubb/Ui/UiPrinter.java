@@ -1,6 +1,6 @@
 package ro.ubb.Ui;
 
-public class UIPrinter {
+public class UiPrinter {
     public final static String TRAIN_CONSTANT = "1";
     public final static String STATION_CONSTANT = "2";
     public final static String TT_CONSTANT = "3";

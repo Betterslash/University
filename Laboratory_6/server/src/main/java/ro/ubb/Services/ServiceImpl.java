@@ -25,8 +25,8 @@ public abstract class ServiceImpl<ID, E extends BaseEntity<ID>> implements Entit
     }
 
     @Override
-    public E deleteEntity(ID id) {
-       return repository.delete(id).orElseThrow(() -> new ServiceException("Something went wrong for deleting !"));
+    public void deleteEntity(ID id) {
+       repository.delete(id);
     }
 
     @Override

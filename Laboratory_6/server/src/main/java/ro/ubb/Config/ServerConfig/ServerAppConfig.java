@@ -3,9 +3,10 @@ package ro.ubb.Config.ServerConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.remoting.rmi.RmiServiceExporter;
-import ro.ubb.Repository.CRUDUtils.StationDBOService;
-import ro.ubb.Repository.CRUDUtils.TimeTableDBOService;
-import ro.ubb.Services.*;
+import ro.ubb.Services.EntityService;
+import ro.ubb.Services.StationService;
+import ro.ubb.Services.TimeTableService;
+import ro.ubb.Services.TrainService;
 
 @Configuration
 public class ServerAppConfig {

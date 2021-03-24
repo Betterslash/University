@@ -1,4 +1,4 @@
-package ro.ubb.UI.EntityManagers;
+package ro.ubb.EntityManagers;
 
 import ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException;
 import ro.ubb.Model.Exceptions.DomainExceptions.TimeFormatException;
@@ -13,7 +13,7 @@ public class TrainCreator extends IEntityCreator<Integer, Train> {
 
     /**
      * creates an entity of type Train
-     * @returns the new created train
+     * @return the new created train
      */
     @Override
     public Train createEntity() {
@@ -54,7 +54,7 @@ public class TrainCreator extends IEntityCreator<Integer, Train> {
         System.out.println("Give here the train id >>");
         Integer id = null;
         try {
-            id = Integer.parseInt(super.bufferRead.readLine());
+            id = Integer.parseInt(super.bufferRead.readLine().strip());
         } catch (IOException e) {
             e.printStackTrace();
         }

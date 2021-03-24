@@ -1,4 +1,4 @@
-package ro.ubb.UI.EntityManagers;
+package ro.ubb.EntityManagers;
 
 import ro.ubb.Model.BaseEntity;
 
@@ -12,6 +12,6 @@ public abstract class IEntityCreator<ID, K extends BaseEntity<ID>>{
         this.bufferRead = new BufferedReader(new InputStreamReader(System.in));
     }
 
-    protected abstract K createEntity();
-    protected abstract ID createID();
+    public abstract K createEntity();
+    public abstract ID createID();
 }

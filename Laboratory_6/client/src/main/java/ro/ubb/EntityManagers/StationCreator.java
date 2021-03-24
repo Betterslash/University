@@ -1,4 +1,4 @@
-package ro.ubb.UI.EntityManagers;
+package ro.ubb.EntityManagers;
 
 import ro.ubb.Model.Exceptions.DomainExceptions.IdTypeException;
 import ro.ubb.Model.Station;
@@ -9,7 +9,7 @@ public class StationCreator extends IEntityCreator<Integer, Station> {
 
     /**
      * creates an entity of type Station
-     * @returns the new created station
+     * @return the new created station
      */
     @Override
     public Station createEntity() {
@@ -43,7 +43,7 @@ public class StationCreator extends IEntityCreator<Integer, Station> {
         System.out.println("Give here a station id >>");
         int id = 0;
         try {
-            id = Integer.parseInt(super.bufferRead.readLine());
+            id = Integer.parseInt(super.bufferRead.readLine().strip());
         } catch (IOException e) {
             e.printStackTrace();
         }

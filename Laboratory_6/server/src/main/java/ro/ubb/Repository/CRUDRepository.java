@@ -6,7 +6,6 @@ import ro.ubb.Model.BaseEntity;
 import ro.ubb.Model.Exceptions.ValidatorException;
 import ro.ubb.Repository.DBOUtils.DBOServices;
 
-import java.util.Optional;
 @org.springframework.stereotype.Repository
 public abstract class CRUDRepository<ID, T extends BaseEntity<ID>> implements Repository<ID, T> {
     @Autowired
@@ -23,9 +22,8 @@ public abstract class CRUDRepository<ID, T extends BaseEntity<ID>> implements Re
     }
 
     @Override
-    public Optional<T> delete(ID id){
+    public void delete(ID id){
         this.entityService.deleteEntity(id);
-        return Optional.empty();
     }
 
     @Override
