@@ -18,7 +18,6 @@ public abstract class ServiceImpl<ID, E extends BaseEntity<ID>> implements Entit
     public Set<E> readEntities() {
         return StreamSupport.stream(repository.read().spliterator(), false).collect(Collectors.toSet());
     }
-
     @Override
     public void createEntity(E entity) {
         repository.save(entity);

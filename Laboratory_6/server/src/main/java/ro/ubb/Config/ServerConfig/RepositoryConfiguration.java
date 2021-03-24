@@ -2,7 +2,6 @@ package ro.ubb.Config.ServerConfig;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import ro.ubb.Repository.StationRepository;
 import ro.ubb.Repository.TimeTableRepository;
 import ro.ubb.Repository.TrainRepository;
@@ -10,7 +9,6 @@ import ro.ubb.Repository.TrainRepository;
 @Configuration
 public class RepositoryConfiguration {
     @Bean
-    @Primary
     public TrainRepository trainRepository(){
         return new TrainRepository();
     }
