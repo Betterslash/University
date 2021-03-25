@@ -23,7 +23,7 @@
 <a href ="UBB_CS_II_sem_2"> Semester 2</a>
 <ul>
   <li>
-    <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/SDI"> Sisteme de design si integrare </a>
+    <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/SDI"> Design and Integration Systems </a>
   </li>
   <li>
     <a href = "#"> Software Engeneering </a>
