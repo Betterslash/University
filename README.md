@@ -26,7 +26,7 @@
     <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/SDI"> Sisteme de design si integrare </a>
   </li>
   <li>
-    <a href = "#"> Ingineria sistemelor de soft </a>
+    <a href = "#"> Software Engeneering </a>
   </li>
   <li>
     <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/DBMS"> DBMS </a>
