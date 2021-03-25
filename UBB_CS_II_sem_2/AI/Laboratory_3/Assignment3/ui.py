@@ -27,6 +27,7 @@ class Ui:
 
     def run(self):
         running = True
+        args = []
         while running:
             self.__print_main_ui()
             menu_choice = input("Choose a menu, master ")
@@ -60,7 +61,14 @@ class Ui:
                 elif menu_choice == "c":
                     pass
                 elif menu_choice == "d":
-                    movingDrone(self.controller.repository.cmap, TEST_VECTOR)
+                    path = []
+                    x = 2
+                    y = 1
+                    for i in self.controller.run(args).get_x():
+                        x = x + v[i.gene][0]
+                        y = y + v[i.gene][1]
+                        path.append([x, y])
+                    movingDrone(self.controller.repository.cmap, path)
 
     @staticmethod
     def __print_main_ui():

@@ -2,8 +2,6 @@
 import os
 import pickle
 
-import pygame
-
 from Assignment3.gui import movingDrone
 from domain import *
 
@@ -14,6 +12,7 @@ class Repository:
         self.__populations = []
         self.cmap = Map()
         self.load_file()
+        self.cmap.surface = self.maps_representation[0]
 
     def initialize_random_map(self):
         cmap = Map()
@@ -23,7 +22,7 @@ class Repository:
     @staticmethod
     def create_population(args):
         # args = [populationSize, individualSize] -- you can add more args    
-        return Population(args[0], args[1])
+        return Population(args[1], args[2])
 
     # TO DO : add the other components for the repository: 
     #    load and save from file, etc

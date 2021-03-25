@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from pygame.locals import *
-import pygame, time
-from utils import *
+import pygame
+import time
+
 from domain import *
 
 
