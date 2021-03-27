@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-from copy import deepcopy
-from random import *
+from random import random
 
 import numpy as np
+from numpy.random import randint
 
 from utils import *
 
@@ -24,13 +24,8 @@ class Gene:
 class Individual:
     def __init__(self, size=0):
         self.__size = size
-        self.__x = [Gene() for i in range(self.__size)]
+        self.__x = [Gene() for _ in range(self.__size)]
         self.__f = 0
-        self.exploration_space = []
-
-    def set_exp_space(self, exp_space):
-        if len(self.exploration_space) == 0:
-            self.exploration_space = deepcopy(exp_space.copy())
 
     def get_f(self):
         return self.__f
@@ -38,71 +33,53 @@ class Individual:
     def get_x(self):
         return self.__x
 
-    def get_visibility(self, x, y):
-        seen_sum = 0
-        dummy_x = x
-        dummy_y = y
-        while self.exploration_space[dummy_x][y] != 1:
-            if (0 <= dummy_x < 19) and (0 <= y < 20):
-                if self.exploration_space[dummy_x][y] != 2:
-                    self.exploration_space[dummy_x][y] = 2
-                    seen_sum += NOT_VISITED
-                else:
-                    seen_sum += ALREADY_VISITED_POINTS
-                dummy_x += 1
-            else:
-                break
-        dummy_x = x
-        while self.exploration_space[dummy_x][y] != 1:
-            if (0 < dummy_x < 20) and (0 <= dummy_y < 20):
-                if self.exploration_space[dummy_x][y] != 2:
-                    self.exploration_space[dummy_x][y] = 2
-                    seen_sum += NOT_VISITED
-                else:
-                    seen_sum += ALREADY_VISITED_POINTS
-                dummy_x -= 1
-            else:
-                break
-        while self.exploration_space[x][dummy_y] != 1:
-            if (0 <= x < 20) and (0 <= dummy_y < 19):
-                if self.exploration_space[x][dummy_y] != 2:
-                    self.exploration_space[x][dummy_y] = 2
-                    seen_sum += NOT_VISITED
-                else:
-                    seen_sum += ALREADY_VISITED_POINTS
-                dummy_y += 1
-            else:
-                break
-        dummy_y = y
-        while self.exploration_space[x][dummy_y] != 1:
-            if (0 <= x < 20) and (0 < dummy_y < 20):
-                if self.exploration_space[x][dummy_y] != 2:
-                    self.exploration_space[x][dummy_y] = 2
-                    seen_sum += NOT_VISITED
-                else:
-                    seen_sum += ALREADY_VISITED_POINTS
-                dummy_y -= 1
-            else:
-                break
-        return seen_sum
-
-    def fitness(self):
-        # compute the fitness for the indivisual
-        # and save it in self.__f
+    def fitness_two(self, exp_map):
+        positions = set()
+        x_pos = 2
+        y_pos = 1
         final_sum = 0
-        x_position = 2
-        y_position = 1
         for elem in self.__x:
-            x_position += v[elem.gene][0]
-            y_position += v[elem.gene][1]
-            if (0 <= x_position < 20) and (0 <= y_position < 20):
-                if self.exploration_space[x_position][y_position] == 0:
-                    final_sum += self.get_visibility(x_position, y_position)
+            x_pos += v[elem.gene][0]
+            y_pos += v[elem.gene][1]
+            if (0 <= x_pos < 20) and (0 <= y_pos < 20):
+                if exp_map[x_pos][y_pos] == 0:
+                    self.get_vision(exp_map, x_pos, y_pos, positions)
                 else:
                     final_sum -= WALL_COLLISION
             else:
                 final_sum -= OUT_OF_MAP
-        self.__f = -final_sum
+        self.__f = final_sum + len(positions)
+
+    @staticmethod
+    def get_vision(exp_map, x, y, positions):
+        dummy_x = x
+        dummy_y = y
+        while exp_map[dummy_x][y] != 1:
+            if (0 <= dummy_x < 19) and (0 <= y < 20):
+                positions.add((dummy_x, y))
+                dummy_x += 1
+            else:
+                break
+        dummy_x = x
+        while exp_map[dummy_x][y] != 1:
+            if (0 < dummy_x < 20) and (0 <= dummy_y < 20):
+                positions.add((dummy_x, y))
+                dummy_x -= 1
+            else:
+                break
+        while exp_map[x][dummy_y] != 1:
+            if (0 <= x < 20) and (0 <= dummy_y < 19):
+                positions.add((x, dummy_y))
+                dummy_y += 1
+            else:
+                break
+        dummy_y = y
+        while exp_map[x][dummy_y] != 1:
+            if (0 <= x < 20) and (0 < dummy_y < 20):
+                positions.add((x, dummy_y))
+                dummy_y -= 1
+            else:
+                break
 
     def mutate(self, mutateProbability=0.04):
         if random() < mutateProbability:
@@ -134,20 +111,20 @@ class Individual:
 class Population:
     def __init__(self, populationSize=0, individualSize=0):
         self.__population_size = populationSize
-        self.__v = [Individual(individualSize) for x in range(populationSize)]
+        self.__v = [Individual(individualSize) for _ in range(populationSize)]
         self._exploration_space = []
 
     def evaluate(self):
         # evaluates the population
         for x in self.__v:
-            x.fitness()
+            x.fitness_two(self._exploration_space)
 
     def set_v(self, value):
         self.__v = value
 
     def selection(self, k=0):
-        self.__v.sort()
-        return self.__v[0]
+        self.__v.sort(key=lambda x: x.get_f(), reverse=True)
+        return self.__v[:k]
 
     def set_generation(self, generation):
         self.__v = generation
@@ -155,15 +132,9 @@ class Population:
     def add_to_population(self, off1: Individual, off2: Individual):
         self.__v.append(off1)
         self.__v.append(off2)
-        off1.exploration_space = self._exploration_space
-        off2.exploration_space = self._exploration_space
 
     def set_population_exp_space(self, exp_spcae):
         self._exploration_space = exp_spcae
-
-    def set_exp_space(self, exp_space):
-        for i in range(len(self.__v)):
-            self.__v[i].set_exp_space(exp_space)
 
     def get_v(self):
         return self.__v
