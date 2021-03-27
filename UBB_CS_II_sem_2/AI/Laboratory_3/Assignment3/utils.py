@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Creating some colors
+
 BLUE = (0, 0, 255)
 GRAYBLUE = (50, 120, 120)
 RED = (255, 0, 0)
@@ -24,6 +25,5 @@ mapLengh = 20
 DIMENSION = (800, 480)
 TEST_VECTOR = [[2, 1], [3, 1], [4, 1], [5, 1]]
 
-
-WALL_COLLISION = 50
-OUT_OF_MAP = 90
+WALL_COLLISION = 4
+OUT_OF_MAP = 5

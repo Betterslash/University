@@ -4,7 +4,6 @@
 # imports
 from Assignment3.commandreader import CommandReader
 from controller import *
-from gui import *
 
 
 # create a menu
@@ -23,11 +22,13 @@ from gui import *
 
 class Ui:
     def __init__(self):
+        self.path = []
         self.controller = Controller()
 
     def run(self):
         running = True
-        args = []
+        args = [200, 100, 20]
+        self.controller.set_args(args)
         while running:
             self.__print_main_ui()
             menu_choice = input("Choose a menu, master ")
@@ -57,18 +58,14 @@ class Ui:
                         args[i] = int(args[i])
                     self.controller.set_args(args)
                 elif menu_choice == "b":
-                    pass
+                    for i in range(30):
+                        self.controller.set_args(args)
+                        self.path = self.controller.solver(args)
                 elif menu_choice == "c":
-                    pass
+                    self.controller.show_table()
+                    self.controller.stats = []
                 elif menu_choice == "d":
-                    path = []
-                    x = 2
-                    y = 1
-                    for i in self.controller.run(args).get_x():
-                        x = x + v[i.gene][0]
-                        y = y + v[i.gene][1]
-                        path.append([x, y])
-                    movingDrone(self.controller.repository.cmap, path)
+                    movingDrone(self.controller.get_cmap(), self.path)
 
     @staticmethod
     def __print_main_ui():
