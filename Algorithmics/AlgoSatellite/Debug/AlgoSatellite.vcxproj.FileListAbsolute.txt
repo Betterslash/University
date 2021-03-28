@@ -1,0 +1,2 @@
+D:\University\University\Algorithmics\AlgoSatellite\Debug\AlgoSatellite.exe
+D:\University\University\Algorithmics\AlgoSatellite\Debug\AlgoSatellite.pdb
