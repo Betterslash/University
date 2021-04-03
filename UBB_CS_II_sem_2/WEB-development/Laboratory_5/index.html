@@ -1,0 +1,131 @@
+<!-- Write a web page which displays a vertically sliding desktop like the ones used 
+    on the Android or iOS. The web page should have 4 desktops, each desktop having 
+    a distinct transparent background color or image and having distinct textual 
+    and image content. A desktop is a large div occupying (exactly or almost) the 
+    whole browser window. By default, desktop no. 1 should be shown to the user. 
+    If the user clicks somewhere on the desktop the desktop should be slided vertically 
+    to the bottom of the window and from the top of the window desktop no. 2 
+    should slide vertically and occupy the whole browser window. Desktop sliding should 
+    be an animated transition and one desktop should not just instantly dissapear and the 
+    next desktop be displayed instead. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        var nums = [
+          'one',
+          'two',
+          'three',
+          'four',
+          'five'
+        ]
+        for(i =0; i < nums.length - 1; i++){
+          let elem = "#desktop-" + nums[i];
+          let elemN = "#desktop-" + nums[i + 1];
+          $(elem).mousedown(function () {
+          //e.preventDefault();
+          $(elemN).slideDown('slow')//.animate({ slideUp: "100vh", }, "slow");
+          $(elem).slideUp('slow')//.animate({ height: "0" }, "slow");
+          
+        });
+        }
+      });
+    </script>
+  </head>
+  <body>
+   <div id="desktop-container">
+      <div id="desktop-one">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed
+        elit tortor. Nulla ac pretium metus, nec molestie orci. Mauris euismod
+        malesuada enim, et bibendum sem venenatis ut. Maecenas volutpat leo ac
+        nunc gravida pellentesque. Praesent ex ex, sagittis ut pellentesque
+        eget, rhoncus et arcu. Quisque leo risus, auctor eu ipsum id, gravida
+        elementum leo. Quisque malesuada convallis dapibus. Vivamus cursus
+        egestas turpis id varius. Duis consectetur dui nisi, in placerat metus
+        rhoncus in. Vivamus rutrum aliquet augue, vitae aliquet leo vehicula
+        sed. Suspendisse accumsan lobortis mauris eleifend pretium. Morbi
+        convallis lobortis dolor sit amet sagittis. In tristique orci vitae
+        turpis efficitur consectetur ut sed quam. Quisque augue tortor,
+        tincidunt sed tellus nec, sollicitudin maximus lorem. Ut et lectus odio.
+        Curabitur sed bibendum arcu. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Praesent nec massa nunc. In ut hendrerit nunc. Aliquam
+        sagittis eros nec leo ornare tincidunt. Nam rhoncus convallis risus, id
+        elementum lorem placerat sit amet. Fusce in erat ac sapien sagittis
+        hendrerit. Mauris ut sollicitudin tellus. Sed ultricies facilisis tortor
+        non ultricies.
+        <img width="500px" height="500px" src = "assets/image_1.jpg" alt="">
+      </div>
+      <div id="desktop-two">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed
+        elit tortor. Nulla ac pretium metus, nec molestie orci. Mauris euismod
+        malesuada enim, et bibendum sem venenatis ut. Maecenas volutpat leo ac
+        nunc gravida pellentesque. Praesent ex ex, sagittis ut pellentesque
+        eget, rhoncus et arcu. Quisque leo risus, auctor eu ipsum id, gravida
+        elementum leo. Quisque malesuada convallis dapibus. Vivamus cursus
+        egestas turpis id varius. Duis consectetur dui nisi, in placerat metus
+        rhoncus in. Vivamus rutrum aliquet augue, vitae aliquet leo vehicula
+        sed. Suspendisse accumsan lobortis mauris eleifend pretium. Morbi
+        convallis lobortis dolor sit amet sagittis. In tristique orci vitae
+        turpis efficitur consectetur ut sed quam. Quisque augue tortor,
+        tincidunt sed tellus nec, sollicitudin maximus lorem. Ut et lectus odio.
+        Curabitur sed bibendum arcu. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Praesent nec massa nunc. In ut hendrerit nunc. Aliquam
+        sagittis eros nec leo ornare tincidunt. Nam rhoncus convallis risus, id
+        elementum lorem placerat sit amet. Fusce in erat ac sapien sagittis
+        hendrerit. Mauris ut sollicitudin tellus. Sed ultricies facilisis tortor
+        non ultricies.
+        <img width="500px" height="500px" src = "assets/image_2.jfif" alt="">
+      </div>
+      <div id="desktop-three">
+        Ut at pretium libero. Proin euismod lacus a blandit dapibus. Sed
+        pharetra metus id bibendum imperdiet. Curabitur nisl massa, eleifend ac
+        lorem eu, ultrices vulputate libero. Donec aliquam sem magna, a rutrum
+        eros condimentum vel. Donec tempor purus eget turpis ultrices, non
+        ultrices sem mattis. Vestibulum mi lorem, fringilla et auctor a,
+        malesuada at lacus. Nulla a accumsan ipsum. Cras non ultrices urna.
+        Aenean malesuada, nulla non fermentum ornare, dolor urna egestas quam,
+        ac fermentum mi odio quis ex. Proin vel turpis urna. Suspendisse dolor
+        nibh, rhoncus semper pellentesque a, aliquet vitae sem. Nullam quis
+        porta nulla, quis mollis lorem. Nam luctus, risus in finibus convallis,
+        magna mauris lobortis orci, ut porttitor eros massa quis diam. non
+        ultricies.
+        <img width="500px" height="500px" src = "assets/image_3.jfif" alt="">
+      </div>
+      <div id="desktop-four">
+        Maecenas euismod condimentum orci et sollicitudin. Aliquam et placerat
+        est. Ut fermentum diam a hendrerit lobortis. Mauris faucibus elit id
+        facilisis aliquam. Mauris eu malesuada nisl. Donec convallis libero in
+        ligula bibendum, commodo aliquam est accumsan. Donec turpis mauris,
+        pulvinar quis arcu et, tincidunt pulvinar enim. Sed lobortis, orci in
+        hendrerit dignissim, dui nunc pulvinar lorem, non dignissim eros dui sit
+        amet leo. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Quisque sit amet ornare risus. Duis
+        luctus fermentum nunc non finibus. Nullam sodales pretium augue, at
+        auctor felis varius vitae. Pellentesque tristique tortor eu commodo
+        finibus. Sed fermentum nulla et mauris dignissim fringilla vitae ac
+        elit. Praesent fringilla mi elementum dolor bibendum fringilla. Mauris
+        placerat nibh sed pharetra convallis.
+        <img width="500px" height="500px" src = "assets/image_4.jpg" alt="">
+      </div>
+      <div id="desktop-five">
+        Sed vitae eros congue orci cursus ornare interdum quis elit. Nam
+        consectetur lectus sit amet urna tincidunt hendrerit. Suspendisse
+        potenti. Cras posuere vehicula magna eu scelerisque. Sed imperdiet
+        blandit nunc. Curabitur est massa, viverra sit amet mollis ut, volutpat
+        vitae nulla. Integer malesuada vestibulum sapien eu feugiat. Nulla
+        pellentesque nunc pulvinar porta tempus. Nulla sapien nisl, hendrerit et
+        porttitor a, varius vitae tellus. Aliquam nec nisl finibus, tempor risus
+        vel, euismod ex. Etiam quis vehicula nisl. Proin nec massa commodo,
+        aliquet ligula venenatis, rutrum arcu. Donec volutpat vehicula mauris a
+        ullamcorper. Donec odio lacus, cursus eget massa posuere, luctus dictum
+        eros. Donec viverra justo in mollis tincidunt.
+        <img width="500px" height="500px" src = "assets/image_5.jpg" alt="">
+      </div>
+    </div> 
+  
+    </div>
+  </body>
+</html>

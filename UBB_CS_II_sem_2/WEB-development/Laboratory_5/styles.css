@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    /* overflow: hidden; */
+}
+#desktop-container{
+    position: fixed;
+    width: 100%;
+    
+}
+#desktop-two,
+#desktop-one,
+#desktop-three,
+#desktop-four,
+#desktop-five{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#desktop-two{
+    background-color: rgba(255, 0, 0, 0.219);
+}
+#desktop-three{
+    background-color: rgba(0, 0, 255, 0.185);
+}
+#desktop-four{
+    background-color: rgba(255, 255, 0, 0.178);
+}
+#desktop-five{
+    background-color: rgba(0, 128, 128, 0.219);
+}
