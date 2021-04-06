@@ -2,7 +2,6 @@
 import os
 import pickle
 
-from Assignment3.gui import movingDrone
 from domain import *
 
 
@@ -39,5 +38,3 @@ class Repository:
             # A new file will be created
             pickle.dump(self.maps_representation, file)
 
-    def visualise_map(self):
-        movingDrone(self.cmap, [[2, 1]])

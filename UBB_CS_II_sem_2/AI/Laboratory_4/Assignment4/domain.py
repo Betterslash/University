@@ -1,21 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import numpy as np
-from numpy.random import randint, seed, random
+import pygame
+from numpy.random import randint, random
 
 from utils import *
 
+
 # the glass gene can be replaced with int or float, or other types
 # depending on your problem's representation
-global sd
-
-
-class Seed:
-    sed = None
-
-    def __init__(self):
-        sed = sd
-
 
 class Gene:
     def __init__(self):
@@ -54,8 +47,8 @@ class Individual:
                     final_sum -= self.__size // 5
             else:
                 final_sum -= self.__size * 5
-            x_pos += v[elem.gene][0]
-            y_pos += v[elem.gene][1]
+            x_pos += directions[elem.gene][0]
+            y_pos += directions[elem.gene][1]
         # print(len(positions))
         self.__f = final_sum + len(positions)
 
@@ -175,3 +168,28 @@ class Map:
                 string = string + str(int(self.surface[i][j]))
             string = string + "\n"
         return string
+
+
+class Node:
+    def __init__(self, X, Y, Value, g_function, h_function, f_function):
+        self.value = Value
+        self.x = X
+        self.y = Y
+        self.g = g_function
+        self.f = f_function
+        self.h = h_function
+
+    def __str__(self):
+        return str(self.value)
+
+
+class Drone:
+    def __init__(self, pos_x=2, pos_y=1):
+        self.x = pos_x
+        self.y = pos_y
+        self.image = pygame.image.load("drona.png")
+        self.open_list = []
+        self.open_list.clear()
+        self.close_list = dict()
+        self.close_list.clear()
+        self.open_list.append((0, (self.x, self.y)))
