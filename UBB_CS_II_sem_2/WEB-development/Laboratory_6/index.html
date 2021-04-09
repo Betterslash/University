@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title></title>
+</head>
+<body>
+<form id="getForm" method="get">
+    <input id="getEntities" type="submit" value = "View Docs"/>
+</form>
+<div id="elems">
+
+</div>
+<form id = "deleteFrom" method="get">
+    <input id="idIn"/>
+    <input id = "deleteEntity" type="submit" value = "Delete Doc"/>
+</form>
+<form id="saveForm" method="post">
+    <input name = "id">
+    <input name = "title">
+    <input name = "page-number">
+    <input name = "type">
+    <input name = "format">
+    <input name = "author">
+    <input id = "addEntity" type="submit" value="Save Doc">
+</form>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#getForm').submit(
+            function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "GET",
+                    url: "index.php?fun='getDocs'",
+                    success: function (res) {
+                        const resp = res.toString().split(";");
+                        console.log(resp);
+                        resp.pop();
+                        const ul = $('<ul>', {id: "documents"}).append(
+                            resp.map(doc =>
+                                $("<li>").append($("<a>").text(doc))
+                            )
+                        );
+                        $("#documents").remove();
+                        $('#elems').append(ul.clone());
+                    }
+                })
+            }
+        );
+        $('#deleteFrom').submit(
+            function (e){
+                e.preventDefault();
+                $.ajax(
+                    {
+                        type: "GET",
+                        url: "index.php?fun='deleteDoc'&id="+$('#idIn').val(),
+                        success:function (res){
+                            alert(res);
+                        }
+                    }
+                )
+            }
+        );
+        $('#saveForm').submit(
+            function (e){
+                e.preventDefault();
+                $.ajax(
+                    {
+                        type: "POST",
+                        url : "index.php",
+                        data : $(this).serialize(),
+                        success: function (res){
+                            alert(res);
+                        }
+                    }
+                )
+            }
+        )
+    });
+</script>
+</body>
+</html>
