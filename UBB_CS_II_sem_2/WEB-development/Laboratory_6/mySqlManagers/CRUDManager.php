@@ -7,4 +7,5 @@ interface CRUDManager
     function read();
     function update(BaseDTO $entity);
     function delete($id);
+    function isStored(BaseDTO $entity);
 }

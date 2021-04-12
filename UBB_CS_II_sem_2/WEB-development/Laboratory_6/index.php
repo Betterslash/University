@@ -13,13 +13,28 @@ if (isset($_POST["id"]) && $_POST["id"]
                 && isset($_POST["format"]) && $_POST["format"]
                     && isset($_POST["author"]) && $_POST["author"]) {
     $entity = new DocumentDTO($_POST["id"],$_POST["title"],$_POST["page-number"],$_POST["type"],$_POST["format"],$_POST["author"]);
-    $doc_conn->create($entity);
+    if($doc_conn->isStored($entity) > 0){
+        $doc_conn->update($entity);
+    }else {
+        $doc_conn->create($entity);
+    }
 }
 if((isset($_GET['fun']) && $_GET['fun']) && $_GET['fun']=="'getDocs'"){
     $arr = $doc_conn->read();
-    echo $_GET['fun'].";";
     foreach ($arr as $el){
          echo $doc_creator->create($el).";\n";
+    }
+}
+if((isset($_GET['fun']) && $_GET['fun']) && $_GET['fun']=="'filterFormat'"){
+    $arr = $doc_conn->getByFormat($_GET['format']);
+    foreach ($arr as $el){
+        echo $doc_creator->create($el).";\n";
+    }
+}
+if((isset($_GET['fun']) && $_GET['fun']) && $_GET['fun']=="'filterType'"){
+    $arr = $doc_conn->getByType($_GET['type']);
+    foreach ($arr as $el){
+        echo $doc_creator->create($el).";\n";
     }
 }
 if((isset($_GET['fun']) && $_GET['fun']) && $_GET['fun']=="'deleteDoc'"){

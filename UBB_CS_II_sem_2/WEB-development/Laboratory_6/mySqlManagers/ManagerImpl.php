@@ -42,7 +42,24 @@
             $data->execute();
             echo "Succesfully deleted ".$this->entityName." with id ".$id;
         }
-
+        function isStored($entity): int
+        {
+            $command = "SELECT * FROM ".$this->entityName." WHERE id = ".$entity->getId().";";
+            $data = $this->conn->query($command);
+            return count($data->fetchAll());
+        }
+        function getByFormat($format): array
+        {
+            $command = "SELECT * FROM ".$this->entityName." WHERE format='".$format."'";
+            $data = $this->conn->query($command);
+            return $data->fetchAll();
+        }
+        function getByType($type): array
+        {
+            $command = "SELECT * FROM ".$this->entityName." WHERE type='".$type."'";
+            $data = $this->conn->query($command);
+            return $data->fetchAll();
+        }
         function __toString()
         {
             return "Manager";

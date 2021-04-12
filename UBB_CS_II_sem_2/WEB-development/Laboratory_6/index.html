@@ -3,50 +3,67 @@
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Documents Manager</title>
 </head>
 <body>
-<form id="getForm" method="get">
-    <input id="getEntities" type="submit" value = "View Docs"/>
+<form id="getForm" method="get" class = "entities-list">
+    <input class = "submit-div" id="getEntities" type="submit" value = "View Docs"/>
 </form>
 <div id="elems">
 
 </div>
-<form id = "deleteFrom" method="get">
-    <input id="idIn"/>
-    <input id = "deleteEntity" type="submit" value = "Delete Doc"/>
+<form id = "deleteFrom" method="get" class = "delete-entity">
+    <input id="idIn" placeholder="ID"/>
+    <input class = "submit-div" id = "deleteEntity" type="submit" value = "Delete Doc"/>
 </form>
-<form id="saveForm" method="post">
-    <input name = "id">
-    <input name = "title">
-    <input name = "page-number">
-    <input name = "type">
-    <input name = "format">
-    <input name = "author">
-    <input id = "addEntity" type="submit" value="Save Doc">
+<form id="saveForm" method="post" class = "save-entity">
+    <input name = "id" placeholder="ID">
+    <input name = "title" placeholder="Title">
+    <input name = "page-number" placeholder="Page number">
+    <input name = "type" placeholder="Type">
+    <input name = "format" placeholder="Format">
+    <input name = "author" placeholder="Author Id">
+    <input class = "submit-div" id = "addEntity" type="submit" value="Save/Update Doc">
 </form>
+<form id="formatFilterFrom" method="get" class ="filter-form">
+    <input id ="formatIn" placeholder="Format"/>
+    <input class = "submit-div" id ="formatFilter" type="submit" value="Filter By Format">
+</form>
+<form id="typeFilterFrom" method="get" class ="filter-form">
+    <input id ="typeIn" placeholder="Type"/>
+    <input class = "submit-div" id ="typeFilter" type="submit" value="Filter By Type">
+</form>
+<div id="lastFilter">
+</div>
 <script type="text/javascript">
+    let currentArr;
+
+    function refereshList(res){
+        $("#documents").remove();
+        const resp = res.toString().split(";");
+        console.log(resp);
+        resp.pop();
+        const ul = $('<ul>', {id: "documents"}).append(
+            resp.map(doc =>
+                $("<li>").append($("<a>").text(doc))
+            )
+        );
+        $('#elems').append(ul.clone());
+    }
+    function rfrList(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "GET",
+            url: "index.php?fun='getDocs'",
+            success: function (res) {
+                refereshList(res)
+            }
+        })
+    }
     $(document).ready(function () {
         $('#getForm').submit(
-            function (e) {
-                e.preventDefault();
-                $.ajax({
-                    type: "GET",
-                    url: "index.php?fun='getDocs'",
-                    success: function (res) {
-                        const resp = res.toString().split(";");
-                        console.log(resp);
-                        resp.pop();
-                        const ul = $('<ul>', {id: "documents"}).append(
-                            resp.map(doc =>
-                                $("<li>").append($("<a>").text(doc))
-                            )
-                        );
-                        $("#documents").remove();
-                        $('#elems').append(ul.clone());
-                    }
-                })
-            }
+            function(e){rfrList(e);}
         );
         $('#deleteFrom').submit(
             function (e){
@@ -57,6 +74,7 @@
                         url: "index.php?fun='deleteDoc'&id="+$('#idIn').val(),
                         success:function (res){
                             alert(res);
+                            rfrList(e);
                         }
                     }
                 )
@@ -72,11 +90,40 @@
                         data : $(this).serialize(),
                         success: function (res){
                             alert(res);
+                            rfrList(e);
                         }
                     }
                 )
             }
-        )
+        );
+        $('#formatFilterFrom').submit(
+            function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "GET",
+                    url: "index.php?fun='filterFormat'&format="+$('#formatIn').val(),
+                    success: function (res) {
+                        $("#lastFilter").text("Last format filter is : " + $('#formatIn').val());
+                        refereshList(res);
+                        $('#formatIn').val("");
+                    }
+                })
+            }
+        );
+        $('#typeFilterFrom').submit(
+            function (e) {
+                e.preventDefault();
+                $.ajax({
+                    type: "GET",
+                    url: "index.php?fun='filterType'&type="+$('#typeIn').val(),
+                    success: function (res) {
+                        $("#lastFilter").text("Last type filter is : " + $('#typeIn').val());
+                        refereshList(res);
+                        $('#typeIn').val("");
+                    }
+                })
+            }
+        );
     });
 </script>
 </body>

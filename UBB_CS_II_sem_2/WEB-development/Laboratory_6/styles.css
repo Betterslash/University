@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-image: url("assets/tech-bckg.jfif");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+input{
+    background: rgba(255, 255, 255, 0.44);
+    outline: none;
+    border: none;
+    border-bottom: 3px solid rgba(0, 183, 255, 0.15);
+    border-radius: 6px;
+    padding: 1vh;
+    margin: 1vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+input:focus{
+    border-bottom: 3px solid rgba(0, 255, 255, 0.85);
+}
+.submit-div{
+    border: none;
+    outline: none;
+    background: #444242;
+    color: antiquewhite;
+    padding: 1.5vh;
+    transition: 0.5s;
+}
+.submit-div:hover{
+    background-color: #2f2e2e;
+    border: 2px solid rgba(0, 255, 255, 0.85);
+}
+li{
+    padding: 4px;
+    font-size: 1.3em;
+    color: antiquewhite;
+}
