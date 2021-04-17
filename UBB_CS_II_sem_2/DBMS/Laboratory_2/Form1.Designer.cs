@@ -67,6 +67,7 @@ namespace Laboratory_2
             this.refreshBTN.TabIndex = 2;
             this.refreshBTN.Text = "Refresh";
             this.refreshBTN.UseVisualStyleBackColor = true;
+            this.refreshBTN.Click += new System.EventHandler(this.refreshBTN_Click);
             // 
             // updateBTN
             // 
@@ -76,6 +77,7 @@ namespace Laboratory_2
             this.updateBTN.TabIndex = 3;
             this.updateBTN.Text = "Update";
             this.updateBTN.UseVisualStyleBackColor = true;
+            this.updateBTN.Click += new System.EventHandler(this.updateBTN_Click);
             // 
             // label1
             // 

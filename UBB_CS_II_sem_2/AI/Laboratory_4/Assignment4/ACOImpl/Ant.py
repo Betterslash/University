@@ -1,3 +1,4 @@
+from copy import deepcopy
 from random import random, randint
 
 from Assignment4.ACOImpl.ACOUtils import ACOConstants
@@ -8,13 +9,27 @@ exp_map = Repository().cmap
 
 
 class Ant:
-    def __init__(self, energy=70):
+    def __init__(self, energy=1270):
         self.__path = [randint(0, (len(ACOConstants.SENSORS) - 1))]
         self.__energy = energy
         self.__fitness = 0
 
-    def computeFitness(self):
-        self.__fitness = 1 / (len(self.__path) + self.__energy)
+    def __sensor_to_energy(self):
+        sensor_energy = []
+        for i in range(0, len(self.__path)):
+            sensor_energy.append((self.__path[i], self.__energy))
+        return sensor_energy
+
+    def compute_fitness(self, nodes):
+        sensor_energy = self.__sensor_to_energy()
+        mapm = deepcopy(exp_map.surface.copy())
+        res = 0
+        for pair in sensor_energy:
+            sensor_index, energy = pair
+            sensor = nodes[sensor_index]
+            res += ACOConstants.get_accesible((sensor.get_x(), sensor.get_y()), mapm, energy)
+        # approximativelly how many empty tiles we have is 320
+        self.__fitness = 320-res
 
     def __get_possible_moves(self, distMap):
         poss_moves = []
@@ -48,24 +63,10 @@ class Ant:
             best_move = max(next_n_prob)
             selected_node = next_n_prob.index(best_move)
         else:
-            selected_node = self.__selection(next_n_prob)
+            selected_node = ACOConstants.selection(next_n_prob)
         self.__energy -= dist_map[self.__path[-1]][selected_node]
         self.__path.append(selected_node)
         return True
-
-    @staticmethod
-    def __selection(next_n_prob):
-        probability_sum = sum(next_n_prob)
-        if probability_sum == 0:
-            return randint(0, len(next_n_prob) - 1)
-        partipartial_sums = [next_n_prob[0] / probability_sum]
-        for i in range(1, len(next_n_prob)):
-            partipartial_sums.append(partipartial_sums[i - 1] + next_n_prob[i] / probability_sum)
-        r = random()
-        position = 0
-        while r > partipartial_sums[position]:
-            position += 1
-        return position
 
     def get_path(self):
         return self.__path
