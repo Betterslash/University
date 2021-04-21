@@ -35,6 +35,6 @@
     <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/AI"> Artificial Inteligence </a>
   </li>
    <li>
-    <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/Web_programming"> Web Programming </a>
+    <a href = "https://github.com/Betterslash/University/tree/main/UBB_CS_II_sem_2/WEB-development"> Web Programming </a>
   </li>
 </ul>
