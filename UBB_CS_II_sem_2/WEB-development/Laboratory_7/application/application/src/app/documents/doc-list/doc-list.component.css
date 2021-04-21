@@ -1,0 +1,7 @@
+.document-coontainer{
+  color: #dbdddd;
+}
+.list-container{
+  max-height: 45vh;
+  overflow: auto;
+}

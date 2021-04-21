@@ -1,0 +1,42 @@
+<div class = "list-container">
+<mat-selection-list color="accent" [multiple]="false">
+  <mat-list-option *ngFor="let document of documents" color="accent" >
+    <div class = "document-coontainer" >
+     ID : {{document.id}} ---- Title : {{document.title}} ---- page number :{{document.pageNumber}} ---- format : {{document.format}} ---- type :{{document.type}}
+    </div>
+    <mat-divider></mat-divider>
+  </mat-list-option>
+
+</mat-selection-list>
+</div>
+<mat-divider></mat-divider>
+<form (ngSubmit)="filterByType(typeForm.value)" [formGroup]="typeForm" >
+  <mat-form-field>
+    <input matInput placeholder="Type" formControlName="type" >
+  </mat-form-field>
+  <button mat-raised-button color="primary">Type Filter</button>
+</form>
+
+<mat-divider></mat-divider>
+
+<form (ngSubmit)="filterByFormat(formatFilter.value)" [formGroup]="formatFilter" >
+  <mat-form-field>
+    <input matInput placeholder="Format" formControlName="format">
+  </mat-form-field>
+  <button mat-raised-button color="primary">Format Filter</button>
+</form>
+<mat-divider></mat-divider>
+
+<button mat-raised-button color="primary" (click)="refreshList()">Refresh List</button>
+
+<mat-divider>
+</mat-divider>
+
+<mat-label style="color: #dbdddd">
+  {{this.lastFilter}}
+</mat-label>
+
+<mat-divider>
+
+</mat-divider>
+

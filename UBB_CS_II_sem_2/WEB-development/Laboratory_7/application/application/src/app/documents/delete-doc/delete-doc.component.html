@@ -1,0 +1,6 @@
+<form [formGroup]="deleteForm" (ngSubmit)="onSubmit(deleteForm.value)">
+  <mat-form-field>
+    <input matInput placeholder="ID" formControlName="id" type="number">
+  </mat-form-field>
+  <button mat-raised-button color="primary">Delete</button>
+</form>

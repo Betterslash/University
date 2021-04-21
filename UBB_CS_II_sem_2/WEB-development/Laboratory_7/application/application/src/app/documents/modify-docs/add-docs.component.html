@@ -1,0 +1,21 @@
+<form class = "modify-container" [formGroup] = "documentForm" (ngSubmit)="onSubmit(documentForm.value)">
+  <mat-form-field>
+    <input matInput placeholder="Id"  formControlName = "id" type="number">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Title"  formControlName = "title">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Page Number"  formControlName="pageNumber" type="number">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Format"  formControlName="format">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Type"  formControlName="type">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Author ID"  formControlName="authorId" type="number">
+  </mat-form-field>
+  <button mat-raised-button color="primary">Modify</button>
+</form>
