@@ -2,6 +2,7 @@
 
 import time
 
+from Assignment4.ACOImpl.ACOUtils import ACOConstants
 from domain import *
 
 
@@ -32,7 +33,7 @@ def closePyGame():
     pygame.quit()
 
 
-def movingDrone(currentMap, path, speed=1, markSeen=False):
+def movingDrone(currentMap, path, sens_path, speed=1, markSeen=False):
     # animation of a drone on a path
 
     screen = initPyGame((currentMap.n * 20, currentMap.m * 20))
@@ -40,7 +41,7 @@ def movingDrone(currentMap, path, speed=1, markSeen=False):
     drona = Drone()
 
     for i in range(len(path)):
-        screen.blit(image(currentMap), (0, 0))
+        screen.blit(image(sens_path, currentMap), (0, 0))
 
         if markSeen:
             brick = pygame.Surface((20, 20))
@@ -62,19 +63,22 @@ def movingDrone(currentMap, path, speed=1, markSeen=False):
     closePyGame()
 
 
-def image(currentMap, colour=BLUE, background=WHITE):
+def image(path, currentMap, colour=BLUE, background=WHITE):
     # creates the image of a map
     imagine = pygame.Surface((currentMap.n * 20, currentMap.m * 20))
     brick = pygame.Surface((20, 20))
     brick.fill(colour)
     imagine.fill(background)
-    brick2 = pygame.Surface((20, 20))
-    brick2.fill(RED)
+    visited_sensors = []
+    for i in range(len(path.get_path())):
+        visited_sensors.append(ACOConstants.SENSORS[path.get_path()[i]])
+    font = pygame.font.Font('freesansbold.ttf', 18)
     for i in range(currentMap.n):
         for j in range(currentMap.m):
             if currentMap.surface[i][j] == 1:
                 imagine.blit(brick, (j * 20, i * 20))
             if currentMap.surface[i][j] == 6:
-                imagine.blit(brick2, (j * 20, i * 20))
-
+                if (i, j) in visited_sensors:
+                    text = font.render(str(visited_sensors.index((i, j))), True,  RED)
+                    imagine.blit(text, (j * 20, i * 20))
     return imagine
