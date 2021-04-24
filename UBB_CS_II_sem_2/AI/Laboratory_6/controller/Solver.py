@@ -1,6 +1,7 @@
 from random import uniform
 
 from constants.Constants import Constants
+from controller.Computer import Computer
 from model.FileHandler import FileHandler
 from ui.Displayer import Displayer
 
@@ -10,10 +11,11 @@ class Solver:
         __file_handler = FileHandler(Constants.FILE_PATH)
         self.__length = Constants.ITEM_FIELD_NUMBER - 1
         self.__items = __file_handler.read_file()
+        self.__computer = None
         self.__displayer = Displayer()
 
     def __get_col_min_max(self):
-
+        # We build minimal points for val1 and val2 and the maximum ones as well
         minima = [Constants.MAX_VALUE for _ in range(self.__length)]
         maxima = [Constants.MIN_VALUE for _ in range(self.__length)]
 
@@ -100,6 +102,12 @@ class Solver:
 
     def run(self):
         items = self.find_clustes()
-        print(len(items))
+        self.__computer = Computer(items)
+        self.__computer.compute()
+        print(self.__computer.get_values())
+
         for elem in items:
             self.__displayer.display(elem)
+
+
+
