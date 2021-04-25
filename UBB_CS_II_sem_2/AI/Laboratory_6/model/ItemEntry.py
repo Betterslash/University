@@ -7,6 +7,7 @@ class ItemEntry:
         self.__x = x
         self.__y = y
         self.__color = self.__get_color()
+
     def get_x(self):
         return self.__x
 
@@ -50,4 +51,3 @@ class ItemEntry:
 
     def get_color(self):
         return self.__color
-

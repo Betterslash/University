@@ -1,5 +1,3 @@
-from random import shuffle
-
 from model.ItemEntry import ItemEntry
 
 
@@ -27,7 +25,7 @@ class FileHandler:
             item_entry = ItemEntry(type_var, x_value, y_value)
             file_items.append(item_entry)
 
-        shuffle(file_items)
+        # shuffle(file_items)
         return file_items
 
 

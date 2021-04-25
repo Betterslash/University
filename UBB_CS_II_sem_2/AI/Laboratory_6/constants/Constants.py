@@ -10,6 +10,11 @@ class Constants:
     RADIUS_SIZE = 2
     CLUSTER_NUMBER = 4
     COLORS = ['red', 'green', 'blue', 'magenta']
+    GREEN = (0, 255, 0)
+    BLUE = (0, 0, 255)
+    PURPLE = (255, 0, 255)
+    BLACK = (0, 0, 0)
+    WHITE = (255, 255, 255)
 
     @staticmethod
     def euclidean_distance(x_value, y_value):
