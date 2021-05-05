@@ -1,4 +1,4 @@
-from random import uniform, random
+from random import uniform
 
 from constants.Constants import Constants
 from controller.Computer import Computer
@@ -6,20 +6,10 @@ from model.FileHandler import FileHandler
 from ui.Displayer import Displayer
 
 
-def get_m():
-    centroids = []
-    for _ in range(4):
-        x = (random() - 0.5) * 10
-        y = (random() - 0.5) * 10
-        c = [x, y]
-        centroids.append(c)
-    return centroids
-
-
 class Solver:
     def __init__(self):
         self.__file_handler = FileHandler(Constants.FILE_PATH)
-        self.__length = Constants.ITEM_FIELD_NUMBER - 1
+        self.__item_length = Constants.ITEM_FIELD_NUMBER - 1
         self.__items = self.__file_handler.read_file()
         self.__computer = None
         self.__displayer = Displayer()
@@ -29,8 +19,8 @@ class Solver:
 
     def __get_col_min_max(self):
         # We build minimal points for val1 and val2 and the maximum ones as well
-        minima = [Constants.MAX_VALUE for _ in range(self.__length)]
-        maxima = [Constants.MIN_VALUE for _ in range(self.__length)]
+        minima = [Constants.MAX_VALUE for _ in range(self.__item_length)]
+        maxima = [Constants.MIN_VALUE for _ in range(self.__item_length)]
 
         for element in self.__items:
             if element.get_x() < minima[0]:
@@ -48,7 +38,7 @@ class Solver:
         return minima, maxima
 
     def __initialize_means(self, min_value, max_value):
-        means = [[0. for _ in range(self.__length)] for _ in range(Constants.CLUSTER_NUMBER)]
+        means = [[0. for _ in range(self.__item_length)] for _ in range(Constants.CLUSTER_NUMBER)]
 
         for mean in means:
             for i in range(len(mean)):
