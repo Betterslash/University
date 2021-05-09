@@ -1,67 +1,63 @@
-import math
-
 import torch
 
 from Assignment7.implementation import mymodel
+from Assignment7.implementation.constants import Constants
+from Assignment7.implementation.data_loader import DataLoader
 
-xT = (-20. * torch.rand(1000) + 10.)
-yT = (-20. * torch.rand(1000) + 10.)
-DATA = torch.column_stack((xT.clone(), yT.clone()))
-torch.save(DATA, 'database/mydataset.dat')
-# # the function to be optimised
-x = torch.load('database/mydataset.dat')
-y = torch.sin(xT.clone() + yT.clone() / math.pi).clone()
-# we set up the lossFunction as the mean square error
-lossFunction = torch.nn.L1Loss()
 
-# we create the ANN
-ann = mymodel.Net(n_feature=2, n_hidden=10, n_output=1)
+class Solver:
 
-print(ann)
-# we use an optimizer that implements stochastic gradient descent
-optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.2)
+    @staticmethod
+    def execute():
 
-# we memorize the losses forsome graphics
-loss_list = []
-avg_loss_list = []
+        # create data for the ann
+        DataLoader().load_data()
 
-# we set up the environment for training in batches
-batch_size = 32
-n_batches = int(len(x) / batch_size)
-print(n_batches)
+        # load the data in memory
+        x_points, y_points, f_tensor = torch.load(Constants.DATA_PATH)
 
-for epoch in range(2000):
+        # merging x_points with y_points to create a tensor of vars of point form
+        variabls = torch.column_stack((x_points, y_points))
 
-    for batch in range(n_batches):
-        batch_X, batch_y = x[batch * batch_size:(batch + 1) * batch_size, ], y[batch * batch_size:(batch + 1) * batch_size, ]
-        # we compute the output for this batch
-        prediction = ann(torch.FloatTensor(batch_X))
-        batch_y = torch.FloatTensor(batch_y)
-        # we compute the loss for this batch
-        loss = lossFunction(prediction, batch_y)
+        f_tensor = f_tensor.unsqueeze(1)
 
-        # we save it for graphics
-        loss_list.append(loss)
+        loss_function = torch.nn.MSELoss()
 
-        # we set up the gradients for the weights to zero (important in pytorch)
-        optimizer_batch.zero_grad()
+        ann = mymodel.Net(n_feature=2, n_hidden=10, n_output=1)
 
-        # we compute automatically the variation for each weight (and bias) of the network
-        loss.backward()
+        print(ann)
 
-        # we compute the new values for the weights
-        optimizer_batch.step()
+        optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.2)
 
-        # we print the loss for all the dataset for each 10th epoch
-    if epoch % 100 == 99:
-        y_pred = loss_list[len(loss_list) - 1]
-        loss = lossFunction(y_pred, y)
-        print('\repoch: {}\tLoss =  {:.5f}'.format(epoch, loss))
+        loss_list = []
+        avg_loss_list = []
 
-    # Specify a path
-filepath = "database/mydataset.dat"
+        batch_size = 16
+        n_batches = int(len(f_tensor) / batch_size)
+        print(n_batches)
 
-# save the model to file
-torch.save(ann.state_dict(), filepath)
-if __name__ == "__main__":
-    pass
+        for epoch in range(2000):
+
+            loss_sum = 0
+
+            for batch in range(n_batches):
+                batch_variables = variabls[batch * batch_size:(batch + 1) * batch_size, ]
+                batch_function = f_tensor[batch * batch_size:(batch + 1) * batch_size, ]
+
+                prediction = ann(batch_variables)
+
+                loss = loss_function(prediction, batch_function)
+                loss_sum += loss.item()
+                optimizer_batch.zero_grad()
+                loss.backward()
+                optimizer_batch.step()
+
+            avg_loss_list.append(loss_sum / n_batches)
+            f_pred = ann(variabls)
+            loss = loss_function(f_pred, f_tensor)
+            loss_list.append(loss.item())
+            if epoch % 100 == 99:
+                print('\rEpoch: {}\tLoss =  {:.5f}'.format(epoch, loss))
+
+        torch.save(ann.state_dict(), Constants.DICT_STATES_PATH)
+
