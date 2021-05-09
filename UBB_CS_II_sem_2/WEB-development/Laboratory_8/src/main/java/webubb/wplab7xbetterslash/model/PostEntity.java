@@ -3,6 +3,7 @@ package webubb.wplab7xbetterslash.model;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @Table(name = "posts")
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class PostEntity {
 
     @Id

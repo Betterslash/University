@@ -19,16 +19,22 @@
 
 
 </head>
-<body>
-<p>Hello ${username}</p>
-<label>Available topics : </label>
-<div class="topics-container">
-    <c:forEach items="${topics}" var="topic">
-        <a href="/topics/${topic.id}">${topic.subject}</a>
-    </c:forEach>
-</div>
+<body style="background-image: url('assets/background.png')">
+<p style="color: antiquewhite; font-size: 2vh;">Hello ${username}</p>
 <form method="post" id="logout-form">
     <input type="submit" value="Logout">
+</form>
+<label style="color: antiquewhite; font-size: 3vh;">Available topics : </label>
+<div class="topics-container">
+    <c:forEach items="${topics}" var="topic">
+        <button onclick="navigateTo(${topic.id})">${topic.subject}</button>
+    </c:forEach>
+</div>
+
+
+<form id="add-topic-form" method="post">
+    <input type="text" name="subject" placeholder="Topic Subject">
+    <input type="submit" value="Add Topic">
 </form>
 <p></p>
 </body>

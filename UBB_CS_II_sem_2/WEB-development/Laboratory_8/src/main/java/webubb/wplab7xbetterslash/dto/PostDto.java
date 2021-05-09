@@ -16,4 +16,6 @@ public class PostDto {
     private String text;
 
     private Long user;
+
+    private Long topic;
 }

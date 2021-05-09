@@ -39,4 +39,5 @@ public class TopicServiceImpl implements TopicService {
     public Optional<TopicDto> getOne(Long id) {
         return Optional.of(this.topicMapper.fromEntityToDto(this.topicRepository.getOne(id)));
     }
+
 }

@@ -1,0 +1,26 @@
+.topics-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    margin: auto;
+}
+
+button{
+    background: none;
+    outline: none;
+    border: 2px solid #026f68;
+    color: antiquewhite;
+    font-size: 1.2em;
+    margin: 5px;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: #252727;
+    color: antiquewhite;
+}
