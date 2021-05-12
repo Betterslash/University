@@ -1,0 +1,6 @@
+1 -> read-commited
+2 -> read uncommited 
+3 -> repeatable read 
+4 -> snapshot
+5 -> serializable
+
