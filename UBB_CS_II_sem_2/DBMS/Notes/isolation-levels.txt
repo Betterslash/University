@@ -1,3 +1,7 @@
+                                            --------------------
+                                            | ISOLATION LEVELS |
+                                            --------------------
+                                                                
 1 -> read-commited
 2 -> read uncommited 
 3 -> repeatable read 
