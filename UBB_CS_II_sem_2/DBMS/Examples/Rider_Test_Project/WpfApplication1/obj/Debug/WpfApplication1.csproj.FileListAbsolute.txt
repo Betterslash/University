@@ -1,0 +1,15 @@
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\bin\Debug\WpfApplication1.exe
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\bin\Debug\WpfApplication1.pdb
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.csprojAssemblyReference.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\MainWindow.g.cs
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\App.g.cs
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\MainWindow.baml
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.csproj.CoreCompileInputs.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.exe
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Rider_Test_Project\WpfApplication1\obj\Debug\WpfApplication1.pdb

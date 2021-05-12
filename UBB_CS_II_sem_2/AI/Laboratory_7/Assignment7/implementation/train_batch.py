@@ -27,7 +27,7 @@ class Solver:
 
         print(ann)
 
-        optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.2)
+        optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.02)
 
         loss_list = []
         avg_loss_list = []
