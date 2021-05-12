@@ -1,10 +1,13 @@
+USE GADB;
 SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED;
 
 BEGIN TRANSACTION
     UPDATE store_table
     SET staffnumber = 251
     WHERE adress = 312;
-    WAITFOR DELAY '00:00:15'
+    EXEC logg_data 'store_table', '', 'UPDATE_STAFF_AT_ADDRESS';
+    WAITFOR DELAY '00:00:10'
 ROLLBACK TRANSACTION
+EXEC logg_data 'store_table', '', 'RB_UPDATE_STAFF_AT_ADDRESS';
 
 
