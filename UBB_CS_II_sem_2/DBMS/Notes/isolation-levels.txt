@@ -24,4 +24,24 @@
   --> Transactions need X/S locks for reading an writing objects
   --> X/S Locks released only at the end of the transaction
 
-4 -->   
+4 --> Transactions can only read commited data
+  --> objects read by T cannot be changed by any other 
+  transactions while T is ongoing
+  --> if T reads a set of objects based on a search predicate, 
+  this set cannot bechanged by other transactions while T is in progress
+  --> Transactions need X/S locks for reading an writing objects
+  --> X/S Locks released only at the end of the transaction
+  --> a transaction also acquires locks on sets of objects
+
+  <---------------------------------------------------------------------------------->
+---------------------------------------------------------------------
+|                   |   Dirty Read    | Unrepeatable Read | Phantom | 
+---------------------------------------------------------------------
+|   Read Uncommited |        Y        |         Y         |    Y    |   -> 1
+---------------------------------------------------------------------
+|   Read Commited   |        N        |         Y         |    Y    |   -> 2   
+---------------------------------------------------------------------
+|   Repeatable Read |        N        |         N         |    Y    |   -> 3
+---------------------------------------------------------------------
+|   Serializable    |        N        |         N         |    N    |   -> 4
+---------------------------------------------------------------------
