@@ -6,11 +6,12 @@
 
 !! Dirty writes aren't alolowed at any of the following isolation levels !!
 
-
+  <--------------------------------------Read-Uncommited----------------------------------------->
 1 --> Transactions can read data modified by other ongoing transactions 
   --> it is the lowest degree of isolation 
   --> no Shared locks when reading data
 
+  <--------------------------------------Read-Commited------------------------------------------->
 2 --> Transactions can only read commited data 
   --> an object read by T(denotes current transaction) 
   can be changed by another transaction while T is in progress
@@ -18,12 +19,14 @@
   --> Exclusive locks are released at the end of the transaction
   --> Shared locks are imediately released
 
+  <---------------------------------------Repeatable-Read---------------------------------------->
 3 --> Transactions can only read commited data
   --> objects read by T cannot be changed by any other 
   transactions while T is ongoing 
   --> Transactions need X/S locks for reading an writing objects
   --> X/S Locks released only at the end of the transaction
 
+  <----------------------------------------Serializable------------------------------------------>
 4 --> Transactions can only read commited data
   --> objects read by T cannot be changed by any other 
   transactions while T is ongoing
@@ -33,15 +36,15 @@
   --> X/S Locks released only at the end of the transaction
   --> a transaction also acquires locks on sets of objects
 
-  <---------------------------------------------------------------------------------->
----------------------------------------------------------------------
-|                   |   Dirty Read    | Unrepeatable Read | Phantom | 
----------------------------------------------------------------------
-|   Read Uncommited |        Y        |         Y         |    Y    |   -> 1
----------------------------------------------------------------------
-|   Read Commited   |        N        |         Y         |    Y    |   -> 2   
----------------------------------------------------------------------
-|   Repeatable Read |        N        |         N         |    Y    |   -> 3
----------------------------------------------------------------------
-|   Serializable    |        N        |         N         |    N    |   -> 4
----------------------------------------------------------------------
+  <------------------------------------------Table----------------------------------------------->
+            ---------------------------------------------------------------------
+            |                   |   Dirty Read    | Unrepeatable Read | Phantom | 
+            ---------------------------------------------------------------------
+            |   Read Uncommited |        Y        |         Y         |    Y    |   -> 1
+            ---------------------------------------------------------------------
+            |   Read Commited   |        N        |         Y         |    Y    |   -> 2   
+            ---------------------------------------------------------------------
+            |   Repeatable Read |        N        |         N         |    Y    |   -> 3
+            ---------------------------------------------------------------------
+            |   Serializable    |        N        |         N         |    N    |   -> 4
+            ---------------------------------------------------------------------
