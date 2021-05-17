@@ -7,9 +7,9 @@ from Assignment7.implementation.train_batch import Solver
 
 if __name__ == "__main__":
 
-    # Solver.execute()
+    Solver.execute()
 
-    ann = mymodel.Net(2, 10, 1)
+    ann = mymodel.Net(2, 16, 1)
 
     ann.load_state_dict(torch.load(Constants.DICT_STATES_PATH))
     ann.eval()

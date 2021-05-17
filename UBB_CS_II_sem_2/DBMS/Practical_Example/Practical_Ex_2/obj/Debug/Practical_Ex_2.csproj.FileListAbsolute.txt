@@ -1,0 +1,10 @@
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.csprojAssemblyReference.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.Form1.resources
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.Properties.Resources.resources
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.csproj.GenerateResource.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.csproj.CoreCompileInputs.cache
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\bin\Debug\Practical_Ex_2.exe.config
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\bin\Debug\Practical_Ex_2.exe
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\bin\Debug\Practical_Ex_2.pdb
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.exe
+D:\University\University\University\UBB_CS_II_sem_2\DBMS\Practical_Example\Practical_Ex_2\obj\Debug\Practical_Ex_2.pdb

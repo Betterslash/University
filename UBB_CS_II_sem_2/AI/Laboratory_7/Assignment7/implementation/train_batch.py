@@ -1,4 +1,5 @@
 import torch
+from matplotlib import pyplot as pt
 
 from Assignment7.implementation import mymodel
 from Assignment7.implementation.constants import Constants
@@ -23,11 +24,12 @@ class Solver:
 
         loss_function = torch.nn.MSELoss()
 
-        ann = mymodel.Net(n_feature=2, n_hidden=10, n_output=1)
+        ann = mymodel.Net(n_feature=2, n_hidden=16, n_output=1)
 
         print(ann)
 
-        optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.02)
+        optimizer_batch = torch.optim.SGD(ann.parameters(), lr=0.025)
+        # optimizer_batch = torch.optim.Adam(ann.parameters(), lr=0.02)
 
         loss_list = []
         avg_loss_list = []
@@ -56,8 +58,11 @@ class Solver:
             f_pred = ann(variabls)
             loss = loss_function(f_pred, f_tensor)
             loss_list.append(loss.item())
+
             if epoch % 100 == 99:
                 print('\rEpoch: {}\tLoss =  {:.5f}'.format(epoch, loss))
 
+        pt.plot(loss_list)
+        pt.show()
         torch.save(ann.state_dict(), Constants.DICT_STATES_PATH)
 
