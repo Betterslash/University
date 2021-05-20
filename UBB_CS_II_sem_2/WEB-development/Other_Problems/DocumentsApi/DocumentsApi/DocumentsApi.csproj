@@ -14,11 +14,4 @@
       <Compile Remove="Data\BaseContext.cs" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Dto" />
-      <Folder Include="Exceptions" />
-      <Folder Include="Mappers" />
-      <Folder Include="Validators" />
-    </ItemGroup>
-
 </Project>

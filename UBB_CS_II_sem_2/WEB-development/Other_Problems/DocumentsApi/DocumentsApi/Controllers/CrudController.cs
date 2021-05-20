@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using DocumentsApi.Dto;
 
 namespace DocumentsApi.Controllers
 {
-    public interface ICrudController<TM>
+    public interface ICrudController<TM> where TM : IBaseDto
     {
         List<TM> read();
 
