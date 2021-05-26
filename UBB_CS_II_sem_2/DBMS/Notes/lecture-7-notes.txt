@@ -1,0 +1,41 @@
+                                            -------------------
+                                            |    Lecture 7    |
+                                            -------------------
+
+
+methods for implementing operators -> iteration    --< 3
+                                   -> indexing     --< 2 
+                                   -> partitioning --< 1
+
+*1  --> Sorting
+    --> Hashing
+
+Selection σ:
+    Access paths:
+        --> File scan
+        --> Index scan matching selection condition 'C'
+                    --> Matching meaning the index can be used to retreive only the tuples matching 'C'
+                    --> Hash index works fine when search condition is =
+                            -->If hash index, the condition must contain all indexed cols
+                    --> For a tree index operators may vary and also the search condition must contain PREFIXES of indexed values
+        --> Selectivity of an access path is defined by the number of pages that is retreived
+
+Joins ⊗: 
+    1) Implementations --> iteration    ==> Simple/Page-Oriented nested loops <-- a
+                                        ==> Block nested loops                <-- b
+                       --> indexing     ==> Index Nested loops Joins          <-- c 
+                       --> partitioning ==> Sort-Merge Joins                  <-- d 
+                                        ==> Hash Joins                        <-- e 
+       
+    *M, N page numbers of the joined tables
+     pe, ps number of records per page 
+
+    a -> Complexity = M + pe * (M * N)
+      -> Complexity = M + M * N = M * (N + 1)
+    
+    b -> Complexity = scan of outer table + number of blocks in outer table * scan of inner table
+            --> No. of blocks = [No. pages outer / Size of block]
+    
+    c -> Complexity = M + ( (M*pE) * cost of finding corresponding records in S)
+            --> cost of finding corresponding records in S = 1.2 for Hash Index
+                                                           = 2-4 for B+ tree index
